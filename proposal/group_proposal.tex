@@ -18,6 +18,28 @@
 
 \maketitle
 
+\section*{Changes from the First Proposal}
+
+We have made the following changes to our design:
+
+\subsection*{SmartFusion}
+
+Instead of using Arduinos to control the locks, we will be using the SmartFusion
+boards instead. Not only do the SmartFusion boards give us more computability
+power, they also allow us to add features otherwise impossible for the Arduino.
+Firstly, we can implement our secure communication via RSA fully in hardware.
+The change also allows more practical implementation of class material as opposed to
+prebuilt Arduino libraries.
+
+The locks themselves, instead of being regular door locks, will be simulated as
+cabinet locks, with the servo turning a piece of metal that will prevent the
+door from opening.
+
+\subsection*{LoRa Gateway}
+
+On further research, we realized that a LoRa Gateway had every part of the Intel
+Edison that we desired: a web server, a cellular chip, and LoRa support. 
+
 \section{Customer}
 Our target market is people in communal living spaces such as houses or shared
 apartments, and who are looking for greater control over the security of their
@@ -42,25 +64,32 @@ than waiting for them to come home.
 
 \section{Approach}
 
-The top level design is of a central hub with a number of nodes connected. The
+The top level design is of a central hub (a LoRa Gateway) with a number of nodes connected. The
 hub is what allows users to communicate with the locks via a web interface. We
 only want the hub to store what is necessary, acting as a control station while
 each of the locks do most of the security part, making it much harder for
-someone to spoof access rights.
+someone to spoof access rights. Each SmartFusion will have a hardware RSA
+implementation in order to maintain secure communication (ensuring secure
+communication on the hub side should be trivial).
 
-When a scan occurs, the Arduino will compare the ID with its internal whitelist
+When a scan occurs, the SmartFusion connected to the lock will compare the
+credentials with its internal whitelist
 and blacklist. If it's on the whitelist, the door will unlock. If it's on the
 blacklist, not only will the door not unlock, but a record of the attempted
-access is saved. If the ID is on neither list, the Arduino will inform the hub,
-which sends out a notification to the lock's owner requesting approval. Upon
+access is saved. If the credentials are on neither list, the SmartFusion will inform the hub,
+which sends out a message to the lock's owner requesting approval. Upon
 answer, the lock will unlock if approved. The request will also be recorded. If
 the scan is via fingerprint, then only the prints already saved are allowed, and
 no requests will be made if access is denied.
 
-A similar notification method will be used to make changes to the locks. In
+A similar messaging method will be used to make changes to the locks. In
 order to allow equal ownership, if somebody wishes to change a common lock, they
 submit a request for the change, and the others must approve it first before it
 becomes implemented.
+
+In case of power loss, the hub will have a backup power supply in order to
+make users aware of the situation. A power-based interrupt will occur upon loss
+of main power and the board will send out an SMS to all users.
 
 The following diagrams will showcase the control flow for the various operations
 that the system will perform:
@@ -80,17 +109,7 @@ that the system will perform:
 Quantity: 1
 
 \noindent
-Base: \textbf{Intel Edison} (stock)
-
-\noindent
-Attachments:
-\begin{itemize}
-
-  \item LoRa transponder ($\thicksim$\$40)
-
-  \item WiFi chip (already on board)
-
-\end{itemize}
+Base: \textbf{LG01 LoRa OpenWrt IoT Gateway} (Tindie)
 
 \subsection{Lock}
 
@@ -98,25 +117,21 @@ Attachments:
 Quantity: 2
 
 \noindent
-Base: \textbf{Arduino Uno} (stock)
+Base: \textbf{SmartFusion Board} (stock)
 
 \noindent
 Attachments:
 \begin{itemize}
-  \item LoRa transponder ($\thicksim$\$40)
-  \item $360\degree$ Servo motor ($\thicksim$\$14)
-  \item Fingerprint scanner ($\thicksim$\$30)
-  \item Physical lock ($\thicksim$\$10)
-  \item NFC Scanner ($\thicksim$\$5)
-  \item Magnetic contact switch ($\thicksim$\$4)
-    %light sensor + LED? 
+  \item Adafruit RFM95W LoRa Radio Transceiver Breakout - 868 or 915 MHz
+    (Adafruit PID: 3072)
+  \item Hitec HS-422 Servo (stock)
+  \item Fingerprint Scanner - TTL (GT-511C1R) (Sparkfun PID: SEN-13007)
+  \item KNACRO PN532 NFC Module 13.56MHz 3.3V Board (Amazon)
+  \item Adafruit Industries LLC 375 Magnetic contact switch (Digi-Key PN: 1528-1907-ND)
+  \item NeoPixel Diffused 5mm Through-Hole LED - 5 Pack (Adafruit PID: 1938)
 \end{itemize}
 
 \section{Potential Components}
-Instead of using regular Arduino Uno with the various sensors attached via IO
-pins, we would design a custom Arduino board with the LoRa transponder and NFC
-scanner as SMDs, and having dedicated pins for attaching the fingerprint scanner
-and servo.
   
 
 \end{document}
