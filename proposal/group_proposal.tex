@@ -96,14 +96,8 @@ NeoPixel LEDs would be used to provide visual feedback for the locks. There will
 be different states for idle, waiting for response, access granted, access
 denied, and an open door.
 
-The following diagrams will showcase the control flow for the various operations
-that the system will perform:
-
-\includegraphics[scale=0.4]{access_graph.png}
-
-\includegraphics[scale=0.4]{autolock_graph.png}
-
-\includegraphics[scale=0.4]{admin_graph.png}
+The diagrams at the end of this proposal will showcase the component networks as
+well as the control flow for the various operations that the system will perform.
 
 \section{Physical Components}
 
@@ -149,5 +143,16 @@ onboard, so it would be something completely separate from the credential
 system that we have (which might be a positive, considering it's a failsafe).
 
 \end{itemize}
+
+\section{Diagrams}
+
+\subsection*{Connections}
+\includegraphics[scale=0.35]{Connections.png}
+
+\subsection*{Access}
+\includegraphics[scale=0.35]{Access.png}
+
+\subsection*{Administration}
+\includegraphics[scale=0.35]{Administration.png}
 
 \end{document}
