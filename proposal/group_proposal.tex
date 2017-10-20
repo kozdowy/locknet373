@@ -22,7 +22,13 @@
 
 We have made the following changes to our design:
 
-\subsection*{SmartFusion}
+
+\subsection*{Hub}
+
+On further research, we realized that a LoRa Gateway had every part of the Intel
+Edison that we desired: web server capabilities, a cellular chip, and LoRa support. 
+
+\subsection*{Lock}
 
 Instead of using Arduinos to control the locks, we will be using the SmartFusion
 boards instead. Not only do the SmartFusion boards give us more computability
@@ -34,11 +40,6 @@ prebuilt Arduino libraries.
 The locks themselves, instead of being regular door locks, will be simulated as
 cabinet locks, with the servo turning a piece of metal that will prevent the
 door from opening.
-
-\subsection*{LoRa Gateway}
-
-On further research, we realized that a LoRa Gateway had every part of the Intel
-Edison that we desired: a web server, a cellular chip, and LoRa support. 
 
 \section{Customer}
 Our target market is people in communal living spaces such as houses or shared
@@ -91,6 +92,10 @@ In case of power loss, the hub will have a backup power supply in order to
 make users aware of the situation. A power-based interrupt will occur upon loss
 of main power and the board will send out an SMS to all users.
 
+NeoPixel LEDs would be used to provide visual feedback for the locks. There will
+be different states for idle, waiting for response, access granted, access
+denied, and an open door.
+
 The following diagrams will showcase the control flow for the various operations
 that the system will perform:
 
@@ -109,29 +114,40 @@ that the system will perform:
 Quantity: 1
 
 \noindent
-Base: \textbf{LG01 LoRa OpenWrt IoT Gateway} (Tindie)
+\begin{itemize}
+\item \textbf{LG01 LoRa OpenWrt IoT Gateway} (Tindie)
+  \item Panasonic LC-R121R3P 12V 1.3AH Sealed Lead Acid battery (Battery Clerk
+    PN: AJC-D1.2S-J-0-142493)
+    \end{itemize}
+
 
 \subsection{Lock}
 
 \noindent
 Quantity: 2
 
-\noindent
-Base: \textbf{SmartFusion Board} (stock)
-
-\noindent
-Attachments:
 \begin{itemize}
+  \item \textbf{SmartFusion Board} (stock)
   \item Adafruit RFM95W LoRa Radio Transceiver Breakout - 868 or 915 MHz
     (Adafruit PID: 3072)
   \item Hitec HS-422 Servo (stock)
-  \item Fingerprint Scanner - TTL (GT-511C1R) (Sparkfun PID: SEN-13007)
+  \item Adafruit NeoPixel Digital RGB LED Strip (stock)
   \item KNACRO PN532 NFC Module 13.56MHz 3.3V Board (Amazon)
   \item Adafruit Industries LLC 375 Magnetic contact switch (Digi-Key PN: 1528-1907-ND)
-  \item NeoPixel Diffused 5mm Through-Hole LED - 5 Pack (Adafruit PID: 1938)
+  \item Portable USB Charger (stock)
 \end{itemize}
 
 \section{Potential Components}
-  
+
+\begin{itemize}
+\item Fingerprint Scanner - TTL (GT-511C1R) (Sparkfun PID: SEN-13007)
+
+The fingerprint scanner would be used as a failsafe in case the NFC reader was
+not viable (either an issue with the scanner or with the NFC tag/phone). The
+sensor itself communicates over UART and all of the heavy calculations are done
+onboard, so it would be something completely separate from the credential
+system that we have (which might be a positive, considering it's a failsafe).
+
+\end{itemize}
 
 \end{document}
