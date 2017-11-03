@@ -1,0 +1,16 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe  -osyn  C:\Users\kozdowy\lockNET_SF\synthesis\synwork\lockNET_SF_comp.srs  -top  lockNET_SF  -hdllog  C:\Users\kozdowy\lockNET_SF\synthesis\synlog\lockNET_SF_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I C:\Users\kozdowy\lockNET_SF\synthesis\  -I C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib   -v2001  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  C:\Users\kozdowy\lockNET_SF\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work C:\Users\kozdowy\lockNET_SF\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v -lib work C:\Users\kozdowy\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell.v -lib work C:\Users\kozdowy\lockNET_SF\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work C:\Users\kozdowy\lockNET_SF\component\work\lockNET_SF_MSS\lockNET_SF_MSS.v -lib work C:\Users\kozdowy\lockNET_SF\hdl\neopixel.v -lib COREAPB3_LIB C:\Users\kozdowy\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v -lib COREAPB3_LIB C:\Users\kozdowy\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v -lib COREAPB3_LIB C:\Users\kozdowy\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v -lib work C:\Users\kozdowy\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v 
+rc:0 success:1 runtime:3
+file:C:\Users\kozdowy\lockNET_SF\synthesis\synwork\lockNET_SF_comp.srs|io:o|time:1509734628|size:33865|exec:0
+file:C:\Users\kozdowy\lockNET_SF\synthesis\synlog\lockNET_SF_compiler.srr|io:o|time:1509734628|size:23269|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1487959650|size:72817|exec:0
+file:C:\Users\kozdowy\lockNET_SF\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v|io:i|time:1471626147|size:11243|exec:0
+file:C:\Users\kozdowy\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell.v|io:i|time:1509734552|size:12226|exec:0
+file:C:\Users\kozdowy\lockNET_SF\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v|io:i|time:1509734550|size:2888|exec:0
+file:C:\Users\kozdowy\lockNET_SF\component\work\lockNET_SF_MSS\lockNET_SF_MSS.v|io:i|time:1509734553|size:18763|exec:0
+file:C:\Users\kozdowy\lockNET_SF\hdl\neopixel.v|io:i|time:1509734508|size:3585|exec:0
+file:C:\Users\kozdowy\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v|io:i|time:1506037752|size:6765|exec:0
+file:C:\Users\kozdowy\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v|io:i|time:1506037752|size:3556|exec:0
+file:C:\Users\kozdowy\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v|io:i|time:1506037752|size:32806|exec:0
+file:C:\Users\kozdowy\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v|io:i|time:1509734558|size:13290|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\c_hdl.exe|io:i|time:1479391564|size:1337856|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe|io:i|time:1479391768|size:1973248|exec:1

@@ -1,0 +1,22 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
+
+Date      :  Fri Nov 03 14:42:35 2017
+Project   :  C:\Users\kozdowy\lockNET_SF
+Component :  lockNET_SF_MSS
+Family    :  SmartFusion
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/kozdowy/lockNET_SF/component/work/lockNET_SF_MSS/MSS_CCC_0/lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v
+    C:/Users/kozdowy/lockNET_SF/component/work/lockNET_SF_MSS/lockNET_SF_MSS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Users/kozdowy/lockNET_SF/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
+    C:/Users/kozdowy/lockNET_SF/component/work/lockNET_SF_MSS/mss_tshell.v
+    C:/Users/kozdowy/lockNET_SF/component/work/lockNET_SF_MSS/mss_tshell_syn.sdc
+
+Stimulus files for all Simulation tools:
+    C:/Users/kozdowy/lockNET_SF/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
+    C:/Users/kozdowy/lockNET_SF/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
+    C:/Users/kozdowy/lockNET_SF/component/work/lockNET_SF_MSS/MSS_ENVM_0/test.bfm
+

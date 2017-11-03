@@ -1,0 +1,79 @@
+----------------------------------------------------------------------
+Report for cell lockNET_SF.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                        CoreAPB3_Z1         1       2.0        2.0
+                                GND         1       0.0        0.0
+                             OUTBUF         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                     lockNET_SF_MSS         1       0.0        0.0
+                                pwm         1     326.0      326.0
+                            
+                         TOTAL              6                328.0
+----------------------------------------------------------------------
+Report for cell pwm.netlist
+     Instance path:  pwm_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        18       1.0       18.0
+                              AND2A         3       1.0        3.0
+                               AND3        54       1.0       54.0
+                                AO1         6       1.0        6.0
+                               AO1C        15       1.0       15.0
+                               AOI1         1       1.0        1.0
+                              AOI1A         5       1.0        5.0
+                              AOI1B         7       1.0        7.0
+                                AX1         4       1.0        4.0
+                               DFN1        33       1.0       33.0
+                             DFN1E1        32       1.0       32.0
+                                GND         1       0.0        0.0
+                               NOR2         7       1.0        7.0
+                              NOR2A        10       1.0       10.0
+                              NOR2B         7       1.0        7.0
+                              NOR3A         5       1.0        5.0
+                              NOR3B         1       1.0        1.0
+                              NOR3C         9       1.0        9.0
+                                OA1         5       1.0        5.0
+                               OA1A        10       1.0       10.0
+                               OR2A        25       1.0       25.0
+                               OR3B         2       1.0        2.0
+                               OR3C         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                              XNOR2        39       1.0       39.0
+                               XOR2        27       1.0       27.0
+                            
+                         TOTAL            328                326.0
+----------------------------------------------------------------------
+Report for cell lockNET_SF_MSS.netlist
+     Instance path:  lockNET_SF_MSS_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                          INBUF_MSS         2       0.0        0.0
+                            MSS_APB         1       0.0        0.0
+                         OUTBUF_MSS         1       0.0        0.0
+                                VCC         1       0.0        0.0
+          lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
+                            
+                         TOTAL              7                  0.0
+----------------------------------------------------------------------
+Report for cell lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.netlist
+     Instance path:  lockNET_SF_MSS_0.MSS_CCC_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                            MSS_CCC         1       0.0        0.0
+                              RCOSC         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              4                  0.0
+----------------------------------------------------------------------
+Report for cell CoreAPB3_Z1.netlist
+     Instance path:  CoreAPB3_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                              NOR3A         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              4                  2.0

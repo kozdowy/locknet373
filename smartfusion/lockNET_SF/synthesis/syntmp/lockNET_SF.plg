@@ -1,0 +1,23 @@
+@P:  Worst Slack : -0.118
+@P:  FAB_CLK - Estimated Frequency : 98.8 MHz
+@P:  FAB_CLK - Requested Frequency : 100.0 MHz
+@P:  FAB_CLK - Estimated Period : 10.118
+@P:  FAB_CLK - Requested Period : 10.000
+@P:  FAB_CLK - Slack : -0.118
+@P:  FCLK - Estimated Frequency : NA
+@P:  FCLK - Requested Frequency : 100.0 MHz
+@P:  FCLK - Estimated Period : NA
+@P:  FCLK - Requested Period : 10.000
+@P:  FCLK - Slack : NA
+@P:  System - Estimated Frequency : 415.2 MHz
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : 2.409
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : 7.591
+@P:  Total Area : 328.0
+@P:  Total Area : 326.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 2.0
+@P:  Total Area : 328.0
+@P:  CPU Time : 0h:00m:01s

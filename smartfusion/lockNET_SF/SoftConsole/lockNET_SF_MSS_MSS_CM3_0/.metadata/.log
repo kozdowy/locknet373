@@ -1,0 +1,23 @@
+!SESSION 2017-11-03 14:42:42.722 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import C:\Users\kozdowy\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\projects\lockNET_SF_MSS_MSS_CM3_0_hw_platform
+Command-line arguments:  -os win32 -ws win32 -arch x86 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data C:/Users/kozdowy/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0 -import C:\Users\kozdowy\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\projects\lockNET_SF_MSS_MSS_CM3_0_hw_platform
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-11-03 14:42:46.354
+!MESSAGE Indexed 'lockNET_SF_MSS_MSS_CM3_0_hw_platform' (11 sources, 48 headers) in 1.13 sec: 2,781 declarations; 5,633 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.01%)
+!SESSION 2017-11-03 14:42:47.932 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import C:\Users\kozdowy\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\projects\lockNET_SF_MSS_MSS_CM3_0_app
+Command-line arguments:  -os win32 -ws win32 -arch x86 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data C:/Users/kozdowy/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0 -import C:\Users\kozdowy\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\projects\lockNET_SF_MSS_MSS_CM3_0_app
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-11-03 14:42:49.114
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-11-03 14:42:50.411
+!MESSAGE Indexed 'lockNET_SF_MSS_MSS_CM3_0_app' (1 sources, 8 headers) in 0.19 sec: 1 declarations; 0 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
