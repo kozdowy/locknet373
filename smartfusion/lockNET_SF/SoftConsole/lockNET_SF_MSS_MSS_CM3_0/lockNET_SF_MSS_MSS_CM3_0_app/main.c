@@ -5,6 +5,7 @@
 //#include <>
 #include "neopixel.h"
 #include "servo.h"
+#include "nfc.h"
 #include "contact_switch.h"
 
 
@@ -14,9 +15,9 @@ __attribute__ ((interrupt)) void Fabric_IRQHandler( void )
 	// Add interrupt status?
 
 	// For the NFC module
-	int n_bytes_to_read =; //Need to look it in the datasheet
-	uint8_t receive_buf[10];
-	nfc_read(receive_buf,n_bytes_to_read);
+	//int n_bytes_to_read =; //Need to look it in the datasheet
+	//uint8_t receive_buf[10];
+	//nfc_read(receive_buf,n_bytes_to_read);
 }
 
 // Main program
@@ -27,26 +28,21 @@ int main()
 	int i;
 
 	// Testing
-	MSS_I2C_init(&g_mss_i2c1 , PN532_I2C_ADDRESS, MSS_I2C_PCLK_DIV_256 );
-	MSS_GPIO_config( MSS_GPIO_0, MSS_GPIO_OUTPUT_MODE);
+	nfc_setup();
 
-
-	// Delays required for setup
-	MSS_GPIO_set_output(MSS_GPIO_0 ,(uint8_t) 1);
-	for(i=0;i<100000;i++);
-	MSS_GPIO_set_output(MSS_GPIO_0 ,(uint8_t) 0);
-	for(i=0;i<3000000;i++); // We need 400 milisecs (we get 418 msec => OK)
-	MSS_GPIO_set_output(MSS_GPIO_0 ,(uint8_t)  1);
-	for(i=0;i<100000;i++); //We need 10 msecs (we get 18 msec => OK)
-
-	uint8_t receive_buf[10];
+	uint8_t ack_buf[7];
+	uint8_t receive_buf[14];
 	uint8_t transmit_buf[] = {0x01};
-
-	while(1){
-		nfc_read(receive_buf, sizeof(receive_buf));
-
-		/*
-		MSS_I2C_write
+	uint8_t command[] = {0x02};
+	//while(1){
+		nfc_send_command(command, 1);
+		for(i=0;i<2000;i++);
+		nfc_read(ack_buf, sizeof(ack_buf));
+		while(1){
+			for(i=0;i<2000;i++);
+			nfc_read(receive_buf, sizeof(receive_buf));
+		}
+		/*MSS_I2C_write
 		(
 			&g_mss_i2c1,
 			PN532_I2C_ADDRESS,
@@ -55,10 +51,10 @@ int main()
 			MSS_I2C_RELEASE_BUS
 		);
 		MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
-		*/
+*/
 
 		//for(i=0;i<100000;i++);
-	}
+	//}
 
 	/*
 	NP_init();
@@ -93,25 +89,7 @@ int main()
 
 
 
-/* NFC read function using I2C
- * Description:
- * Receives: buff -> Buffer (address) where the written data will be stored
- * 			 n	  -> Number of bytes to read
- */
 
-void nfc_read(uint8_t *buff, uint8_t n){
-	// Read transaction
-	MSS_I2C_read
-	    (
-	    	    &g_mss_i2c1,
-	    	    PN532_I2C_ADDRESS,
-	    	    buff,
-	    	    n,
-	    	    MSS_I2C_RELEASE_BUS
-	    );
-	MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
-	return;
-}
 
 
 

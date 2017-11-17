@@ -8,6 +8,7 @@ C_SRCS += \
 ../main.c \
 ../neopixel.c \
 ../neopixel_test.c \
+../nfc.c \
 ../servo.c 
 
 OBJS += \
@@ -15,6 +16,7 @@ OBJS += \
 ./main.o \
 ./neopixel.o \
 ./neopixel_test.o \
+./nfc.o \
 ./servo.o 
 
 C_DEPS += \
@@ -22,6 +24,7 @@ C_DEPS += \
 ./main.d \
 ./neopixel.d \
 ./neopixel_test.d \
+./nfc.d \
 ./servo.d 
 
 

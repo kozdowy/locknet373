@@ -20,14 +20,23 @@
 
 // Initialization bytes
 #define PN532_PREAMBLE (0x00)
-#define PN532_STARTCODE2 (0xFF)
+#define PN532_STARTCODE2 (0x00FF)
+#define PN532_HOST_TO_NFC (0xD4)
+#define PN532_NFC_TO_HOST (0xD5)
+#define PN532_POSTAMBLE (0x00)
+
+//commands
+#define PN532_POWERDOWN_INPUT (0x168801)
+#define PN532_GENERAL_STATUS_INPUT (0x04)
+
 
 // Prototypes
 void nfc_read(uint8_t *buff, uint8_t n);
 
 void nfc_setup(void);
 
-void nfc_read(uint8_t *buff, uint8_t n);
+void nfc_send_command(uint8_t *command_buff, uint8_t length);
+
 
 
 #endif /* NFC_H_ */
