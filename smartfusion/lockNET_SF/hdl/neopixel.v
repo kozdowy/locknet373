@@ -8,7 +8,7 @@
 `define HIGH_1 7'd80 // 8'd64, 0.8us
 
 `define LOW_0 7'd85 // 0.85us
-`define LOW_1 7'd45 // 0.45us
+`define LOW_1 7'd45 // 0.45us 
 
 module neopixel(
            /*** APB3 BUS INTERFACE ***/

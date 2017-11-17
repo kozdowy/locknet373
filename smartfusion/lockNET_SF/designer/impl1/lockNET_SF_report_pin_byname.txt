@@ -1,0 +1,31 @@
+*****************************************************************
+Pin Report - Date: Fri Nov 17 12:52:19 2017 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+Design Name: lockNET_SF
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+*****************************************************************
+Port         |Pin |Fixed |Function              |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-------------|----|------|----------------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+GPIO_1_IN     R3   Yes    GPIO_1/IO46RSB4V0      LVTTL    ---                ---   None           No               ---   ---               No           Yes
+I2C_1_SCL     U20  Yes    I2C_1_SCL/GPIO_31      LVTTL    8                  High  None           No               No    35                No           Yes
+I2C_1_SDA     V22  Yes    I2C_1_SDA/GPIO_30      LVTTL    8                  High  None           No               No    35                No           Yes
+M2F_GPO_0     G20  Yes    IO24NDB1V0             LVTTL    12                 High  None           ---              No    35                No           No
+MAC_0_CRSDV   W4   Yes    MAC_CRSDV/IO51RSB4V0   LVTTL    ---                ---   None           No               ---   ---               No           Yes
+MAC_0_MDC     AA3  Yes    MAC_MDC/IO48RSB4V0     LVTTL    8                  High  None           ---              No    35                No           Yes
+MAC_0_MDIO    V4   Yes    MAC_MDIO/IO49RSB4V0    LVTTL    8                  High  None           No               No    35                No           Yes
+MAC_0_RXD[0]  V5   Yes    MAC_RXD[0]/IO54RSB4V0  LVTTL    ---                ---   None           No               ---   ---               No           Yes
+MAC_0_RXD[1]  U5   Yes    MAC_RXD[1]/IO53RSB4V0  LVTTL    ---                ---   None           No               ---   ---               No           Yes
+MAC_0_RXER    AA4  Yes    MAC_RXER/IO50RSB4V0    LVTTL    ---                ---   None           No               ---   ---               No           Yes
+MAC_0_TXD[0]  AA5  Yes    MAC_TXD[0]/IO56RSB4V0  LVTTL    8                  High  None           ---              No    35                No           Yes
+MAC_0_TXD[1]  W5   Yes    MAC_TXD[1]/IO55RSB4V0  LVTTL    8                  High  None           ---              No    35                No           Yes
+MAC_0_TXEN    Y4   Yes    MAC_TXEN/IO52RSB4V0    LVTTL    8                  High  None           ---              No    35                No           Yes
+MSS_RESET_N   R1   Yes    MSS_RESET_N            LVTTL    ---                ---   None           No               ---   ---               No           Yes
+NP_OUT        F1   Yes    GFB1/IO65PPB5V0        LVTTL    12                 High  None           ---              No    35                No           No
+PIN_NFC_IRQ   F2   Yes    IO67NPB5V0             LVTTL    ---                ---   None           No               ---   ---               No           No
+SERVO_OUT     J6   Yes    GFA0/IO64NDB5V0        LVTTL    12                 High  None           ---              No    35                No           No
+UART_0_RXD    U18  Yes    UART_0_RXD/GPIO_21     LVTTL    ---                ---   None           No               ---   ---               No           Yes
+UART_0_TXD    Y22  Yes    UART_0_TXD/GPIO_20     LVTTL    8                  High  None           ---              No    35                No           Yes

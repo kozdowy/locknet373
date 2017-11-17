@@ -11,7 +11,9 @@ module apb3_interface(
 					PWDATA,
 					PRDATA,
 					NP_OUT,
-                    SERVO_OUT
+                    SERVO_OUT,
+                    FABINT,
+                    PIN_NFC_IRQ
                     //TEST
 );
 
@@ -25,6 +27,8 @@ output [31:0] PRDATA;
 output PREADY, PSLVERR;
 output NP_OUT;
 output SERVO_OUT;
+input PIN_NFC_IRQ;
+output FABINT;
 //output TEST;
 
 // Test Interface
@@ -72,5 +76,17 @@ servo servo_0(	.pclk(PCLK),
                 .servo_en(SERVO_EN),
                 .servo_out(SERVO_OUT)
 			);
+
+nfc nfc(
+                .pclk(PCLK),
+			    .nreset(PRESETN),
+			    .bus_write_en(BUS_WRITE_EN),
+			    .bus_read_en(BUS_READ_EN),
+			    .bus_addr(PADDR),
+			    .bus_write_data(PWDATA),
+			    .bus_read_data(PRDATA),
+                .fabint(FABINT),
+                .irq_pin(PIN_NFC_IRQ)
+          );
 
 endmodule

@@ -1,5 +1,5 @@
 #===========================================================
-# Created by Microsemi SmartDesign Fri Nov 03 14:42:38 2017
+# Created by Microsemi SmartDesign Fri Nov 17 12:48:04 2017
 #
 # Syntax: 
 # ------- 
@@ -17,4 +17,4 @@
 # Define name and base address of each resource.
 #-----------------------------------------------------------
 
-memmap pwm_0 0x40050000;
+memmap apb3_interface_0 0x40050000;

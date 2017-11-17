@@ -7,28 +7,58 @@
 #include "servo.h"
 #include "contact_switch.h"
 
-/*the target address is a 7(8) bit value! */
-// Target address (got it from datasheet)
-#define PN532_I2C_ADDRESS (0x48>>1)
-#define PN532_I2C_ADDRESS_WRITE 0x48 //DONT USE
-#define PN532_I2C_ADDRESS_READ 0x49 // DONT USE
 
+// Interrupts Handler
+__attribute__ ((interrupt)) void Fabric_IRQHandler( void )
+{
+	// Add interrupt status?
 
-// Initialization bytes
-#define PN532_PREAMBLE (0x00)
-#define PN532_STARTCODE2 (0xFF)
-
-// Prototypes
-void nfc_read(uint8_t *buff, uint8_t n);
+	// For the NFC module
+	int n_bytes_to_read =; //Need to look it in the datasheet
+	uint8_t receive_buf[10];
+	nfc_read(receive_buf,n_bytes_to_read);
+}
 
 // Main program
 int main()
 {
-	// I2C initialization
-	MSS_I2C_init(&g_mss_i2c1 , PN532_I2C_ADDRESS, MSS_I2C_PCLK_DIV_256 );
+	// MSS_GPIO initialization
 	MSS_GPIO_init();
-	MSS_GPIO_config( MSS_GPIO_0, MSS_GPIO_OUTPUT_MODE);
 	int i;
+
+	// Testing
+	MSS_I2C_init(&g_mss_i2c1 , PN532_I2C_ADDRESS, MSS_I2C_PCLK_DIV_256 );
+	MSS_GPIO_config( MSS_GPIO_0, MSS_GPIO_OUTPUT_MODE);
+
+
+	// Delays required for setup
+	MSS_GPIO_set_output(MSS_GPIO_0 ,(uint8_t) 1);
+	for(i=0;i<100000;i++);
+	MSS_GPIO_set_output(MSS_GPIO_0 ,(uint8_t) 0);
+	for(i=0;i<3000000;i++); // We need 400 milisecs (we get 418 msec => OK)
+	MSS_GPIO_set_output(MSS_GPIO_0 ,(uint8_t)  1);
+	for(i=0;i<100000;i++); //We need 10 msecs (we get 18 msec => OK)
+
+	uint8_t receive_buf[10];
+	uint8_t transmit_buf[] = {0x01};
+
+	while(1){
+		nfc_read(receive_buf, sizeof(receive_buf));
+
+		/*
+		MSS_I2C_write
+		(
+			&g_mss_i2c1,
+			PN532_I2C_ADDRESS,
+			transmit_buf,
+			sizeof(transmit_buf),
+			MSS_I2C_RELEASE_BUS
+		);
+		MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+		*/
+
+		//for(i=0;i<100000;i++);
+	}
 
 	/*
 	NP_init();
@@ -46,52 +76,6 @@ int main()
 	}
 	return 0;
 	*/
-	// Initialization of the NFC
-	// We need to do some stuff with the reset pin of the device
-//	volatile uint32_t * reset_pin = (uint32_t *) PIN_RESET;
-//	(*reset_pin)=1;
-//	for(int i=0;i<10;i++);
-//	(*reset_pin)=0;
-//	for(int i=0;i<1000;i++);
-//	(*reset_pin)=1;
-//	for(int i=0;i<100;i++);
-	MSS_GPIO_set_output(MSS_GPIO_0 ,(uint8_t) 1);
-	for(i=0;i<100000;i++);
-	MSS_GPIO_set_output(MSS_GPIO_0 ,(uint8_t) 0);
-	for(i=0;i<3000000;i++); // We need 400 milisecs (we get 418 msec => OK)
-	MSS_GPIO_set_output(MSS_GPIO_0 ,(uint8_t)  1);
-	for(i=0;i<100000;i++); //We need 10 msecs (we get 18 msec => OK)
-	uint8_t receive_buf[10];
-	uint8_t transmit_buf[] = {0x01};
-
-	while(1){
-		nfc_read(receive_buf, sizeof(receive_buf));
-		// Lets try to communicate with the device with a simple write (see if we get an ack)
-		/*
-		MSS_I2C_write
-		(
-			&g_mss_i2c1,
-			PN532_I2C_ADDRESS,
-			transmit_buf,
-			sizeof(transmit_buf),
-			MSS_I2C_RELEASE_BUS
-		);
-		MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
-		*/
-		//for(i=0;i<100000;i++);
-	}
-
-	// The function readdata in Arduino it's like
-
-//	MSS_I2C_write
-//	(
-//		&g_mss_i2c1,
-//		TARGET_ADDRESS,
-//		transmit_buf,
-//		sizeof(transmit_buf),
-//		MSS_I2C_RELEASE_BUS
-//	);
-//	MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
 
 	return(0);
 
