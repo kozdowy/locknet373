@@ -1,13 +1,27 @@
 Archive member included because of file (symbol)
 
-N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                              N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o (SystemInit)
+N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                              ./main.o (g_mss_i2c1)
+N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                              ./contact_switch.o (MSS_GPIO_init)
+N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                              N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o) (__get_PRIMASK)
+N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                              N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o (SystemInit)
 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
-                              N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o (__errno)
+                              N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o (__errno)
 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
                               c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o) (_impure_ptr)
 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                              N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o (__libc_init_array)
+                              N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o (__libc_init_array)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                              N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o) (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+g_mss_i2c0          0x74              N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+g_mss_i2c1          0x74              N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
 
 Discarded input sections
 
@@ -15,16 +29,37 @@ Discarded input sections
  .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
  .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
  .data          0x00000000        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .text          0x00000000        0x0 ./contact_switch.o
+ .data          0x00000000        0x0 ./contact_switch.o
+ .bss           0x00000000        0x0 ./contact_switch.o
+ .text.MSS_GPIO_get_inputs
+                0x00000000       0x18 ./contact_switch.o
+ .text.CS_init  0x00000000       0x18 ./contact_switch.o
+ .text.CS_get_door_status
+                0x00000000       0x28 ./contact_switch.o
  .text          0x00000000        0x0 ./main.o
  .data          0x00000000        0x0 ./main.o
  .bss           0x00000000        0x0 ./main.o
  .text          0x00000000        0x0 ./neopixel.o
  .data          0x00000000        0x0 ./neopixel.o
  .bss           0x00000000        0x0 ./neopixel.o
+ .data.NP_ADDRESS
+                0x00000000        0x4 ./neopixel.o
+ .text.NP_init  0x00000000        0xc ./neopixel.o
+ .text.NP_set_pixel
+                0x00000000       0x24 ./neopixel.o
+ .text.NP_set_pixel_c
+                0x00000000       0x60 ./neopixel.o
+ .text.NP_apply
+                0x00000000       0x1c ./neopixel.o
  .text.NP_clear
                 0x00000000       0x1c ./neopixel.o
  .text.NP_get_pixel
                 0x00000000       0x18 ./neopixel.o
+ .text          0x00000000        0x0 ./neopixel_test.o
+ .data          0x00000000        0x0 ./neopixel_test.o
+ .bss           0x00000000        0x0 ./neopixel_test.o
+ .text.np_test  0x00000000      0x110 ./neopixel_test.o
  .text          0x00000000        0x0 ./servo.o
  .data          0x00000000        0x0 ./servo.o
  .bss           0x00000000        0x0 ./servo.o
@@ -36,57 +71,156 @@ Discarded input sections
                 0x00000000       0x1c ./servo.o
  .text.SERVO_read_state
                 0x00000000       0x18 ./servo.o
- .text          0x00000000        0x0 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
- .data          0x00000000        0x0 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
- .bss           0x00000000        0x0 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
- .text          0x00000000        0x0 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .data          0x00000000        0x0 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .bss           0x00000000        0x0 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .bss.__env     0x00000000        0x4 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .data.environ  0x00000000        0x4 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._close   0x00000000       0x18 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._execve  0x00000000       0x28 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._exit    0x00000000        0xc N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._fork    0x00000000       0x18 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._fstat   0x00000000       0x24 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._getpid  0x00000000       0x10 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._isatty  0x00000000       0x18 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._kill    0x00000000       0x24 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._link    0x00000000       0x24 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._lseek   0x00000000       0x1c N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._open    0x00000000       0x1c N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._read    0x00000000       0x1c N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text          0x00000000        0x0 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+ .data          0x00000000        0x0 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+ .bss           0x00000000        0x0 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+ .text          0x00000000        0x0 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .data          0x00000000        0x0 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .bss           0x00000000        0x0 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .bss.__env     0x00000000        0x4 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .data.environ  0x00000000        0x4 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._close   0x00000000       0x18 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._execve  0x00000000       0x28 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._exit    0x00000000        0xc N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._fork    0x00000000       0x18 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._fstat   0x00000000       0x24 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._getpid  0x00000000       0x10 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._isatty  0x00000000       0x18 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._kill    0x00000000       0x24 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._link    0x00000000       0x24 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._lseek   0x00000000       0x1c N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._open    0x00000000       0x1c N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._read    0x00000000       0x1c N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .text._write_r
-                0x00000000       0x20 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .rodata        0x00000000       0x1c N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._sbrk    0x00000000       0x94 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._stat    0x00000000       0x24 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._times   0x00000000       0x18 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._unlink  0x00000000       0x24 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text._wait    0x00000000       0x24 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x00000000       0x20 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .rodata        0x00000000       0x1c N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._sbrk    0x00000000       0x94 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._stat    0x00000000       0x24 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._times   0x00000000       0x18 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._unlink  0x00000000       0x24 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._wait    0x00000000       0x24 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .bss.heap_end.2220
-                0x00000000        0x4 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .text          0x00000000        0x0 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .data          0x00000000        0x0 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .bss           0x00000000        0x0 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000000        0x4 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text          0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .data          0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .bss           0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_write
+                0x00000000       0xf4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_write_read
+                0x00000000      0x134 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_get_status
+                0x00000000       0x3c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_system_tick
+                0x00000000       0x5c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_set_slave_tx_buffer
+                0x00000000       0x58 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_set_slave_rx_buffer
+                0x00000000       0x58 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_set_slave_mem_offset_length
+                0x00000000       0x54 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_register_write_handler
+                0x00000000       0x38 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_enable_slave
+                0x00000000       0x5c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_disable_slave
+                0x00000000       0x50 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_smbus_init
+                0x00000000       0x28 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_enable_smbus_irq
+                0x00000000       0xe4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_disable_smbus_irq
+                0x00000000       0xc4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_suspend_smbus_slave
+                0x00000000       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_resume_smbus_slave
+                0x00000000       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_reset_smbus
+                0x00000000       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_set_smbus_alert
+                0x00000000       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_clear_smbus_alert
+                0x00000000       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_set_gca
+                0x00000000       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_clear_gca
+                0x00000000       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_set_user_data
+                0x00000000       0x1c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_get_user_data
+                0x00000000       0x18 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text          0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .data          0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .bss           0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.NVIC_EnableIRQ
+                0x00000000       0x38 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_drive_inout
+                0x00000000      0x128 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_enable_irq
+                0x00000000       0x64 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_disable_irq
+                0x00000000       0x50 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_clear_irq
+                0x00000000       0x50 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text          0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .data          0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .bss           0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__get_PSP
+                0x00000000       0x10 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__set_PSP
+                0x00000000        0x8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__get_MSP
+                0x00000000       0x10 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__set_MSP
+                0x00000000        0x8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__get_BASEPRI
+                0x00000000       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__set_BASEPRI
+                0x00000000       0x18 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__get_FAULTMASK
+                0x00000000       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__set_FAULTMASK
+                0x00000000       0x18 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__get_CONTROL
+                0x00000000       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__set_CONTROL
+                0x00000000       0x18 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__REV    0x00000000       0x24 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__REV16  0x00000000       0x24 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__REVSH  0x00000000       0x24 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__RBIT   0x00000000       0x24 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__LDREXB
+                0x00000000       0x24 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__LDREXH
+                0x00000000       0x24 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__LDREXW
+                0x00000000       0x24 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__STREXB
+                0x00000000       0x2c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__STREXH
+                0x00000000       0x2c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text.__STREXW
+                0x00000000       0x28 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .text          0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .data          0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .bss           0x00000000        0x0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .data.SystemFrequency
-                0x00000000        0x4 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000000        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .data.SystemCoreClock
-                0x00000000        0x4 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000000        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .data.g_FrequencyPCLK0
-                0x00000000        0x4 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000000        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .data.g_FrequencyPCLK1
-                0x00000000        0x4 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000000        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .data.g_FrequencyACE
-                0x00000000        0x4 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000000        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .data.g_FrequencyFPGA
-                0x00000000        0x4 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000000        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .text.SystemCoreClockUpdate
-                0x00000000      0x150 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000000      0x150 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .text.GetSystemClock
-                0x00000000       0xe8 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000000       0xe8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .rodata.C.18.2576
-                0x00000000       0x10 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000000       0x10 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .text          0x00000000        0xc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
  .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
@@ -98,6 +232,8 @@ Discarded input sections
                 0x00000000        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
  .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
  .text          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
@@ -115,12 +251,14 @@ Linker script and memory map
 
 LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
 LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+LOAD ./contact_switch.o
 LOAD ./main.o
 LOAD ./neopixel.o
+LOAD ./neopixel_test.o
 LOAD ./servo.o
-LOAD N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
-LOAD N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-LOAD N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a
+LOAD N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+LOAD N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+LOAD N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a
 START GROUP
 LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a
 LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a
@@ -142,13 +280,13 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000      0x6d8
+.text           0x20000000     0x1618
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
                 0x20000000                __vector_table_vma_base_address = .
  *(.isr_vector)
- .isr_vector    0x20000000      0x470 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+ .isr_vector    0x20000000      0x470 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
                 0x20000000                g_pfnVectors
                 0x20000298                Reset_Handler
                 0x20000308                NMI_Handler
@@ -174,10 +312,8 @@ END GROUP
                 0x20000330                UART1_IRQHandler
                 0x20000332                SPI0_IRQHandler
                 0x20000334                SPI1_IRQHandler
-                0x20000336                I2C0_IRQHandler
                 0x20000338                I2C0_SMBAlert_IRQHandler
                 0x2000033a                I2C0_SMBus_IRQHandler
-                0x2000033c                I2C1_IRQHandler
                 0x2000033e                I2C1_SMBAlert_IRQHandler
                 0x20000340                I2C1_SMBus_IRQHandler
                 0x20000342                Timer1_IRQHandler
@@ -306,24 +442,64 @@ END GROUP
                 0x20000438                ACE_PPE_Flag31_IRQHandler
  *(.text .text.* .gnu.linkonce.t.*)
  .text          0x20000470       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .text.main     0x200004a0      0x110 ./main.o
+ .text.main     0x200004a0       0xc0 ./main.o
                 0x200004a0                main
- .text.NP_init  0x200005b0        0xc ./neopixel.o
-                0x200005b0                NP_init
- .text.NP_set_pixel
-                0x200005bc       0x24 ./neopixel.o
-                0x200005bc                NP_set_pixel
- .text.NP_set_pixel_c
-                0x200005e0       0x60 ./neopixel.o
-                0x200005e0                NP_set_pixel_c
- .text.NP_apply
-                0x20000640       0x1c ./neopixel.o
-                0x20000640                NP_apply
+ .text.nfc_read
+                0x20000560       0x40 ./main.o
+                0x20000560                nfc_read
+ .text.NVIC_EnableIRQ
+                0x200005a0       0x38 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.NVIC_DisableIRQ
+                0x200005d8       0x3c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.NVIC_ClearPendingIRQ
+                0x20000614       0x3c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.MSS_I2C_init
+                0x20000650      0x16c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20000650                MSS_I2C_init
+ .text.MSS_I2C_read
+                0x200007bc       0xf4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200007bc                MSS_I2C_read
+ .text.MSS_I2C_wait_complete
+                0x200008b0       0x4c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200008b0                MSS_I2C_wait_complete
+ .text.enable_slave_if_required
+                0x200008fc       0x28 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.mss_i2c_isr
+                0x20000924      0x8f4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.disable_interrupts
+                0x20001218       0x24 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.restore_interrupts
+                0x2000123c       0x18 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .text.I2C0_IRQHandler
+                0x20001254       0x2c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001254                I2C0_IRQHandler
+ .text.I2C1_IRQHandler
+                0x20001280       0x2c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001280                I2C1_IRQHandler
+ .text.NVIC_ClearPendingIRQ
+                0x200012ac       0x3c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_init
+                0x200012e8       0x6c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x200012e8                MSS_GPIO_init
+ .text.MSS_GPIO_config
+                0x20001354       0x3c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20001354                MSS_GPIO_config
+ .text.MSS_GPIO_set_output
+                0x20001390       0x40 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20001390                MSS_GPIO_set_output
+ .text.__get_PRIMASK
+                0x200013d0       0x20 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x200013d0                __get_PRIMASK
+ .text.__set_PRIMASK
+                0x200013f0       0x18 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x200013f0                __set_PRIMASK
  .text.SystemInit
-                0x2000065c        0xc N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x2000065c                SystemInit
- .text          0x20000668       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x20000668                __libc_init_array
+                0x20001408        0xc N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20001408                SystemInit
+ .text          0x20001414       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x20001414                __libc_init_array
+ .text          0x20001464       0xd4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x20001464                memset
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -332,7 +508,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x200006b8                . = ALIGN (0x4)
+                0x20001538                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -342,83 +518,87 @@ END GROUP
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.g_config_reg_lut
+                0x20001538       0x80 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .rodata.g_gpio_irqn_lut
+                0x200015b8       0x40 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x200006b8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x200006b8                _init
- .init          0x200006bc        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x200015f8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x200015f8                _init
+ .init          0x200015fc        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x200006c4        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x200006c4                _fini
- .fini          0x200006c8        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x200006d0                PROVIDE (__preinit_array_start, .)
+ .fini          0x20001604        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20001604                _fini
+ .fini          0x20001608        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x20001610                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x200006d0                PROVIDE (__preinit_array_end, .)
-                0x200006d0                PROVIDE (__init_array_start, .)
+                0x20001610                PROVIDE (__preinit_array_end, .)
+                0x20001610                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x200006d0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x200006d4                PROVIDE (__init_array_end, .)
-                0x200006d4                PROVIDE (__fini_array_start, .)
+ .init_array    0x20001610        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x20001614                PROVIDE (__init_array_end, .)
+                0x20001614                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x200006d4        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x20001614        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x200006d8                PROVIDE (__fini_array_end, .)
-                0x200006d8                __exidx_start = .
+                0x20001618                PROVIDE (__fini_array_end, .)
+                0x20001618                __exidx_start = .
 
-.v4_bx          0x200006d8        0x0
+.v4_bx          0x20001618        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x200006d8                __exidx_end = .
-                0x200006d8                _etext = .
-                0x200006d8                PROVIDE (__text_end, .)
+                0x20001618                __exidx_end = .
+                0x20001618                _etext = .
+                0x20001618                PROVIDE (__text_end, .)
 
-.data           0x200006d8        0x8
-                0x200006d8                __data_load = LOADADDR (.data)
-                0x200006d8                _sidata = LOADADDR (.data)
-                0x200006d8                __data_start = .
-                0x200006d8                _sdata = .
+.data           0x20001618        0x4
+                0x20001618                __data_load = LOADADDR (.data)
+                0x20001618                _sidata = LOADADDR (.data)
+                0x20001618                __data_start = .
+                0x20001618                _sdata = .
  *(.jcr)
- .jcr           0x200006d8        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x200006d8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x20001618        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x20001618        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
- .data.NP_ADDRESS
-                0x200006dc        0x4 ./neopixel.o
-                0x200006dc                NP_ADDRESS
-                0x200006e0                . = ALIGN (0x4)
-                0x200006e0                _edata = .
+                0x2000161c                . = ALIGN (0x4)
+                0x2000161c                _edata = .
 
-.bss            0x200006e0        0x8
-                0x200006e0                __bss_start__ = .
-                0x200006e0                _sbss = .
+.bss            0x2000161c       0xec
+                0x2000161c                __bss_start__ = .
+                0x2000161c                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x200006e0        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .bss           0x2000161c        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(COMMON)
-                0x200006e8                . = ALIGN (0x8)
- *fill*         0x200006e1        0x7 00
-                0x200006e8                __bss_end__ = .
-                0x200006e8                _end = .
-                0x200006e8                __end = _end
-                0x200006e8                _ebss = .
-                0x200006e8                PROVIDE (end, .)
+ *fill*         0x2000161d        0x3 00
+ COMMON         0x20001620       0xe8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001620                g_mss_i2c0
+                0x20001694                g_mss_i2c1
+                0x20001708                . = ALIGN (0x8)
+                0x20001708                __bss_end__ = .
+                0x20001708                _end = .
+                0x20001708                __end = _end
+                0x20001708                _ebss = .
+                0x20001708                PROVIDE (end, .)
 
-.stack          0x200006e8     0x3000
-                0x200006e8                . = ALIGN (0x4)
-                0x200016e8                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x200006e8     0x1000 00
-                0x200016e8                . = ALIGN (0x4)
-                0x200036e8                . = (. + MAIN_STACK_SIZE)
- *fill*         0x200016e8     0x2000 00
-                0x200036e8                . = ALIGN (0x4)
+.stack          0x20001708     0x3000
+                0x20001708                . = ALIGN (0x4)
+                0x20002708                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x20001708     0x1000 00
+                0x20002708                . = ALIGN (0x4)
+                0x20004708                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x20002708     0x2000 00
+                0x20004708                . = ALIGN (0x4)
 
 .stab
  *(.stab)
@@ -438,107 +618,178 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.comment        0x00000000       0xd7
- .comment       0x00000000       0x2b ./main.o
- .comment       0x0000002b       0x2b ./neopixel.o
- .comment       0x00000056       0x2b ./servo.o
- .comment       0x00000081       0x2b N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .comment       0x000000ac       0x2b N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+.comment        0x00000000      0x1ae
+ .comment       0x00000000       0x2b ./contact_switch.o
+ .comment       0x0000002b       0x2b ./main.o
+ .comment       0x00000056       0x2b ./neopixel.o
+ .comment       0x00000081       0x2b ./neopixel_test.o
+ .comment       0x000000ac       0x2b ./servo.o
+ .comment       0x000000d7       0x2b N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .comment       0x00000102       0x2b N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .comment       0x0000012d       0x2b N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .comment       0x00000158       0x2b N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .comment       0x00000183       0x2b N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_aranges  0x00000000      0x178
+.debug_aranges  0x00000000      0x420
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x20 ./main.o
+                0x00000000       0x30 ./contact_switch.o
  .debug_aranges
-                0x00000020       0x48 ./neopixel.o
+                0x00000030       0x28 ./main.o
  .debug_aranges
-                0x00000068       0x38 ./servo.o
+                0x00000058       0x48 ./neopixel.o
  .debug_aranges
-                0x000000a0       0xa8 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x000000a0       0x20 ./neopixel_test.o
  .debug_aranges
-                0x00000148       0x30 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x000000c0       0x38 ./servo.o
+ .debug_aranges
+                0x000000f8       0xa8 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_aranges
+                0x000001a0      0x128 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_aranges
+                0x000002c8       0x60 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_aranges
+                0x00000328       0xc8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_aranges
+                0x000003f0       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_pubnames
-                0x00000000      0x28b
+                0x00000000      0x7e0
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000       0x1b ./main.o
+                0x00000000       0x35 ./contact_switch.o
  .debug_pubnames
-                0x0000001b       0x7c ./neopixel.o
+                0x00000035       0x28 ./main.o
  .debug_pubnames
-                0x00000097       0x55 ./servo.o
+                0x0000005d       0x7c ./neopixel.o
  .debug_pubnames
-                0x000000ec       0xeb N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x000000d9       0x1e ./neopixel_test.o
  .debug_pubnames
-                0x000001d7       0xb4 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x000000f7       0x55 ./servo.o
+ .debug_pubnames
+                0x0000014c       0xeb N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_pubnames
+                0x00000237      0x2eb N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_pubnames
+                0x00000522       0xb1 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_pubnames
+                0x000005d3      0x159 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_pubnames
+                0x0000072c       0xb4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_info     0x00000000      0xeee
+.debug_info     0x00000000     0x4c46
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000       0xa3 ./main.o
- .debug_info    0x000000a3      0x179 ./neopixel.o
- .debug_info    0x0000021c       0xd7 ./servo.o
- .debug_info    0x000002f3      0x6bf N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_info    0x000009b2      0x53c N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_info    0x00000000      0x3eb ./contact_switch.o
+ .debug_info    0x000003eb      0xc26 ./main.o
+ .debug_info    0x00001011      0x179 ./neopixel.o
+ .debug_info    0x0000118a       0xa3 ./neopixel_test.o
+ .debug_info    0x0000122d       0xd7 ./servo.o
+ .debug_info    0x00001304      0x6bf N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_info    0x000019c3     0x16e7 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_info    0x000030aa     0x1114 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_info    0x000041be      0x54c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_info    0x0000470a      0x53c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_abbrev   0x00000000      0x3cf
+.debug_abbrev   0x00000000      0xab9
  *(.debug_abbrev)
- .debug_abbrev  0x00000000       0x5b ./main.o
- .debug_abbrev  0x0000005b       0xcc ./neopixel.o
- .debug_abbrev  0x00000127       0x67 ./servo.o
- .debug_abbrev  0x0000018e      0x130 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_abbrev  0x000002be      0x111 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_abbrev  0x00000000       0xe9 ./contact_switch.o
+ .debug_abbrev  0x000000e9      0x17c ./main.o
+ .debug_abbrev  0x00000265       0xcc ./neopixel.o
+ .debug_abbrev  0x00000331       0x5b ./neopixel_test.o
+ .debug_abbrev  0x0000038c       0x67 ./servo.o
+ .debug_abbrev  0x000003f3      0x130 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_abbrev  0x00000523      0x22b N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_abbrev  0x0000074e      0x181 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_abbrev  0x000008cf       0xd9 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_abbrev  0x000009a8      0x111 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_line     0x00000000      0xcdc
+.debug_line     0x00000000     0x2281
  *(.debug_line)
- .debug_line    0x00000000      0x33a ./main.o
- .debug_line    0x0000033a      0x139 ./neopixel.o
- .debug_line    0x00000473      0x10a ./servo.o
- .debug_line    0x0000057d      0x4a8 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_line    0x00000a25      0x2b7 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x00000000      0x274 ./contact_switch.o
+ .debug_line    0x00000274      0x610 ./main.o
+ .debug_line    0x00000884      0x139 ./neopixel.o
+ .debug_line    0x000009bd      0x343 ./neopixel_test.o
+ .debug_line    0x00000d00      0x10a ./servo.o
+ .debug_line    0x00000e0a      0x4a8 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x000012b2      0x742 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_line    0x000019f4      0x362 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_line    0x00001d56      0x274 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_line    0x00001fca      0x2b7 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_frame    0x00000000      0x414
+.debug_frame    0x00000000      0xc5c
  *(.debug_frame)
- .debug_frame   0x00000000       0x30 ./main.o
- .debug_frame   0x00000030       0xa8 ./neopixel.o
- .debug_frame   0x000000d8       0x70 ./servo.o
- .debug_frame   0x00000148      0x21c N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_frame   0x00000364       0x64 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .debug_frame   0x000003c8       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
- .debug_frame   0x000003e8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .debug_frame   0x00000000       0x64 ./contact_switch.o
+ .debug_frame   0x00000064       0x50 ./main.o
+ .debug_frame   0x000000b4       0xa8 ./neopixel.o
+ .debug_frame   0x0000015c       0x30 ./neopixel_test.o
+ .debug_frame   0x0000018c       0x70 ./servo.o
+ .debug_frame   0x000001fc      0x21c N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_frame   0x00000418      0x40c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_frame   0x00000824      0x118 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_frame   0x0000093c      0x248 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_frame   0x00000b84       0x64 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_frame   0x00000be8       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+ .debug_frame   0x00000c08       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .debug_frame   0x00000c34       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
 
-.debug_str      0x00000000      0x73d
+.debug_str      0x00000000     0x20d0
  *(.debug_str)
- .debug_str     0x00000000       0xdf ./main.o
-                                0x118 (size before relaxing)
- .debug_str     0x000000df       0x83 ./neopixel.o
-                                0x18e (size before relaxing)
- .debug_str     0x00000162       0x3e ./servo.o
-                                0x14b (size before relaxing)
- .debug_str     0x000001a0      0x265 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                                0x33c (size before relaxing)
- .debug_str     0x00000405      0x338 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                                0x470 (size before relaxing)
+ .debug_str     0x00000000      0x44c ./contact_switch.o
+                                0x487 (size before relaxing)
+ .debug_str     0x0000044c      0xfc3 ./main.o
+                               0x12be (size before relaxing)
+ .debug_str     0x0000140f       0x72 ./neopixel.o
+                                0x193 (size before relaxing)
+ .debug_str     0x00001481       0x1b ./neopixel_test.o
+                                0x129 (size before relaxing)
+ .debug_str     0x0000149c       0x3e ./servo.o
+                                0x150 (size before relaxing)
+ .debug_str     0x000014da      0x25d N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                                0x341 (size before relaxing)
+ .debug_str     0x00001737      0x5ef N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                               0x1772 (size before relaxing)
+ .debug_str     0x00001d26      0x14f N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                               0x12aa (size before relaxing)
+ .debug_str     0x00001e75      0x142 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                                0x288 (size before relaxing)
+ .debug_str     0x00001fb7      0x119 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                                0x475 (size before relaxing)
 
-.debug_loc      0x00000000      0x65c
+.debug_loc      0x00000000     0x145a
  *(.debug_loc)
- .debug_loc     0x00000000       0x37 ./main.o
- .debug_loc     0x00000037      0x11a ./neopixel.o
- .debug_loc     0x00000151       0xac ./servo.o
- .debug_loc     0x000001fd      0x3c6 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_loc     0x000005c3       0x99 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_loc     0x00000000       0x8d ./contact_switch.o
+ .debug_loc     0x0000008d       0x6e ./main.o
+ .debug_loc     0x000000fb      0x11a ./neopixel.o
+ .debug_loc     0x00000215       0x37 ./neopixel_test.o
+ .debug_loc     0x0000024c       0xac ./servo.o
+ .debug_loc     0x000002f8      0x3c6 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_loc     0x000006be      0x736 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_loc     0x00000df4      0x1ef N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_loc     0x00000fe3      0x3de N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_loc     0x000013c1       0x99 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_macinfo  0x00000000    0x1128b
+.debug_macinfo  0x00000000    0x2e794
  *(.debug_macinfo)
  .debug_macinfo
-                0x00000000     0x40bc ./main.o
+                0x00000000     0x5876 ./contact_switch.o
  .debug_macinfo
-                0x000040bc     0x15e4 ./neopixel.o
+                0x00005876     0x95a1 ./main.o
  .debug_macinfo
-                0x000056a0     0x157c ./servo.o
+                0x0000ee17     0x15e4 ./neopixel.o
  .debug_macinfo
-                0x00006c1c     0x4bf0 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x000103fb     0x40bc ./neopixel_test.o
  .debug_macinfo
-                0x0000b80c     0x5a7f N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x000144b7     0x157c ./servo.o
+ .debug_macinfo
+                0x00015a33     0x4bf0 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macinfo
+                0x0001a623     0x74ff N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_macinfo
+                0x00021b22     0x5ce1 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_macinfo
+                0x00027803     0x1512 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_macinfo
+                0x00028d15     0x5a7f N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_weaknames
  *(.debug_weaknames)
@@ -563,36 +814,53 @@ END GROUP
  .ARM.attributes
                 0x00000019       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  .ARM.attributes
-                0x00000042       0x31 ./main.o
+                0x00000042       0x31 ./contact_switch.o
  .ARM.attributes
-                0x00000073       0x31 ./neopixel.o
+                0x00000073       0x31 ./main.o
  .ARM.attributes
-                0x000000a4       0x31 ./servo.o
+                0x000000a4       0x31 ./neopixel.o
  .ARM.attributes
-                0x000000d5       0x21 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+                0x000000d5       0x31 ./neopixel_test.o
  .ARM.attributes
-                0x000000f6       0x31 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x00000106       0x31 ./servo.o
  .ARM.attributes
-                0x00000127       0x31 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x00000137       0x21 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
  .ARM.attributes
-                0x00000158       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+                0x00000158       0x31 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .ARM.attributes
-                0x00000181       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x00000189       0x31 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .ARM.attributes
-                0x000001aa       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x000001ba       0x31 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  .ARM.attributes
-                0x000001d3       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+                0x000001eb       0x31 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
  .ARM.attributes
-                0x000001fc       0x19 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x0000021c       0x31 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .ARM.attributes
+                0x0000024d       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000276       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x0000029f       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x000002c8       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000002f1       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .ARM.attributes
+                0x0000031a       0x19 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
 
 /DISCARD/
  *(.note.GNU-stack)
  *(.isr_vector)
 OUTPUT(lockNET_SF_MSS_MSS_CM3_0_app elf32-littlearm)
 
-.debug_ranges   0x00000000      0x150
- .debug_ranges  0x00000000       0x18 ./main.o
- .debug_ranges  0x00000018       0x40 ./neopixel.o
- .debug_ranges  0x00000058       0x30 ./servo.o
- .debug_ranges  0x00000088       0xa0 N:/locknet373-master/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_ranges  0x00000128       0x28 N:\locknet373-master\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+.debug_ranges   0x00000000      0x3e8
+ .debug_ranges  0x00000000       0x28 ./contact_switch.o
+ .debug_ranges  0x00000028       0x20 ./main.o
+ .debug_ranges  0x00000048       0x40 ./neopixel.o
+ .debug_ranges  0x00000088       0x18 ./neopixel_test.o
+ .debug_ranges  0x000000a0       0x30 ./servo.o
+ .debug_ranges  0x000000d0       0xa0 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_ranges  0x00000170      0x138 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_ranges  0x000002a8       0x58 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_ranges  0x00000300       0xc0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_ranges  0x000003c0       0x28 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
