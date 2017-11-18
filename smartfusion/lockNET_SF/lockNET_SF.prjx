@@ -366,47 +366,47 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF.adb,adb"
 STATE="utd"
-TIME="1510880139"
-SIZE="750592"
+TIME="1510941176"
+SIZE="755200"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF.fdb,fdb"
 STATE="utd"
-TIME="1510941174"
-SIZE="52147"
+TIME="1511041122"
+SIZE="53055"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF.ide_des,ide_des"
 STATE="utd"
-TIME="1510880139"
+TIME="1510941177"
 SIZE="1099"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_compile_log.rpt,log"
 STATE="utd"
-TIME="1510880028"
-SIZE="31350"
+TIME="1510940986"
+SIZE="31398"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_fp\lockNET_SF.pdb,pdb"
 STATE="utd"
-TIME="1510880331"
-SIZE="58016"
+TIME="1510941209"
+SIZE="57708"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_fp\lockNET_SF.pro,pro"
 STATE="utd"
-TIME="1510880377"
+TIME="1510941250"
 SIZE="2439"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_fp\projectData\lockNET_SF.pdb,pdb"
 STATE="utd"
-TIME="1510880376"
-SIZE="58016"
+TIME="1510941249"
+SIZE="57708"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1510941142"
+TIME="1511041089"
 SIZE="2686"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1510941177"
+TIME="1511041124"
 SIZE="717"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_timingconstraints_log.rpt,log"
@@ -416,7 +416,7 @@ SIZE="268"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1510941151"
+TIME="1511041098"
 SIZE="1189"
 ENDFILE
 VALUE "<project>\hdl\apb3_interface.v,hdl"
@@ -477,23 +477,23 @@ PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\lockNET_SF.edn,syn_edn"
 STATE="utd"
-TIME="1510879979"
-SIZE="509946"
+TIME="1510940966"
+SIZE="513174"
 ENDFILE
 VALUE "<project>\synthesis\lockNET_SF.so,so"
 STATE="utd"
-TIME="1510879979"
+TIME="1510940966"
 SIZE="238"
 ENDFILE
 VALUE "<project>\synthesis\lockNET_SF_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1510879978"
+TIME="1510940966"
 SIZE="546"
 ENDFILE
 VALUE "<project>\synthesis\lockNET_SF_syn.prj,prj"
 STATE="utd"
-TIME="1510879980"
-SIZE="3170"
+TIME="1510940968"
+SIZE="3250"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -560,6 +560,18 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -665,8 +677,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -713,6 +725,18 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -734,7 +758,7 @@ SmartDesign;lockNET_SF_MSS;0
 HDL;hdl\apb3_interface.v;0
 HDL;hdl\neopixel.v;0
 HDL;hdl\NFC.v;0
-ACTIVEVIEW;lockNET_SF
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "apb3_interface::work","hdl\apb3_interface.v","FALSE","FALSE"

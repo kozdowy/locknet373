@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Fri Nov 17 12:52:18 2017 ***************************************************************************
+                          Sat Nov 18 16:38:06 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
 File Name: N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb
 Design Name: lockNET_SF  Design State: layout
-Last Saved: Fri Nov 17 12:51:30 2017
+Last Saved: Sat Nov 18 16:37:01 2017
 
 ***** Device Data **************************************************
 
@@ -532,16 +532,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Fri Nov 17 12:51:49 2017
+Timing-driven Placer Started: Sat Nov 18 16:37:36 2017
 
-Placer Finished: Fri Nov 17 12:51:58 2017
+Placer Finished: Sat Nov 18 16:37:45 2017
 Total Placer CPU Time:     00:00:09
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: lockNET_SF                      Started: Fri Nov 17 12:52:03 2017
+Design: lockNET_SF                      Started: Sat Nov 18 16:37:49 2017
 
  
 Iterative improvement...
@@ -549,9 +549,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: lockNET_SF                      
-Finished: Fri Nov 17 12:52:14 2017
-Total CPU Time:     00:00:10            Total Elapsed Time: 00:00:11
-Total Memory Usage: 173.5 Mbytes
+Finished: Sat Nov 18 16:38:02 2017
+Total CPU Time:     00:00:12            Total Elapsed Time: 00:00:13
+Total Memory Usage: 173.6 Mbytes
                         o - o - o - o - o - o
 
 

@@ -786,7 +786,7 @@ int main()
 200004be:	f000 f837 	bl	20000530 <nfc_setup>
 
 	uint8_t ack_buf[7];
-	uint8_t receive_buf[15];
+	uint8_t receive_buf[14];
 	uint8_t transmit_buf[] = {0x01};
 200004c2:	f04f 0301 	mov.w	r3, #1
 200004c6:	723b      	strb	r3, [r7, #8]
@@ -830,7 +830,7 @@ int main()
 			nfc_read(receive_buf, sizeof(receive_buf));
 2000051e:	f107 030c 	add.w	r3, r7, #12
 20000522:	4618      	mov	r0, r3
-20000524:	f04f 010f 	mov.w	r1, #15
+20000524:	f04f 010e 	mov.w	r1, #14
 20000528:	f000 f858 	bl	200005dc <nfc_read>
 		}
 2000052c:	e7ea      	b.n	20000504 <main+0x50>

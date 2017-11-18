@@ -58,9 +58,7 @@ int main()
 
 	/*
 	NP_init();
-
 	CS_init();
-
 	while (1){
 		if (CS_get_door_status() == CS_DOOR_OPEN){
 			NP_set_pixel_c(0x55, 0x00, 0x00);
@@ -85,11 +83,4 @@ int main()
  * Receives:
  */
 //void nfc_write(uint8_t *transmit_buf, uint8_t cmdlen)
-
-
-
-
-
-
-
 
