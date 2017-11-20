@@ -32,16 +32,33 @@ int main()
 
 	uint8_t ack_buf[7];
 	uint8_t receive_buf[14];
-	uint8_t transmit_buf[] = {0x01};
 	uint8_t command[] = {0x02};
-	//while(1){
-		nfc_send_command(command, 1);
+	//uint8_t status_buff[9+8];
+	//uint8_t rf;
+
+	nfc_send_command(command, 1);
+	for(i=0;i<2000;i++);
+	nfc_read(ack_buf, sizeof(ack_buf));
+
+	while(1){
+//		nfc_send_command(command, 1);
 		for(i=0;i<2000;i++);
-		nfc_read(ack_buf, sizeof(ack_buf));
-		while(1){
-			for(i=0;i<2000;i++);
-			nfc_read(receive_buf, sizeof(receive_buf));
-		}
+		nfc_read(receive_buf, sizeof(receive_buf));
+//		for(i=0;i<2000;i++);
+	}
+
+
+
+
+//	while(1){
+//		for(i=0;i<2000;i++);
+//		rf = nfc_GetGeneralStatus(status_buff);
+//		if(rf == 1){
+//			// Intentionally empty for testing. Use breakpoint
+//		}
+//	}
+
+
 		/*MSS_I2C_write
 		(
 			&g_mss_i2c1,
@@ -51,6 +68,7 @@ int main()
 			MSS_I2C_RELEASE_BUS
 		);
 		MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+
 */
 
 		//for(i=0;i<100000;i++);

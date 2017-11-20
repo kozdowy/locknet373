@@ -92,16 +92,17 @@ void nfc_send_command(uint8_t* command, uint8_t len){
 
 /*
  * Description: Function to get all the parameters of the status of the NFC
- * Receives:	Array LENGTH 9 where the info will be stored
+ * Receives:	Array LENGTH 9(+8) where the info will be stored
  * Returns:	 field (if external RF is present=1, 0 otherwise)
  */
-void nfc_GetGeneralStatus(uint8_t *array){
+uint8_t nfc_GetGeneralStatus(uint8_t *array){
 	uint8_t command[] = {(uint8_t)PN532_COMMAND_GETSTATUS};
 	nfc_send_command(command,1);
+	int i;
 	for(i=0;i<2000;i++);
-	nfc_read(array, 9);
+	nfc_read(array, 9+8);
 
-	return array[3];
+	return array[3+8];
 }
 
 

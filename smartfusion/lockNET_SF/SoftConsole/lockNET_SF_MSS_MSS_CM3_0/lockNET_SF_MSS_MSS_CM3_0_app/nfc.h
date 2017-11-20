@@ -29,12 +29,11 @@
 #define PN532_COMMAND_GETFIRMWARE (0x02)
 #define PN532_COMMAND_POWERDOWN (0x16)
 #define PN532_COMMAND_GETSTATUS (0x04)
-#define PN532_COMMAND_INAUTOPOLL(0x60)
+#define PN532_COMMAND_INAUTOPOLL (0x60)
 
 
-//commands
 #define PN532_POWERDOWN_INPUT (0x168801)
-#define PN532_GENERAL_STATUS_INPUT (0x04)
+
 
 
 // Prototypes
@@ -43,6 +42,8 @@ void nfc_read(uint8_t *buff, uint8_t n);
 void nfc_setup(void);
 
 void nfc_send_command(uint8_t *command_buff, uint8_t length);
+
+uint8_t nfc_GetGeneralStatus(uint8_t *array);
 
 
 
