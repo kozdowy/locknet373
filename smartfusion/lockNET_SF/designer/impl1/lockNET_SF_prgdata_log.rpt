@@ -2,20 +2,18 @@ Microsemi Libero Software
 Version: 11.8.0.26
 Release: v11.8
 
-Info: The design N:/PortableGit/locknet373/smartfusion/lockNET_SF/designer/impl1/lockNET_SF.adb
-      was last modified by software version 11.8.0.26.
+Info: The design N:/Git/locknet373/smartfusion/lockNET_SF/designer/impl1/lockNET_SF.adb was last
+      modified by software version 11.8.0.26.
 Opened an existing Libero design
-N:/PortableGit/locknet373/smartfusion/lockNET_SF/designer/impl1/lockNET_SF.adb.
+N:/Git/locknet373/smartfusion/lockNET_SF/designer/impl1/lockNET_SF.adb.
 
-The Export-map command succeeded ( 00:00:12 )
+The Export-map command succeeded ( 00:00:10 )
 CHECKSUM: 73D5
-Wrote to the file:
-N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.fdb
+Wrote to the file: N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.fdb
 
-The Export command succeeded ( 00:00:17 )
-Design saved to file
-N:/PortableGit/locknet373/smartfusion/lockNET_SF/designer/impl1/lockNET_SF.adb.
+The Export command succeeded ( 00:00:13 )
+Design saved to file N:/Git/locknet373/smartfusion/lockNET_SF/designer/impl1/lockNET_SF.adb.
 
-The Execute Script command succeeded ( 00:00:20 )
+The Execute Script command succeeded ( 00:00:16 )
 Design closed.
 

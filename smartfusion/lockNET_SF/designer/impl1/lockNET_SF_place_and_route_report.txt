@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sat Nov 18 16:38:06 2017 ***************************************************************************
+                          Tue Nov 21 16:58:29 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
-File Name: N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb
+File Name: N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb
 Design Name: lockNET_SF  Design State: layout
-Last Saved: Sat Nov 18 16:37:01 2017
+Last Saved: Tue Nov 21 16:57:58 2017
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Fri Nov 17 12:49:36 2017:
-        N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
-        N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
+Source File(s) Imported on Tue Nov 21 16:57:49 2017:
+        N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
+        N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
-
-N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
+Source      : N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
+              N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
 Format      : EDIF
 Topcell     : lockNET_SF
 Speed grade : STD
@@ -441,11 +440,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :   3 ( 75.00% )
+    Locked  :   4 ( 100.00% )
     Placed  :   0
-    UnPlaced:   1 ( 25.00% )
-
-Warning: Only some I/Os are locked
+    UnPlaced:   0
 
 Net information report:
 =======================
@@ -532,16 +529,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sat Nov 18 16:37:36 2017
+Timing-driven Placer Started: Tue Nov 21 16:58:07 2017
 
-Placer Finished: Sat Nov 18 16:37:45 2017
-Total Placer CPU Time:     00:00:09
+Placer Finished: Tue Nov 21 16:58:13 2017
+Total Placer CPU Time:     00:00:06
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: lockNET_SF                      Started: Sat Nov 18 16:37:49 2017
+Design: lockNET_SF                      Started: Tue Nov 21 16:58:17 2017
 
  
 Iterative improvement...
@@ -549,8 +546,8 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: lockNET_SF                      
-Finished: Sat Nov 18 16:38:02 2017
-Total CPU Time:     00:00:12            Total Elapsed Time: 00:00:13
+Finished: Tue Nov 21 16:58:26 2017
+Total CPU Time:     00:00:08            Total Elapsed Time: 00:00:09
 Total Memory Usage: 173.6 Mbytes
                         o - o - o - o - o - o
 

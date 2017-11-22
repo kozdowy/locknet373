@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Fri Nov 17 12:49:43 2017 ***************************************************************************
+                          Tue Nov 21 16:57:56 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
-File Name: N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb
+File Name: N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb
 Design Name: lockNET_SF  Design State: compile
-Last Saved: Thu Nov 16 19:55:39 2017
+Last Saved: Tue Nov 21 16:54:22 2017
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Fri Nov 17 12:49:36 2017:
-        N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
-        N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
+Source File(s) Imported on Tue Nov 21 16:57:49 2017:
+        N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
+        N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
-
-N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
+Source      : N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
+              N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
 Format      : EDIF
 Topcell     : lockNET_SF
 Speed grade : STD
@@ -441,11 +440,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :   3 ( 75.00% )
+    Locked  :   4 ( 100.00% )
     Placed  :   0
-    UnPlaced:   1 ( 25.00% )
-
-Warning: Only some I/Os are locked
+    UnPlaced:   0
 
 Net information report:
 =======================
