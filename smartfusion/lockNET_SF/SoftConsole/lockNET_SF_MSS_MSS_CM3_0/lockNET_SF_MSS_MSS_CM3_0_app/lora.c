@@ -100,7 +100,7 @@ uint8_t LORA_init(void){
 	(
 		&g_mss_spi1,
 		MSS_SPI_SLAVE_0,
-		MSS_SPI_MODE0,
+		MSS_SPI_NSC_MODE,
 		MSS_SPI_PCLK_DIV_256,
 		frame_size
 	);
@@ -312,33 +312,25 @@ void LORA_write(uint8_t addr, uint8_t data){
 
 // TODO: make sure these can properly do burst
 uint8_t LORA_burst_read(uint8_t addr, uint8_t* res, uint8_t len){
-	uint8_t status = 0;
-	MSS_SPI_configure_master_mode
-		(
-			&g_mss_spi1,
-			MSS_SPI_SLAVE_0,
-			MSS_SPI_MODE0,
-			MSS_SPI_PCLK_DIV_256,
-			(len + 1) * 8
-		);
+  uint8_t status = 0;
 	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
-	res = MSS_SPI_transfer_frame(&g_mss_spi1, addr << (8 * len));
+  status = MSS_SPI_transfer_frame(&g_mss_spi1, addr);
+  int i;
+  for (i = 0; i < len; ++i){
+    res[i] = MSS_SPI_transfer_frame(&g_mss_spi1, 0);
+  }
 	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
 	return status;
 }
 
 uint8_t LORA_burst_write(uint8_t addr, uint8_t* src, uint8_t len){
-	uint8_t status = 0;
-	MSS_SPI_configure_master_mode
-		(
-			&g_mss_spi1,
-			MSS_SPI_SLAVE_0,
-			MSS_SPI_MODE0,
-			MSS_SPI_PCLK_DIV_256,
-			(len + 1) * 8
-		);
+  uint8_t status = 0;
 	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
-	MSS_SPI_transfer_frame(&g_mss_spi1, addr << (8 * len));
+  status = MSS_SPI_transfer_frame(&g_mss_spi1, (1 << 7) | addr);
+  int i;
+  for (i = 0; i < len; ++i){
+    MSS_SPI_transfer_frame(&g_mss_spi1, src[i]);
+  }
 	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
 	return status;
 }
