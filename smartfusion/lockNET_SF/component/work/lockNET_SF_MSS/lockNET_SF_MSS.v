@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Nov 17 12:47:48 2017
+// Created by SmartDesign Sun Nov 26 23:29:20 2017
 // Version: v11.8 11.8.0.26
 //////////////////////////////////////////////////////////////////////
 
@@ -10,31 +10,33 @@ module lockNET_SF_MSS(
     // Inputs
     FABINT,
     GPIO_1_IN,
-    MAC_0_CRSDV,
-    MAC_0_RXD,
-    MAC_0_RXER,
+    GPIO_9_IN,
     MSSPRDATA,
     MSSPREADY,
     MSSPSLVERR,
     MSS_RESET_N,
+    SPI_1_DI,
     UART_0_RXD,
+    UART_1_RXD,
     // Outputs
     FAB_CLK,
+    GPIO_8_OUT,
     M2F_GPO_0,
     M2F_RESET_N,
-    MAC_0_MDC,
-    MAC_0_TXD,
-    MAC_0_TXEN,
     MSSPADDR,
     MSSPENABLE,
     MSSPSEL,
     MSSPWDATA,
     MSSPWRITE,
+    SPI_1_DO,
     UART_0_TXD,
+    UART_1_TXD,
     // Inouts
+    GPIO_10_BI,
     I2C_1_SCL,
     I2C_1_SDA,
-    MAC_0_MDIO
+    SPI_1_CLK,
+    SPI_1_SS
 );
 
 //--------------------------------------------------------------------
@@ -42,118 +44,123 @@ module lockNET_SF_MSS(
 //--------------------------------------------------------------------
 input         FABINT;
 input         GPIO_1_IN;
-input         MAC_0_CRSDV;
-input  [1:0]  MAC_0_RXD;
-input         MAC_0_RXER;
+input         GPIO_9_IN;
 input  [31:0] MSSPRDATA;
 input         MSSPREADY;
 input         MSSPSLVERR;
 input         MSS_RESET_N;
+input         SPI_1_DI;
 input         UART_0_RXD;
+input         UART_1_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
 output        FAB_CLK;
+output        GPIO_8_OUT;
 output        M2F_GPO_0;
 output        M2F_RESET_N;
-output        MAC_0_MDC;
-output [1:0]  MAC_0_TXD;
-output        MAC_0_TXEN;
 output [19:0] MSSPADDR;
 output        MSSPENABLE;
 output        MSSPSEL;
 output [31:0] MSSPWDATA;
 output        MSSPWRITE;
+output        SPI_1_DO;
 output        UART_0_TXD;
+output        UART_1_TXD;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
+inout         GPIO_10_BI;
 inout         I2C_1_SCL;
 inout         I2C_1_SDA;
-inout         MAC_0_MDIO;
+inout         SPI_1_CLK;
+inout         SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
-wire   [0:0]  MAC_0_RXD_slice_0;
-wire   [1:1]  MAC_0_RXD_slice_1;
-wire          DSSGEN_MAC_0_TXD_0;
-wire          DSSGEN_MAC_0_TXD_1;
-wire          FABINT;
-wire          GPIO_1_IN;
-wire          I2C_1_SCL;
-wire          I2C_1_SDA;
-wire          MAC_0_CRSDV;
-wire          MAC_0_RXER;
-wire          MSS_ADLIB_INST_EMCCLK;
-wire          MSS_ADLIB_INST_FCLK;
-wire          MSS_ADLIB_INST_MACCLK;
-wire          MSS_ADLIB_INST_MACCLKCCC;
-wire          MSS_ADLIB_INST_PLLLOCK;
-wire          MSS_ADLIB_INST_SYNCCLKFDBK;
-wire          MSS_GPIO_0_GPIO_1_IN_Y;
-wire          MSS_I2C_1_SCL_E;
-wire          MSS_I2C_1_SCL_Y;
-wire          MSS_I2C_1_SDA_E;
-wire          MSS_I2C_1_SDA_Y;
-wire          MSS_MAC_0_CRSDV_Y;
-wire          MSS_MAC_0_MDC_D;
-wire          MSS_MAC_0_MDIO_D;
-wire          MSS_MAC_0_MDIO_E;
-wire          MSS_MAC_0_MDIO_Y;
-wire          MSS_MAC_0_RXD_0_Y;
-wire          MSS_MAC_0_RXD_1_Y;
-wire          MSS_MAC_0_RXER_Y;
-wire   [0:0]  MSS_MAC_0_TXD_0_D;
-wire   [1:1]  MSS_MAC_0_TXD_1_D;
-wire          MSS_MAC_0_TXEN_D;
-wire          MSS_RESET_0_MSS_RESET_N_Y;
-wire          MSS_RESET_N;
-wire          MSS_UART_0_RXD_Y;
-wire          MSS_UART_0_TXD_D;
-wire   [0:0]  MSSINT_GPO_0_A;
-wire          net_71;
-wire          net_72;
-wire   [19:0] net_73_PADDR;
-wire          net_73_PENABLE;
-wire   [31:0] MSSPRDATA;
-wire          MSSPREADY;
-wire          net_73_PSELx;
-wire          MSSPSLVERR;
-wire   [31:0] net_73_PWDATA;
-wire          net_73_PWRITE;
-wire          MAC_0_MDIO;
-wire          PAD_0;
-wire          PAD_1;
-wire          UART_0_RXD;
-wire          UART_0_TXD_net_0;
-wire          MSS_ADLIB_INST_SYNCCLKFDBK_net_0;
-wire          net_72_net_0;
-wire          net_73_PSELx_net_0;
-wire          net_73_PENABLE_net_0;
-wire          net_73_PWRITE_net_0;
-wire          net_71_net_0;
-wire   [19:0] net_73_PADDR_net_0;
-wire   [31:0] net_73_PWDATA_net_0;
-wire          UART_0_TXD_net_1;
-wire   [0:0]  DSSGEN_MAC_0_TXD_0_net_0;
-wire   [1:1]  DSSGEN_MAC_0_TXD_1_net_0;
-wire          PAD_0_net_0;
-wire          PAD_1_net_0;
-wire   [31:0] GPI_net_0;
-wire   [1:0]  MACRXD_net_0;
-wire   [1:0]  MAC_0_RXD;
-wire   [31:0] GPO_net_0;
-wire   [1:0]  MACTXD_net_0;
+wire           FABINT;
+wire           GPIO_1_IN;
+wire           GPIO_8_OUT_net_0;
+wire           GPIO_9_IN;
+wire           GPIO_10_BI;
+wire           I2C_1_SCL;
+wire           I2C_1_SDA;
+wire           MSS_ADLIB_INST_EMCCLK;
+wire           MSS_ADLIB_INST_FCLK;
+wire           MSS_ADLIB_INST_MACCLK;
+wire           MSS_ADLIB_INST_MACCLKCCC;
+wire           MSS_ADLIB_INST_PLLLOCK;
+wire           MSS_ADLIB_INST_SYNCCLKFDBK;
+wire           MSS_GPIO_0_GPIO_1_IN_Y;
+wire   [8:8]   MSS_GPIO_0_GPIO_8_OUT_D;
+wire           MSS_GPIO_0_GPIO_9_IN_Y;
+wire   [10:10] MSS_GPIO_0_GPIO_10_BI_D;
+wire   [10:10] MSS_GPIO_0_GPIO_10_BI_E;
+wire           MSS_GPIO_0_GPIO_10_BI_Y;
+wire           MSS_I2C_1_SCL_E;
+wire           MSS_I2C_1_SCL_Y;
+wire           MSS_I2C_1_SDA_E;
+wire           MSS_I2C_1_SDA_Y;
+wire           MSS_RESET_0_MSS_RESET_N_Y;
+wire           MSS_RESET_N;
+wire           MSS_SPI_1_CLK_D;
+wire           MSS_SPI_1_CLK_Y;
+wire           MSS_SPI_1_DI_Y;
+wire           MSS_SPI_1_DO_D;
+wire           MSS_SPI_1_DO_E;
+wire   [0:0]   MSS_SPI_1_SS_D;
+wire           MSS_SPI_1_SS_E;
+wire           MSS_SPI_1_SS_Y;
+wire           MSS_UART_0_RXD_Y;
+wire           MSS_UART_0_TXD_D;
+wire           MSS_UART_1_RXD_Y;
+wire           MSS_UART_1_TXD_D;
+wire   [0:0]   MSSINT_GPO_0_A;
+wire           net_71;
+wire           net_72;
+wire   [19:0]  net_73_PADDR;
+wire           net_73_PENABLE;
+wire   [31:0]  MSSPRDATA;
+wire           MSSPREADY;
+wire           net_73_PSELx;
+wire           MSSPSLVERR;
+wire   [31:0]  net_73_PWDATA;
+wire           net_73_PWRITE;
+wire           SPI_1_CLK;
+wire           SPI_1_DI;
+wire           SPI_1_DO_net_0;
+wire           SPI_1_SS;
+wire           UART_0_RXD;
+wire           UART_0_TXD_net_0;
+wire           UART_1_RXD;
+wire           UART_1_TXD_net_0;
+wire           MSS_ADLIB_INST_SYNCCLKFDBK_net_0;
+wire           net_72_net_0;
+wire           net_73_PSELx_net_0;
+wire           net_73_PENABLE_net_0;
+wire           net_73_PWRITE_net_0;
+wire           net_71_net_0;
+wire   [19:0]  net_73_PADDR_net_0;
+wire   [31:0]  net_73_PWDATA_net_0;
+wire           UART_0_TXD_net_1;
+wire           UART_1_TXD_net_1;
+wire           SPI_1_DO_net_1;
+wire           GPIO_8_OUT_net_1;
+wire   [31:0]  GPI_net_0;
+wire   [31:0]  GPO_net_0;
+wire   [31:0]  GPOE_net_0;
+wire   [7:0]   SPI1SSO_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
-wire          GND_net;
-wire          VCC_net;
-wire   [1:0]  DMAREADY_const_net_0;
-wire   [1:0]  MACF2MRXD_const_net_0;
-wire   [15:0] EMCRDB_const_net_0;
-wire   [31:0] FABPADDR_const_net_0;
-wire   [31:0] FABPWDATA_const_net_0;
+wire           GND_net;
+wire           VCC_net;
+wire   [1:0]   DMAREADY_const_net_0;
+wire   [1:0]   MACF2MRXD_const_net_0;
+wire   [1:0]   MACRXD_const_net_0;
+wire   [15:0]  EMCRDB_const_net_0;
+wire   [31:0]  FABPADDR_const_net_0;
+wire   [31:0]  FABPWDATA_const_net_0;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -161,6 +168,7 @@ assign GND_net               = 1'b0;
 assign VCC_net               = 1'b1;
 assign DMAREADY_const_net_0  = 2'h0;
 assign MACF2MRXD_const_net_0 = 2'h0;
+assign MACRXD_const_net_0    = 2'h0;
 assign EMCRDB_const_net_0    = 16'h0000;
 assign FABPADDR_const_net_0  = 32'h00000000;
 assign FABPWDATA_const_net_0 = 32'h00000000;
@@ -185,27 +193,24 @@ assign net_73_PWDATA_net_0              = net_73_PWDATA;
 assign MSSPWDATA[31:0]                  = net_73_PWDATA_net_0;
 assign UART_0_TXD_net_1                 = UART_0_TXD_net_0;
 assign UART_0_TXD                       = UART_0_TXD_net_1;
-assign DSSGEN_MAC_0_TXD_0_net_0[0]      = DSSGEN_MAC_0_TXD_0;
-assign MAC_0_TXD[0:0]                   = DSSGEN_MAC_0_TXD_0_net_0[0];
-assign DSSGEN_MAC_0_TXD_1_net_0[1]      = DSSGEN_MAC_0_TXD_1;
-assign MAC_0_TXD[1:1]                   = DSSGEN_MAC_0_TXD_1_net_0[1];
-assign PAD_0_net_0                      = PAD_0;
-assign MAC_0_TXEN                       = PAD_0_net_0;
-assign PAD_1_net_0                      = PAD_1;
-assign MAC_0_MDC                        = PAD_1_net_0;
+assign UART_1_TXD_net_1                 = UART_1_TXD_net_0;
+assign UART_1_TXD                       = UART_1_TXD_net_1;
+assign SPI_1_DO_net_1                   = SPI_1_DO_net_0;
+assign SPI_1_DO                         = SPI_1_DO_net_1;
+assign GPIO_8_OUT_net_1                 = GPIO_8_OUT_net_0;
+assign GPIO_8_OUT                       = GPIO_8_OUT_net_1;
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
-assign MAC_0_RXD_slice_0[0] = MAC_0_RXD[0:0];
-assign MAC_0_RXD_slice_1[1] = MAC_0_RXD[1:1];
-assign MSS_MAC_0_TXD_0_D[0] = MACTXD_net_0[0:0];
-assign MSS_MAC_0_TXD_1_D[1] = MACTXD_net_0[1:1];
-assign MSSINT_GPO_0_A[0]    = GPO_net_0[0:0];
+assign MSS_GPIO_0_GPIO_8_OUT_D[8]  = GPO_net_0[8:8];
+assign MSS_GPIO_0_GPIO_10_BI_D[10] = GPO_net_0[10:10];
+assign MSS_GPIO_0_GPIO_10_BI_E[10] = GPOE_net_0[10:10];
+assign MSS_SPI_1_SS_D[0]           = SPI1SSO_net_0[0:0];
+assign MSSINT_GPO_0_A[0]           = GPO_net_0[0:0];
 //--------------------------------------------------------------------
 // Concatenation assignments
 //--------------------------------------------------------------------
-assign GPI_net_0    = { 30'h00000000 , MSS_GPIO_0_GPIO_1_IN_Y , 1'b0 };
-assign MACRXD_net_0 = { MSS_MAC_0_RXD_1_Y , MSS_MAC_0_RXD_0_Y };
+assign GPI_net_0 = { 21'h000000 , MSS_GPIO_0_GPIO_10_BI_Y , MSS_GPIO_0_GPIO_9_IN_Y , 7'h00 , MSS_GPIO_0_GPIO_1_IN_Y , 1'b0 };
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -282,16 +287,16 @@ MSS_ADLIB_INST(
         .UART0RXD       ( MSS_UART_0_RXD_Y ),
         .I2C0SDAI       ( GND_net ), // tied to 1'b0 from definition
         .I2C0SCLI       ( GND_net ), // tied to 1'b0 from definition
-        .SPI1DI         ( GND_net ), // tied to 1'b0 from definition
-        .SPI1CLKI       ( GND_net ), // tied to 1'b0 from definition
-        .SPI1SSI        ( GND_net ), // tied to 1'b0 from definition
-        .UART1RXD       ( GND_net ), // tied to 1'b0 from definition
+        .SPI1DI         ( MSS_SPI_1_DI_Y ),
+        .SPI1CLKI       ( MSS_SPI_1_CLK_Y ),
+        .SPI1SSI        ( MSS_SPI_1_SS_Y ),
+        .UART1RXD       ( MSS_UART_1_RXD_Y ),
         .I2C1SDAI       ( MSS_I2C_1_SDA_Y ),
         .I2C1SCLI       ( MSS_I2C_1_SCL_Y ),
-        .MACRXD         ( MACRXD_net_0 ),
-        .MACCRSDV       ( MSS_MAC_0_CRSDV_Y ),
-        .MACRXER        ( MSS_MAC_0_RXER_Y ),
-        .MACMDI         ( MSS_MAC_0_MDIO_Y ),
+        .MACRXD         ( MACRXD_const_net_0 ), // tied to 2'h0 from definition
+        .MACCRSDV       ( GND_net ), // tied to 1'b0 from definition
+        .MACRXER        ( GND_net ), // tied to 1'b0 from definition
+        .MACMDI         ( GND_net ), // tied to 1'b0 from definition
         .EMCCLKRTN      ( MSS_ADLIB_INST_EMCCLK ),
         .EMCRDB         ( EMCRDB_const_net_0 ), // tied to 16'h0000 from definition
         .ADC0           ( GND_net ), // tied to 1'b0 from definition
@@ -396,7 +401,7 @@ MSS_ADLIB_INST(
         .PUFABn         (  ),
         .VCC15GOOD      (  ),
         .VCC33GOOD      (  ),
-        .GPOE           (  ),
+        .GPOE           ( GPOE_net_0 ),
         .SPI0DO         (  ),
         .SPI0DOE        (  ),
         .SPI0CLKO       (  ),
@@ -405,19 +410,19 @@ MSS_ADLIB_INST(
         .UART0TXD       ( MSS_UART_0_TXD_D ),
         .I2C0SDAO       (  ),
         .I2C0SCLO       (  ),
-        .SPI1DO         (  ),
-        .SPI1DOE        (  ),
-        .SPI1CLKO       (  ),
-        .SPI1MODE       (  ),
-        .SPI1SSO        (  ),
-        .UART1TXD       (  ),
+        .SPI1DO         ( MSS_SPI_1_DO_D ),
+        .SPI1DOE        ( MSS_SPI_1_DO_E ),
+        .SPI1CLKO       ( MSS_SPI_1_CLK_D ),
+        .SPI1MODE       ( MSS_SPI_1_SS_E ),
+        .SPI1SSO        ( SPI1SSO_net_0 ),
+        .UART1TXD       ( MSS_UART_1_TXD_D ),
         .I2C1SDAO       ( MSS_I2C_1_SDA_E ),
         .I2C1SCLO       ( MSS_I2C_1_SCL_E ),
-        .MACTXD         ( MACTXD_net_0 ),
-        .MACTXEN        ( MSS_MAC_0_TXEN_D ),
-        .MACMDO         ( MSS_MAC_0_MDIO_D ),
-        .MACMDEN        ( MSS_MAC_0_MDIO_E ),
-        .MACMDC         ( MSS_MAC_0_MDC_D ),
+        .MACTXD         (  ),
+        .MACTXEN        (  ),
+        .MACMDO         (  ),
+        .MACMDEN        (  ),
+        .MACMDC         (  ),
         .EMCCLK         ( MSS_ADLIB_INST_EMCCLK ),
         .EMCAB          (  ),
         .EMCWDB         (  ),
@@ -480,6 +485,42 @@ MSS_GPIO_0_GPIO_1_IN(
         .Y   ( MSS_GPIO_0_GPIO_1_IN_Y ) 
         );
 
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "T3" ) )
+MSS_GPIO_0_GPIO_8_OUT(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_8_OUT_D ),
+        // Outputs
+        .PAD ( GPIO_8_OUT_net_0 ) 
+        );
+
+//--------INBUF_MSS
+INBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "V3" ) )
+MSS_GPIO_0_GPIO_9_IN(
+        // Inputs
+        .PAD ( GPIO_9_IN ),
+        // Outputs
+        .Y   ( MSS_GPIO_0_GPIO_9_IN_Y ) 
+        );
+
+//--------BIBUF_MSS
+BIBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "U3" ) )
+MSS_GPIO_0_GPIO_10_BI(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_10_BI_D ),
+        .E   ( MSS_GPIO_0_GPIO_10_BI_E ),
+        // Outputs
+        .Y   ( MSS_GPIO_0_GPIO_10_BI_Y ),
+        // Inouts
+        .PAD ( GPIO_10_BI ) 
+        );
+
 //--------BIBUF_OPEND_MSS
 BIBUF_OPEND_MSS #( 
         .ACT_CONFIG ( 0 ),
@@ -509,114 +550,63 @@ MSS_I2C_1_SDA(
 //--------INBUF_MSS
 INBUF_MSS #( 
         .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "W4" ) )
-MSS_MAC_0_CRSDV(
-        // Inputs
-        .PAD ( MAC_0_CRSDV ),
-        // Outputs
-        .Y   ( MSS_MAC_0_CRSDV_Y ) 
-        );
-
-//--------OUTBUF_MSS
-OUTBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "AA3" ) )
-MSS_MAC_0_MDC(
-        // Inputs
-        .D   ( MSS_MAC_0_MDC_D ),
-        // Outputs
-        .PAD ( PAD_1 ) 
-        );
-
-//--------BIBUF_MSS
-BIBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "V4" ) )
-MSS_MAC_0_MDIO(
-        // Inputs
-        .D   ( MSS_MAC_0_MDIO_D ),
-        .E   ( MSS_MAC_0_MDIO_E ),
-        // Outputs
-        .Y   ( MSS_MAC_0_MDIO_Y ),
-        // Inouts
-        .PAD ( MAC_0_MDIO ) 
-        );
-
-//--------INBUF_MSS
-INBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "V5" ) )
-MSS_MAC_0_RXD_0(
-        // Inputs
-        .PAD ( MAC_0_RXD_slice_0 ),
-        // Outputs
-        .Y   ( MSS_MAC_0_RXD_0_Y ) 
-        );
-
-//--------INBUF_MSS
-INBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "U5" ) )
-MSS_MAC_0_RXD_1(
-        // Inputs
-        .PAD ( MAC_0_RXD_slice_1 ),
-        // Outputs
-        .Y   ( MSS_MAC_0_RXD_1_Y ) 
-        );
-
-//--------INBUF_MSS
-INBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "AA4" ) )
-MSS_MAC_0_RXER(
-        // Inputs
-        .PAD ( MAC_0_RXER ),
-        // Outputs
-        .Y   ( MSS_MAC_0_RXER_Y ) 
-        );
-
-//--------OUTBUF_MSS
-OUTBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "AA5" ) )
-MSS_MAC_0_TXD_0(
-        // Inputs
-        .D   ( MSS_MAC_0_TXD_0_D ),
-        // Outputs
-        .PAD ( DSSGEN_MAC_0_TXD_0 ) 
-        );
-
-//--------OUTBUF_MSS
-OUTBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "W5" ) )
-MSS_MAC_0_TXD_1(
-        // Inputs
-        .D   ( MSS_MAC_0_TXD_1_D ),
-        // Outputs
-        .PAD ( DSSGEN_MAC_0_TXD_1 ) 
-        );
-
-//--------OUTBUF_MSS
-OUTBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "Y4" ) )
-MSS_MAC_0_TXEN(
-        // Inputs
-        .D   ( MSS_MAC_0_TXEN_D ),
-        // Outputs
-        .PAD ( PAD_0 ) 
-        );
-
-//--------INBUF_MSS
-INBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
         .ACT_PIN    ( "R1" ) )
 MSS_RESET_0_MSS_RESET_N(
         // Inputs
         .PAD ( MSS_RESET_N ),
         // Outputs
         .Y   ( MSS_RESET_0_MSS_RESET_N_Y ) 
+        );
+
+//--------BIBUF_MSS
+BIBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "AA22" ) )
+MSS_SPI_1_CLK(
+        // Inputs
+        .D   ( MSS_SPI_1_CLK_D ),
+        .E   ( MSS_SPI_1_SS_E ),
+        // Outputs
+        .Y   ( MSS_SPI_1_CLK_Y ),
+        // Inouts
+        .PAD ( SPI_1_CLK ) 
+        );
+
+//--------INBUF_MSS
+INBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "V19" ) )
+MSS_SPI_1_DI(
+        // Inputs
+        .PAD ( SPI_1_DI ),
+        // Outputs
+        .Y   ( MSS_SPI_1_DI_Y ) 
+        );
+
+//--------TRIBUFF_MSS
+TRIBUFF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "T17" ) )
+MSS_SPI_1_DO(
+        // Inputs
+        .D   ( MSS_SPI_1_DO_D ),
+        .E   ( MSS_SPI_1_DO_E ),
+        // Outputs
+        .PAD ( SPI_1_DO_net_0 ) 
+        );
+
+//--------BIBUF_MSS
+BIBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "W21" ) )
+MSS_SPI_1_SS(
+        // Inputs
+        .D   ( MSS_SPI_1_SS_D ),
+        .E   ( MSS_SPI_1_SS_E ),
+        // Outputs
+        .Y   ( MSS_SPI_1_SS_Y ),
+        // Inouts
+        .PAD ( SPI_1_SS ) 
         );
 
 //--------INBUF_MSS
@@ -639,6 +629,28 @@ MSS_UART_0_TXD(
         .D   ( MSS_UART_0_TXD_D ),
         // Outputs
         .PAD ( UART_0_TXD_net_0 ) 
+        );
+
+//--------INBUF_MSS
+INBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "W22" ) )
+MSS_UART_1_RXD(
+        // Inputs
+        .PAD ( UART_1_RXD ),
+        // Outputs
+        .Y   ( MSS_UART_1_RXD_Y ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "V20" ) )
+MSS_UART_1_TXD(
+        // Inputs
+        .D   ( MSS_UART_1_TXD_D ),
+        // Outputs
+        .PAD ( UART_1_TXD_net_0 ) 
         );
 
 //--------MSSINT

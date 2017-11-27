@@ -12,6 +12,7 @@ RM := rm -rf
 -include hal/CortexM3/subdir.mk
 -include hal/CortexM3/GNU/subdir.mk
 -include drivers/mss_uart/subdir.mk
+-include drivers/mss_spi/subdir.mk
 -include drivers/mss_rtc/drivers/mss_rtc/subdir.mk
 -include drivers/mss_pdma/subdir.mk
 -include drivers/mss_nvm/drivers/F2DSS_NVM/subdir.mk

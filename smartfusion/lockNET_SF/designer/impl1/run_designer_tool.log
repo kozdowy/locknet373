@@ -2,18 +2,23 @@ Microsemi Libero Software
 Version: 11.8.0.26
 Release: v11.8
 
-'IDE_DESIGNERVIEW_ROOTDIR' set to 'N:\Git\locknet373\smartfusion\lockNET_SF\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer'
 Info: The design lockNET_SF.adb was last modified by software version 11.8.0.26.
 Opened an existing Libero design lockNET_SF.adb.
-WARNING: DEFUSR table not loaded - file: C:\Users\eliubakk\AppData\Roaming\Actel/designer.def
 
-The Execute Script command succeeded ( 00:00:23 )
-This program can detect if an updated version of the software is available by
-checking the Actel web-site.
+The Execute Script command succeeded ( 00:00:26 )
+Design saved to file
+N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb.
+Wrote pin report to file:
+N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_report_pin_byname.txt
 
-Would you like to have this check automatically done when you startup the program?
+The Report command succeeded ( 00:00:00 )
+Wrote pin report to file:
+N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_report_pin_bynumber.\
+txt
 
-(To change this setting later, go to the File menu and select Preferences.
-From the Updates tab, you can change your selection.) [NO]
+The Report command succeeded ( 00:00:01 )
+
+The Execute Script command succeeded ( 00:00:02 )
 Design closed.
 

@@ -55,4 +55,22 @@ uint8_t is_interrupt_handled(void);
 
 void set_interrupt_handled(uint8_t val);
 
+void LORA_wait_available(void);
+
+uint8_t LORA_wait_available_timeout(uint16_t timeout);
+
+uint8_t LORA_wait_packet_sent(uint16_t timeout);
+
+void LORA_set_promiscuous(uint8_t prom);
+
+void LORA_set_this_address(uint8_t addr);
+
+void LORA_set_header_to(uint8_t to);
+
+void LORA_set_header_from(uint8_t from);
+
+void LORA_set_header_id(uint8_t id);
+
+void LORA_set_header_flags(uint8_t set, uint8_t clear);
+
 #endif /* NFC_H_ */

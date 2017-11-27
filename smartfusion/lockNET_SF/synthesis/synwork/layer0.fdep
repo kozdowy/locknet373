@@ -1,36 +1,36 @@
-#OPTIONS:"|-layerid|0|-orig_srs|N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\synthesis\\synwork\\lockNET_SF_comp.srs|-top|lockNET_SF|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\synthesis\\synwork\\lockNET_SF_comp.srs|-top|lockNET_SF|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_ver.exe":1479996624
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\smartfusion.v":1487959650
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\hypermods.v":1487959786
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\umr_capim.v":1487959786
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1487959786
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1487959786
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\hdl\\neopixel.v":1511301263
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\hdl\\NFC.v":1511301263
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\hdl\\servo.v":1511301263
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\hdl\\apb3_interface.v":1511301263
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1511301261
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\component\\work\\lockNET_SF_MSS\\mss_tshell.v":1511301262
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\component\\work\\lockNET_SF_MSS\\MSS_CCC_0\\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1511301262
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\component\\work\\lockNET_SF_MSS\\lockNET_SF_MSS.v":1511301262
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1511301261
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1511301261
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1511301261
-#CUR:"N:\\Git\\locknet373\\smartfusion\\lockNET_SF\\component\\work\\lockNET_SF\\lockNET_SF.v":1511301262
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\hdl\\neopixel.v":1511740529
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\hdl\\NFC.v":1511740529
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\hdl\\servo.v":1511740529
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\hdl\\apb3_interface.v":1511740529
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1471626147
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\component\\work\\lockNET_SF_MSS\\mss_tshell.v":1511744643
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\component\\work\\lockNET_SF_MSS\\MSS_CCC_0\\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1511744636
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\component\\work\\lockNET_SF_MSS\\lockNET_SF_MSS.v":1511744646
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1506037752
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1506037752
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1506037752
+#CUR:"N:\\PortableGit\\locknet373\\smartfusion\\lockNET_SF\\component\\work\\lockNET_SF\\lockNET_SF.v":1511744658
 #numinternalfiles:5
 #defaultlanguage:verilog
-0			"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v" verilog
-1			"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v" verilog
-2			"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\servo.v" verilog
-3			"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v" verilog
-4			"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
-5			"N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell.v" verilog
-6			"N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
-7			"N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\lockNET_SF_MSS.v" verilog
-8			"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
-9			"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
-10			"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
-11			"N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v" verilog
+0			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v" verilog
+1			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\NFC.v" verilog
+2			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\servo.v" verilog
+3			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v" verilog
+4			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
+5			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell.v" verilog
+6			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+7			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\lockNET_SF_MSS.v" verilog
+8			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
+9			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
+10			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
+11			"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1

@@ -1,6 +1,6 @@
 <project name="lockNET_SF" version="1.1">
     <ProjectDirectory>
-        N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp
+        N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.log
+        N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pdb
+                N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pdb
             </filename>
             <local>
                 projectData\lockNET_SF.pdb

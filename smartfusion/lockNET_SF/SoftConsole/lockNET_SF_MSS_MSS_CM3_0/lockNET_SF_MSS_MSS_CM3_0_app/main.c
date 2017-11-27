@@ -7,6 +7,7 @@
 #include "servo.h"
 #include "nfc.h"
 #include "contact_switch.h"
+#include "lora.h"
 
 uint8_t last_was_ack = 0;
 
@@ -49,6 +50,11 @@ __attribute__ ((interrupt)) void GPIO1_IRQHandler( void )
 // Main program
 int main()
 {
+	MSS_GPIO_init();
+
+	int init_res = LORA_init();
+	//LORA_read_addr(LORA_RegFifoTxBaseAddr);
+	/*
 	// MSS_GPIO initialization
 	MSS_GPIO_init();
 	int i;
@@ -85,6 +91,7 @@ int main()
 //			// Intentionally empty for testing. Use breakpoint
 //		}
 //	}
+ * */
 
 
 		/*MSS_I2C_write

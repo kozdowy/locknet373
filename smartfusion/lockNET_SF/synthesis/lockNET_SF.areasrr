@@ -16,19 +16,20 @@ Report for cell lockNET_SF_MSS.netlist
      Instance path:  lockNET_SF_MSS_0
                                           Cell usage:
                                cell       count     area    count*area
-                          BIBUF_MSS         1       0.0        0.0
+                          BIBUF_MSS         4       0.0        0.0
                     BIBUF_OPEND_MSS         2       0.0        0.0
                                BUFF         1       1.0        1.0
                              CLKINT         1       0.0        0.0
                                 GND         1       0.0        0.0
-                          INBUF_MSS         7       0.0        0.0
+                          INBUF_MSS        10       0.0        0.0
                              MSSINT         1       0.0        0.0
                             MSS_APB         1       0.0        0.0
-                         OUTBUF_MSS         5       0.0        0.0
+                         OUTBUF_MSS         7       0.0        0.0
+                        TRIBUFF_MSS         1       0.0        0.0
                                 VCC         1       0.0        0.0
           lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
                             
-                         TOTAL             22                  1.0
+                         TOTAL             31                  1.0
 ----------------------------------------------------------------------
 Report for cell lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  lockNET_SF_MSS_0.MSS_CCC_0

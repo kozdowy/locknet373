@@ -20,10 +20,10 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb"
+KEY IDE_DES_ADB_PATH "N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb"
 LIST SOURCE_FILES
-VALUE "N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn;edn"
-VALUE "N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc;pdc"
+VALUE "N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn;edn"
+VALUE "N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

@@ -1,4 +1,4 @@
-# Tue Nov 21 16:56:54 2017
+# Sun Nov 26 20:05:44 2017
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -18,9 +18,9 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
 
-@N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\portablegit\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\portablegit\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\portablegit\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
@@ -28,36 +28,36 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":104:3:104:8|Found counter in view:work.neopixel(verilog) instance send_pixel[4:0] 
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":104:3:104:8|Found counter in view:work.neopixel(verilog) instance counter[13:0] 
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\servo.v":55:3:55:8|Found counter in view:work.servo(verilog) instance counter[31:0] 
-@N: MF179 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\servo.v":45:10:45:30|Found 32 by 32 bit less-than operator ('<') servo_out_n6 (in view: work.servo(verilog))
+@N: MO231 :"n:\portablegit\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":104:3:104:8|Found counter in view:work.neopixel(verilog) instance send_pixel[4:0] 
+@N: MO231 :"n:\portablegit\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":104:3:104:8|Found counter in view:work.neopixel(verilog) instance counter[13:0] 
+@N: MO231 :"n:\portablegit\locknet373\smartfusion\locknet_sf\hdl\servo.v":55:3:55:8|Found counter in view:work.servo(verilog) instance counter[31:0] 
+@N: MF179 :"n:\portablegit\locknet373\smartfusion\locknet_sf\hdl\servo.v":45:10:45:30|Found 32 by 32 bit less-than operator ('<') servo_out_n6 (in view: work.servo(verilog))
 
-Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+Starting factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 117MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 117MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 117MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 117MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 118MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 117MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 118MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 117MB peak: 118MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 118MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 117MB peak: 118MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 118MB)
+Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 117MB peak: 118MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 117MB peak: 118MB)
 
 
 High Fanout Net Report
@@ -77,7 +77,7 @@ apb3_interface_0.pxl_0.counter_n15_0_a3 / Y         27
 
 @N: FP130 |Promoting Net lockNET_SF_MSS_0_M2F_RESET_N on CLKINT  I_50 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 118MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 117MB peak: 118MB)
 
 Replicating Combinational Instance apb3_interface_0.pxl_0.counter_n15_0_a3, fanout 27 segments 2
 Replicating Combinational Instance apb3_interface_0.servo_0.read_pulse, fanout 32 segments 2
@@ -92,7 +92,7 @@ Added 6 Cells via replication
 	Added 1 Sequential Cells via replication
 	Added 5 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 118MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 117MB peak: 118MB)
 
 
 
@@ -116,27 +116,28 @@ Clock Tree ID     Driving Element      Drive Element Type                Fanout 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 115MB peak: 118MB)
 
-Writing Analyst data base N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_m.srm
+Writing Analyst data base N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 118MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
 
 Writing EDIF Netlist and constraint files
 L-2016.09M-2
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
+Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
 
-@W: MT246 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\locknet_sf_mss.v":645:7:645:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"n:\portablegit\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\locknet_sf_mss.v":811:7:811:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"n:\portablegit\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\locknet_sf_mss.v":744:0:744:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @N: MT615 |Found clock FCLK with period 10.00ns 
 @N: MT615 |Found clock FAB_CLK with period 10.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Nov 21 16:56:59 2017
+# Timing Report written on Sun Nov 26 20:05:51 2017
 #
 
 
@@ -147,7 +148,7 @@ Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell_syn.sdc
+Constraint File(s):    N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell_syn.sdc
                        
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
@@ -838,10 +839,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:03s; Memory used current: 116MB peak: 118MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
+Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:03s; Memory used current: 116MB peak: 118MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
@@ -905,27 +906,28 @@ Report for cell lockNET_SF.verilog
 
   IO Cell usage:
               cell count
-         BIBUF_MSS     1
+         BIBUF_MSS     4
    BIBUF_OPEND_MSS     2
              INBUF     1
-         INBUF_MSS     7
+         INBUF_MSS    10
             OUTBUF     3
-        OUTBUF_MSS     5
+        OUTBUF_MSS     7
+       TRIBUFF_MSS     1
                    -----
-             TOTAL    19
+             TOTAL    28
 
 
 Core Cells         : 709 of 4608 (15%)
-IO Cells           : 19
+IO Cells           : 28
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 29MB peak: 118MB)
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:03s; Memory used current: 29MB peak: 118MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:02s cputime
-# Tue Nov 21 16:57:00 2017
+Process took 0h:00m:06s realtime, 0h:00m:03s cputime
+# Sun Nov 26 20:05:51 2017
 
 ###########################################################]
