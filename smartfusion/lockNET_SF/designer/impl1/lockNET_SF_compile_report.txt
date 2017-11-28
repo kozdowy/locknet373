@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sun Nov 26 20:06:24 2017 ***************************************************************************
+                          Mon Nov 27 19:27:36 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
 File Name: N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb
 Design Name: lockNET_SF  Design State: compile
-Last Saved: Sun Nov 26 19:22:51 2017
+Last Saved: Mon Nov 27 19:21:05 2017
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Sun Nov 26 20:06:17 2017:
+Source File(s) Imported on Mon Nov 27 19:27:30 2017:
         N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
         N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
 
@@ -100,6 +100,10 @@ Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_SPI0CLKO drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_SPI0MODE drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_I2C0SDAO drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_I2C0SCLO drives no load.
+Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_MACTXEN drives no load.
+Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_MACMDO drives no load.
+Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_MACMDEN drives no load.
+Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_MACMDC drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_MACM2FTXD[0] drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_MACM2FTXD[1] drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_MACM2FTXEN drives no load.
@@ -270,6 +274,8 @@ Warning: CMP201: Net lockNET_SF_MSS_0/SPI1SSO_net_0[4] drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/SPI1SSO_net_0[5] drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/SPI1SSO_net_0[6] drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/SPI1SSO_net_0[7] drives no load.
+Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_MACTXD[0] drives no load.
+Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_MACTXD[1] drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_ACEFLAGS[0] drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_ACEFLAGS[1] drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_ADLIB_INST_ACEFLAGS[2] drives no load.
@@ -344,7 +350,7 @@ Warning: CMP201: Net lockNET_SF_MSS_0/MSSPADDR[18] drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSSPADDR[19] drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC_GLB drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC_GLC drives no load.
-Warning: CMP201: Net lockNET_SF_MSS_0/MSS_CCC_0/FAB_LOCK drives no load.
+Warning: CMP201: Net lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC_LOCK drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC_YB drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC_YC drives no load.
 
@@ -360,7 +366,7 @@ Optimized macros:
 
     Total macros optimized  21
 
-There were 0 error(s) and 268 warning(s) in this design.
+There were 0 error(s) and 274 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -384,7 +390,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      4  Total:     94   (4.26%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:     24  Total:     43   (55.81%)
+    Dedicated MSS IO           Used:     15  Total:     43   (34.88%)
     GLOBAL (Chip+Quadrant)     Used:      1  Total:     15   (6.67%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)

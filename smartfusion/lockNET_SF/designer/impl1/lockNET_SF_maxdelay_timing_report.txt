@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version v11.8
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
-Date: Sun Nov 26 20:07:12 2017
+Date: Mon Nov 27 19:28:27 2017
 
 
 Design: lockNET_SF
@@ -34,8 +34,8 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               mss_fabric_interface_clock
-Period (ns):                11.215
-Frequency (MHz):            89.166
+Period (ns):                11.012
+Frequency (MHz):            90.810
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
 External Setup (ns):        N/A
@@ -54,14 +54,14 @@ Min Clock-To-Out (ns):      5.905
 Max Clock-To-Out (ns):      13.906
 
 Clock Domain:               mss_ccc_gla1
-Period (ns):                13.246
-Frequency (MHz):            75.494
+Period (ns):                14.019
+Frequency (MHz):            71.332
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        -2.702
-External Hold (ns):         3.075
-Min Clock-To-Out (ns):      6.183
-Max Clock-To-Out (ns):      12.063
+External Setup (ns):        -1.128
+External Hold (ns):         2.249
+Min Clock-To-Out (ns):      5.967
+Max Clock-To-Out (ns):      11.761
 
 Clock Domain:               mss_ccc_gla0
 Period (ns):                12.500
@@ -70,16 +70,6 @@ Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
 External Setup (ns):        -4.814
 External Hold (ns):         3.700
-Min Clock-To-Out (ns):      N/A
-Max Clock-To-Out (ns):      N/A
-
-Clock Domain:               mss_ccc_macclk
-Period (ns):                25.000
-Frequency (MHz):            40.000
-Required Period (ns):       20.000
-Required Frequency (MHz):   50.000
-External Setup (ns):        N/A
-External Hold (ns):         N/A
 Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
@@ -156,61 +146,61 @@ SET Register to Register
 
 Path 1
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[9]
-  Delay (ns):                  13.442
-  Slack (ns):                  -1.215
-  Arrival (ns):                16.997
-  Required (ns):               15.782
-  Setup (ns):                  -2.227
-  Minimum Period (ns):         11.215
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[18]
+  Delay (ns):                  13.233
+  Slack (ns):                  -1.012
+  Arrival (ns):                16.788
+  Required (ns):               15.776
+  Setup (ns):                  -2.221
+  Minimum Period (ns):         11.012
 
 Path 2
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[2]
-  Delay (ns):                  13.251
-  Slack (ns):                  -1.036
-  Arrival (ns):                16.806
-  Required (ns):               15.770
-  Setup (ns):                  -2.215
-  Minimum Period (ns):         11.036
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[20]
+  Delay (ns):                  12.679
+  Slack (ns):                  -0.448
+  Arrival (ns):                16.234
+  Required (ns):               15.786
+  Setup (ns):                  -2.231
+  Minimum Period (ns):         10.448
 
 Path 3
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[7]
-  Delay (ns):                  13.152
-  Slack (ns):                  -0.925
-  Arrival (ns):                16.707
-  Required (ns):               15.782
-  Setup (ns):                  -2.227
-  Minimum Period (ns):         10.925
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[21]
+  Delay (ns):                  12.651
+  Slack (ns):                  -0.417
+  Arrival (ns):                16.206
+  Required (ns):               15.789
+  Setup (ns):                  -2.234
+  Minimum Period (ns):         10.417
 
 Path 4
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[1]
-  Delay (ns):                  12.887
-  Slack (ns):                  -0.663
-  Arrival (ns):                16.442
-  Required (ns):               15.779
-  Setup (ns):                  -2.224
-  Minimum Period (ns):         10.663
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[8]
+  Delay (ns):                  12.546
+  Slack (ns):                  -0.316
+  Arrival (ns):                16.101
+  Required (ns):               15.785
+  Setup (ns):                  -2.230
+  Minimum Period (ns):         10.316
 
 Path 5
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[5]
-  Delay (ns):                  12.806
-  Slack (ns):                  -0.583
-  Arrival (ns):                16.361
-  Required (ns):               15.778
-  Setup (ns):                  -2.223
-  Minimum Period (ns):         10.583
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[15]
+  Delay (ns):                  12.497
+  Slack (ns):                  -0.264
+  Arrival (ns):                16.052
+  Required (ns):               15.788
+  Setup (ns):                  -2.233
+  Minimum Period (ns):         10.264
 
 
 Expanded Path 1
   From: lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To: lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[9]
-  data required time                             15.782
-  data arrival time                          -   16.997
-  slack                                          -1.215
+  To: lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[18]
+  data required time                             15.776
+  data arrival time                          -   16.788
+  slack                                          -1.012
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_fabric_interface_clock
@@ -232,26 +222,26 @@ Expanded Path 1
   8.810                        CoreAPB3_0/CAPB3l0OI[0]:C (r)
                +     0.604          cell: ADLIB:AND3B
   9.414                        CoreAPB3_0/CAPB3l0OI[0]:Y (r)
-               +     1.069          net: CoreAPB3_0_APBmslave0_PSELx
-  10.483                       apb3_interface_0/BUS_READ_EN_0:A (r)
+               +     1.111          net: CoreAPB3_0_APBmslave0_PSELx
+  10.525                       apb3_interface_0/BUS_READ_EN:A (r)
                +     0.470          cell: ADLIB:NOR2A
-  10.953                       apb3_interface_0/BUS_READ_EN_0:Y (r)
-               +     1.701          net: apb3_interface_0/BUS_READ_EN_0
-  12.654                       apb3_interface_0/servo_0/read_pulse_0:C (r)
+  10.995                       apb3_interface_0/BUS_READ_EN:Y (r)
+               +     0.968          net: apb3_interface_0/BUS_READ_EN
+  11.963                       apb3_interface_0/servo_0/read_pulse:C (r)
                +     0.683          cell: ADLIB:NOR3C
-  13.337                       apb3_interface_0/servo_0/read_pulse_0:Y (r)
-               +     1.235          net: apb3_interface_0/servo_0/read_pulse_0
-  14.572                       apb3_interface_0/servo_0/pulse_comp_RNILISQ1[9]:B (r)
+  12.646                       apb3_interface_0/servo_0/read_pulse:Y (r)
+               +     1.619          net: apb3_interface_0/servo_0/read_pulse
+  14.265                       apb3_interface_0/servo_0/pulse_comp_RNIL8Q82[18]:B (r)
                +     0.516          cell: ADLIB:AO1
-  15.088                       apb3_interface_0/servo_0/pulse_comp_RNILISQ1[9]:Y (r)
-               +     1.390          net: lockNET_SF_MSS_0_MSS_MASTER_APB_PRDATA[9]
-  16.478                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_39:PIN6 (r)
+  14.781                       apb3_interface_0/servo_0/pulse_comp_RNIL8Q82[18]:Y (r)
+               +     1.487          net: lockNET_SF_MSS_0_MSS_MASTER_APB_PRDATA[18]
+  16.268                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_53:PIN6 (r)
                +     0.076          cell: ADLIB:MSS_IF
-  16.554                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_39:PIN6INT (r)
-               +     0.443          net: lockNET_SF_MSS_0/MSS_ADLIB_INST/MSSPRDATA[9]INT_NET
-  16.997                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[9] (r)
+  16.344                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_53:PIN6INT (r)
+               +     0.444          net: lockNET_SF_MSS_0/MSS_ADLIB_INST/MSSPRDATA[18]INT_NET
+  16.788                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[18] (r)
                                     
-  16.997                       data arrival time
+  16.788                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_fabric_interface_clock
@@ -259,10 +249,10 @@ Expanded Path 1
   10.000                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
                +     3.555          Clock generation
   13.555
-               -    -2.227          Library setup time: ADLIB:MSS_APB_IP
-  15.782                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[9]
+               -    -2.221          Library setup time: ADLIB:MSS_APB_IP
+  15.776                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[18]
                                     
-  15.782                       data required time
+  15.776                       data required time
 
 
 END SET Register to Register
@@ -312,57 +302,57 @@ END SET Asynchronous to Register
 SET mss_ccc_gla1 to mss_fabric_interface_clock
 
 Path 1
-  From:                        apb3_interface_0/pxl_0/neopixel_reg[13]:CLK
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[13]
-  Delay (ns):                  6.146
-  Slack (ns):                  4.421
-  Arrival (ns):                11.389
+  From:                        apb3_interface_0/pxl_0/neopixel_reg[18]:CLK
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[18]
+  Delay (ns):                  5.606
+  Slack (ns):                  4.915
+  Arrival (ns):                10.861
+  Required (ns):               15.776
+  Setup (ns):                  -2.221
+
+Path 2
+  From:                        apb3_interface_0/pxl_0/neopixel_reg[0]:CLK
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[0]
+  Delay (ns):                  5.563
+  Slack (ns):                  4.974
+  Arrival (ns):                10.818
+  Required (ns):               15.792
+  Setup (ns):                  -2.237
+
+Path 3
+  From:                        apb3_interface_0/pxl_0/neopixel_reg[19]:CLK
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[19]
+  Delay (ns):                  5.361
+  Slack (ns):                  5.178
+  Arrival (ns):                10.631
+  Required (ns):               15.809
+  Setup (ns):                  -2.254
+
+Path 4
+  From:                        apb3_interface_0/pxl_0/neopixel_reg[21]:CLK
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[21]
+  Delay (ns):                  5.361
+  Slack (ns):                  5.221
+  Arrival (ns):                10.589
   Required (ns):               15.810
   Setup (ns):                  -2.255
 
-Path 2
-  From:                        apb3_interface_0/pxl_0/neopixel_reg[19]:CLK
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[19]
-  Delay (ns):                  5.863
-  Slack (ns):                  4.682
-  Arrival (ns):                11.106
-  Required (ns):               15.788
-  Setup (ns):                  -2.233
-
-Path 3
-  From:                        apb3_interface_0/pxl_0/neopixel_reg[23]:CLK
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[23]
-  Delay (ns):                  5.669
-  Slack (ns):                  4.868
-  Arrival (ns):                10.922
-  Required (ns):               15.790
-  Setup (ns):                  -2.235
-
-Path 4
-  From:                        apb3_interface_0/pxl_0/neopixel_reg[14]:CLK
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[14]
-  Delay (ns):                  5.337
-  Slack (ns):                  5.234
-  Arrival (ns):                10.570
-  Required (ns):               15.804
-  Setup (ns):                  -2.249
-
 Path 5
-  From:                        apb3_interface_0/pxl_0/neopixel_reg[9]:CLK
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[9]
-  Delay (ns):                  5.135
-  Slack (ns):                  5.387
-  Arrival (ns):                10.395
-  Required (ns):               15.782
-  Setup (ns):                  -2.227
+  From:                        apb3_interface_0/pxl_0/neopixel_reg[10]:CLK
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[10]
+  Delay (ns):                  5.321
+  Slack (ns):                  5.251
+  Arrival (ns):                10.554
+  Required (ns):               15.805
+  Setup (ns):                  -2.250
 
 
 Expanded Path 1
-  From: apb3_interface_0/pxl_0/neopixel_reg[13]:CLK
-  To: lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[13]
-  data required time                             15.810
-  data arrival time                          -   11.389
-  slack                                          4.421
+  From: apb3_interface_0/pxl_0/neopixel_reg[18]:CLK
+  To: lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[18]
+  data required time                             15.776
+  data arrival time                          -   10.861
+  slack                                          4.915
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -374,26 +364,26 @@ Expanded Path 1
   4.630                        lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.613          net: FAB_CLK
-  5.243                        apb3_interface_0/pxl_0/neopixel_reg[13]:CLK (r)
-               +     0.671          cell: ADLIB:DFN1
-  5.914                        apb3_interface_0/pxl_0/neopixel_reg[13]:Q (f)
-               +     3.166          net: apb3_interface_0/pxl_0/neopixel_reg[13]
-  9.080                        apb3_interface_0/pxl_0/neopixel_reg_RNIT4V31[13]:C (f)
-               +     0.620          cell: ADLIB:NOR3C
-  9.700                        apb3_interface_0/pxl_0/neopixel_reg_RNIT4V31[13]:Y (f)
-               +     0.339          net: apb3_interface_0/NP_PRDATA[13]
-  10.039                       apb3_interface_0/servo_0/pulse_comp_RNIBUP82[13]:C (f)
-               +     0.576          cell: ADLIB:AO1
-  10.615                       apb3_interface_0/servo_0/pulse_comp_RNIBUP82[13]:Y (f)
-               +     0.272          net: lockNET_SF_MSS_0_MSS_MASTER_APB_PRDATA[13]
-  10.887                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_41:PIN5 (f)
-               +     0.095          cell: ADLIB:MSS_IF
-  10.982                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_41:PIN5INT (f)
-               +     0.407          net: lockNET_SF_MSS_0/MSS_ADLIB_INST/MSSPRDATA[13]INT_NET
-  11.389                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[13] (f)
+               +     0.625          net: FAB_CLK
+  5.255                        apb3_interface_0/pxl_0/neopixel_reg[18]:CLK (r)
+               +     0.528          cell: ADLIB:DFN1
+  5.783                        apb3_interface_0/pxl_0/neopixel_reg[18]:Q (r)
+               +     1.486          net: apb3_interface_0/pxl_0/neopixel_reg[18]
+  7.269                        apb3_interface_0/pxl_0/neopixel_reg_RNI2AV31[18]:C (r)
+               +     0.683          cell: ADLIB:NOR3C
+  7.952                        apb3_interface_0/pxl_0/neopixel_reg_RNI2AV31[18]:Y (r)
+               +     0.306          net: apb3_interface_0/NP_PRDATA[18]
+  8.258                        apb3_interface_0/servo_0/pulse_comp_RNIL8Q82[18]:C (r)
+               +     0.596          cell: ADLIB:AO1
+  8.854                        apb3_interface_0/servo_0/pulse_comp_RNIL8Q82[18]:Y (r)
+               +     1.487          net: lockNET_SF_MSS_0_MSS_MASTER_APB_PRDATA[18]
+  10.341                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_53:PIN6 (r)
+               +     0.076          cell: ADLIB:MSS_IF
+  10.417                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_53:PIN6INT (r)
+               +     0.444          net: lockNET_SF_MSS_0/MSS_ADLIB_INST/MSSPRDATA[18]INT_NET
+  10.861                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[18] (r)
                                     
-  11.389                       data arrival time
+  10.861                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_fabric_interface_clock
@@ -401,10 +391,10 @@ Expanded Path 1
   10.000                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
                +     3.555          Clock generation
   13.555
-               -    -2.255          Library setup time: ADLIB:MSS_APB_IP
-  15.810                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[13]
+               -    -2.221          Library setup time: ADLIB:MSS_APB_IP
+  15.776                       lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPRDATA[18]
                                     
-  15.810                       data required time
+  15.776                       data required time
 
 
 END SET mss_ccc_gla1 to mss_fabric_interface_clock
@@ -591,62 +581,62 @@ Clock Domain mss_ccc_gla1
 SET Register to Register
 
 Path 1
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.749
-  Slack (ns):                  -3.246
-  Arrival (ns):                18.004
-  Required (ns):               14.758
-  Setup (ns):                  0.490
-  Minimum Period (ns):         13.246
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.475
+  Slack (ns):                  -4.019
+  Arrival (ns):                18.745
+  Required (ns):               14.726
+  Setup (ns):                  0.522
+  Minimum Period (ns):         14.019
 
 Path 2
   From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.725
-  Slack (ns):                  -3.222
-  Arrival (ns):                17.980
-  Required (ns):               14.758
-  Setup (ns):                  0.490
-  Minimum Period (ns):         13.222
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.398
+  Slack (ns):                  -3.942
+  Arrival (ns):                18.668
+  Required (ns):               14.726
+  Setup (ns):                  0.522
+  Minimum Period (ns):         13.942
 
 Path 3
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[15]:D
-  Delay (ns):                  12.688
-  Slack (ns):                  -3.178
-  Arrival (ns):                17.943
-  Required (ns):               14.765
-  Setup (ns):                  0.490
-  Minimum Period (ns):         13.178
+  From:                        apb3_interface_0/servo_0/counter[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.387
+  Slack (ns):                  -3.909
+  Arrival (ns):                18.635
+  Required (ns):               14.726
+  Setup (ns):                  0.522
+  Minimum Period (ns):         13.909
 
 Path 4
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[0]:D
-  Delay (ns):                  12.705
-  Slack (ns):                  -3.165
-  Arrival (ns):                17.960
-  Required (ns):               14.795
-  Setup (ns):                  0.490
-  Minimum Period (ns):         13.165
+  From:                        apb3_interface_0/servo_0/counter[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.290
+  Slack (ns):                  -3.823
+  Arrival (ns):                18.549
+  Required (ns):               14.726
+  Setup (ns):                  0.522
+  Minimum Period (ns):         13.823
 
 Path 5
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.649
-  Slack (ns):                  -3.146
-  Arrival (ns):                17.904
-  Required (ns):               14.758
-  Setup (ns):                  0.490
-  Minimum Period (ns):         13.146
+  From:                        apb3_interface_0/servo_0/pulse_comp[0]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.168
+  Slack (ns):                  -3.685
+  Arrival (ns):                18.411
+  Required (ns):               14.726
+  Setup (ns):                  0.522
+  Minimum Period (ns):         13.685
 
 
 Expanded Path 1
-  From: apb3_interface_0/servo_0/counter[11]:CLK
-  To: apb3_interface_0/servo_0/counter[21]:D
-  data required time                             14.758
-  data arrival time                          -   18.004
-  slack                                          -3.246
+  From: apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To: apb3_interface_0/servo_0/counter[7]:D
+  data required time                             14.726
+  data arrival time                          -   18.745
+  slack                                          -4.019
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -658,50 +648,50 @@ Expanded Path 1
   4.630                        lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.625          net: FAB_CLK
-  5.255                        apb3_interface_0/servo_0/counter[11]:CLK (r)
-               +     0.671          cell: ADLIB:DFN1
-  5.926                        apb3_interface_0/servo_0/counter[11]:Q (f)
-               +     1.092          net: apb3_interface_0/servo_0/counter[11]
-  7.018                        apb3_interface_0/servo_0/servo_out_n6_0_I_96:B (f)
-               +     0.592          cell: ADLIB:OR2A
-  7.610                        apb3_interface_0/servo_0/servo_out_n6_0_I_96:Y (f)
+               +     0.640          net: FAB_CLK
+  5.270                        apb3_interface_0/servo_0/pulse_comp[11]:CLK (r)
+               +     0.528          cell: ADLIB:DFN1
+  5.798                        apb3_interface_0/servo_0/pulse_comp[11]:Q (r)
+               +     0.934          net: apb3_interface_0/servo_0/pulse_comp[11]
+  6.732                        apb3_interface_0/servo_0/servo_out_n6_0_I_96:A (r)
+               +     0.462          cell: ADLIB:OR2A
+  7.194                        apb3_interface_0/servo_0/servo_out_n6_0_I_96:Y (f)
                +     0.306          net: apb3_interface_0/servo_0/N_22
-  7.916                        apb3_interface_0/servo_0/servo_out_n6_0_I_102:C (f)
+  7.500                        apb3_interface_0/servo_0/servo_out_n6_0_I_102:C (f)
                +     0.641          cell: ADLIB:AO1C
-  8.557                        apb3_interface_0/servo_0/servo_out_n6_0_I_102:Y (r)
+  8.141                        apb3_interface_0/servo_0/servo_out_n6_0_I_102:Y (r)
                +     0.296          net: apb3_interface_0/servo_0/N_28_0
-  8.853                        apb3_interface_0/servo_0/servo_out_n6_0_I_105:B (r)
+  8.437                        apb3_interface_0/servo_0/servo_out_n6_0_I_105:B (r)
                +     0.829          cell: ADLIB:OA1A
-  9.682                        apb3_interface_0/servo_0/servo_out_n6_0_I_105:Y (r)
-               +     0.317          net: apb3_interface_0/servo_0/N_31
-  9.999                        apb3_interface_0/servo_0/servo_out_n6_0_I_106:A (r)
+  9.266                        apb3_interface_0/servo_0/servo_out_n6_0_I_105:Y (r)
+               +     0.306          net: apb3_interface_0/servo_0/N_31
+  9.572                        apb3_interface_0/servo_0/servo_out_n6_0_I_106:A (r)
                +     0.895          cell: ADLIB:OA1
-  10.894                       apb3_interface_0/servo_0/servo_out_n6_0_I_106:Y (r)
-               +     0.976          net: apb3_interface_0/servo_0/DWACT_CMPLE_PO0_DWACT_COMP0_E[2]
-  11.870                       apb3_interface_0/servo_0/servo_out_n6_0_I_107:B (r)
+  10.467                       apb3_interface_0/servo_0/servo_out_n6_0_I_106:Y (r)
+               +     1.022          net: apb3_interface_0/servo_0/DWACT_CMPLE_PO0_DWACT_COMP0_E[2]
+  11.489                       apb3_interface_0/servo_0/servo_out_n6_0_I_107:B (r)
                +     0.516          cell: ADLIB:AO1
-  12.386                       apb3_interface_0/servo_0/servo_out_n6_0_I_107:Y (r)
-               +     0.873          net: apb3_interface_0/servo_0/DWACT_CMPLE_PO2_DWACT_COMP0_E[0]
-  13.259                       apb3_interface_0/servo_0/servo_out_n6_0_I_139:C (r)
+  12.005                       apb3_interface_0/servo_0/servo_out_n6_0_I_107:Y (r)
+               +     0.995          net: apb3_interface_0/servo_0/DWACT_CMPLE_PO2_DWACT_COMP0_E[0]
+  13.000                       apb3_interface_0/servo_0/servo_out_n6_0_I_139:C (r)
                +     0.596          cell: ADLIB:AO1
-  13.855                       apb3_interface_0/servo_0/servo_out_n6_0_I_139:Y (r)
+  13.596                       apb3_interface_0/servo_0/servo_out_n6_0_I_139:Y (r)
                +     0.320          net: apb3_interface_0/servo_0/DWACT_COMP0_E[2]
-  14.175                       apb3_interface_0/servo_0/servo_out_n6_0_I_140:B (r)
+  13.916                       apb3_interface_0/servo_0/servo_out_n6_0_I_140:B (r)
                +     0.516          cell: ADLIB:AO1
-  14.691                       apb3_interface_0/servo_0/servo_out_n6_0_I_140:Y (r)
-               +     0.309          net: apb3_interface_0/servo_0/servo_out_n6
-  15.000                       apb3_interface_0/servo_0/counter_RNITIGRJ1[15]:B (r)
+  14.432                       apb3_interface_0/servo_0/servo_out_n6_0_I_140:Y (r)
+               +     0.844          net: apb3_interface_0/servo_0/servo_out_n6
+  15.276                       apb3_interface_0/servo_0/counter_RNITIGRJ1[15]:B (r)
                +     0.351          cell: ADLIB:NOR2A
-  15.351                       apb3_interface_0/servo_0/counter_RNITIGRJ1[15]:Y (f)
-               +     1.869          net: apb3_interface_0/servo_0/r_N_6
-  17.220                       apb3_interface_0/servo_0/counter_RNO[21]:C (f)
-               +     0.478          cell: ADLIB:NOR3B
-  17.698                       apb3_interface_0/servo_0/counter_RNO[21]:Y (r)
-               +     0.306          net: apb3_interface_0/servo_0/counter_n21
-  18.004                       apb3_interface_0/servo_0/counter[21]:D (r)
+  15.627                       apb3_interface_0/servo_0/counter_RNITIGRJ1[15]:Y (f)
+               +     2.360          net: apb3_interface_0/servo_0/r_N_6
+  17.987                       apb3_interface_0/servo_0/counter_RNO[7]:B (f)
+               +     0.445          cell: ADLIB:NOR2A
+  18.432                       apb3_interface_0/servo_0/counter_RNO[7]:Y (r)
+               +     0.313          net: apb3_interface_0/servo_0/counter_n7
+  18.745                       apb3_interface_0/servo_0/counter[7]:D (r)
                                     
-  18.004                       data arrival time
+  18.745                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -714,11 +704,11 @@ Expanded Path 1
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
                +     0.618          net: FAB_CLK
-  15.248                       apb3_interface_0/servo_0/counter[21]:CLK (r)
-               -     0.490          Library setup time: ADLIB:DFN1
-  14.758                       apb3_interface_0/servo_0/counter[21]:D
+  15.248                       apb3_interface_0/servo_0/counter[7]:CLK (r)
+               -     0.522          Library setup time: ADLIB:DFN1
+  14.726                       apb3_interface_0/servo_0/counter[7]:D
                                     
-  14.758                       data required time
+  14.726                       data required time
 
 
 END SET Register to Register
@@ -730,19 +720,19 @@ SET External Setup
 Path 1
   From:                        PIN_NFC_IRQ
   To:                          apb3_interface_0/nfc/fabint:D
-  Delay (ns):                  2.006
+  Delay (ns):                  3.580
   Slack (ns):
-  Arrival (ns):                2.006
+  Arrival (ns):                3.580
   Required (ns):
   Setup (ns):                  0.522
-  External Setup (ns):         -2.702
+  External Setup (ns):         -1.128
 
 
 Expanded Path 1
   From: PIN_NFC_IRQ
   To: apb3_interface_0/nfc/fabint:D
   data required time                             N/C
-  data arrival time                          -   2.006
+  data arrival time                          -   3.580
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -755,14 +745,14 @@ Expanded Path 1
   0.967                        PIN_NFC_IRQ_pad/U0/U1:YIN (r)
                +     0.039          cell: ADLIB:IOIN_IB
   1.006                        PIN_NFC_IRQ_pad/U0/U1:Y (r)
-               +     0.280          net: PIN_NFC_IRQ_c
-  1.286                        apb3_interface_0/nfc/fabint_RNO:A (r)
+               +     1.854          net: PIN_NFC_IRQ_c
+  2.860                        apb3_interface_0/nfc/fabint_RNO:A (r)
                +     0.424          cell: ADLIB:NOR2
-  1.710                        apb3_interface_0/nfc/fabint_RNO:Y (f)
+  3.284                        apb3_interface_0/nfc/fabint_RNO:Y (f)
                +     0.296          net: apb3_interface_0/nfc/fabint6
-  2.006                        apb3_interface_0/nfc/fabint:D (f)
+  3.580                        apb3_interface_0/nfc/fabint:D (f)
                                     
-  2.006                        data arrival time
+  3.580                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -789,27 +779,27 @@ SET Clock to Output
 Path 1
   From:                        apb3_interface_0/servo_0/servo_out:CLK
   To:                          SERVO_OUT
-  Delay (ns):                  6.815
+  Delay (ns):                  6.536
   Slack (ns):
-  Arrival (ns):                12.063
+  Arrival (ns):                11.761
   Required (ns):
-  Clock to Out (ns):           12.063
+  Clock to Out (ns):           11.761
 
 Path 2
   From:                        apb3_interface_0/pxl_0/np_out:CLK
   To:                          NP_OUT
-  Delay (ns):                  6.099
+  Delay (ns):                  5.614
   Slack (ns):
-  Arrival (ns):                11.326
+  Arrival (ns):                10.844
   Required (ns):
-  Clock to Out (ns):           11.326
+  Clock to Out (ns):           10.844
 
 
 Expanded Path 1
   From: apb3_interface_0/servo_0/servo_out:CLK
   To: SERVO_OUT
   data required time                             N/C
-  data arrival time                          -   12.063
+  data arrival time                          -   11.761
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -822,22 +812,22 @@ Expanded Path 1
   4.630                        lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.618          net: FAB_CLK
-  5.248                        apb3_interface_0/servo_0/servo_out:CLK (r)
+               +     0.595          net: FAB_CLK
+  5.225                        apb3_interface_0/servo_0/servo_out:CLK (r)
                +     0.671          cell: ADLIB:DFN1
-  5.919                        apb3_interface_0/servo_0/servo_out:Q (f)
-               +     2.245          net: SERVO_OUT_c
-  8.164                        SERVO_OUT_pad/U0/U1:D (f)
+  5.896                        apb3_interface_0/servo_0/servo_out:Q (f)
+               +     1.966          net: SERVO_OUT_c
+  7.862                        SERVO_OUT_pad/U0/U1:D (f)
                +     0.530          cell: ADLIB:IOTRI_OB_EB
-  8.694                        SERVO_OUT_pad/U0/U1:DOUT (f)
+  8.392                        SERVO_OUT_pad/U0/U1:DOUT (f)
                +     0.000          net: SERVO_OUT_pad/U0/NET1
-  8.694                        SERVO_OUT_pad/U0/U0:D (f)
+  8.392                        SERVO_OUT_pad/U0/U0:D (f)
                +     3.369          cell: ADLIB:IOPAD_TRI
-  12.063                       SERVO_OUT_pad/U0/U0:PAD (f)
+  11.761                       SERVO_OUT_pad/U0/U0:PAD (f)
                +     0.000          net: SERVO_OUT
-  12.063                       SERVO_OUT (f)
+  11.761                       SERVO_OUT (f)
                                     
-  12.063                       data arrival time
+  11.761                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -882,55 +872,55 @@ SET mss_fabric_interface_clock to mss_ccc_gla1
 Path 1
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                          apb3_interface_0/pxl_0/neopixel_reg[2]:D
-  Delay (ns):                  14.500
-  Slack (ns):                  -3.334
-  Arrival (ns):                18.055
-  Required (ns):               14.721
+  Delay (ns):                  14.389
+  Slack (ns):                  -3.211
+  Arrival (ns):                17.944
+  Required (ns):               14.733
   Setup (ns):                  0.522
 
 Path 2
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[9]:D
-  Delay (ns):                  14.477
-  Slack (ns):                  -3.294
-  Arrival (ns):                18.032
-  Required (ns):               14.738
+  To:                          apb3_interface_0/pxl_0/neopixel_reg[15]:D
+  Delay (ns):                  14.230
+  Slack (ns):                  -3.067
+  Arrival (ns):                17.785
+  Required (ns):               14.718
   Setup (ns):                  0.522
 
 Path 3
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[0]:D
-  Delay (ns):                  14.139
-  Slack (ns):                  -2.973
-  Arrival (ns):                17.694
-  Required (ns):               14.721
+  To:                          apb3_interface_0/servo_0/pulse_comp[24]:D
+  Delay (ns):                  14.140
+  Slack (ns):                  -2.953
+  Arrival (ns):                17.695
+  Required (ns):               14.742
   Setup (ns):                  0.522
 
 Path 4
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[7]:D
-  Delay (ns):                  14.072
-  Slack (ns):                  -2.916
-  Arrival (ns):                17.627
-  Required (ns):               14.711
+  To:                          apb3_interface_0/pxl_0/neopixel_reg[6]:D
+  Delay (ns):                  14.048
+  Slack (ns):                  -2.894
+  Arrival (ns):                17.603
+  Required (ns):               14.709
   Setup (ns):                  0.522
 
 Path 5
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[12]:D
-  Delay (ns):                  14.072
-  Slack (ns):                  -2.906
-  Arrival (ns):                17.627
-  Required (ns):               14.721
+  To:                          apb3_interface_0/pxl_0/neopixel_reg[10]:D
+  Delay (ns):                  14.048
+  Slack (ns):                  -2.892
+  Arrival (ns):                17.603
+  Required (ns):               14.711
   Setup (ns):                  0.522
 
 
 Expanded Path 1
   From: lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
   To: apb3_interface_0/pxl_0/neopixel_reg[2]:D
-  data required time                             14.721
-  data arrival time                          -   18.055
-  slack                                          -3.334
+  data required time                             14.733
+  data arrival time                          -   17.944
+  slack                                          -3.211
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_fabric_interface_clock
@@ -956,30 +946,30 @@ Expanded Path 1
   10.264                       apb3_interface_0/BUS_WRITE_EN:A (r)
                +     0.478          cell: ADLIB:NOR3C
   10.742                       apb3_interface_0/BUS_WRITE_EN:Y (r)
-               +     1.446          net: apb3_interface_0/BUS_WRITE_EN
-  12.188                       apb3_interface_0/pxl_0/send_pixel_RNIRTK31_0[4]:A (r)
+               +     1.204          net: apb3_interface_0/BUS_WRITE_EN
+  11.946                       apb3_interface_0/pxl_0/send_pixel_RNIRTK31_0[4]:A (r)
                +     0.606          cell: ADLIB:NOR3B
-  12.794                       apb3_interface_0/pxl_0/send_pixel_RNIRTK31_0[4]:Y (r)
-               +     0.594          net: apb3_interface_0/pxl_0/counter_n15_0
-  13.388                       apb3_interface_0/pxl_0/send_pixel_RNI8DHB4[4]:B (r)
+  12.552                       apb3_interface_0/pxl_0/send_pixel_RNIRTK31_0[4]:Y (r)
+               +     0.573          net: apb3_interface_0/pxl_0/counter_n15_0
+  13.125                       apb3_interface_0/pxl_0/send_pixel_RNI8DHB4[4]:B (r)
                +     0.516          cell: ADLIB:AO1
-  13.904                       apb3_interface_0/pxl_0/send_pixel_RNI8DHB4[4]:Y (r)
+  13.641                       apb3_interface_0/pxl_0/send_pixel_RNI8DHB4[4]:Y (r)
                +     0.306          net: apb3_interface_0/pxl_0/un1_counter_n16_1_i_0
-  14.210                       apb3_interface_0/pxl_0/send_pixel_RNI7BNI5[4]:C (r)
+  13.947                       apb3_interface_0/pxl_0/send_pixel_RNI7BNI5[4]:C (r)
                +     0.596          cell: ADLIB:AO1
-  14.806                       apb3_interface_0/pxl_0/send_pixel_RNI7BNI5[4]:Y (r)
-               +     1.882          net: apb3_interface_0/pxl_0/N_14
-  16.688                       apb3_interface_0/pxl_0/neopixel_reg_RNO_0[2]:S (r)
+  14.543                       apb3_interface_0/pxl_0/send_pixel_RNI7BNI5[4]:Y (r)
+               +     2.034          net: apb3_interface_0/pxl_0/N_14
+  16.577                       apb3_interface_0/pxl_0/neopixel_reg_RNO_0[2]:S (r)
                +     0.332          cell: ADLIB:MX2
-  17.020                       apb3_interface_0/pxl_0/neopixel_reg_RNO_0[2]:Y (r)
+  16.909                       apb3_interface_0/pxl_0/neopixel_reg_RNO_0[2]:Y (r)
                +     0.294          net: apb3_interface_0/pxl_0/N_266
-  17.314                       apb3_interface_0/pxl_0/neopixel_reg_RNO[2]:A (r)
+  17.203                       apb3_interface_0/pxl_0/neopixel_reg_RNO[2]:A (r)
                +     0.445          cell: ADLIB:NOR2B
-  17.759                       apb3_interface_0/pxl_0/neopixel_reg_RNO[2]:Y (r)
+  17.648                       apb3_interface_0/pxl_0/neopixel_reg_RNO[2]:Y (r)
                +     0.296          net: apb3_interface_0/pxl_0/neopixel_reg_RNO[2]
-  18.055                       apb3_interface_0/pxl_0/neopixel_reg[2]:D (r)
+  17.944                       apb3_interface_0/pxl_0/neopixel_reg[2]:D (r)
                                     
-  18.055                       data arrival time
+  17.944                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -991,12 +981,12 @@ Expanded Path 1
   14.630                       lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.613          net: FAB_CLK
-  15.243                       apb3_interface_0/pxl_0/neopixel_reg[2]:CLK (r)
+               +     0.625          net: FAB_CLK
+  15.255                       apb3_interface_0/pxl_0/neopixel_reg[2]:CLK (r)
                -     0.522          Library setup time: ADLIB:DFN1
-  14.721                       apb3_interface_0/pxl_0/neopixel_reg[2]:D
+  14.733                       apb3_interface_0/pxl_0/neopixel_reg[2]:D
                                     
-  14.721                       data required time
+  14.733                       data required time
 
 
 END SET mss_fabric_interface_clock to mss_ccc_gla1
@@ -1007,56 +997,56 @@ SET mss_ccc_gla0 to mss_ccc_gla1
 
 Path 1
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          apb3_interface_0/pxl_0/counter[2]:D
-  Delay (ns):                  12.111
-  Slack (ns):                  -0.952
-  Arrival (ns):                15.666
-  Required (ns):               14.714
+  To:                          apb3_interface_0/pxl_0/counter[13]:D
+  Delay (ns):                  11.199
+  Slack (ns):                  -0.047
+  Arrival (ns):                14.754
+  Required (ns):               14.707
   Setup (ns):                  0.522
 
 Path 2
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          apb3_interface_0/pxl_0/counter[10]:D
-  Delay (ns):                  11.632
-  Slack (ns):                  -0.441
-  Arrival (ns):                15.187
-  Required (ns):               14.746
+  To:                          apb3_interface_0/pxl_0/send_pixel[0]:D
+  Delay (ns):                  11.222
+  Slack (ns):                  -0.039
+  Arrival (ns):                14.777
+  Required (ns):               14.738
   Setup (ns):                  0.490
 
 Path 3
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          apb3_interface_0/pxl_0/counter[13]:D
-  Delay (ns):                  11.230
-  Slack (ns):                  -0.096
-  Arrival (ns):                14.785
-  Required (ns):               14.689
-  Setup (ns):                  0.522
+  To:                          apb3_interface_0/pxl_0/counter[11]:D
+  Delay (ns):                  11.128
+  Slack (ns):                  0.056
+  Arrival (ns):                14.683
+  Required (ns):               14.739
+  Setup (ns):                  0.490
 
 Path 4
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          apb3_interface_0/pxl_0/counter[3]:D
-  Delay (ns):                  11.258
-  Slack (ns):                  -0.091
-  Arrival (ns):                14.813
-  Required (ns):               14.722
+  To:                          apb3_interface_0/servo_0/counter[14]:D
+  Delay (ns):                  10.924
+  Slack (ns):                  0.274
+  Arrival (ns):                14.479
+  Required (ns):               14.753
   Setup (ns):                  0.490
 
 Path 5
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                          apb3_interface_0/pxl_0/counter[8]:D
-  Delay (ns):                  11.230
-  Slack (ns):                  -0.071
-  Arrival (ns):                14.785
-  Required (ns):               14.714
-  Setup (ns):                  0.522
+  To:                          apb3_interface_0/pxl_0/counter[12]:D
+  Delay (ns):                  10.832
+  Slack (ns):                  0.381
+  Arrival (ns):                14.387
+  Required (ns):               14.768
+  Setup (ns):                  0.490
 
 
 Expanded Path 1
   From: lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To: apb3_interface_0/pxl_0/counter[2]:D
-  data required time                             14.714
-  data arrival time                          -   15.666
-  slack                                          -0.952
+  To: apb3_interface_0/pxl_0/counter[13]:D
+  data required time                             14.707
+  data arrival time                          -   14.754
+  slack                                          -0.047
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla0
@@ -1076,18 +1066,22 @@ Expanded Path 1
   10.029                       lockNET_SF_MSS_0/MSS_ADLIB_INST_RNI2GO1/U_CLKSRC:A (r)
                +     0.699          cell: ADLIB:CLKSRC
   10.728                       lockNET_SF_MSS_0/MSS_ADLIB_INST_RNI2GO1/U_CLKSRC:Y (r)
-               +     0.604          net: lockNET_SF_MSS_0_M2F_RESET_N
-  11.332                       apb3_interface_0/pxl_0/send_pixel_RNIAS1H3[4]:A (r)
+               +     0.601          net: lockNET_SF_MSS_0_M2F_RESET_N
+  11.329                       apb3_interface_0/pxl_0/send_pixel_RNIAS1H3[4]:A (r)
                +     0.478          cell: ADLIB:OR3B
-  11.810                       apb3_interface_0/pxl_0/send_pixel_RNIAS1H3[4]:Y (f)
-               +     3.115          net: apb3_interface_0/pxl_0/N_322
-  14.925                       apb3_interface_0/pxl_0/counter_RNO[2]:B (f)
+  11.807                       apb3_interface_0/pxl_0/send_pixel_RNIAS1H3[4]:Y (f)
+               +     1.196          net: apb3_interface_0/pxl_0/N_322
+  13.003                       apb3_interface_0/pxl_0/counter_RNO_0[13]:B (f)
                +     0.445          cell: ADLIB:NOR2A
-  15.370                       apb3_interface_0/pxl_0/counter_RNO[2]:Y (r)
-               +     0.296          net: apb3_interface_0/pxl_0/counter_n2
-  15.666                       apb3_interface_0/pxl_0/counter[2]:D (r)
+  13.448                       apb3_interface_0/pxl_0/counter_RNO_0[13]:Y (r)
+               +     0.325          net: apb3_interface_0/pxl_0/counter_38_0
+  13.773                       apb3_interface_0/pxl_0/counter_RNO[13]:B (r)
+               +     0.685          cell: ADLIB:AX1C
+  14.458                       apb3_interface_0/pxl_0/counter_RNO[13]:Y (f)
+               +     0.296          net: apb3_interface_0/pxl_0/counter_n13
+  14.754                       apb3_interface_0/pxl_0/counter[13]:D (f)
                                     
-  15.666                       data arrival time
+  14.754                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -1099,12 +1093,12 @@ Expanded Path 1
   14.630                       lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.606          net: FAB_CLK
-  15.236                       apb3_interface_0/pxl_0/counter[2]:CLK (r)
+               +     0.599          net: FAB_CLK
+  15.229                       apb3_interface_0/pxl_0/counter[13]:CLK (r)
                -     0.522          Library setup time: ADLIB:DFN1
-  14.714                       apb3_interface_0/pxl_0/counter[2]:D
+  14.707                       apb3_interface_0/pxl_0/counter[13]:D
                                     
-  14.714                       data required time
+  14.707                       data required time
 
 
 END SET mss_ccc_gla0 to mss_ccc_gla1
@@ -1207,9 +1201,9 @@ SET mss_ccc_gla1 to mss_ccc_gla0
 Path 1
   From:                        apb3_interface_0/nfc/fabint:CLK
   To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:FABINT
-  Delay (ns):                  3.501
-  Slack (ns):                  4.200
-  Arrival (ns):                8.731
+  Delay (ns):                  3.275
+  Slack (ns):                  4.426
+  Arrival (ns):                8.505
   Required (ns):               12.931
   Setup (ns):                  0.624
 
@@ -1218,8 +1212,8 @@ Expanded Path 1
   From: apb3_interface_0/nfc/fabint:CLK
   To: lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:FABINT
   data required time                             12.931
-  data arrival time                          -   8.731
-  slack                                          4.200
+  data arrival time                          -   8.505
+  slack                                          4.426
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -1235,14 +1229,14 @@ Expanded Path 1
   5.230                        apb3_interface_0/nfc/fabint:CLK (r)
                +     0.671          cell: ADLIB:DFN1
   5.901                        apb3_interface_0/nfc/fabint:Q (f)
-               +     2.230          net: apb3_interface_0_FABINT
-  8.131                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_60:PIN5 (f)
+               +     2.004          net: apb3_interface_0_FABINT
+  7.905                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_60:PIN5 (f)
                +     0.190          cell: ADLIB:MSS_IF
-  8.321                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_60:PIN5INT (f)
+  8.095                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_60:PIN5INT (f)
                +     0.410          net: lockNET_SF_MSS_0/MSS_ADLIB_INST/FABINTINT_NET
-  8.731                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:FABINT (f)
+  8.505                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:FABINT (f)
                                     
-  8.731                        data arrival time
+  8.505                        data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla0
@@ -1259,58 +1253,6 @@ Expanded Path 1
 
 
 END SET mss_ccc_gla1 to mss_ccc_gla0
-
-----------------------------------------------------
-
-Clock Domain mss_ccc_macclk
-
-Info: The maximum frequency of this clock domain is limited by the period of pin lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:MACCLKCCC
-
-SET Register to Register
-
-No Path
-
-END SET Register to Register
-
-----------------------------------------------------
-
-SET External Setup
-
-No Path
-
-END SET External Setup
-
-----------------------------------------------------
-
-SET Clock to Output
-
-No Path
-
-END SET Clock to Output
-
-----------------------------------------------------
-
-SET Register to Asynchronous
-
-No Path
-
-END SET Register to Asynchronous
-
-----------------------------------------------------
-
-SET External Recovery
-
-No Path
-
-END SET External Recovery
-
-----------------------------------------------------
-
-SET Asynchronous to Register
-
-No Path
-
-END SET Asynchronous to Register
 
 ----------------------------------------------------
 

@@ -51,8 +51,24 @@ __attribute__ ((interrupt)) void GPIO1_IRQHandler( void )
 int main()
 {
 	MSS_GPIO_init();
+	MSS_GPIO_config( MSS_GPIO_8, MSS_GPIO_OUTPUT_MODE);
+	MSS_GPIO_config( MSS_GPIO_9, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE );
+	//MSS_GPIO_config( MSS_GPIO_10, MSS_GPIO_INOUT_MODE);
+	MSS_GPIO_set_output(MSS_GPIO_8, 1);
 
 	int init_res = LORA_init();
+
+	uint8_t send_buf[] = {0x01, 0x03, 0x05, 0x07};
+
+	LORA_write(RH_RF95_REG_0D_FIFO_ADDR_PTR, 0);
+	LORA_burst_write(RH_RF95_REG_00_FIFO, send_buf, 4);
+
+	int i;
+	for (i = 0; i < 100000; ++i);
+
+	LORA_write(RH_RF95_REG_0D_FIFO_ADDR_PTR, 0);
+	uint8_t read_buf[4];
+	LORA_burst_read(RH_RF95_REG_00_FIFO, read_buf, 4);
 	//LORA_read_addr(LORA_RegFifoTxBaseAddr);
 	/*
 	// MSS_GPIO initialization

@@ -59,19 +59,19 @@ Report for cell lockNET_SF.verilog
 
   IO Cell usage:
               cell count
-         BIBUF_MSS     4
+         BIBUF_MSS     3
    BIBUF_OPEND_MSS     2
              INBUF     1
-         INBUF_MSS    10
+         INBUF_MSS     6
             OUTBUF     3
-        OUTBUF_MSS     7
+        OUTBUF_MSS     3
        TRIBUFF_MSS     1
                    -----
-             TOTAL    28
+             TOTAL    19
 
 
 Core Cells         : 709 of 4608 (15%)
-IO Cells           : 28
+IO Cells           : 19
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

@@ -1,16 +1,16 @@
 C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synlog\report\lockNET_SF_fpga_mapper.xml  -top_level_module  lockNET_SF  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn   -freq 100.000   -tcl  N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell_syn.sdc  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_prem.srd  -sap  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.sap  -otap  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.tap  -omap  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.map  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\smartfusion.v  -sap  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.sap  -ologparam  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\syntmp\lockNET_SF.plg  -osyn  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.srm  -prjdir  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\  -prjname  lockNET_SF_syn  -log  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synlog\lockNET_SF_fpga_mapper.srr 
 rc:1 success:1 runtime:7
 file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\scratchproject.prs|io:o|time:1511740813|size:3312|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn|io:o|time:1511744750|size:519712|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell_syn.sdc|io:i|time:1511744643|size:200|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_prem.srd|io:i|time:1511744741|size:50015|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.sap|io:o|time:1511744744|size:1173|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn|io:o|time:1511828720|size:512457|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell_syn.sdc|io:i|time:1511828653|size:200|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_prem.srd|io:i|time:1511828713|size:48607|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.sap|io:o|time:1511828714|size:1173|exec:0
 file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.tap|io:o|time:0|size:0|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.map|io:o|time:1511744751|size:28|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.map|io:o|time:1511828721|size:28|exec:0
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1487959650|size:72817|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.sap|io:o|time:1511744744|size:1173|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\syntmp\lockNET_SF.plg|io:o|time:1511744751|size:867|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.srm|io:o|time:1511744750|size:70776|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synlog\lockNET_SF_fpga_mapper.srr|io:o|time:1511744751|size:71914|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.sap|io:o|time:1511828714|size:1173|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\syntmp\lockNET_SF.plg|io:o|time:1511828721|size:867|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.srm|io:o|time:1511828720|size:70245|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synlog\lockNET_SF_fpga_mapper.srr|io:o|time:1511828721|size:71914|exec:0
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479392234|size:10978304|exec:1
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479393640|size:14125056|exec:1

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sun Nov 26 20:04:18 2017
+// Created by SmartDesign Mon Nov 27 19:24:27 2017
 // Version: v11.8 11.8.0.26
 //////////////////////////////////////////////////////////////////////
 
@@ -10,9 +10,6 @@ module lockNET_SF(
     // Inputs
     GPIO_1_IN,
     GPIO_9_IN,
-    MAC_0_CRSDV,
-    MAC_0_RXD,
-    MAC_0_RXER,
     MSS_RESET_N,
     PIN_NFC_IRQ,
     SPI_1_DI,
@@ -21,9 +18,6 @@ module lockNET_SF(
     // Outputs
     GPIO_8_OUT,
     M2F_GPO_0,
-    MAC_0_MDC,
-    MAC_0_TXD,
-    MAC_0_TXEN,
     NP_OUT,
     SERVO_OUT,
     SPI_1_DO,
@@ -33,7 +27,6 @@ module lockNET_SF(
     GPIO_10_BI,
     I2C_1_SCL,
     I2C_1_SDA,
-    MAC_0_MDIO,
     SPI_1_CLK,
     SPI_1_SS
 );
@@ -41,38 +34,31 @@ module lockNET_SF(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
-input        GPIO_1_IN;
-input        GPIO_9_IN;
-input        MAC_0_CRSDV;
-input  [1:0] MAC_0_RXD;
-input        MAC_0_RXER;
-input        MSS_RESET_N;
-input        PIN_NFC_IRQ;
-input        SPI_1_DI;
-input        UART_0_RXD;
-input        UART_1_RXD;
+input  GPIO_1_IN;
+input  GPIO_9_IN;
+input  MSS_RESET_N;
+input  PIN_NFC_IRQ;
+input  SPI_1_DI;
+input  UART_0_RXD;
+input  UART_1_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
-output       GPIO_8_OUT;
-output       M2F_GPO_0;
-output       MAC_0_MDC;
-output [1:0] MAC_0_TXD;
-output       MAC_0_TXEN;
-output       NP_OUT;
-output       SERVO_OUT;
-output       SPI_1_DO;
-output       UART_0_TXD;
-output       UART_1_TXD;
+output GPIO_8_OUT;
+output M2F_GPO_0;
+output NP_OUT;
+output SERVO_OUT;
+output SPI_1_DO;
+output UART_0_TXD;
+output UART_1_TXD;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
-inout        GPIO_10_BI;
-inout        I2C_1_SCL;
-inout        I2C_1_SDA;
-inout        MAC_0_MDIO;
-inout        SPI_1_CLK;
-inout        SPI_1_SS;
+inout  GPIO_10_BI;
+inout  I2C_1_SCL;
+inout  I2C_1_SDA;
+inout  SPI_1_CLK;
+inout  SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -100,35 +86,25 @@ wire          lockNET_SF_MSS_0_MSS_MASTER_APB_PSLVERR;
 wire   [31:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PWDATA;
 wire          lockNET_SF_MSS_0_MSS_MASTER_APB_PWRITE;
 wire          M2F_GPO_0_net_0;
-wire          MAC_0_CRSDV;
-wire          MAC_0_MDC_net_0;
-wire          MAC_0_MDIO;
-wire   [1:0]  MAC_0_RXD;
-wire          MAC_0_RXER;
-wire   [1:0]  MAC_0_TXD_net_0;
-wire          MAC_0_TXEN_net_0;
 wire          MSS_RESET_N;
 wire          NP_OUT_net_0;
 wire          PIN_NFC_IRQ;
 wire          SERVO_OUT_net_0;
 wire          SPI_1_CLK;
 wire          SPI_1_DI;
-wire          SPI_1_DO_1;
+wire          SPI_1_DO_0;
 wire          SPI_1_SS;
 wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
 wire          UART_1_RXD;
-wire          UART_1_TXD_1;
+wire          UART_1_TXD_0;
 wire          UART_0_TXD_net_1;
-wire          MAC_0_TXEN_net_1;
-wire          MAC_0_MDC_net_1;
 wire          M2F_GPO_0_net_1;
 wire          NP_OUT_net_1;
 wire          SERVO_OUT_net_1;
-wire   [1:0]  MAC_0_TXD_net_1;
 wire          GPIO_8_OUT_net_1;
-wire          SPI_1_DO_1_net_0;
-wire          UART_1_TXD_1_net_0;
+wire          SPI_1_DO_0_net_0;
+wire          UART_1_TXD_0_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -188,24 +164,18 @@ assign PRDATAS16_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 assign UART_0_TXD_net_1   = UART_0_TXD_net_0;
 assign UART_0_TXD         = UART_0_TXD_net_1;
-assign MAC_0_TXEN_net_1   = MAC_0_TXEN_net_0;
-assign MAC_0_TXEN         = MAC_0_TXEN_net_1;
-assign MAC_0_MDC_net_1    = MAC_0_MDC_net_0;
-assign MAC_0_MDC          = MAC_0_MDC_net_1;
 assign M2F_GPO_0_net_1    = M2F_GPO_0_net_0;
 assign M2F_GPO_0          = M2F_GPO_0_net_1;
 assign NP_OUT_net_1       = NP_OUT_net_0;
 assign NP_OUT             = NP_OUT_net_1;
 assign SERVO_OUT_net_1    = SERVO_OUT_net_0;
 assign SERVO_OUT          = SERVO_OUT_net_1;
-assign MAC_0_TXD_net_1    = MAC_0_TXD_net_0;
-assign MAC_0_TXD[1:0]     = MAC_0_TXD_net_1;
 assign GPIO_8_OUT_net_1   = GPIO_8_OUT_net_0;
 assign GPIO_8_OUT         = GPIO_8_OUT_net_1;
-assign SPI_1_DO_1_net_0   = SPI_1_DO_1;
-assign SPI_1_DO           = SPI_1_DO_1_net_0;
-assign UART_1_TXD_1_net_0 = UART_1_TXD_1;
-assign UART_1_TXD         = UART_1_TXD_1_net_0;
+assign SPI_1_DO_0_net_0   = SPI_1_DO_0;
+assign SPI_1_DO           = SPI_1_DO_0_net_0;
+assign UART_1_TXD_0_net_0 = UART_1_TXD_0;
+assign UART_1_TXD         = UART_1_TXD_0_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -373,15 +343,12 @@ lockNET_SF_MSS lockNET_SF_MSS_0(
         .UART_0_RXD  ( UART_0_RXD ),
         .MSSPREADY   ( lockNET_SF_MSS_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( lockNET_SF_MSS_0_MSS_MASTER_APB_PSLVERR ),
-        .MAC_0_CRSDV ( MAC_0_CRSDV ),
-        .MAC_0_RXER  ( MAC_0_RXER ),
         .GPIO_1_IN   ( GPIO_1_IN ),
         .FABINT      ( apb3_interface_0_FABINT ),
-        .MSSPRDATA   ( lockNET_SF_MSS_0_MSS_MASTER_APB_PRDATA ),
-        .MAC_0_RXD   ( MAC_0_RXD ),
         .GPIO_9_IN   ( GPIO_9_IN ),
         .SPI_1_DI    ( SPI_1_DI ),
         .UART_1_RXD  ( UART_1_RXD ),
+        .MSSPRDATA   ( lockNET_SF_MSS_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .FAB_CLK     ( lockNET_SF_MSS_0_FAB_CLK ),
         .M2F_RESET_N ( lockNET_SF_MSS_0_M2F_RESET_N ),
@@ -389,19 +356,15 @@ lockNET_SF_MSS lockNET_SF_MSS_0(
         .MSSPSEL     ( lockNET_SF_MSS_0_MSS_MASTER_APB_PSELx ),
         .MSSPENABLE  ( lockNET_SF_MSS_0_MSS_MASTER_APB_PENABLE ),
         .MSSPWRITE   ( lockNET_SF_MSS_0_MSS_MASTER_APB_PWRITE ),
-        .MAC_0_TXEN  ( MAC_0_TXEN_net_0 ),
-        .MAC_0_MDC   ( MAC_0_MDC_net_0 ),
         .M2F_GPO_0   ( M2F_GPO_0_net_0 ),
+        .GPIO_8_OUT  ( GPIO_8_OUT_net_0 ),
+        .SPI_1_DO    ( SPI_1_DO_0 ),
+        .UART_1_TXD  ( UART_1_TXD_0 ),
         .MSSPADDR    ( lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR ),
         .MSSPWDATA   ( lockNET_SF_MSS_0_MSS_MASTER_APB_PWDATA ),
-        .MAC_0_TXD   ( MAC_0_TXD_net_0 ),
-        .GPIO_8_OUT  ( GPIO_8_OUT_net_0 ),
-        .SPI_1_DO    ( SPI_1_DO_1 ),
-        .UART_1_TXD  ( UART_1_TXD_1 ),
         // Inouts
         .I2C_1_SCL   ( I2C_1_SCL ),
         .I2C_1_SDA   ( I2C_1_SDA ),
-        .MAC_0_MDIO  ( MAC_0_MDIO ),
         .SPI_1_CLK   ( SPI_1_CLK ),
         .SPI_1_SS    ( SPI_1_SS ),
         .GPIO_10_BI  ( GPIO_10_BI ) 

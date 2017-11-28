@@ -2,11 +2,11 @@ Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
 @N|Running in 64-bit mode
 File N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 71MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Nov 26 20:05:39 2017
+# Mon Nov 27 19:25:11 2017
 
 ###########################################################]

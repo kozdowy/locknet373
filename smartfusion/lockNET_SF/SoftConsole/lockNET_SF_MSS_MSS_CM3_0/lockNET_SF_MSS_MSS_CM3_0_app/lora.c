@@ -8,6 +8,7 @@
 #include "lora.h"
 
 const uint8_t frame_size = 16;
+const uint8_t burst_frame_size = 8;
 const uint8_t modem_default[] = {0x72, 0x74, 0x00};
 
 volatile uint8_t buf_len;
@@ -95,19 +96,18 @@ void LORA_set_header_flags(uint8_t set, uint8_t clear){
 // END RHGenericDriver code
 
 uint8_t LORA_init(void){
+
 	MSS_SPI_init(&g_mss_spi1);
 	MSS_SPI_configure_master_mode
 	(
 		&g_mss_spi1,
 		MSS_SPI_SLAVE_0,
-		MSS_SPI_NSC_MODE,
+		MSS_SPI_MODE0,
 		MSS_SPI_PCLK_DIV_256,
 		frame_size
 	);
 
-	//MSS_GPIO_config( MSS_GPIO_8, MSS_GPIO_OUTPUT_MODE);
-	MSS_GPIO_config( MSS_GPIO_9, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE );
-	//MSS_GPIO_config( MSS_GPIO_10, MSS_GPIO_INOUT_MODE);
+
 
 
 	//MSS_GPIO_drive_inout(MSS_GPIO_10, MSS_GPIO_HIGH_Z);
@@ -297,40 +297,80 @@ uint8_t LORA_recv(uint8_t* in_buf, uint8_t* len){
 
 uint8_t LORA_read(uint8_t addr){
 	uint8_t response;
-	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+	//MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+	MSS_GPIO_set_output(MSS_GPIO_8, 0);
 	response = MSS_SPI_transfer_frame(&g_mss_spi1, addr << 8);
-	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+	MSS_GPIO_set_output(MSS_GPIO_8, 1);
+	//MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
 	return response;
 }
 
 void LORA_write(uint8_t addr, uint8_t data){
 	uint16_t cmd = (1 << 15) | (addr << 8) | data;
 	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+	MSS_GPIO_set_output(MSS_GPIO_8, 0);
 	MSS_SPI_transfer_frame( &g_mss_spi1, cmd);
+	MSS_GPIO_set_output(MSS_GPIO_8, 1);
 	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
 }
 
 // TODO: make sure these can properly do burst
 uint8_t LORA_burst_read(uint8_t addr, uint8_t* res, uint8_t len){
+	MSS_SPI_configure_master_mode
+		(
+			&g_mss_spi1,
+			MSS_SPI_SLAVE_0,
+			MSS_SPI_MODE0,
+			MSS_SPI_PCLK_DIV_256,
+			burst_frame_size
+		);
   uint8_t status = 0;
-	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+  MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+  MSS_GPIO_set_output(MSS_GPIO_8, 0);
   status = MSS_SPI_transfer_frame(&g_mss_spi1, addr);
   int i;
   for (i = 0; i < len; ++i){
     res[i] = MSS_SPI_transfer_frame(&g_mss_spi1, 0);
   }
-	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
-	return status;
+  MSS_GPIO_set_output(MSS_GPIO_8, 1);
+  MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+  MSS_SPI_configure_master_mode
+  	(
+  		&g_mss_spi1,
+  		MSS_SPI_SLAVE_0,
+  		MSS_SPI_MODE0,
+  		MSS_SPI_PCLK_DIV_256,
+  		frame_size
+  	);
+  return status;
 }
 
 uint8_t LORA_burst_write(uint8_t addr, uint8_t* src, uint8_t len){
+	MSS_SPI_configure_master_mode
+	(
+		&g_mss_spi1,
+		MSS_SPI_SLAVE_0,
+		MSS_SPI_MODE0,
+		MSS_SPI_PCLK_DIV_256,
+		burst_frame_size
+	);
   uint8_t status = 0;
-	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+  MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+  MSS_GPIO_set_output(MSS_GPIO_8, 0);
   status = MSS_SPI_transfer_frame(&g_mss_spi1, (1 << 7) | addr);
   int i;
   for (i = 0; i < len; ++i){
     MSS_SPI_transfer_frame(&g_mss_spi1, src[i]);
   }
-	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
-	return status;
+  MSS_GPIO_set_output(MSS_GPIO_8, 1);
+  MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+  MSS_SPI_configure_master_mode
+  	(
+  		&g_mss_spi1,
+  		MSS_SPI_SLAVE_0,
+  		MSS_SPI_MODE0,
+  		MSS_SPI_PCLK_DIV_256,
+  		frame_size
+  	);
+  return status;
 }

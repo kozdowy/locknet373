@@ -2,7 +2,7 @@ Timing Violation Report Max Delay Analysis
 
 SmartTime Version v11.8
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
-Date: Sun Nov 26 20:07:12 2017
+Date: Mon Nov 27 19:28:27 2017
 
 
 Design: lockNET_SF
@@ -21,802 +21,802 @@ Scenario for Timing Analysis: Primary
 
 
 Path 1
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[2]:D
-  Delay (ns):                  14.500
-  Slack (ns):                  -3.334
-  Arrival (ns):                18.055
-  Required (ns):               14.721
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.475
+  Slack (ns):                  -4.019
+  Arrival (ns):                18.745
+  Required (ns):               14.726
 
 Path 2
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[9]:D
-  Delay (ns):                  14.477
-  Slack (ns):                  -3.294
-  Arrival (ns):                18.032
-  Required (ns):               14.738
+  From:                        apb3_interface_0/servo_0/counter[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.398
+  Slack (ns):                  -3.942
+  Arrival (ns):                18.668
+  Required (ns):               14.726
 
 Path 3
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.749
-  Slack (ns):                  -3.246
-  Arrival (ns):                18.004
-  Required (ns):               14.758
+  From:                        apb3_interface_0/servo_0/counter[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.387
+  Slack (ns):                  -3.909
+  Arrival (ns):                18.635
+  Required (ns):               14.726
 
 Path 4
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.725
-  Slack (ns):                  -3.222
-  Arrival (ns):                17.980
-  Required (ns):               14.758
+  From:                        apb3_interface_0/servo_0/counter[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.290
+  Slack (ns):                  -3.823
+  Arrival (ns):                18.549
+  Required (ns):               14.726
 
 Path 5
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[15]:D
-  Delay (ns):                  12.688
-  Slack (ns):                  -3.178
-  Arrival (ns):                17.943
-  Required (ns):               14.765
+  From:                        apb3_interface_0/servo_0/pulse_comp[0]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.168
+  Slack (ns):                  -3.685
+  Arrival (ns):                18.411
+  Required (ns):               14.726
 
 Path 6
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[0]:D
-  Delay (ns):                  12.705
-  Slack (ns):                  -3.165
-  Arrival (ns):                17.960
-  Required (ns):               14.795
+  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.108
+  Slack (ns):                  -3.652
+  Arrival (ns):                18.378
+  Required (ns):               14.726
 
 Path 7
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.649
-  Slack (ns):                  -3.146
-  Arrival (ns):                17.904
-  Required (ns):               14.758
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  13.087
+  Slack (ns):                  -3.631
+  Arrival (ns):                18.357
+  Required (ns):               14.726
 
 Path 8
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.625
-  Slack (ns):                  -3.122
-  Arrival (ns):                17.880
-  Required (ns):               14.758
+  From:                        apb3_interface_0/servo_0/counter[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.102
+  Slack (ns):                  -3.629
+  Arrival (ns):                18.355
+  Required (ns):               14.726
 
 Path 9
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[15]:D
-  Delay (ns):                  12.588
-  Slack (ns):                  -3.078
-  Arrival (ns):                17.843
-  Required (ns):               14.765
+  From:                        apb3_interface_0/servo_0/pulse_comp[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.048
+  Slack (ns):                  -3.586
+  Arrival (ns):                18.312
+  Required (ns):               14.726
 
 Path 10
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[0]:D
-  Delay (ns):                  12.605
-  Slack (ns):                  -3.065
-  Arrival (ns):                17.860
-  Required (ns):               14.795
+  From:                        apb3_interface_0/servo_0/counter[1]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  13.063
+  Slack (ns):                  -3.580
+  Arrival (ns):                18.306
+  Required (ns):               14.726
 
 Path 11
-  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.518
-  Slack (ns):                  -3.020
-  Arrival (ns):                17.778
-  Required (ns):               14.758
+  From:                        apb3_interface_0/servo_0/counter[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  13.010
+  Slack (ns):                  -3.554
+  Arrival (ns):                18.280
+  Required (ns):               14.726
 
 Path 12
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[10]:D
-  Delay (ns):                  12.522
-  Slack (ns):                  -3.012
-  Arrival (ns):                17.777
-  Required (ns):               14.765
+  From:                        apb3_interface_0/servo_0/counter[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.999
+  Slack (ns):                  -3.521
+  Arrival (ns):                18.247
+  Required (ns):               14.726
 
 Path 13
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[25]:D
-  Delay (ns):                  12.498
-  Slack (ns):                  -3.012
-  Arrival (ns):                17.753
-  Required (ns):               14.741
+  From:                        apb3_interface_0/servo_0/pulse_comp[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.974
+  Slack (ns):                  -3.496
+  Arrival (ns):                18.222
+  Required (ns):               14.726
 
 Path 14
-  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.494
-  Slack (ns):                  -2.996
-  Arrival (ns):                17.754
-  Required (ns):               14.758
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.963
+  Slack (ns):                  -3.490
+  Arrival (ns):                18.233
+  Required (ns):               14.743
 
 Path 15
+  From:                        apb3_interface_0/servo_0/pulse_comp[6]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.966
+  Slack (ns):                  -3.488
+  Arrival (ns):                18.214
+  Required (ns):               14.726
+
+Path 16
+  From:                        apb3_interface_0/servo_0/counter[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.902
+  Slack (ns):                  -3.435
+  Arrival (ns):                18.161
+  Required (ns):               14.726
+
+Path 17
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.911
+  Slack (ns):                  -3.428
+  Arrival (ns):                18.181
+  Required (ns):               14.753
+
+Path 18
+  From:                        apb3_interface_0/servo_0/counter[27]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.892
+  Slack (ns):                  -3.426
+  Arrival (ns):                18.152
+  Required (ns):               14.726
+
+Path 19
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.902
+  Slack (ns):                  -3.414
+  Arrival (ns):                18.172
+  Required (ns):               14.758
+
+Path 20
+  From:                        apb3_interface_0/servo_0/counter[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.886
+  Slack (ns):                  -3.413
+  Arrival (ns):                18.156
+  Required (ns):               14.743
+
+Path 21
+  From:                        apb3_interface_0/servo_0/counter[0]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.884
+  Slack (ns):                  -3.401
+  Arrival (ns):                18.127
+  Required (ns):               14.726
+
+Path 22
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[26]:D
+  Delay (ns):                  12.893
+  Slack (ns):                  -3.393
+  Arrival (ns):                18.163
+  Required (ns):               14.770
+
+Path 23
+  From:                        apb3_interface_0/servo_0/counter[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.875
+  Slack (ns):                  -3.380
+  Arrival (ns):                18.123
+  Required (ns):               14.743
+
+Path 24
+  From:                        apb3_interface_0/servo_0/counter[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.834
+  Slack (ns):                  -3.351
+  Arrival (ns):                18.104
+  Required (ns):               14.753
+
+Path 25
+  From:                        apb3_interface_0/servo_0/counter[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.825
+  Slack (ns):                  -3.337
+  Arrival (ns):                18.095
+  Required (ns):               14.758
+
+Path 26
+  From:                        apb3_interface_0/servo_0/counter[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.823
+  Slack (ns):                  -3.318
+  Arrival (ns):                18.071
+  Required (ns):               14.753
+
+Path 27
+  From:                        apb3_interface_0/servo_0/counter[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[26]:D
+  Delay (ns):                  12.816
+  Slack (ns):                  -3.316
+  Arrival (ns):                18.086
+  Required (ns):               14.770
+
+Path 28
+  From:                        apb3_interface_0/servo_0/counter[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.814
+  Slack (ns):                  -3.304
+  Arrival (ns):                18.062
+  Required (ns):               14.758
+
+Path 29
+  From:                        apb3_interface_0/servo_0/pulse_comp[0]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.780
+  Slack (ns):                  -3.297
+  Arrival (ns):                18.023
+  Required (ns):               14.726
+
+Path 30
+  From:                        apb3_interface_0/servo_0/counter[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.778
+  Slack (ns):                  -3.294
+  Arrival (ns):                18.037
+  Required (ns):               14.743
+
+Path 31
+  From:                        apb3_interface_0/servo_0/counter[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[26]:D
+  Delay (ns):                  12.805
+  Slack (ns):                  -3.283
+  Arrival (ns):                18.053
+  Required (ns):               14.770
+
+Path 32
+  From:                        apb3_interface_0/servo_0/counter[3]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.748
+  Slack (ns):                  -3.265
+  Arrival (ns):                17.991
+  Required (ns):               14.726
+
+Path 33
+  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.720
+  Slack (ns):                  -3.264
+  Arrival (ns):                17.990
+  Required (ns):               14.726
+
+Path 34
+  From:                        apb3_interface_0/servo_0/counter[25]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.711
+  Slack (ns):                  -3.256
+  Arrival (ns):                17.982
+  Required (ns):               14.726
+
+Path 35
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[3]:D
+  Delay (ns):                  12.735
+  Slack (ns):                  -3.252
+  Arrival (ns):                18.005
+  Required (ns):               14.753
+
+Path 36
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[20]:D
+  Delay (ns):                  12.725
+  Slack (ns):                  -3.247
+  Arrival (ns):                17.995
+  Required (ns):               14.748
+
+Path 37
+  From:                        apb3_interface_0/servo_0/counter[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.714
+  Slack (ns):                  -3.241
+  Arrival (ns):                17.967
+  Required (ns):               14.726
+
+Path 38
+  From:                        apb3_interface_0/servo_0/counter[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.726
+  Slack (ns):                  -3.232
+  Arrival (ns):                17.985
+  Required (ns):               14.753
+
+Path 39
+  From:                        apb3_interface_0/servo_0/counter[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.717
+  Slack (ns):                  -3.218
+  Arrival (ns):                17.976
+  Required (ns):               14.758
+
+Path 40
+  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          apb3_interface_0/pxl_0/neopixel_reg[2]:D
+  Delay (ns):                  14.389
+  Slack (ns):                  -3.211
+  Arrival (ns):                17.944
+  Required (ns):               14.733
+
+Path 41
+  From:                        apb3_interface_0/servo_0/pulse_comp[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.660
+  Slack (ns):                  -3.198
+  Arrival (ns):                17.924
+  Required (ns):               14.726
+
+Path 42
+  From:                        apb3_interface_0/servo_0/counter[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[26]:D
+  Delay (ns):                  12.708
+  Slack (ns):                  -3.197
+  Arrival (ns):                17.967
+  Required (ns):               14.770
+
+Path 43
   From:                        apb3_interface_0/servo_0/counter[1]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.454
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.675
+  Slack (ns):                  -3.192
+  Arrival (ns):                17.918
+  Required (ns):               14.726
+
+Path 44
+  From:                        apb3_interface_0/servo_0/counter[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[3]:D
+  Delay (ns):                  12.658
+  Slack (ns):                  -3.175
+  Arrival (ns):                17.928
+  Required (ns):               14.753
+
+Path 45
+  From:                        apb3_interface_0/servo_0/counter[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[20]:D
+  Delay (ns):                  12.648
+  Slack (ns):                  -3.170
+  Arrival (ns):                17.918
+  Required (ns):               14.748
+
+Path 46
+  From:                        apb3_interface_0/servo_0/pulse_comp[0]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.656
+  Slack (ns):                  -3.156
+  Arrival (ns):                17.899
+  Required (ns):               14.743
+
+Path 47
+  From:                        apb3_interface_0/servo_0/counter[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[3]:D
+  Delay (ns):                  12.647
+  Slack (ns):                  -3.142
+  Arrival (ns):                17.895
+  Required (ns):               14.753
+
+Path 48
+  From:                        apb3_interface_0/servo_0/counter[20]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.629
+  Slack (ns):                  -3.141
+  Arrival (ns):                17.867
+  Required (ns):               14.726
+
+Path 49
+  From:                        apb3_interface_0/servo_0/counter[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[20]:D
+  Delay (ns):                  12.637
+  Slack (ns):                  -3.137
+  Arrival (ns):                17.885
+  Required (ns):               14.748
+
+Path 50
+  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.596
+  Slack (ns):                  -3.123
+  Arrival (ns):                17.866
+  Required (ns):               14.743
+
+Path 51
+  From:                        apb3_interface_0/servo_0/pulse_comp[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.586
+  Slack (ns):                  -3.108
+  Arrival (ns):                17.834
+  Required (ns):               14.726
+
+Path 52
+  From:                        apb3_interface_0/servo_0/counter[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.590
+  Slack (ns):                  -3.100
+  Arrival (ns):                17.843
+  Required (ns):               14.743
+
+Path 53
+  From:                        apb3_interface_0/servo_0/pulse_comp[6]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.578
+  Slack (ns):                  -3.100
+  Arrival (ns):                17.826
+  Required (ns):               14.726
+
+Path 54
+  From:                        apb3_interface_0/servo_0/pulse_comp[0]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.604
+  Slack (ns):                  -3.094
+  Arrival (ns):                17.847
+  Required (ns):               14.753
+
+Path 55
+  From:                        apb3_interface_0/servo_0/pulse_comp[0]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.595
+  Slack (ns):                  -3.080
+  Arrival (ns):                17.838
+  Required (ns):               14.758
+
+Path 56
+  From:                        apb3_interface_0/servo_0/counter[13]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.530
+  Slack (ns):                  -3.074
+  Arrival (ns):                17.800
+  Required (ns):               14.726
+
+Path 57
+  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          apb3_interface_0/pxl_0/neopixel_reg[15]:D
+  Delay (ns):                  14.230
+  Slack (ns):                  -3.067
+  Arrival (ns):                17.785
+  Required (ns):               14.718
+
+Path 58
+  From:                        apb3_interface_0/servo_0/counter[2]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.558
+  Slack (ns):                  -3.065
+  Arrival (ns):                17.791
+  Required (ns):               14.726
+
+Path 59
+  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.544
+  Slack (ns):                  -3.061
+  Arrival (ns):                17.814
+  Required (ns):               14.753
+
+Path 60
+  From:                        apb3_interface_0/servo_0/pulse_comp[0]:CLK
+  To:                          apb3_interface_0/servo_0/counter[26]:D
+  Delay (ns):                  12.586
+  Slack (ns):                  -3.059
+  Arrival (ns):                17.829
+  Required (ns):               14.770
+
+Path 61
+  From:                        apb3_interface_0/servo_0/counter[6]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.537
+  Slack (ns):                  -3.059
+  Arrival (ns):                17.785
+  Required (ns):               14.726
+
+Path 62
+  From:                        apb3_interface_0/servo_0/pulse_comp[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.536
+  Slack (ns):                  -3.057
+  Arrival (ns):                17.800
+  Required (ns):               14.743
+
+Path 63
+  From:                        apb3_interface_0/servo_0/counter[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[3]:D
+  Delay (ns):                  12.550
+  Slack (ns):                  -3.056
+  Arrival (ns):                17.809
+  Required (ns):               14.753
+
+Path 64
+  From:                        apb3_interface_0/servo_0/counter[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[20]:D
+  Delay (ns):                  12.540
+  Slack (ns):                  -3.051
+  Arrival (ns):                17.799
+  Required (ns):               14.748
+
+Path 65
+  From:                        apb3_interface_0/servo_0/counter[1]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.551
+  Slack (ns):                  -3.051
+  Arrival (ns):                17.794
+  Required (ns):               14.743
+
+Path 66
+  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.535
+  Slack (ns):                  -3.047
+  Arrival (ns):                17.805
+  Required (ns):               14.758
+
+Path 67
+  From:                        apb3_interface_0/servo_0/counter[27]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.504
+  Slack (ns):                  -3.038
+  Arrival (ns):                17.764
+  Required (ns):               14.726
+
+Path 68
+  From:                        apb3_interface_0/servo_0/counter[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.538
+  Slack (ns):                  -3.038
+  Arrival (ns):                17.791
+  Required (ns):               14.753
+
+Path 69
+  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[26]:D
+  Delay (ns):                  12.526
+  Slack (ns):                  -3.026
+  Arrival (ns):                17.796
+  Required (ns):               14.770
+
+Path 70
+  From:                        apb3_interface_0/servo_0/counter[21]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.480
+  Slack (ns):                  -3.025
+  Arrival (ns):                17.751
+  Required (ns):               14.726
+
+Path 71
+  From:                        apb3_interface_0/servo_0/counter[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.529
+  Slack (ns):                  -3.024
+  Arrival (ns):                17.782
+  Required (ns):               14.758
+
+Path 72
+  From:                        apb3_interface_0/servo_0/counter[0]:CLK
+  To:                          apb3_interface_0/servo_0/counter[5]:D
+  Delay (ns):                  12.496
+  Slack (ns):                  -3.013
+  Arrival (ns):                17.739
+  Required (ns):               14.726
+
+Path 73
+  From:                        apb3_interface_0/servo_0/counter[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[26]:D
+  Delay (ns):                  12.520
+  Slack (ns):                  -3.003
+  Arrival (ns):                17.773
+  Required (ns):               14.770
+
+Path 74
+  From:                        apb3_interface_0/servo_0/pulse_comp[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.484
+  Slack (ns):                  -2.995
+  Arrival (ns):                17.748
+  Required (ns):               14.753
+
+Path 75
+  From:                        apb3_interface_0/servo_0/counter[1]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.499
+  Slack (ns):                  -2.989
+  Arrival (ns):                17.742
+  Required (ns):               14.753
+
+Path 76
+  From:                        apb3_interface_0/servo_0/counter[9]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.462
+  Slack (ns):                  -2.984
+  Arrival (ns):                17.710
+  Required (ns):               14.726
+
+Path 77
+  From:                        apb3_interface_0/servo_0/pulse_comp[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.475
   Slack (ns):                  -2.981
   Arrival (ns):                17.739
   Required (ns):               14.758
 
-Path 16
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[0]:D
-  Delay (ns):                  14.139
-  Slack (ns):                  -2.973
-  Arrival (ns):                17.694
-  Required (ns):               14.721
-
-Path 17
-  From:                        apb3_interface_0/servo_0/counter[1]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.430
-  Slack (ns):                  -2.957
-  Arrival (ns):                17.715
-  Required (ns):               14.758
-
-Path 18
-  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[15]:D
-  Delay (ns):                  12.457
-  Slack (ns):                  -2.952
-  Arrival (ns):                17.717
-  Required (ns):               14.765
-
-Path 19
-  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[0]:D
-  Delay (ns):                  12.474
-  Slack (ns):                  -2.939
-  Arrival (ns):                17.734
-  Required (ns):               14.795
-
-Path 20
-  From:                        apb3_interface_0/servo_0/counter[6]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.454
-  Slack (ns):                  -2.939
-  Arrival (ns):                17.697
-  Required (ns):               14.758
-
-Path 21
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[7]:D
-  Delay (ns):                  14.072
-  Slack (ns):                  -2.916
-  Arrival (ns):                17.627
-  Required (ns):               14.711
-
-Path 22
-  From:                        apb3_interface_0/servo_0/counter[6]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.430
-  Slack (ns):                  -2.915
-  Arrival (ns):                17.673
-  Required (ns):               14.758
-
-Path 23
-  From:                        apb3_interface_0/servo_0/counter[1]:CLK
-  To:                          apb3_interface_0/servo_0/counter[15]:D
-  Delay (ns):                  12.393
-  Slack (ns):                  -2.913
-  Arrival (ns):                17.678
-  Required (ns):               14.765
-
-Path 24
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[10]:D
-  Delay (ns):                  12.422
-  Slack (ns):                  -2.912
-  Arrival (ns):                17.677
-  Required (ns):               14.765
-
-Path 25
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[25]:D
-  Delay (ns):                  12.398
-  Slack (ns):                  -2.912
-  Arrival (ns):                17.653
-  Required (ns):               14.741
-
-Path 26
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[12]:D
-  Delay (ns):                  14.072
-  Slack (ns):                  -2.906
-  Arrival (ns):                17.627
-  Required (ns):               14.721
-
-Path 27
-  From:                        apb3_interface_0/servo_0/counter[1]:CLK
-  To:                          apb3_interface_0/servo_0/counter[0]:D
-  Delay (ns):                  12.410
-  Slack (ns):                  -2.900
-  Arrival (ns):                17.695
-  Required (ns):               14.795
-
-Path 28
-  From:                        apb3_interface_0/servo_0/counter[6]:CLK
-  To:                          apb3_interface_0/servo_0/counter[15]:D
-  Delay (ns):                  12.393
-  Slack (ns):                  -2.871
-  Arrival (ns):                17.636
-  Required (ns):               14.765
-
-Path 29
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[11]:D
-  Delay (ns):                  14.012
-  Slack (ns):                  -2.858
-  Arrival (ns):                17.567
-  Required (ns):               14.709
-
-Path 30
-  From:                        apb3_interface_0/servo_0/counter[6]:CLK
-  To:                          apb3_interface_0/servo_0/counter[0]:D
-  Delay (ns):                  12.410
-  Slack (ns):                  -2.858
-  Arrival (ns):                17.653
-  Required (ns):               14.795
-
-Path 31
-  From:                        apb3_interface_0/servo_0/counter[0]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.304
-  Slack (ns):                  -2.831
-  Arrival (ns):                17.589
-  Required (ns):               14.758
-
-Path 32
-  From:                        apb3_interface_0/servo_0/counter[0]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.280
-  Slack (ns):                  -2.807
-  Arrival (ns):                17.565
-  Required (ns):               14.758
-
-Path 33
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[10]:D
-  Delay (ns):                  13.959
-  Slack (ns):                  -2.805
-  Arrival (ns):                17.514
-  Required (ns):               14.709
-
-Path 34
-  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[10]:D
-  Delay (ns):                  12.291
-  Slack (ns):                  -2.786
-  Arrival (ns):                17.551
-  Required (ns):               14.765
-
-Path 35
-  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[25]:D
-  Delay (ns):                  12.267
-  Slack (ns):                  -2.786
-  Arrival (ns):                17.527
-  Required (ns):               14.741
-
-Path 36
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[15]:D
-  Delay (ns):                  13.950
-  Slack (ns):                  -2.767
-  Arrival (ns):                17.505
-  Required (ns):               14.738
-
-Path 37
-  From:                        apb3_interface_0/servo_0/counter[0]:CLK
-  To:                          apb3_interface_0/servo_0/counter[15]:D
-  Delay (ns):                  12.243
-  Slack (ns):                  -2.763
-  Arrival (ns):                17.528
-  Required (ns):               14.765
-
-Path 38
-  From:                        apb3_interface_0/servo_0/counter[0]:CLK
-  To:                          apb3_interface_0/servo_0/counter[0]:D
-  Delay (ns):                  12.260
-  Slack (ns):                  -2.750
-  Arrival (ns):                17.545
-  Required (ns):               14.795
-
-Path 39
-  From:                        apb3_interface_0/servo_0/counter[1]:CLK
-  To:                          apb3_interface_0/servo_0/counter[10]:D
-  Delay (ns):                  12.227
-  Slack (ns):                  -2.747
-  Arrival (ns):                17.512
-  Required (ns):               14.765
-
-Path 40
-  From:                        apb3_interface_0/servo_0/counter[1]:CLK
-  To:                          apb3_interface_0/servo_0/counter[25]:D
-  Delay (ns):                  12.203
-  Slack (ns):                  -2.747
-  Arrival (ns):                17.488
-  Required (ns):               14.741
-
-Path 41
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[19]:D
-  Delay (ns):                  13.911
-  Slack (ns):                  -2.745
-  Arrival (ns):                17.466
-  Required (ns):               14.721
-
-Path 42
-  From:                        apb3_interface_0/servo_0/counter[27]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.218
-  Slack (ns):                  -2.736
-  Arrival (ns):                17.494
-  Required (ns):               14.758
-
-Path 43
-  From:                        apb3_interface_0/servo_0/counter[27]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.194
-  Slack (ns):                  -2.712
-  Arrival (ns):                17.470
-  Required (ns):               14.758
-
-Path 44
-  From:                        apb3_interface_0/servo_0/counter[6]:CLK
-  To:                          apb3_interface_0/servo_0/counter[10]:D
-  Delay (ns):                  12.227
-  Slack (ns):                  -2.705
-  Arrival (ns):                17.470
-  Required (ns):               14.765
-
-Path 45
-  From:                        apb3_interface_0/servo_0/counter[6]:CLK
-  To:                          apb3_interface_0/servo_0/counter[25]:D
-  Delay (ns):                  12.203
-  Slack (ns):                  -2.705
-  Arrival (ns):                17.446
-  Required (ns):               14.741
-
-Path 46
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[16]:D
-  Delay (ns):                  13.859
-  Slack (ns):                  -2.703
-  Arrival (ns):                17.414
-  Required (ns):               14.711
-
-Path 47
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[14]:D
-  Delay (ns):                  13.859
-  Slack (ns):                  -2.703
-  Arrival (ns):                17.414
-  Required (ns):               14.711
-
-Path 48
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[21]:D
-  Delay (ns):                  13.859
-  Slack (ns):                  -2.693
-  Arrival (ns):                17.414
-  Required (ns):               14.721
-
-Path 49
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[17]:D
-  Delay (ns):                  13.859
-  Slack (ns):                  -2.693
-  Arrival (ns):                17.414
-  Required (ns):               14.721
-
-Path 50
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[20]:D
-  Delay (ns):                  13.859
-  Slack (ns):                  -2.693
-  Arrival (ns):                17.414
-  Required (ns):               14.721
-
-Path 51
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[3]:D
-  Delay (ns):                  13.832
-  Slack (ns):                  -2.681
-  Arrival (ns):                17.387
-  Required (ns):               14.706
-
-Path 52
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[1]:D
-  Delay (ns):                  13.832
-  Slack (ns):                  -2.681
-  Arrival (ns):                17.387
-  Required (ns):               14.706
-
-Path 53
-  From:                        apb3_interface_0/servo_0/counter[27]:CLK
-  To:                          apb3_interface_0/servo_0/counter[15]:D
-  Delay (ns):                  12.157
-  Slack (ns):                  -2.668
-  Arrival (ns):                17.433
-  Required (ns):               14.765
-
-Path 54
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[8]:D
-  Delay (ns):                  13.832
-  Slack (ns):                  -2.666
-  Arrival (ns):                17.387
-  Required (ns):               14.721
-
-Path 55
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[5]:D
-  Delay (ns):                  13.832
-  Slack (ns):                  -2.666
-  Arrival (ns):                17.387
-  Required (ns):               14.721
-
-Path 56
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[13]:D
-  Delay (ns):                  13.832
-  Slack (ns):                  -2.666
-  Arrival (ns):                17.387
-  Required (ns):               14.721
-
-Path 57
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[29]:D
-  Delay (ns):                  12.196
-  Slack (ns):                  -2.665
-  Arrival (ns):                17.451
-  Required (ns):               14.786
-
-Path 58
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[27]:D
-  Delay (ns):                  12.196
-  Slack (ns):                  -2.665
-  Arrival (ns):                17.451
-  Required (ns):               14.786
-
-Path 59
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[5]:D
-  Delay (ns):                  12.128
-  Slack (ns):                  -2.662
-  Arrival (ns):                17.383
-  Required (ns):               14.721
-
-Path 60
-  From:                        apb3_interface_0/servo_0/counter[27]:CLK
-  To:                          apb3_interface_0/servo_0/counter[0]:D
-  Delay (ns):                  12.174
-  Slack (ns):                  -2.655
-  Arrival (ns):                17.450
-  Required (ns):               14.795
-
-Path 61
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[3]:D
-  Delay (ns):                  12.154
-  Slack (ns):                  -2.614
-  Arrival (ns):                17.409
-  Required (ns):               14.795
-
-Path 62
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[2]:D
-  Delay (ns):                  12.154
-  Slack (ns):                  -2.614
-  Arrival (ns):                17.409
-  Required (ns):               14.795
-
-Path 63
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[6]:D
-  Delay (ns):                  12.111
-  Slack (ns):                  -2.613
-  Arrival (ns):                17.366
-  Required (ns):               14.753
-
-Path 64
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[1]:D
-  Delay (ns):                  12.148
-  Slack (ns):                  -2.608
-  Arrival (ns):                17.403
-  Required (ns):               14.795
-
-Path 65
-  From:                        apb3_interface_0/servo_0/counter[0]:CLK
-  To:                          apb3_interface_0/servo_0/counter[10]:D
-  Delay (ns):                  12.077
-  Slack (ns):                  -2.597
-  Arrival (ns):                17.362
-  Required (ns):               14.765
-
-Path 66
-  From:                        apb3_interface_0/servo_0/counter[0]:CLK
-  To:                          apb3_interface_0/servo_0/counter[25]:D
-  Delay (ns):                  12.053
-  Slack (ns):                  -2.597
-  Arrival (ns):                17.338
-  Required (ns):               14.741
-
-Path 67
-  From:                        apb3_interface_0/servo_0/counter[9]:CLK
-  To:                          apb3_interface_0/servo_0/counter[26]:D
-  Delay (ns):                  11.993
-  Slack (ns):                  -2.569
-  Arrival (ns):                17.278
-  Required (ns):               14.709
-
-Path 68
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[29]:D
-  Delay (ns):                  12.096
-  Slack (ns):                  -2.565
-  Arrival (ns):                17.351
-  Required (ns):               14.786
-
-Path 69
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[27]:D
-  Delay (ns):                  12.096
-  Slack (ns):                  -2.565
-  Arrival (ns):                17.351
-  Required (ns):               14.786
-
-Path 70
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[5]:D
-  Delay (ns):                  12.028
-  Slack (ns):                  -2.562
-  Arrival (ns):                17.283
-  Required (ns):               14.721
-
-Path 71
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[28]:D
-  Delay (ns):                  12.081
-  Slack (ns):                  -2.561
-  Arrival (ns):                17.336
-  Required (ns):               14.775
-
-Path 72
-  From:                        apb3_interface_0/servo_0/counter[28]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.038
-  Slack (ns):                  -2.545
-  Arrival (ns):                17.303
-  Required (ns):               14.758
-
-Path 73
-  From:                        apb3_interface_0/servo_0/counter[5]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.055
-  Slack (ns):                  -2.540
-  Arrival (ns):                17.298
-  Required (ns):               14.758
-
-Path 74
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[22]:D
-  Delay (ns):                  13.691
-  Slack (ns):                  -2.537
-  Arrival (ns):                17.246
-  Required (ns):               14.709
-
-Path 75
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[9]:D
-  Delay (ns):                  12.063
-  Slack (ns):                  -2.523
-  Arrival (ns):                17.318
-  Required (ns):               14.795
-
-Path 76
-  From:                        apb3_interface_0/servo_0/counter[28]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.014
-  Slack (ns):                  -2.521
-  Arrival (ns):                17.279
-  Required (ns):               14.758
-
-Path 77
-  From:                        apb3_interface_0/servo_0/counter[5]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.031
-  Slack (ns):                  -2.516
-  Arrival (ns):                17.274
-  Required (ns):               14.758
-
 Path 78
-  From:                        apb3_interface_0/servo_0/counter[19]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.047
-  Slack (ns):                  -2.515
-  Arrival (ns):                17.273
-  Required (ns):               14.758
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[29]:D
+  Delay (ns):                  12.480
+  Slack (ns):                  -2.980
+  Arrival (ns):                17.750
+  Required (ns):               14.770
 
 Path 79
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[3]:D
-  Delay (ns):                  12.054
-  Slack (ns):                  -2.514
-  Arrival (ns):                17.309
-  Required (ns):               14.795
+  From:                        apb3_interface_0/servo_0/counter[1]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.490
+  Slack (ns):                  -2.975
+  Arrival (ns):                17.733
+  Required (ns):               14.758
 
 Path 80
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
+  From:                        apb3_interface_0/servo_0/pulse_comp[5]:CLK
   To:                          apb3_interface_0/servo_0/counter[2]:D
-  Delay (ns):                  12.054
-  Slack (ns):                  -2.514
-  Arrival (ns):                17.309
-  Required (ns):               14.795
+  Delay (ns):                  12.462
+  Slack (ns):                  -2.967
+  Arrival (ns):                17.710
+  Required (ns):               14.743
 
 Path 81
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[6]:D
-  Delay (ns):                  12.011
-  Slack (ns):                  -2.513
-  Arrival (ns):                17.266
-  Required (ns):               14.753
+  From:                        apb3_interface_0/servo_0/pulse_comp[19]:CLK
+  To:                          apb3_interface_0/servo_0/counter[26]:D
+  Delay (ns):                  12.466
+  Slack (ns):                  -2.960
+  Arrival (ns):                17.730
+  Required (ns):               14.770
 
 Path 82
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[8]:D
-  Delay (ns):                  12.049
-  Slack (ns):                  -2.509
-  Arrival (ns):                17.304
-  Required (ns):               14.795
+  From:                        apb3_interface_0/servo_0/pulse_comp[6]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.454
+  Slack (ns):                  -2.959
+  Arrival (ns):                17.702
+  Required (ns):               14.743
 
 Path 83
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[1]:D
-  Delay (ns):                  12.048
-  Slack (ns):                  -2.508
-  Arrival (ns):                17.303
-  Required (ns):               14.795
+  From:                        apb3_interface_0/servo_0/counter[1]:CLK
+  To:                          apb3_interface_0/servo_0/counter[26]:D
+  Delay (ns):                  12.481
+  Slack (ns):                  -2.954
+  Arrival (ns):                17.724
+  Required (ns):               14.770
 
 Path 84
-  From:                        apb3_interface_0/servo_0/counter[27]:CLK
-  To:                          apb3_interface_0/servo_0/counter[10]:D
-  Delay (ns):                  11.991
-  Slack (ns):                  -2.502
-  Arrival (ns):                17.267
-  Required (ns):               14.765
+  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          apb3_interface_0/servo_0/pulse_comp[24]:D
+  Delay (ns):                  14.140
+  Slack (ns):                  -2.953
+  Arrival (ns):                17.695
+  Required (ns):               14.742
 
 Path 85
-  From:                        apb3_interface_0/servo_0/counter[27]:CLK
-  To:                          apb3_interface_0/servo_0/counter[25]:D
-  Delay (ns):                  11.967
-  Slack (ns):                  -2.502
-  Arrival (ns):                17.243
-  Required (ns):               14.741
+  From:                        apb3_interface_0/servo_0/pulse_comp[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[28]:D
+  Delay (ns):                  12.450
+  Slack (ns):                  -2.950
+  Arrival (ns):                17.720
+  Required (ns):               14.770
 
 Path 86
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
+  From:                        apb3_interface_0/servo_0/pulse_comp[1]:CLK
   To:                          apb3_interface_0/servo_0/counter[7]:D
-  Delay (ns):                  12.006
-  Slack (ns):                  -2.498
-  Arrival (ns):                17.261
-  Required (ns):               14.763
+  Delay (ns):                  12.435
+  Slack (ns):                  -2.942
+  Arrival (ns):                17.668
+  Required (ns):               14.726
 
 Path 87
-  From:                        apb3_interface_0/servo_0/counter[20]:CLK
-  To:                          apb3_interface_0/servo_0/counter[21]:D
-  Delay (ns):                  12.005
-  Slack (ns):                  -2.495
-  Arrival (ns):                17.253
-  Required (ns):               14.758
+  From:                        apb3_interface_0/servo_0/pulse_comp[0]:CLK
+  To:                          apb3_interface_0/servo_0/counter[3]:D
+  Delay (ns):                  12.428
+  Slack (ns):                  -2.918
+  Arrival (ns):                17.671
+  Required (ns):               14.753
 
 Path 88
-  From:                        apb3_interface_0/servo_0/counter[19]:CLK
+  From:                        apb3_interface_0/servo_0/pulse_comp[0]:CLK
   To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  12.023
-  Slack (ns):                  -2.491
-  Arrival (ns):                17.249
-  Required (ns):               14.758
+  Delay (ns):                  12.418
+  Slack (ns):                  -2.913
+  Arrival (ns):                17.661
+  Required (ns):               14.748
 
 Path 89
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[19]:D
-  Delay (ns):                  11.971
-  Slack (ns):                  -2.490
-  Arrival (ns):                17.226
-  Required (ns):               14.736
+  From:                        apb3_interface_0/servo_0/pulse_comp[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.410
+  Slack (ns):                  -2.905
+  Arrival (ns):                17.658
+  Required (ns):               14.753
 
 Path 90
-  From:                        apb3_interface_0/servo_0/counter[28]:CLK
-  To:                          apb3_interface_0/servo_0/counter[15]:D
-  Delay (ns):                  11.977
-  Slack (ns):                  -2.477
-  Arrival (ns):                17.242
-  Required (ns):               14.765
+  From:                        apb3_interface_0/servo_0/counter[11]:CLK
+  To:                          apb3_interface_0/servo_0/counter[29]:D
+  Delay (ns):                  12.403
+  Slack (ns):                  -2.903
+  Arrival (ns):                17.673
+  Required (ns):               14.770
 
 Path 91
-  From:                        apb3_interface_0/servo_0/counter[5]:CLK
-  To:                          apb3_interface_0/servo_0/counter[15]:D
-  Delay (ns):                  11.994
-  Slack (ns):                  -2.472
-  Arrival (ns):                17.237
-  Required (ns):               14.765
+  From:                        apb3_interface_0/servo_0/counter[27]:CLK
+  To:                          apb3_interface_0/servo_0/counter[2]:D
+  Delay (ns):                  12.380
+  Slack (ns):                  -2.897
+  Arrival (ns):                17.640
+  Required (ns):               14.743
 
 Path 92
-  From:                        apb3_interface_0/servo_0/counter[20]:CLK
-  To:                          apb3_interface_0/servo_0/counter[20]:D
-  Delay (ns):                  11.981
-  Slack (ns):                  -2.471
-  Arrival (ns):                17.229
-  Required (ns):               14.758
+  From:                        apb3_interface_0/servo_0/pulse_comp[6]:CLK
+  To:                          apb3_interface_0/servo_0/counter[0]:D
+  Delay (ns):                  12.402
+  Slack (ns):                  -2.897
+  Arrival (ns):                17.650
+  Required (ns):               14.753
 
 Path 93
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
   To:                          apb3_interface_0/pxl_0/neopixel_reg[6]:D
-  Delay (ns):                  13.618
-  Slack (ns):                  -2.465
-  Arrival (ns):                17.173
-  Required (ns):               14.708
+  Delay (ns):                  14.048
+  Slack (ns):                  -2.894
+  Arrival (ns):                17.603
+  Required (ns):               14.709
 
 Path 94
-  From:                        apb3_interface_0/servo_0/counter[28]:CLK
-  To:                          apb3_interface_0/servo_0/counter[0]:D
-  Delay (ns):                  11.994
-  Slack (ns):                  -2.464
-  Arrival (ns):                17.259
-  Required (ns):               14.795
+  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          apb3_interface_0/pxl_0/neopixel_reg[10]:D
+  Delay (ns):                  14.048
+  Slack (ns):                  -2.892
+  Arrival (ns):                17.603
+  Required (ns):               14.711
 
 Path 95
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[26]:D
-  Delay (ns):                  11.948
-  Slack (ns):                  -2.462
-  Arrival (ns):                17.203
-  Required (ns):               14.741
+  From:                        apb3_interface_0/servo_0/pulse_comp[5]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.401
+  Slack (ns):                  -2.891
+  Arrival (ns):                17.649
+  Required (ns):               14.758
 
 Path 96
-  From:                        apb3_interface_0/servo_0/counter[10]:CLK
-  To:                          apb3_interface_0/servo_0/counter[28]:D
-  Delay (ns):                  11.981
-  Slack (ns):                  -2.461
-  Arrival (ns):                17.236
-  Required (ns):               14.775
+  From:                        apb3_interface_0/servo_0/pulse_comp[12]:CLK
+  To:                          apb3_interface_0/servo_0/counter[7]:D
+  Delay (ns):                  12.373
+  Slack (ns):                  -2.890
+  Arrival (ns):                17.616
+  Required (ns):               14.726
 
 Path 97
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                          apb3_interface_0/pxl_0/neopixel_reg[18]:D
-  Delay (ns):                  13.604
-  Slack (ns):                  -2.459
-  Arrival (ns):                17.159
-  Required (ns):               14.700
+  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[3]:D
+  Delay (ns):                  12.368
+  Slack (ns):                  -2.885
+  Arrival (ns):                17.638
+  Required (ns):               14.753
 
 Path 98
-  From:                        apb3_interface_0/servo_0/counter[5]:CLK
-  To:                          apb3_interface_0/servo_0/counter[0]:D
-  Delay (ns):                  12.011
-  Slack (ns):                  -2.459
-  Arrival (ns):                17.254
-  Required (ns):               14.795
+  From:                        apb3_interface_0/servo_0/pulse_comp[6]:CLK
+  To:                          apb3_interface_0/servo_0/counter[8]:D
+  Delay (ns):                  12.393
+  Slack (ns):                  -2.883
+  Arrival (ns):                17.641
+  Required (ns):               14.758
 
 Path 99
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[23]:D
-  Delay (ns):                  11.948
-  Slack (ns):                  -2.449
-  Arrival (ns):                17.203
-  Required (ns):               14.754
+  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          apb3_interface_0/pxl_0/neopixel_reg[12]:D
+  Delay (ns):                  14.073
+  Slack (ns):                  -2.880
+  Arrival (ns):                17.628
+  Required (ns):               14.748
 
 Path 100
-  From:                        apb3_interface_0/servo_0/counter[11]:CLK
-  To:                          apb3_interface_0/servo_0/counter[24]:D
-  Delay (ns):                  11.948
-  Slack (ns):                  -2.449
-  Arrival (ns):                17.203
-  Required (ns):               14.754
+  From:                        apb3_interface_0/servo_0/pulse_comp[10]:CLK
+  To:                          apb3_interface_0/servo_0/counter[20]:D
+  Delay (ns):                  12.358
+  Slack (ns):                  -2.880
+  Arrival (ns):                17.628
+  Required (ns):               14.748
 

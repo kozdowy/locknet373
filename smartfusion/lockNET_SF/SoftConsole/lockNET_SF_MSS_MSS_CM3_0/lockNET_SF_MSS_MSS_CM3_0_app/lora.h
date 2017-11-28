@@ -8,7 +8,7 @@
 #ifndef LORA_H_
 #define LORA_H_
 
-#include "drivers/mss_spi/mss_spi.h"
+#include "drivers/mss_spi/drivers/mss_spi/mss_spi.h"
 #include "drivers/mss_gpio/mss_gpio.h"
 #include <inttypes.h>
 
