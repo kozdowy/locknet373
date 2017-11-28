@@ -20,7 +20,7 @@ uint8_t buf[RH_RF95_MAX_PAYLOAD_LEN];
 uint8_t mode;
 
 uint8_t this_address;
-uint8_t promiscuous;
+uint8_t promiscuous = 1;
 
 volatile uint8_t rx_header_to;
 volatile uint8_t rx_header_from;
@@ -85,14 +85,14 @@ void LORA_handle_interrupt(void)
 }
 
 void LORA_wait_available(void){
-	while (!LORA_available());
+	while (LORA_available() == FALSE);
 }
 
 uint8_t LORA_wait_available_timeout(uint16_t timeout){
 	unsigned long starttime = timeout * 1000000;
 	unsigned long counter = 0;
-	while ((counter++ - starttime) < 0){
-		if (LORA_available()){
+	while (counter++ < starttime){
+		if (LORA_available() != FALSE){
 			return TRUE;
 		}
 	}
@@ -106,9 +106,9 @@ uint8_t LORA_wait_packet_sent(uint16_t timeout){
 	}
 	//unsigned long starttime = time(0);
 	//while ((time(0) - starttime < timeout)){
-	unsigned long starttime = timeout * 1000000;
+	unsigned long starttime = timeout * 1000000000;
 	unsigned long counter = 0;
-	while ((counter++ - starttime) < 0){
+	while (counter++ < starttime){
 		if (mode != LORA_MODE_TX){
 			return TRUE;
 		}
