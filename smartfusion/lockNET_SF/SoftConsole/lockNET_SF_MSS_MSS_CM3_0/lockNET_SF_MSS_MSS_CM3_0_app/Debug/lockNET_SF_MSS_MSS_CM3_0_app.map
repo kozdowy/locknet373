@@ -243,7 +243,7 @@ Discarded input sections
                 0x00000000       0x58 ./nfc.o
  .text.is_interrupt_handled
                 0x00000000       0x18 ./nfc.o
- .rodata.C.27.4054
+ .rodata.C.27.4035
                 0x00000000        0x4 ./nfc.o
  COMMON         0x00000000        0x7 ./nfc.o
  .text          0x00000000        0x0 ./servo.o
@@ -593,7 +593,7 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000     0x8d98
+.text           0x20000000     0x8d90
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
@@ -808,289 +808,289 @@ END GROUP
                 0x20000da4       0xf0 ./lora.o
                 0x20000da4                LORA_burst_write
  .text.LORA_server_ex_setup
-                0x20000e94       0x24 ./lora_server_ex.o
+                0x20000e94       0x30 ./lora_server_ex.o
                 0x20000e94                LORA_server_ex_setup
  .text.LORA_server_ex_loop
-                0x20000eb8       0xd4 ./lora_server_ex.o
-                0x20000eb8                LORA_server_ex_loop
+                0x20000ec4       0xb8 ./lora_server_ex.o
+                0x20000ec4                LORA_server_ex_loop
  .text.GPIO9_IRQHandler
-                0x20000f8c       0x24 ./main.o
-                0x20000f8c                GPIO9_IRQHandler
+                0x20000f7c       0x24 ./main.o
+                0x20000f7c                GPIO9_IRQHandler
  .text.GPIO1_IRQHandler
-                0x20000fb0       0x54 ./main.o
-                0x20000fb0                GPIO1_IRQHandler
- .text.main     0x20001004       0xb4 ./main.o
-                0x20001004                main
+                0x20000fa0       0x54 ./main.o
+                0x20000fa0                GPIO1_IRQHandler
+ .text.main     0x20000ff4       0xb4 ./main.o
+                0x20000ff4                main
  .text.set_interrupt_handled
-                0x200010b8       0x20 ./nfc.o
-                0x200010b8                set_interrupt_handled
- .text._close   0x200010d8        0x8 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x200010d8                _close
- .text._exit    0x200010e0        0x4 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x200010e0                _exit
- .text._fstat   0x200010e4        0xc N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x200010e4                _fstat
- .text._isatty  0x200010f0        0x8 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x200010f0                _isatty
- .text._lseek   0x200010f8        0x8 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x200010f8                _lseek
- .text._read    0x20001100        0x8 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001100                _read
+                0x200010a8       0x20 ./nfc.o
+                0x200010a8                set_interrupt_handled
+ .text._close   0x200010c8        0x8 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x200010c8                _close
+ .text._exit    0x200010d0        0x4 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x200010d0                _exit
+ .text._fstat   0x200010d4        0xc N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x200010d4                _fstat
+ .text._isatty  0x200010e0        0x8 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x200010e0                _isatty
+ .text._lseek   0x200010e8        0x8 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x200010e8                _lseek
+ .text._read    0x200010f0        0x8 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x200010f0                _read
  .text._write_r
-                0x20001108       0x48 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001108                _write_r
- .text._sbrk    0x20001150       0x64 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
-                0x20001150                _sbrk
+                0x200010f8       0x48 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x200010f8                _write_r
+ .text._sbrk    0x20001140       0x64 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20001140                _sbrk
  .text.MSS_UART_polled_tx
-                0x200011b4       0xac N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200011b4                MSS_UART_polled_tx
+                0x200011a4       0xac N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200011a4                MSS_UART_polled_tx
  .text.MSS_UART_isr
-                0x20001260       0x70 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20001250       0x70 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.default_tx_handler
-                0x200012d0       0xa8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200012c0       0xa8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.UART0_IRQHandler
-                0x20001378       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20001378                UART0_IRQHandler
+                0x20001368       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20001368                UART0_IRQHandler
  .text.UART1_IRQHandler
-                0x200013a8       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200013a8                UART1_IRQHandler
+                0x20001398       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20001398                UART1_IRQHandler
  .text.MSS_UART_init
-                0x200013d8      0x150 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200013d8                MSS_UART_init
+                0x200013c8      0x150 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200013c8                MSS_UART_init
  .text.recover_from_rx_overflow
-                0x20001528       0xe4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20001518       0xe4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.MSS_SPI_configure_master_mode
-                0x2000160c      0x100 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x2000160c                MSS_SPI_configure_master_mode
+                0x200015fc      0x100 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200015fc                MSS_SPI_configure_master_mode
  .text.MSS_SPI_set_slave_select
-                0x2000170c       0xcc N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x2000170c                MSS_SPI_set_slave_select
+                0x200016fc       0xcc N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200016fc                MSS_SPI_set_slave_select
  .text.MSS_SPI_clear_slave_select
-                0x200017d8       0x90 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x200017d8                MSS_SPI_clear_slave_select
+                0x200017c8       0x90 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200017c8                MSS_SPI_clear_slave_select
  .text.MSS_SPI_transfer_frame
-                0x20001868       0x90 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20001868                MSS_SPI_transfer_frame
+                0x20001858       0x90 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20001858                MSS_SPI_transfer_frame
  .text.fill_slave_tx_fifo
-                0x200018f8       0xa8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200018e8       0xa8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.read_slave_rx_fifo
-                0x200019a0       0x74 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20001990       0x74 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.mss_spi_isr
-                0x20001a14      0x1c8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20001a04      0x1c8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
  .text.SPI0_IRQHandler
-                0x20001bdc       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20001bdc                SPI0_IRQHandler
+                0x20001bcc       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20001bcc                SPI0_IRQHandler
  .text.SPI1_IRQHandler
-                0x20001c0c       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20001c0c                SPI1_IRQHandler
+                0x20001bfc       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20001bfc                SPI1_IRQHandler
  .text.MSS_SPI_init
-                0x20001c3c       0xfc N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20001c3c                MSS_SPI_init
+                0x20001c2c       0xfc N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20001c2c                MSS_SPI_init
  .text.enable_slave_if_required
-                0x20001d38       0x10 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001d28       0x10 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.mss_i2c_isr
-                0x20001d48      0x594 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001d38      0x594 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.I2C0_IRQHandler
-                0x200022dc       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x200022dc                I2C0_IRQHandler
+                0x200022cc       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200022cc                I2C0_IRQHandler
  .text.I2C1_IRQHandler
-                0x2000230c       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x2000230c                I2C1_IRQHandler
+                0x200022fc       0x30 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200022fc                I2C1_IRQHandler
  .text.MSS_GPIO_init
-                0x2000233c       0x60 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
-                0x2000233c                MSS_GPIO_init
+                0x2000232c       0x60 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x2000232c                MSS_GPIO_init
  .text.MSS_GPIO_config
-                0x2000239c       0x18 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
-                0x2000239c                MSS_GPIO_config
+                0x2000238c       0x18 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x2000238c                MSS_GPIO_config
  .text.MSS_GPIO_set_output
-                0x200023b4       0x1c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
-                0x200023b4                MSS_GPIO_set_output
+                0x200023a4       0x1c N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x200023a4                MSS_GPIO_set_output
  .text.MSS_GPIO_enable_irq
-                0x200023d0       0x48 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
-                0x200023d0                MSS_GPIO_enable_irq
+                0x200023c0       0x48 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x200023c0                MSS_GPIO_enable_irq
  .text.MSS_GPIO_clear_irq
-                0x20002418       0x48 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
-                0x20002418                MSS_GPIO_clear_irq
+                0x20002408       0x48 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20002408                MSS_GPIO_clear_irq
  .text.SystemInit
-                0x20002460        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20002460                SystemInit
+                0x20002450        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20002450                SystemInit
  .text.SystemCoreClockUpdate
-                0x20002464      0x130 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20002464                SystemCoreClockUpdate
- .text          0x20002594      0x424 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
-                0x20002594                __aeabi_dmul
-                0x20002594                __muldf3
-                0x200027e8                __divdf3
-                0x200027e8                __aeabi_ddiv
- .text          0x200029b8       0x40 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunsdfsi.o)
-                0x200029b8                __aeabi_d2uiz
-                0x200029b8                __fixunsdfsi
- .text          0x200029f8       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x200029f8                __libc_init_array
- .text          0x20002a48      0x190 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
-                0x20002a48                memcpy
- .text          0x20002bd8       0xd4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
-                0x20002bd8                memset
- .text          0x20002cac       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
-                0x20002cac                printf
-                0x20002ce4                _printf_r
- .text          0x20002d10       0x88 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-puts.o)
-                0x20002d10                _puts_r
-                0x20002d88                puts
- .text          0x20002d98       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
-                0x20002d98                strlen
- .text          0x20002df8     0x1940 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
-                0x20002e14                _vfprintf_r
-                0x2000471c                vfprintf
- .text          0x20004738      0x104 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
-                0x20004738                __swsetup_r
- *fill*         0x2000483c        0x4 00
- .text          0x20004840      0xfb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
-                0x20004960                _dtoa_r
- .text          0x200057f8      0x178 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
-                0x200057f8                _fflush_r
-                0x20005948                fflush
- .text          0x20005970      0x1c8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
-                0x20005970                __sfp_lock_acquire
-                0x20005974                __sfp_lock_release
-                0x20005978                __sinit_lock_acquire
-                0x2000597c                __sinit_lock_release
-                0x20005988                __fp_unlock_all
-                0x200059a0                __fp_lock_all
-                0x200059b8                _cleanup_r
-                0x200059c4                _cleanup
-                0x20005a20                __sfmoreglue
-                0x20005a50                __sfp
-                0x20005ad8                __sinit
- .text          0x20005b38      0x268 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
-                0x20005b38                _malloc_trim_r
-                0x20005be0                _free_r
- .text          0x20005da0      0x334 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
-                0x20005da0                __sfvwrite_r
- .text          0x200060d4       0xa0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
-                0x200060d4                _fwalk_reent
-                0x20006128                _fwalk
- .text          0x20006174       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
-                0x20006174                __locale_charset
-                0x20006180                _localeconv_r
-                0x20006188                localeconv
-                0x20006190                _setlocale_r
-                0x200061d8                setlocale
- .text          0x200061e8       0xdc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
-                0x200061e8                __smakebuf_r
- .text          0x200062c4       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
-                0x200062c4                free
-                0x200062d4                malloc
- .text          0x200062e4      0x5a4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x200062e4                _malloc_r
- .text          0x20006888       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
-                0x20006888                memchr
- .text          0x200068fc       0xb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
-                0x200068fc                memmove
- .text          0x200069b4        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
-                0x200069b4                __malloc_lock
-                0x200069b8                __malloc_unlock
- .text          0x200069bc      0x958 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
-                0x200069bc                __hi0bits
-                0x200069fc                __lo0bits
-                0x20006a60                __mcmp
-                0x20006aa0                __ulp
-                0x20006aec                __b2d
-                0x20006b94                __ratio
-                0x20006bf4                _mprec_log10
-                0x20006c2c                __copybits
-                0x20006c7c                __any_on
-                0x20006cd4                _Bfree
-                0x20006d0c                _Balloc
-                0x20006d78                __d2b
-                0x20006e48                __mdiff
-                0x20006f40                __lshift
-                0x20006ffc                __multiply
-                0x20007130                __i2b
-                0x20007144                __multadd
-                0x200071cc                __pow5mult
-                0x20007278                __s2b
- .text          0x20007314      0x3b4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
-                0x20007314                _realloc_r
- .text          0x200076c8       0x24 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
-                0x200076c8                __isinfd
- .text          0x200076ec       0x1c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
-                0x200076ec                __isnand
- .text          0x20007708       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
-                0x20007708                _sbrk_r
- .text          0x20007730       0x90 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
-                0x20007730                __sclose
-                0x20007738                __sseek
-                0x20007760                __swrite
-                0x2000779c                __sread
- .text          0x200077c0      0x1dc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
-                0x200077c0                strcmp
- .text          0x2000799c       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
-                0x2000799c                _calloc_r
- .text          0x200079f8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
-                0x200079f8                _close_r
- .text          0x20007a20       0xcc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
-                0x20007a20                _fclose_r
-                0x20007adc                fclose
- .text          0x20007aec       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
-                0x20007aec                _fstat_r
- .text          0x20007b18       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
-                0x20007b18                _isatty_r
- .text          0x20007b40       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
-                0x20007b40                _lseek_r
- .text          0x20007b6c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
-                0x20007b6c                _read_r
- .text          0x20007b98      0x278 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
-                0x20007b98                __aeabi_uidiv
-                0x20007b98                __udivsi3
-                0x20007df4                __aeabi_uidivmod
- .text          0x20007e10        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_dvmd_tls.o)
-                0x20007e10                __aeabi_idiv0
-                0x20007e10                __aeabi_ldiv0
- .text          0x20007e14      0x370 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
-                0x20007e14                __aeabi_drsub
-                0x20007e1c                __aeabi_dsub
-                0x20007e1c                __subdf3
-                0x20007e20                __aeabi_dadd
-                0x20007e20                __adddf3
-                0x20008098                __floatunsidf
-                0x20008098                __aeabi_ui2d
-                0x200080b8                __floatsidf
-                0x200080b8                __aeabi_i2d
-                0x200080dc                __aeabi_f2d
-                0x200080dc                __extendsfdf2
-                0x20008118                __floatundidf
-                0x20008118                __aeabi_ul2d
-                0x20008128                __floatdidf
-                0x20008128                __aeabi_l2d
- .text          0x20008184      0x110 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
-                0x20008184                __gtdf2
-                0x20008184                __gedf2
-                0x2000818c                __ltdf2
-                0x2000818c                __ledf2
-                0x20008194                __nedf2
-                0x20008194                __eqdf2
-                0x20008194                __cmpdf2
-                0x20008210                __aeabi_cdrcmple
-                0x20008220                __aeabi_cdcmpeq
-                0x20008220                __aeabi_cdcmple
-                0x20008230                __aeabi_dcmpeq
-                0x20008244                __aeabi_dcmplt
-                0x20008258                __aeabi_dcmple
-                0x2000826c                __aeabi_dcmpge
-                0x20008280                __aeabi_dcmpgt
- .text          0x20008294       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
-                0x20008294                __aeabi_d2iz
-                0x20008294                __fixdfsi
- .text          0x200082e4       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_aeabi_uldivmod.o)
-                0x200082e4                __aeabi_uldivmod
- .text          0x20008310       0x58 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
-                0x20008310                __gnu_uldivmod_helper
-                0x2000833c                __gnu_ldivmod_helper
- .text          0x20008368      0x364 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
-                0x20008368                __divdi3
- .text          0x200086cc      0x300 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
-                0x200086cc                __udivdi3
+                0x20002454      0x130 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20002454                SystemCoreClockUpdate
+ .text          0x20002584      0x424 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+                0x20002584                __aeabi_dmul
+                0x20002584                __muldf3
+                0x200027d8                __divdf3
+                0x200027d8                __aeabi_ddiv
+ .text          0x200029a8       0x40 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+                0x200029a8                __aeabi_d2uiz
+                0x200029a8                __fixunsdfsi
+ .text          0x200029e8       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x200029e8                __libc_init_array
+ .text          0x20002a38      0x190 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memcpy.o)
+                0x20002a38                memcpy
+ .text          0x20002bc8       0xd4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x20002bc8                memset
+ .text          0x20002c9c       0x64 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-printf.o)
+                0x20002c9c                printf
+                0x20002cd4                _printf_r
+ .text          0x20002d00       0x88 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-puts.o)
+                0x20002d00                _puts_r
+                0x20002d78                puts
+ .text          0x20002d88       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strlen.o)
+                0x20002d88                strlen
+ .text          0x20002de8     0x1940 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+                0x20002e04                _vfprintf_r
+                0x2000470c                vfprintf
+ .text          0x20004728      0x104 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-wsetup.o)
+                0x20004728                __swsetup_r
+ *fill*         0x2000482c        0x4 00
+ .text          0x20004830      0xfb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
+                0x20004950                _dtoa_r
+ .text          0x200057e8      0x178 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fflush.o)
+                0x200057e8                _fflush_r
+                0x20005938                fflush
+ .text          0x20005960      0x1c8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
+                0x20005960                __sfp_lock_acquire
+                0x20005964                __sfp_lock_release
+                0x20005968                __sinit_lock_acquire
+                0x2000596c                __sinit_lock_release
+                0x20005978                __fp_unlock_all
+                0x20005990                __fp_lock_all
+                0x200059a8                _cleanup_r
+                0x200059b4                _cleanup
+                0x20005a10                __sfmoreglue
+                0x20005a40                __sfp
+                0x20005ac8                __sinit
+ .text          0x20005b28      0x268 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-freer.o)
+                0x20005b28                _malloc_trim_r
+                0x20005bd0                _free_r
+ .text          0x20005d90      0x334 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fvwrite.o)
+                0x20005d90                __sfvwrite_r
+ .text          0x200060c4       0xa0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fwalk.o)
+                0x200060c4                _fwalk_reent
+                0x20006118                _fwalk
+ .text          0x20006164       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                0x20006164                __locale_charset
+                0x20006170                _localeconv_r
+                0x20006178                localeconv
+                0x20006180                _setlocale_r
+                0x200061c8                setlocale
+ .text          0x200061d8       0xdc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-makebuf.o)
+                0x200061d8                __smakebuf_r
+ .text          0x200062b4       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-malloc.o)
+                0x200062b4                free
+                0x200062c4                malloc
+ .text          0x200062d4      0x5a4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x200062d4                _malloc_r
+ .text          0x20006878       0x74 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memchr.o)
+                0x20006878                memchr
+ .text          0x200068ec       0xb8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memmove.o)
+                0x200068ec                memmove
+ .text          0x200069a4        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mlock.o)
+                0x200069a4                __malloc_lock
+                0x200069a8                __malloc_unlock
+ .text          0x200069ac      0x958 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
+                0x200069ac                __hi0bits
+                0x200069ec                __lo0bits
+                0x20006a50                __mcmp
+                0x20006a90                __ulp
+                0x20006adc                __b2d
+                0x20006b84                __ratio
+                0x20006be4                _mprec_log10
+                0x20006c1c                __copybits
+                0x20006c6c                __any_on
+                0x20006cc4                _Bfree
+                0x20006cfc                _Balloc
+                0x20006d68                __d2b
+                0x20006e38                __mdiff
+                0x20006f30                __lshift
+                0x20006fec                __multiply
+                0x20007120                __i2b
+                0x20007134                __multadd
+                0x200071bc                __pow5mult
+                0x20007268                __s2b
+ .text          0x20007304      0x3b4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reallocr.o)
+                0x20007304                _realloc_r
+ .text          0x200076b8       0x24 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isinfd.o)
+                0x200076b8                __isinfd
+ .text          0x200076dc       0x1c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-s_isnand.o)
+                0x200076dc                __isnand
+ .text          0x200076f8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-sbrkr.o)
+                0x200076f8                _sbrk_r
+ .text          0x20007720       0x90 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-stdio.o)
+                0x20007720                __sclose
+                0x20007728                __sseek
+                0x20007750                __swrite
+                0x2000778c                __sread
+ .text          0x200077b0      0x1dc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strcmp.o)
+                0x200077b0                strcmp
+ .text          0x2000798c       0x5c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-callocr.o)
+                0x2000798c                _calloc_r
+ .text          0x200079e8       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-closer.o)
+                0x200079e8                _close_r
+ .text          0x20007a10       0xcc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fclose.o)
+                0x20007a10                _fclose_r
+                0x20007acc                fclose
+ .text          0x20007adc       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-fstatr.o)
+                0x20007adc                _fstat_r
+ .text          0x20007b08       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-isattyr.o)
+                0x20007b08                _isatty_r
+ .text          0x20007b30       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-lseekr.o)
+                0x20007b30                _lseek_r
+ .text          0x20007b5c       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-readr.o)
+                0x20007b5c                _read_r
+ .text          0x20007b88      0x278 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivsi3.o)
+                0x20007b88                __aeabi_uidiv
+                0x20007b88                __udivsi3
+                0x20007de4                __aeabi_uidivmod
+ .text          0x20007e00        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_dvmd_tls.o)
+                0x20007e00                __aeabi_idiv0
+                0x20007e00                __aeabi_ldiv0
+ .text          0x20007e04      0x370 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+                0x20007e04                __aeabi_drsub
+                0x20007e0c                __aeabi_dsub
+                0x20007e0c                __subdf3
+                0x20007e10                __aeabi_dadd
+                0x20007e10                __adddf3
+                0x20008088                __floatunsidf
+                0x20008088                __aeabi_ui2d
+                0x200080a8                __floatsidf
+                0x200080a8                __aeabi_i2d
+                0x200080cc                __aeabi_f2d
+                0x200080cc                __extendsfdf2
+                0x20008108                __floatundidf
+                0x20008108                __aeabi_ul2d
+                0x20008118                __floatdidf
+                0x20008118                __aeabi_l2d
+ .text          0x20008174      0x110 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
+                0x20008174                __gtdf2
+                0x20008174                __gedf2
+                0x2000817c                __ltdf2
+                0x2000817c                __ledf2
+                0x20008184                __nedf2
+                0x20008184                __eqdf2
+                0x20008184                __cmpdf2
+                0x20008200                __aeabi_cdrcmple
+                0x20008210                __aeabi_cdcmpeq
+                0x20008210                __aeabi_cdcmple
+                0x20008220                __aeabi_dcmpeq
+                0x20008234                __aeabi_dcmplt
+                0x20008248                __aeabi_dcmple
+                0x2000825c                __aeabi_dcmpge
+                0x20008270                __aeabi_dcmpgt
+ .text          0x20008284       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
+                0x20008284                __aeabi_d2iz
+                0x20008284                __fixdfsi
+ .text          0x200082d4       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_aeabi_uldivmod.o)
+                0x200082d4                __aeabi_uldivmod
+ .text          0x20008300       0x58 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(bpabi.o)
+                0x20008300                __gnu_uldivmod_helper
+                0x2000832c                __gnu_ldivmod_helper
+ .text          0x20008358      0x364 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
+                0x20008358                __divdi3
+ .text          0x200086bc      0x300 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
+                0x200086bc                __udivdi3
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -1099,7 +1099,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x200089cc                . = ALIGN (0x4)
+                0x200089bc                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -1110,208 +1110,208 @@ END GROUP
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.frame_size
-                0x200089cc        0x1 ./lora.o
-                0x200089cc                frame_size
+                0x200089bc        0x1 ./lora.o
+                0x200089bc                frame_size
  .rodata.burst_frame_size
-                0x200089cd        0x1 ./lora.o
-                0x200089cd                burst_frame_size
- *fill*         0x200089ce        0x2 00
+                0x200089bd        0x1 ./lora.o
+                0x200089bd                burst_frame_size
+ *fill*         0x200089be        0x2 00
  .rodata.modem_default
-                0x200089d0        0x4 ./lora.o
-                0x200089d0                modem_default
- .rodata        0x200089d4       0x6c ./lora_server_ex.o
+                0x200089c0        0x4 ./lora.o
+                0x200089c0                modem_default
+ .rodata        0x200089c4       0x74 ./lora_server_ex.o
  .rodata.C.19.4133
-                0x20008a40        0x4 ./main.o
+                0x20008a38        0x4 ./main.o
  .rodata.str1.4
-                0x20008a44       0x1a N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x20008a3c       0x1a N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
                                  0x1c (size before relaxing)
- *fill*         0x20008a5e        0x2 00
+ *fill*         0x20008a56        0x2 00
  .rodata.g_gpio_irqn_lut
-                0x20008a60       0x40 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20008a58       0x40 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  .rodata.g_config_reg_lut
-                0x20008aa0       0x80 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20008a98       0x80 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  .rodata.C.16.2565
-                0x20008b20       0x10 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .rodata        0x20008b30        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x20008b30                _global_impure_ptr
+                0x20008b18       0x10 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .rodata        0x20008b28        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20008b28                _global_impure_ptr
  .rodata.str1.4
-                0x20008b34        0x2 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20008b2c        0x2 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
                                   0x4 (size before relaxing)
  .rodata.str1.4
                 0x00000000        0x2 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-puts.o)
                                   0x4 (size before relaxing)
- *fill*         0x20008b36        0x2 00
- .rodata        0x20008b38       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+ *fill*         0x20008b2e        0x2 00
+ .rodata        0x20008b30       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
  .rodata.str1.4
-                0x20008b58       0x42 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
+                0x20008b50       0x42 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-vfprintf.o)
                                  0x44 (size before relaxing)
- *fill*         0x20008b9a        0x2 00
+ *fill*         0x20008b92        0x2 00
  .rodata.str1.4
-                0x20008b9c       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
+                0x20008b94       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-dtoa.o)
                                  0x14 (size before relaxing)
- .rodata        0x20008bac       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
-                0x20008bac                __sf_fake_stdin
-                0x20008bcc                __sf_fake_stdout
-                0x20008bec                __sf_fake_stderr
- .rodata        0x20008c0c       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+ .rodata        0x20008ba4       0x60 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-findfp.o)
+                0x20008ba4                __sf_fake_stdin
+                0x20008bc4                __sf_fake_stdout
+                0x20008be4                __sf_fake_stderr
+ .rodata        0x20008c04       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
  .rodata.str1.4
-                0x20008c40       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
+                0x20008c38       0x10 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-locale.o)
                                  0x18 (size before relaxing)
- .rodata        0x20008c50      0x128 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
-                0x20008c50                __mprec_tens
-                0x20008d28                __mprec_bigtens
-                0x20008d50                __mprec_tinytens
+ .rodata        0x20008c48      0x128 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mprec.o)
+                0x20008c48                __mprec_tens
+                0x20008d20                __mprec_bigtens
+                0x20008d48                __mprec_tinytens
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x20008d78        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x20008d78                _init
- .init          0x20008d7c        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x20008d70        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20008d70                _init
+ .init          0x20008d74        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x20008d84        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x20008d84                _fini
- .fini          0x20008d88        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x20008d90                PROVIDE (__preinit_array_start, .)
+ .fini          0x20008d7c        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20008d7c                _fini
+ .fini          0x20008d80        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x20008d88                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x20008d90                PROVIDE (__preinit_array_end, .)
-                0x20008d90                PROVIDE (__init_array_start, .)
+                0x20008d88                PROVIDE (__preinit_array_end, .)
+                0x20008d88                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x20008d90        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x20008d94                PROVIDE (__init_array_end, .)
-                0x20008d94                PROVIDE (__fini_array_start, .)
+ .init_array    0x20008d88        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x20008d8c                PROVIDE (__init_array_end, .)
+                0x20008d8c                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x20008d94        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x20008d8c        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x20008d98                PROVIDE (__fini_array_end, .)
-                0x20008d98                __exidx_start = .
+                0x20008d90                PROVIDE (__fini_array_end, .)
+                0x20008d90                __exidx_start = .
 
-.v4_bx          0x20008d98        0x0
+.v4_bx          0x20008d90        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.ARM.exidx      0x20008d98        0x8
+.ARM.exidx      0x20008d90        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x20008d98        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
- .ARM.exidx     0x20008da0        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x20008d90        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x20008d98        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
-                0x20008da0                __exidx_end = .
-                0x20008da0                _etext = .
-                0x20008da0                PROVIDE (__text_end, .)
+                0x20008d98                __exidx_end = .
+                0x20008d98                _etext = .
+                0x20008d98                PROVIDE (__text_end, .)
 
-.data           0x20008da0      0x524
-                0x20008da0                __data_load = LOADADDR (.data)
-                0x20008da0                _sidata = LOADADDR (.data)
-                0x20008da0                __data_start = .
-                0x20008da0                _sdata = .
+.data           0x20008d98      0x524
+                0x20008d98                __data_load = LOADADDR (.data)
+                0x20008d98                _sidata = LOADADDR (.data)
+                0x20008d98                __data_start = .
+                0x20008d98                _sdata = .
  *(.jcr)
- .jcr           0x20008da0        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x20008da0        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x20008d98        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x20008d98        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
  .data.interrupt_handled
-                0x20008da4        0x1 ./nfc.o
-                0x20008da4                interrupt_handled
- *fill*         0x20008da5        0x3 00
+                0x20008d9c        0x1 ./nfc.o
+                0x20008d9c                interrupt_handled
+ *fill*         0x20008d9d        0x3 00
  .data.g_FrequencyACE
-                0x20008da8        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20008da8                g_FrequencyACE
+                0x20008da0        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20008da0                g_FrequencyACE
  .data.g_FrequencyFPGA
-                0x20008dac        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20008dac                g_FrequencyFPGA
+                0x20008da4        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20008da4                g_FrequencyFPGA
  .data.g_FrequencyPCLK0
-                0x20008db0        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20008db0                g_FrequencyPCLK0
+                0x20008da8        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20008da8                g_FrequencyPCLK0
  .data.g_FrequencyPCLK1
-                0x20008db4        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20008db4                g_FrequencyPCLK1
+                0x20008dac        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20008dac                g_FrequencyPCLK1
  .data.SystemCoreClock
-                0x20008db8        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20008db8                SystemCoreClock
+                0x20008db0        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20008db0                SystemCoreClock
  .data.SystemFrequency
-                0x20008dbc        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20008dbc                SystemFrequency
- .data          0x20008dc0       0xf4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x20008dc0                _impure_ptr
- .data          0x20008eb4      0x410 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x20008eb4                __malloc_av_
-                0x200092bc                __malloc_sbrk_base
-                0x200092c0                __malloc_trim_threshold
-                0x200092c4                . = ALIGN (0x4)
-                0x200092c4                _edata = .
+                0x20008db4        0x4 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20008db4                SystemFrequency
+ .data          0x20008db8       0xf4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20008db8                _impure_ptr
+ .data          0x20008eac      0x410 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x20008eac                __malloc_av_
+                0x200092b4                __malloc_sbrk_base
+                0x200092b8                __malloc_trim_threshold
+                0x200092bc                . = ALIGN (0x4)
+                0x200092bc                _edata = .
 
-.bss            0x200092c4      0x3a4
-                0x200092c4                __bss_start__ = .
-                0x200092c4                _sbss = .
+.bss            0x200092bc      0x3a4
+                0x200092bc                __bss_start__ = .
+                0x200092bc                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x200092c4        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .bss           0x200092bc        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  .bss.last_was_ack
-                0x200092c5        0x1 ./main.o
-                0x200092c5                last_was_ack
- *fill*         0x200092c6        0x2 00
+                0x200092bd        0x1 ./main.o
+                0x200092bd                last_was_ack
+ *fill*         0x200092be        0x2 00
  .bss.g_stdio_uart_init_done
-                0x200092c8        0x4 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x200092c0        0x4 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .bss.heap_end.3583
-                0x200092cc        0x4 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .bss           0x200092d0       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
-                0x200092d0                __malloc_top_pad
-                0x200092d4                __malloc_current_mallinfo
-                0x200092fc                __malloc_max_sbrked_mem
-                0x20009300                __malloc_max_total_mem
+                0x200092c4        0x4 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .bss           0x200092c8       0x34 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-mallocr.o)
+                0x200092c8                __malloc_top_pad
+                0x200092cc                __malloc_current_mallinfo
+                0x200092f4                __malloc_max_sbrked_mem
+                0x200092f8                __malloc_max_total_mem
  *(COMMON)
- COMMON         0x20009304      0x11b ./lora.o
-                0x20009304                this_address
-                0x20009305                tx_header_id
-                0x20009306                last_rssi
-                0x20009308                rx_good
-                0x2000930a                tx_header_to
-                0x2000930b                mode
-                0x2000930c                promiscuous
-                0x2000930d                rx_header_from
-                0x2000930e                rx_header_flags
-                0x2000930f                cad
-                0x20009310                rx_buf_valid
-                0x20009311                buf_len
-                0x20009312                tx_good
-                0x20009314                buf
-                0x20009414                rx_bad
-                0x20009416                tx_header_from
-                0x20009418                cad_timeout
-                0x2000941c                rx_header_id
-                0x2000941d                rx_header_to
-                0x2000941e                tx_header_flags
- *fill*         0x2000941f        0x1 00
- COMMON         0x20009420       0x50 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20009420                g_mss_uart1
-                0x20009448                g_mss_uart0
- COMMON         0x20009470      0x108 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
-                0x20009470                g_mss_spi1
-                0x200094f4                g_mss_spi0
- COMMON         0x20009578       0xe8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20009578                g_mss_i2c0
-                0x200095ec                g_mss_i2c1
- COMMON         0x20009660        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
-                0x20009660                errno
-                0x20009668                . = ALIGN (0x8)
- *fill*         0x20009664        0x4 00
-                0x20009668                __bss_end__ = .
-                0x20009668                _end = .
-                0x20009668                __end = _end
-                0x20009668                _ebss = .
-                0x20009668                PROVIDE (end, .)
+ COMMON         0x200092fc      0x11b ./lora.o
+                0x200092fc                this_address
+                0x200092fd                tx_header_id
+                0x200092fe                last_rssi
+                0x20009300                rx_good
+                0x20009302                tx_header_to
+                0x20009303                mode
+                0x20009304                promiscuous
+                0x20009305                rx_header_from
+                0x20009306                rx_header_flags
+                0x20009307                cad
+                0x20009308                rx_buf_valid
+                0x20009309                buf_len
+                0x2000930a                tx_good
+                0x2000930c                buf
+                0x2000940c                rx_bad
+                0x2000940e                tx_header_from
+                0x20009410                cad_timeout
+                0x20009414                rx_header_id
+                0x20009415                rx_header_to
+                0x20009416                tx_header_flags
+ *fill*         0x20009417        0x1 00
+ COMMON         0x20009418       0x50 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20009418                g_mss_uart1
+                0x20009440                g_mss_uart0
+ COMMON         0x20009468      0x108 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20009468                g_mss_spi1
+                0x200094ec                g_mss_spi0
+ COMMON         0x20009570       0xe8 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20009570                g_mss_i2c0
+                0x200095e4                g_mss_i2c1
+ COMMON         0x20009658        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-reent.o)
+                0x20009658                errno
+                0x20009660                . = ALIGN (0x8)
+ *fill*         0x2000965c        0x4 00
+                0x20009660                __bss_end__ = .
+                0x20009660                _end = .
+                0x20009660                __end = _end
+                0x20009660                _ebss = .
+                0x20009660                PROVIDE (end, .)
 
-.stack          0x20009668     0x3000
-                0x20009668                . = ALIGN (0x4)
-                0x2000a668                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x20009668     0x1000 00
-                0x2000a668                . = ALIGN (0x4)
-                0x2000c668                . = (. + MAIN_STACK_SIZE)
- *fill*         0x2000a668     0x2000 00
-                0x2000c668                . = ALIGN (0x4)
+.stack          0x20009660     0x3000
+                0x20009660                . = ALIGN (0x4)
+                0x2000a660                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x20009660     0x1000 00
+                0x2000a660                . = ALIGN (0x4)
+                0x2000c660                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x2000a660     0x2000 00
+                0x2000c660                . = ALIGN (0x4)
 
 .stab
  *(.stab)
@@ -1458,24 +1458,24 @@ END GROUP
  .debug_abbrev  0x000015dc       0xc5 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
  .debug_abbrev  0x000016a1      0x154 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_line     0x00000000     0x52aa
+.debug_line     0x00000000     0x52a8
  *(.debug_line)
  .debug_line    0x00000000      0x274 ./contact_switch.o
  .debug_line    0x00000274      0x85b ./lora.o
  .debug_line    0x00000acf      0x750 ./lora_client_ex.o
- .debug_line    0x0000121f      0x752 ./lora_server_ex.o
- .debug_line    0x00001971      0x914 ./main.o
- .debug_line    0x00002285      0x139 ./neopixel.o
- .debug_line    0x000023be      0x343 ./neopixel_test.o
- .debug_line    0x00002701      0x6d0 ./nfc.o
- .debug_line    0x00002dd1      0x10a ./servo.o
- .debug_line    0x00002edb      0x547 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_line    0x00003422      0x619 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_line    0x00003a3b      0x866 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
- .debug_line    0x000042a1      0x7c9 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_line    0x00004a6a      0x348 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
- .debug_line    0x00004db2      0x258 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_line    0x0000500a      0x2a0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x0000121f      0x750 ./lora_server_ex.o
+ .debug_line    0x0000196f      0x914 ./main.o
+ .debug_line    0x00002283      0x139 ./neopixel.o
+ .debug_line    0x000023bc      0x343 ./neopixel_test.o
+ .debug_line    0x000026ff      0x6d0 ./nfc.o
+ .debug_line    0x00002dcf      0x10a ./servo.o
+ .debug_line    0x00002ed9      0x547 N:/PortableGit/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0/lockNET_SF_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x00003420      0x619 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_line    0x00003a39      0x866 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_line    0x0000429f      0x7c9 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_line    0x00004a68      0x348 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_line    0x00004db0      0x258 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_line    0x00005008      0x2a0 N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole\lockNET_SF_MSS_MSS_CM3_0\lockNET_SF_MSS_MSS_CM3_0_hw_platform\Debug\liblockNET_SF_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_frame    0x00000000     0x1e54
  *(.debug_frame)
