@@ -11,6 +11,7 @@
 #include "drivers/mss_spi/drivers/mss_spi/mss_spi.h"
 #include "drivers/mss_gpio/mss_gpio.h"
 #include <inttypes.h>
+#include <time.h>
 
 #define LORA_RegFifoTxBaseAddr 0x0E
 
@@ -215,12 +216,13 @@
 #define LORA_MODE_SLEEP 1
 #define LORA_MODE_RX 2
 #define LORA_MODE_TX 3
+#define LORA_MODE_CAD 4
 
 #define FALSE 0
 #define TRUE 1
 
 uint8_t LORA_init(void);
-
+void LORA_handle_interrupt(void);
 void LORA_set_mode_idle(void);
 void LORA_sleep(void);
 void LORA_set_mode_tx(void);

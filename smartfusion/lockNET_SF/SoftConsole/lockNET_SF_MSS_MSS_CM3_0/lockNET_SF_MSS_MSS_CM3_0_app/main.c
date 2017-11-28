@@ -8,8 +8,14 @@
 #include "nfc.h"
 #include "contact_switch.h"
 #include "lora.h"
+#include "lora_client_ex.h"
 
 uint8_t last_was_ack = 0;
+
+__attribute__ ((interrupt)) void GPIO9_IRQHandler( void ){
+	MSS_GPIO_clear_irq(MSS_GPIO_9);
+	LORA_handle_interrupt();
+}
 
 // Interrupts Handler
 __attribute__ ((interrupt)) void GPIO1_IRQHandler( void )
@@ -53,6 +59,7 @@ int main()
 	MSS_GPIO_init();
 	MSS_GPIO_config( MSS_GPIO_8, MSS_GPIO_OUTPUT_MODE);
 	MSS_GPIO_config( MSS_GPIO_9, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE );
+	MSS_GPIO_enable_irq(MSS_GPIO_9);
 	//MSS_GPIO_config( MSS_GPIO_10, MSS_GPIO_INOUT_MODE);
 	MSS_GPIO_set_output(MSS_GPIO_8, 1);
 
@@ -69,6 +76,8 @@ int main()
 	LORA_write(RH_RF95_REG_0D_FIFO_ADDR_PTR, 0);
 	uint8_t read_buf[4];
 	LORA_burst_read(RH_RF95_REG_00_FIFO, read_buf, 4);
+
+	LORA_client_ex_setup();
 	//LORA_read_addr(LORA_RegFifoTxBaseAddr);
 	/*
 	// MSS_GPIO initialization

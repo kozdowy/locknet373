@@ -7,6 +7,7 @@
 
 #include "lora.h"
 
+
 const uint8_t frame_size = 16;
 const uint8_t burst_frame_size = 8;
 const uint8_t modem_default[] = {0x72, 0x74, 0x00};
@@ -40,13 +41,57 @@ volatile uint16_t tx_good;
 volatile uint8_t cad;
 unsigned int cad_timeout;
 
+void LORA_handle_interrupt(void)
+{
+    // Read the interrupt register
+    uint8_t irq_flags = LORA_read(RH_RF95_REG_12_IRQ_FLAGS);
+    if (mode == LORA_MODE_RX && irq_flags & (RH_RF95_RX_TIMEOUT | RH_RF95_PAYLOAD_CRC_ERROR))
+    {
+	rx_bad++;
+    }
+    else if (mode == LORA_MODE_RX && irq_flags & RH_RF95_RX_DONE)
+    {
+	// Have received a packet
+	uint8_t len = LORA_read(RH_RF95_REG_13_RX_NB_BYTES);
+
+	// Reset the fifo read ptr to the beginning of the packet
+	LORA_write(RH_RF95_REG_0D_FIFO_ADDR_PTR, LORA_read(RH_RF95_REG_10_FIFO_RX_CURRENT_ADDR));
+	LORA_burst_read(RH_RF95_REG_00_FIFO, buf, len);
+	buf_len = len;
+	LORA_write(RH_RF95_REG_12_IRQ_FLAGS, 0xff); // Clear all IRQ flags
+
+	// Remember the RSSI of this packet
+	// this is according to the doc, but is it really correct?
+	// weakest receiveable signals are reported RSSI at about -66
+	last_rssi = LORA_read(RH_RF95_REG_1A_PKT_RSSI_VALUE) - 137;
+
+	// We have received a message.
+	LORA_validate_rx_buf();
+	if (rx_buf_valid)
+	    LORA_set_mode_idle(); // Got one
+    }
+    else if (mode == LORA_MODE_TX && irq_flags & RH_RF95_TX_DONE)
+    {
+	tx_good++;
+	LORA_set_mode_idle();
+    }
+    else if (mode == LORA_MODE_CAD && irq_flags & RH_RF95_CAD_DONE)
+    {
+        cad = irq_flags & RH_RF95_CAD_DETECTED;
+        LORA_set_mode_idle();
+    }
+
+    LORA_write(RH_RF95_REG_12_IRQ_FLAGS, 0xff); // Clear all IRQ flags
+}
+
 void LORA_wait_available(void){
 	while (!LORA_available());
 }
 
 uint8_t LORA_wait_available_timeout(uint16_t timeout){
-	unsigned long starttime = get_milliseconds(); // millis()?
-	while ((get_milliseconds() - starttime) < timeout){
+	unsigned long starttime = timeout * 1000000;
+	unsigned long counter = 0;
+	while ((counter++ - starttime) < 0){
 		if (LORA_available()){
 			return TRUE;
 		}
@@ -59,8 +104,11 @@ uint8_t LORA_wait_packet_sent(uint16_t timeout){
 		while (mode == LORA_MODE_TX);
 		return TRUE;
 	}
-	unsigned long starttime = millis();
-	while ((millis() - starttime < timeout)){
+	//unsigned long starttime = time(0);
+	//while ((time(0) - starttime < timeout)){
+	unsigned long starttime = timeout * 1000000;
+	unsigned long counter = 0;
+	while ((counter++ - starttime) < 0){
 		if (mode != LORA_MODE_TX){
 			return TRUE;
 		}
