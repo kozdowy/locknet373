@@ -57,13 +57,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511744656"
+TIME="1511839376"
 SIZE="2769"
 PARENT="<project>\component\work\lockNET_SF\lockNET_SF.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1511744656"
+TIME="1511839376"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -71,14 +71,14 @@ IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 STATE="utd"
-TIME="1506037752"
+TIME="1505855986"
 SIZE="912"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
 STATE="utd"
-TIME="1506037751"
+TIME="1506101531"
 SIZE="4636"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -86,7 +86,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
 STATE="utd"
-TIME="1506037752"
+TIME="1506101531"
 SIZE="9073"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -94,7 +94,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 STATE="utd"
-TIME="1506037752"
+TIME="1506101531"
 SIZE="25129"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -102,7 +102,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 STATE="utd"
-TIME="1506037752"
+TIME="1506101531"
 SIZE="36275"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -110,7 +110,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
 STATE="utd"
-TIME="1506037751"
+TIME="1506101531"
 SIZE="122456"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -118,7 +118,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
 STATE="utd"
-TIME="1506037752"
+TIME="1506101532"
 SIZE="32806"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -126,7 +126,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v,hdl"
 STATE="utd"
-TIME="1506037752"
+TIME="1506101532"
 SIZE="3556"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -134,7 +134,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v,hdl"
 STATE="utd"
-TIME="1506037752"
+TIME="1506101532"
 SIZE="6765"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -142,7 +142,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1506037752"
+TIME="1506101531"
 SIZE="23651"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
@@ -152,7 +152,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756960"
+TIME="1510940868"
 SIZE="945"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
@@ -170,125 +170,119 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756946"
+TIME="1510940858"
 SIZE="252"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756946"
+TIME="1510940858"
 SIZE="252"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756946"
+TIME="1510940858"
 SIZE="252"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756946"
+TIME="1510940858"
 SIZE="252"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756954"
+TIME="1510940864"
 SIZE="253"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756955"
+TIME="1510940864"
 SIZE="252"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756955"
+TIME="1510940864"
 SIZE="252"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756955"
+TIME="1510940864"
 SIZE="253"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_I2C\1.0.101\MSS_I2C.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756955"
+TIME="1510940864"
 SIZE="252"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756955"
+TIME="1510940864"
 SIZE="253"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_MAC\2.1.101\MSS_MAC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511744642"
+TIME="1510940864"
 SIZE="252"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756955"
+TIME="1510940865"
 SIZE="254"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756955"
-SIZE="252"
-PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
-ENDFILE
-VALUE "<project>\component\Actel\SmartFusionMSS\MSS_SPI\1.0.102\MSS_SPI.cxf,actgen_cxf"
-STATE="utd"
-TIME="1511756956"
+TIME="1510940865"
 SIZE="252"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756956"
+TIME="1510940865"
 SIZE="254"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756956"
+TIME="1510940865"
 SIZE="253"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756956"
+TIME="1510940865"
 SIZE="254"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511741034"
-SIZE="2730"
+TIME="1511838469"
+SIZE="2543"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511740527"
+TIME="1510875920"
 SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF\lockNET_SF.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511744693"
-SIZE="11463"
+TIME="1511839411"
+SIZE="8582"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF\lockNET_SF.pdc,pdc"
 STATE="utd"
-TIME="1511744654"
-SIZE="7876"
+TIME="1511839375"
+SIZE="3283"
 PARENT="<project>\component\work\lockNET_SF\lockNET_SF.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -298,20 +292,20 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF\lockNET_SF.v,hdl"
 STATE="utd"
-TIME="1511744658"
-SIZE="17380"
+TIME="1511839378"
+SIZE="16107"
 PARENT="<project>\component\work\lockNET_SF\lockNET_SF.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756965"
+TIME="1511838469"
 SIZE="16798"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.pdc,pdc"
 STATE="utd"
-TIME="1511756940"
-SIZE="3789"
+TIME="1511838469"
+SIZE="3175"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -321,34 +315,34 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.v,hdl"
 STATE="utd"
-TIME="1511756961"
+TIME="1511838469"
 SIZE="25408"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1511756946"
+TIME="1510940858"
 SIZE="495"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1511756946"
+TIME="1511838469"
 SIZE="2888"
 PARENT="<project>\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1511756954"
-SIZE="19088"
+TIME="1511838469"
+SIZE="16219"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF_MSS\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1511756957"
+TIME="1510940866"
 SIZE="12226"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -360,7 +354,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF_MSS\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1511756957"
+TIME="1510940866"
 SIZE="200"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -372,92 +366,72 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF.adb,adb"
 STATE="ood"
-TIME="1511744854"
-SIZE="762880"
-ENDFILE
-VALUE "<project>\designer\impl1\lockNET_SF.fdb,fdb"
-STATE="ood"
-TIME="1511744853"
-SIZE="52010"
+TIME="1511839245"
+SIZE="761344"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF.ide_des,ide_des"
 STATE="utd"
-TIME="1511744855"
-SIZE="1099"
+TIME="1511839383"
+SIZE="1096"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_compile_log.rpt,log"
 STATE="utd"
-TIME="1511744786"
-SIZE="30319"
+TIME="1511839245"
+SIZE="30794"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_fp\lockNET_SF.pdb,pdb"
 STATE="ood"
-TIME="1511744885"
-SIZE="57578"
+TIME="1511839063"
+SIZE="57621"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_fp\lockNET_SF.pro,pro"
 STATE="utd"
-TIME="1511827448"
-SIZE="2415"
+TIME="1511839109"
+SIZE="2439"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_fp\projectData\lockNET_SF.pdb,pdb"
 STATE="utd"
-TIME="1511744927"
-SIZE="57578"
-ENDFILE
-VALUE "<project>\designer\impl1\lockNET_SF_placeroute_log.rpt,log"
-STATE="utd"
-TIME="1511744826"
-SIZE="2686"
-ENDFILE
-VALUE "<project>\designer\impl1\lockNET_SF_prgdata_log.rpt,log"
-STATE="utd"
-TIME="1511744855"
-SIZE="717"
+TIME="1511839108"
+SIZE="57621"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_timingconstraints_log.rpt,log"
 STATE="utd"
-TIME="1511740528"
+TIME="1510880057"
 SIZE="268"
-ENDFILE
-VALUE "<project>\designer\impl1\lockNET_SF_verifytiming_log.rpt,log"
-STATE="utd"
-TIME="1511744834"
-SIZE="1189"
 ENDFILE
 VALUE "<project>\hdl\apb3_interface.v,hdl"
 STATE="utd"
-TIME="1511740529"
+TIME="1510940666"
 SIZE="2177"
 ENDFILE
 VALUE "<project>\hdl\MonMult.v,hdl"
 STATE="utd"
-TIME="1511827448"
+TIME="1511838471"
 SIZE="2242"
 ENDFILE
 VALUE "<project>\hdl\neopixel.v,hdl"
 STATE="utd"
-TIME="1511740529"
+TIME="1510877844"
 SIZE="4078"
 ENDFILE
 VALUE "<project>\hdl\NFC.v,hdl"
 STATE="utd"
-TIME="1511740529"
+TIME="1510940328"
 SIZE="429"
 ENDFILE
 VALUE "<project>\hdl\RSA.v,hdl"
 STATE="utd"
-TIME="1511827448"
+TIME="1511838471"
 SIZE="1221"
 ENDFILE
 VALUE "<project>\hdl\servo.v,hdl"
 STATE="utd"
-TIME="1511740529"
+TIME="1510876691"
 SIZE="2057"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
-TIME="1506037752"
+TIME="1505855986"
 SIZE="1229"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
@@ -469,47 +443,47 @@ PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
 STATE="utd"
-TIME="1511740529"
+TIME="1510875921"
 SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1511744658"
+TIME="1511839378"
 SIZE="639"
 PARENT="<project>\component\work\lockNET_SF\lockNET_SF.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1511756947"
+TIME="1511838471"
 SIZE="5496"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
-TIME="1511740529"
+TIME="1510875921"
 SIZE="670"
 PARENT="<project>\component\work\lockNET_SF_MSS\lockNET_SF_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\lockNET_SF.edn,syn_edn"
-STATE="ood"
-TIME="1511744750"
-SIZE="519712"
+STATE="utd"
+TIME="1511839456"
+SIZE="512457"
 ENDFILE
 VALUE "<project>\synthesis\lockNET_SF.so,so"
 STATE="utd"
-TIME="1511744750"
+TIME="1511839456"
 SIZE="238"
 ENDFILE
 VALUE "<project>\synthesis\lockNET_SF_sdc.sdc,syn_sdc"
-STATE="ood"
-TIME="1511744750"
+STATE="utd"
+TIME="1511839456"
 SIZE="546"
 ENDFILE
 VALUE "<project>\synthesis\lockNET_SF_syn.prj,prj"
 STATE="utd"
-TIME="1511827448"
-SIZE="3138"
+TIME="1511839457"
+SIZE="3250"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -523,6 +497,19 @@ VALUE "<project>\component\work\lockNET_SF\lockNET_SF.pdc,pdc"
 ENDLIST
 LIST SynthesisConstraints
 VALUE "<project>\component\work\lockNET_SF_MSS\mss_tshell_syn.sdc,sdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\lockNET_SF.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 LIST "lockNET_SF_MSS::work"
@@ -662,10 +649,10 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsole"
+NAME="SoftConsole v3.3"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
-LOCATION="eclipse.exe"
+LOCATION="C:\Program Files (x86)\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
 PARAM=""
 BATCH=0
 LICENSE=""
@@ -709,6 +696,19 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "lockNET_SF::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\lockNET_SF.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "CoreAPB3::COREAPB3_LIB"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -749,7 +749,6 @@ LIST "BIBUF_OPEND_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_com
 ENDLIST
 LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
 SUBBLOCK "HAL::work","","FALSE","FALSE"
-SUBBLOCK "MSS_Ethernet_MAC_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_GPIO_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_I2C_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_IAP_Driver::work","","FALSE","FALSE"
@@ -798,8 +797,6 @@ ENDLIST
 LIST "MSS_APB::work","component\work\lockNET_SF_MSS\mss_tshell.v","FALSE","FALSE"
 ENDLIST
 LIST "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
-ENDLIST
-LIST "MSS_Ethernet_MAC_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "MSS_GPIO_Driver::work","","FALSE","FALSE"
 ENDLIST

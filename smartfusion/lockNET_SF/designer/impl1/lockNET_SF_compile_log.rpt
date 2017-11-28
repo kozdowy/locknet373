@@ -12,7 +12,7 @@ Opened an existing Libero design lockNET_SF.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 1.0 seconds
+ Netlist Reading Time = 0.0 seconds
 Imported the files:
    N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
    N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc

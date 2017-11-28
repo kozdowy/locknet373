@@ -3,7 +3,7 @@
 
 # Version: v11.8 11.8.0.26
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Mon Nov 27 19:24:24 2017 
+# Date generated: Mon Nov 27 22:22:55 2017 
 
 
 # 
@@ -42,14 +42,48 @@ define_group -name UART_1_PADs
 # Dedicated Peripheral I/O Settings
 # 
 
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+set_io GPIO_10_BI     \
+    -iostd LVTTL      \
+    -DIRECTION INOUT
+
+
+set_io GPIO_1_IN      \
+    -iostd LVTTL      \
+    -DIRECTION INPUT
+
+
+set_io GPIO_8_OUT      \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO_9_IN      \
+    -iostd LVTTL      \
+    -DIRECTION INPUT
+
+
+set_io MSS_RESET_N    \
+    -iostd LVTTL      \
+    -DIRECTION INPUT
+
+
 # User Group I2C_1_PADs
 
 set_io I2C_1_SCL            \
+    -iostd LVTTL            \
     -GROUP_NAME I2C_1_PADs  \
     -DIRECTION INOUT
 
 
 set_io I2C_1_SDA            \
+    -iostd LVTTL            \
     -GROUP_NAME I2C_1_PADs  \
     -DIRECTION INOUT
 
@@ -57,21 +91,25 @@ set_io I2C_1_SDA            \
 # User Group SPI_1_PADs
 
 set_io SPI_1_CLK            \
+    -iostd LVTTL            \
     -GROUP_NAME SPI_1_PADs  \
     -DIRECTION INOUT
 
 
 set_io SPI_1_DI             \
+    -iostd LVTTL            \
     -GROUP_NAME SPI_1_PADs  \
     -DIRECTION INPUT
 
 
 set_io SPI_1_DO             \
+    -iostd LVTTL            \
     -GROUP_NAME SPI_1_PADs  \
     -DIRECTION OUTPUT
 
 
 set_io SPI_1_SS             \
+    -iostd LVTTL            \
     -GROUP_NAME SPI_1_PADs  \
     -DIRECTION INOUT
 
@@ -79,11 +117,13 @@ set_io SPI_1_SS             \
 # User Group UART_0_PADs
 
 set_io UART_0_RXD            \
+    -iostd LVTTL             \
     -GROUP_NAME UART_0_PADs  \
     -DIRECTION INPUT
 
 
 set_io UART_0_TXD            \
+    -iostd LVTTL             \
     -GROUP_NAME UART_0_PADs  \
     -DIRECTION OUTPUT
 
@@ -91,21 +131,16 @@ set_io UART_0_TXD            \
 # User Group UART_1_PADs
 
 set_io UART_1_RXD            \
+    -iostd LVTTL             \
     -GROUP_NAME UART_1_PADs  \
     -DIRECTION INPUT
 
 
 set_io UART_1_TXD            \
+    -iostd LVTTL             \
     -GROUP_NAME UART_1_PADs  \
     -DIRECTION OUTPUT
 
-
-
-# 
-# Unlocked I/O settings
-# The I/Os in this section are unplaced or placed but are not locked
-# the other listed attributes have been applied
-# 
 
 
 #
@@ -117,30 +152,6 @@ set_io UART_1_TXD            \
 # Old IO constraints, commented out for reference
 #
 
-# set_io GPIO_10_BI -iostd LVTTL -DIRECTION INOUT 
-# set_io GPIO_1_IN -iostd LVTTL -DIRECTION INPUT 
-# set_io GPIO_8_OUT -iostd LVTTL -DIRECTION OUTPUT 
-# set_io GPIO_9_IN -iostd LVTTL -DIRECTION INPUT 
-# set_io MSS_RESET_N -iostd LVTTL -DIRECTION INPUT 
-# set_io I2C_1_SCL -iostd LVTTL -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
-# set_io I2C_1_SDA -iostd LVTTL -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
-# set_io MAC_0_CRSDV -iostd LVTTL -GROUP_NAME MAC_0_RMII_DATA_PADs -DIRECTION INPUT 
-# set_io {MAC_0_RXD[0]} -iostd LVTTL -GROUP_NAME MAC_0_RMII_DATA_PADs -DIRECTION INPUT 
-# set_io {MAC_0_RXD[1]} -iostd LVTTL -GROUP_NAME MAC_0_RMII_DATA_PADs -DIRECTION INPUT 
-# set_io MAC_0_RXER -iostd LVTTL -GROUP_NAME MAC_0_RMII_DATA_PADs -DIRECTION INPUT 
-# set_io {MAC_0_TXD[0]} -iostd LVTTL -GROUP_NAME MAC_0_RMII_DATA_PADs -DIRECTION OUTPUT 
-# set_io {MAC_0_TXD[1]} -iostd LVTTL -GROUP_NAME MAC_0_RMII_DATA_PADs -DIRECTION OUTPUT 
-# set_io MAC_0_TXEN -iostd LVTTL -GROUP_NAME MAC_0_RMII_DATA_PADs -DIRECTION OUTPUT 
-# set_io MAC_0_MDC -iostd LVTTL -GROUP_NAME MAC_0_RMII_PHY_MGMT_PADs -DIRECTION OUTPUT 
-# set_io MAC_0_MDIO -iostd LVTTL -GROUP_NAME MAC_0_RMII_PHY_MGMT_PADs -DIRECTION INOUT 
-# set_io SPI_1_CLK -iostd LVTTL -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io SPI_1_DI -iostd LVTTL -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
-# set_io SPI_1_DO -iostd LVTTL -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
-# set_io SPI_1_SS -iostd LVTTL -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io UART_0_RXD -iostd LVTTL -GROUP_NAME UART_0_PADs -DIRECTION INPUT 
-# set_io UART_0_TXD -iostd LVTTL -GROUP_NAME UART_0_PADs -DIRECTION OUTPUT 
-# set_io UART_1_RXD -iostd LVTTL -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
-# set_io UART_1_TXD -iostd LVTTL -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
 # set_io I2C_1_SCL -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
 # set_io I2C_1_SDA -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
 # set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 

@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Nov 27 19:27:36 2017 ***************************************************************************
+                          Mon Nov 27 22:20:42 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
 File Name: N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb
 Design Name: lockNET_SF  Design State: compile
-Last Saved: Mon Nov 27 19:21:05 2017
+Last Saved: Mon Nov 27 22:17:12 2017
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Nov 27 19:27:30 2017:
+Source File(s) Imported on Mon Nov 27 22:20:36 2017:
         N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
         N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
 

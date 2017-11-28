@@ -1,9 +1,9 @@
 #Build: Synplify Pro L-2016.09M-2, Build 065R, Nov 16 2016
 #install: C:\Microsemi\Libero_SoC_v11.8\SynplifyPro
 #OS: Windows 8 6.2
-#Hostname: EECS373-11
+#Hostname: EECS373-10
 
-# Mon Nov 27 19:25:07 2017
+# Mon Nov 27 22:24:02 2017
 
 #Implementation: synthesis
 
@@ -34,9 +34,6 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
 @I::"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v" (library work)
 Verilog syntax check successful!
-File N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell.v changed - recompiling
-File N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
-File N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\lockNET_SF_MSS.v changed - recompiling
 File N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v changed - recompiling
 Selecting top level module lockNET_SF
 @N: CG364 :"N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":13:7:13:14|Synthesizing module neopixel in library work.
@@ -235,12 +232,12 @@ Selecting top level module lockNET_SF
 @W: CL246 :"N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":22:29:22:42|Input port bits 31 to 27 of bus_write_data[31:0] are unused. Assign logic for all port bits or change the input port size.
 @N: CL159 :"N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":21:28:21:35|Input bus_addr is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 80MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 80MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Nov 27 19:25:09 2017
+# Mon Nov 27 22:24:04 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
@@ -251,7 +248,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Nov 27 19:25:09 2017
+# Mon Nov 27 22:24:04 2017
 
 ###########################################################]
 @END
@@ -261,7 +258,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Nov 27 19:25:09 2017
+# Mon Nov 27 22:24:04 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
@@ -273,12 +270,12 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Nov 27 19:25:11 2017
+# Mon Nov 27 22:24:06 2017
 
 ###########################################################]
 Pre-mapping Report
 
-# Mon Nov 27 19:25:11 2017
+# Mon Nov 27 22:24:07 2017
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -323,19 +320,19 @@ Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 114MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 114MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:01s cputime
-# Mon Nov 27 19:25:14 2017
+# Mon Nov 27 22:24:10 2017
 
 ###########################################################]
 Map & Optimize Report
 
-# Mon Nov 27 19:25:15 2017
+# Mon Nov 27 22:24:10 2017
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -457,7 +454,7 @@ Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02
 
 Writing Analyst data base N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:02s; Memory used current: 116MB peak: 118MB)
 
 Writing EDIF Netlist and constraint files
 L-2016.09M-2
@@ -474,7 +471,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Nov 27 19:25:20 2017
+# Timing Report written on Mon Nov 27 22:24:16 2017
 #
 
 
@@ -1262,9 +1259,9 @@ Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 29MB peak: 118MB)
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:03s; Memory used current: 29MB peak: 118MB)
 
-Process took 0h:00m:05s realtime, 0h:00m:03s cputime
-# Mon Nov 27 19:25:20 2017
+Process took 0h:00m:06s realtime, 0h:00m:03s cputime
+# Mon Nov 27 22:24:16 2017
 
 ###########################################################]

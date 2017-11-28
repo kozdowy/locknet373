@@ -1,19 +1,19 @@
 C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe  -osyn  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_comp.srs  -top  lockNET_SF  -hdllog  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synlog\lockNET_SF_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\  -I C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib   -v2001  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v -lib work N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\NFC.v -lib work N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\servo.v -lib work N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v -lib work N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v -lib work N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell.v -lib work N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\lockNET_SF_MSS.v -lib COREAPB3_LIB N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v -lib COREAPB3_LIB N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v -lib COREAPB3_LIB N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v -lib work N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v 
-rc:0 success:1 runtime:3
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_comp.srs|io:o|time:1511828709|size:42981|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synlog\lockNET_SF_compiler.srr|io:o|time:1511828709|size:24773|exec:0
+rc:0 success:1 runtime:4
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_comp.srs|io:o|time:1511839444|size:42976|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synlog\lockNET_SF_compiler.srr|io:o|time:1511839444|size:24373|exec:0
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1487959650|size:72817|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v|io:i|time:1511740529|size:4078|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\NFC.v|io:i|time:1511740529|size:429|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\servo.v|io:i|time:1511740529|size:2057|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v|io:i|time:1511740529|size:2177|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v|io:i|time:1510877844|size:4078|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\NFC.v|io:i|time:1510940328|size:429|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\servo.v|io:i|time:1510876691|size:2057|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v|io:i|time:1510940666|size:2177|exec:0
 file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v|io:i|time:1471626147|size:11243|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell.v|io:i|time:1511828653|size:12226|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v|io:i|time:1511828645|size:2888|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\lockNET_SF_MSS.v|io:i|time:1511828656|size:25408|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v|io:i|time:1506616002|size:6765|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v|io:i|time:1506616002|size:3556|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v|io:i|time:1506616002|size:32806|exec:0
-file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v|io:i|time:1511828667|size:16107|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell.v|io:i|time:1510940866|size:12226|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v|io:i|time:1511838469|size:2888|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\lockNET_SF_MSS.v|io:i|time:1511838469|size:25408|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v|io:i|time:1506101532|size:6765|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v|io:i|time:1506101532|size:3556|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v|io:i|time:1506101532|size:32806|exec:0
+file:N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v|io:i|time:1511839378|size:16107|exec:0
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\c_hdl.exe|io:i|time:1479391564|size:1337856|exec:1
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe|io:i|time:1479391768|size:1973248|exec:1

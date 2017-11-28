@@ -65,8 +65,8 @@ void LORA_client_ex_loop(void){
   // Now wait for a reply
   uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];
   uint8_t len = sizeof(buf);
-
-  if (LORA_wait_available_timeout(3))
+  LORA_wait_available();
+  if (1)
   {
     // Should be a reply message for us now
     if (LORA_recv(buf, &len))

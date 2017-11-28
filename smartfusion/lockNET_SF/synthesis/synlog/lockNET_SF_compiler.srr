@@ -25,9 +25,6 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
 @I::"N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v" (library work)
 Verilog syntax check successful!
-File N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell.v changed - recompiling
-File N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
-File N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\lockNET_SF_MSS.v changed - recompiling
 File N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v changed - recompiling
 Selecting top level module lockNET_SF
 @N: CG364 :"N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":13:7:13:14|Synthesizing module neopixel in library work.
@@ -226,12 +223,12 @@ Selecting top level module lockNET_SF
 @W: CL246 :"N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":22:29:22:42|Input port bits 31 to 27 of bus_write_data[31:0] are unused. Assign logic for all port bits or change the input port size.
 @N: CL159 :"N:\PortableGit\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":21:28:21:35|Input bus_addr is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 80MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 80MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Nov 27 19:25:09 2017
+# Mon Nov 27 22:24:04 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
@@ -242,7 +239,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Nov 27 19:25:09 2017
+# Mon Nov 27 22:24:04 2017
 
 ###########################################################]
 @END
@@ -252,6 +249,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Nov 27 19:25:09 2017
+# Mon Nov 27 22:24:04 2017
 
 ###########################################################]

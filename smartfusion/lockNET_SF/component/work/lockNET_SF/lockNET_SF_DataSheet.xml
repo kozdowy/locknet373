@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF</location>
-    <state>GENERATED ( Mon Nov 27 19:24:42 2017 )</state>
+    <state>GENERATED ( Mon Nov 27 22:23:20 2017 )</state>
     <swide-toolchain>SoftConsole workspace generated to N:\PortableGit\locknet373\smartfusion\lockNET_SF\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -36,7 +36,7 @@
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>SPI_1_CLK</port-name>
