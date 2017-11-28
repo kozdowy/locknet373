@@ -7,6 +7,7 @@ C_SRCS += \
 ../contact_switch.c \
 ../lora.c \
 ../lora_client_ex.c \
+../lora_server_ex.c \
 ../main.c \
 ../neopixel.c \
 ../neopixel_test.c \
@@ -17,6 +18,7 @@ OBJS += \
 ./contact_switch.o \
 ./lora.o \
 ./lora_client_ex.o \
+./lora_server_ex.o \
 ./main.o \
 ./neopixel.o \
 ./neopixel_test.o \
@@ -27,6 +29,7 @@ C_DEPS += \
 ./contact_switch.d \
 ./lora.d \
 ./lora_client_ex.d \
+./lora_server_ex.d \
 ./main.d \
 ./neopixel.d \
 ./neopixel_test.d \

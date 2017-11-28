@@ -9,6 +9,7 @@
 #include "contact_switch.h"
 #include "lora.h"
 #include "lora_client_ex.h"
+#include "lora_server_ex.h"
 
 uint8_t last_was_ack = 0;
 
@@ -77,7 +78,7 @@ int main()
 	uint8_t read_buf[4];
 	LORA_burst_read(RH_RF95_REG_00_FIFO, read_buf, 4);
 
-	LORA_client_ex_setup();
+	LORA_server_ex_setup();
 	//LORA_read_addr(LORA_RegFifoTxBaseAddr);
 	/*
 	// MSS_GPIO initialization

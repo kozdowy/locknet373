@@ -235,6 +235,24 @@ void LORA_validate_rx_buf(void);
 uint8_t LORA_available(void);
 void LORA_clear_rx_buf(void);
 
+void LORA_wait_available(void);
+
+uint8_t LORA_wait_available_timeout(uint16_t timeout);
+
+uint8_t LORA_wait_packet_sent(uint16_t timeout);
+
+void LORA_set_promiscuous(uint8_t prom);
+
+void LORA_set_this_address(uint8_t addr);
+
+void LORA_set_header_to(uint8_t to);
+
+void LORA_set_header_from(uint8_t from);
+
+void LORA_set_header_id(uint8_t id);
+
+void LORA_set_header_flags(uint8_t set, uint8_t clear);
+
 uint8_t LORA_send(const uint8_t* data, uint8_t len);
 uint8_t LORA_recv(uint8_t* buf, uint8_t* len);
 
