@@ -1,47 +1,46 @@
 /*
- * lora_client_ex.c
+ * lora_server_ex.c
  *
  *  Created on: Nov 27, 2017
  *      Author: kozdowy
  */
 
-// rf95_client.pde
+// rf95_server.pde
 // -*- mode: C++ -*-
-// Example sketch showing how to create a simple messageing client
+// Example sketch showing how to create a simple messageing server
 // with the RH_RF95 class. RH_RF95 class does not provide for addressing or
-// reliability, so you should only use RH_RF95 if you do not need the higher
+// reliability, so you should only use RH_RF95  if you do not need the higher
 // level messaging abilities.
-// It is designed to work with the other example rf95_server
+// It is designed to work with the other example rf95_client
 // Tested with Anarduino MiniWirelessLoRa, Rocket Scream Mini Ultra Pro with
 // the RFM95W, Adafruit Feather M0 with RFM95
 
-
-// Singleton instance of the radio driver
-//RH_RF95 rf95;
+#include "lora_server_ex.h"
 //RH_RF95 rf95(5, 2); // Rocket Scream Mini Ultra Pro with the RFM95W
 //RH_RF95 rf95(8, 3); // Adafruit Feather M0 with RFM95
 
 // Need this on Arduino Zero with SerialUSB port (eg RocketScream Mini Ultra Pro)
 //#define Serial SerialUSB
-#include "lora_client_ex.h"
 
+//int led = 9;
 
-void LORA_client_ex_setup(void){
+void LORA_server_ex_setup()
+{
   // Rocket Scream Mini Ultra Pro with the RFM95W only:
   // Ensure serial flash is not interfering with radio communication on SPI bus
 //  pinMode(4, OUTPUT);
 //  digitalWrite(4, HIGH);
 
-  if (LORA_init() == 1){
-	  printf("init failed\r\n");
-	  return;
-  }
+	  if (LORA_init() == 1){
+		  printf("init failed\r\n");
+		  return;
+	  }
+	  printf("Listening for packets\r\n");
 
-  while (1){
-	  LORA_client_ex_loop();
-  }
-
-
+	  //LORA_set_mode_idle();
+	  while (1){
+		  LORA_server_ex_loop();
+	  }
   // Defaults after init are 434.0MHz, 13dBm, Bw = 125 kHz, Cr = 4/5, Sf = 128chips/symbol, CRC on
 
   // The default transmitter power is 13dBm, using PA_BOOST.
@@ -55,38 +54,34 @@ void LORA_client_ex_setup(void){
 //  driver.setTxPower(14, true);
 }
 
-void LORA_client_ex_loop(void){
-  printf("Sending to rf95_server\r\n");
-  // Send a message to rf95_server
-  uint8_t data[] = "Hello World!";
-  LORA_send(data, sizeof(data));
-
-  LORA_wait_packet_sent(0);
-  // Now wait for a reply
-  uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];
-  uint8_t len = sizeof(buf);
-
-  if (LORA_wait_available_timeout(6500))
+void LORA_server_ex_loop()
+{
+	uint8_t avail = LORA_available();
+  if (avail != FALSE)
   {
-    // Should be a reply message for us now
+    // Should be a message for us now
+    uint8_t buf[RH_RF95_MAX_MESSAGE_LEN];
+    uint8_t len = sizeof(buf);
     if (LORA_recv(buf, &len))
-   {
-      printf("got reply: ");
+    {
+      //digitalWrite(led, HIGH);
+//      RH_RF95::printBuffer("request: ", buf, len);
+      printf("got request: ");
       printf((char*)buf);
       printf("\r\n");
 //      Serial.print("RSSI: ");
-//      printf(rf95.lastRssi(), DEC);
+//      Serial.println(rf95.lastRssi(), DEC);
+
+      // Send a reply
+      uint8_t data[] = "And hello back to you";
+      LORA_send(data, sizeof(data));
+      LORA_wait_packet_sent(0);
+      printf("Sent a reply\r\n");
+       //digitalWrite(led, LOW);
     }
     else
     {
       printf("recv failed\r\n");
     }
   }
-  else
-  {
-    printf("No reply, is rf95_server running?\r\n");
-  }
-  //delay(400);
-  int i;
-  for (i = 0; i < 1000000; ++i);
 }

@@ -12,6 +12,8 @@
 #include "drivers/mss_gpio/mss_gpio.h"
 #include <inttypes.h>
 #include <time.h>
+#include "drivers/mss_uart/mss_uart.h"
+
 
 #define LORA_RegFifoTxBaseAddr 0x0E
 
