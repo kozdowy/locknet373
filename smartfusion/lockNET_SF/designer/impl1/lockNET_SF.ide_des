@@ -10,7 +10,7 @@ KEY IDE_DES_IOSTD "LVTTL"
 KEY IDE_DES_TOP_CELL_NAME "lockNET_SF"
 KEY IDE_DES_KEEP_PHY_CONSTR "TRUE"
 KEY IDE_DES_KEEP_TIME_CONSTR "TRUE"
-KEY IDE_DES_LAYOUT_DONE "FALSE"
+KEY IDE_DES_LAYOUT_DONE "TRUE"
 KEY IDE_DES_COMPILE_DONE "TRUE"
 KEY IDE_DES_IOCONSTRAINTS_PRESENT "TRUE"
 KEY IDE_DES_TIMINGCONSTRAINTS_PRESENT "TRUE"
@@ -20,10 +20,10 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb"
+KEY IDE_DES_ADB_PATH "N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb"
 LIST SOURCE_FILES
-VALUE "N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn;edn"
-VALUE "N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc;pdc"
+VALUE "N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn;edn"
+VALUE "N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

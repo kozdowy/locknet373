@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Nov 27 22:20:42 2017 ***************************************************************************
+                          Mon Dec 04 05:09:34 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
-File Name: N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb
+File Name: N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb
 Design Name: lockNET_SF  Design State: compile
-Last Saved: Mon Nov 27 22:17:12 2017
+Last Saved: Sun Dec 03 21:06:16 2017
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Nov 27 22:20:36 2017:
-        N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
-        N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
+Source File(s) Imported on Mon Dec 04 05:09:29 2017:
+        N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
+        N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
-
-N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
+Source      : N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
+              N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
 Format      : EDIF
 Topcell     : lockNET_SF
 Speed grade : STD
@@ -362,9 +361,9 @@ Optimized macros:
   - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        20
+  - Logic combining:        15
 
-    Total macros optimized  21
+    Total macros optimized  16
 
 There were 0 error(s) and 274 warning(s) in this design.
 =====================================================================
@@ -386,7 +385,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:    689  Total:   4608   (14.95%)
+    Fabric                     Used:    680  Total:   4608   (14.76%)
     Fabric IO (W/ clocks)      Used:      4  Total:     94   (4.26%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -415,7 +414,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 578          | 578
+    COMB    | 569          | 569
     SEQ     | 111          | 111
 
 I/O Function:
@@ -451,7 +450,7 @@ The following nets have been assigned to a chip global resource:
     112     CLK_NET       Net   : FAB_CLK
                           Driver: lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
-    96      INT_NET       Net   : lockNET_SF_MSS_0_M2F_RESET_N
+    89      INT_NET       Net   : lockNET_SF_MSS_0_M2F_RESET_N
                           Driver: lockNET_SF_MSS_0/MSS_ADLIB_INST_RNI2GO1/U_CLKSRC
                           Source: NETLIST
 
@@ -460,7 +459,7 @@ High fanout nets in the post compile netlist:
     --------------------------
     24      INT_NET       Net   : apb3_interface_0/pxl_0/N_14
                           Driver: apb3_interface_0/pxl_0/send_pixel_RNI7BNI5[4]
-    22      INT_NET       Net   : apb3_interface_0/servo_0/r_N_6
+    18      INT_NET       Net   : apb3_interface_0/servo_0/N_132
                           Driver: apb3_interface_0/servo_0/counter_RNITIGRJ1[15]
     16      INT_NET       Net   : apb3_interface_0/servo_0/write_pulse_0
                           Driver: apb3_interface_0/servo_0/write_pulse_0
@@ -486,7 +485,7 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: lockNET_SF_MSS_0/MSS_ADLIB_INST
     24      INT_NET       Net   : apb3_interface_0/pxl_0/N_14
                           Driver: apb3_interface_0/pxl_0/send_pixel_RNI7BNI5[4]
-    22      INT_NET       Net   : apb3_interface_0/servo_0/r_N_6
+    18      INT_NET       Net   : apb3_interface_0/servo_0/N_132
                           Driver: apb3_interface_0/servo_0/counter_RNITIGRJ1[15]
     16      INT_NET       Net   : apb3_interface_0/servo_0/write_pulse_0
                           Driver: apb3_interface_0/servo_0/write_pulse_0

@@ -1,0 +1,1 @@
+@W: MT532 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\rsa.v":190:4:190:5|Found signal identified as System clock which controls 32 sequential elements including apb3_interface_0.rsa_0.bus_read_data_1[0].  Using this clock, which has no specified timing constraint, can adversely impact design performance. 

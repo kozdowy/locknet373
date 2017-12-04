@@ -36,6 +36,7 @@ output FABINT;
 
 wire [31:0] NP_PRDATA;
 wire [31:0] SERVO_PRDATA;
+wire [31:0] RSA_PRDATA;
 
  
 assign BUS_WRITE_EN = (PENABLE && PWRITE && PSEL);
@@ -46,13 +47,20 @@ assign PSLVERR = 1'b0;
 
 wire NP_EN;
 wire SERVO_EN;
+wire RSA_EN;
 
 assign NP_EN = PADDR[7:0] == 8'h00;
 assign SERVO_EN = PADDR[7:0] == 8'h04;
+//RSA has many internal addresses. Look at RSA.v to see assignments.
+assign RSA_EN = (PADDR[7:0] == 8'h08 || PADDR[7:0] == 8'h0C
+                || PADDR[7:0] == 8'h10 || PADDR[7:0] == 8'h14
+                || PADDR[7:0] == 8'h18 || PADDR[7:0] == 8'h1C
+                || PADDR[7:0] == 8'h20 || PADDR[7:0] == 8'h24);
 
 assign PRDATA = (NP_EN ? NP_PRDATA :
                 (SERVO_EN ? SERVO_PRDATA :
-                (32'b0)));
+                (RSA_EN ? RSA_PRDATA :
+                (32'b0))));
 
 neopixel pxl_0(	.pclk(PCLK),
 			    .nreset(PRESETN),
@@ -88,5 +96,16 @@ nfc nfc(
                 .fabint(FABINT),
                 .irq_pin(PIN_NFC_IRQ)
           );
+
+rsa rsa_0(
+                .pclk(PCLK), // clock
+                .nreset(PRESETN), // system reset
+                .bus_write_en(BUS_WRITE_EN),
+                .bus_read_en(BUS_READ_EN),
+                .RSA_ENABLE(RSA_EN),
+                .bus_addr(PADDR), // I/O address
+                .bus_write_data(PWDATA), // data from processor to I/O device (32 bits)
+                .bus_read_data(RSA_PRDATA) // data to processor from I/O device (32-bits)   
+            );
 
 endmodule

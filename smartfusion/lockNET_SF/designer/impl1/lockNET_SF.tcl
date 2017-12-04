@@ -1,5 +1,5 @@
 # Created by Microsemi Libero Software 11.8.0.26
-# Mon Nov 27 22:20:34 2017
+# Mon Dec 04 05:15:18 2017
 
 # (OPEN DESIGN)
 
@@ -11,7 +11,7 @@ set_defvar "IDE_DESIGNERVIEW_NAME" {Impl1}
 set_defvar "IDE_DESIGNERVIEW_COUNT" "1"
 set_defvar "IDE_DESIGNERVIEW_REV0" {Impl1}
 set_defvar "IDE_DESIGNERVIEW_REVNUM0" "1"
-set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer}
+set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {N:\Git\locknet373\smartfusion\lockNET_SF\designer}
 set_defvar "IDE_DESIGNERVIEW_LASTREV" "1"
 
 

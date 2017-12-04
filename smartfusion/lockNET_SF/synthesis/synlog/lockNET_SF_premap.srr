@@ -1,4 +1,4 @@
-# Mon Nov 27 22:24:07 2017
+# Mon Dec 04 05:13:37 2017
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -6,50 +6,67 @@ Product Version L-2016.09M-2
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
-Reading constraint file: N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell_syn.sdc
-@L: N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF_scck.rpt 
-Printing clock  summary report in "N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF_scck.rpt" file 
+Reading constraint file: N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell_syn.sdc
+@L: N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF_scck.rpt 
+Printing clock  summary report in "N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 107MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 109MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 107MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 109MB)
 
-@N: MO111 :"n:\portablegit\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"n:\portablegit\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"n:\portablegit\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 115MB)
 
 
 
 Clock Summary
 *****************
 
-Start       Requested     Requested     Clock        Clock           Clock
-Clock       Frequency     Period        Type         Group           Load 
---------------------------------------------------------------------------
-FAB_CLK     100.0 MHz     10.000        declared     clk_group_0     110  
-FCLK        100.0 MHz     10.000        declared     clk_group_0     0    
-==========================================================================
+Start       Requested     Requested     Clock        Clock               Clock
+Clock       Frequency     Period        Type         Group               Load 
+------------------------------------------------------------------------------
+FAB_CLK     100.0 MHz     10.000        declared     clk_group_0         781  
+FCLK        100.0 MHz     10.000        declared     clk_group_0         0    
+System      100.0 MHz     10.000        system       system_clkgroup     32   
+==============================================================================
+
+@W: MT532 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\rsa.v":190:4:190:5|Found signal identified as System clock which controls 32 sequential elements including apb3_interface_0.rsa_0.bus_read_data_1[0].  Using this clock, which has no specified timing constraint, can adversely impact design performance. 
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.sap.
+@N: BN225 |Writing default property annotation file N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 115MB)
 
+Encoding state machine encrypt_state[11:0] (in view: work.rsa(verilog))
+original code -> new code
+   00000 -> 000000000000
+   00001 -> 000000000011
+   00010 -> 000000000101
+   00011 -> 000000001001
+   00100 -> 000000010001
+   00101 -> 000000100001
+   00110 -> 000001000001
+   00111 -> 000010000001
+   01000 -> 000100000001
+   01001 -> 001000000001
+   01010 -> 010000000001
+   01011 -> 100000000001
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 114MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 30MB peak: 117MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:01s cputime
-# Mon Nov 27 22:24:10 2017
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Mon Dec 04 05:13:40 2017
 
 ###########################################################]

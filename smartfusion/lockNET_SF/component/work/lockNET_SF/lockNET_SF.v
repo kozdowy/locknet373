@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Nov 27 22:22:58 2017
+// Created by SmartDesign Mon Dec 04 05:12:57 2017
 // Version: v11.8 11.8.0.26
 //////////////////////////////////////////////////////////////////////
 
@@ -130,9 +130,9 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
+wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0;
-wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [31:20]lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR_0;
