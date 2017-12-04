@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Dec 04 05:09:34 2017 ***************************************************************************
+                          Mon Dec 04 07:02:27 2017 ***************************************************************************
 
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
 File Name: N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb
 Design Name: lockNET_SF  Design State: compile
-Last Saved: Sun Dec 03 21:06:16 2017
+Last Saved: Mon Dec 04 06:38:43 2017
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Dec 04 05:09:29 2017:
+Source File(s) Imported on Mon Dec 04 07:02:21 2017:
         N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.edn
         N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.pdc
 
@@ -352,6 +352,7 @@ Warning: CMP201: Net lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC_GLC drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC_LOCK drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC_YB drives no load.
 Warning: CMP201: Net lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC_YC drives no load.
+Warning: Top level port PIN_NFC_IRQ is not connected to any IO pad
 
 Netlist Optimization Report
 ===========================
@@ -361,11 +362,11 @@ Optimized macros:
   - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        15
+  - Logic combining:        140
 
-    Total macros optimized  16
+    Total macros optimized  141
 
-There were 0 error(s) and 274 warning(s) in this design.
+There were 0 error(s) and 275 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -385,12 +386,12 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:    680  Total:   4608   (14.76%)
-    Fabric IO (W/ clocks)      Used:      4  Total:     94   (4.26%)
+    Fabric                     Used:   4552  Total:   4608   (98.78%)
+    Fabric IO (W/ clocks)      Used:      3  Total:     94   (3.19%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
     Dedicated MSS IO           Used:     15  Total:     43   (34.88%)
-    GLOBAL (Chip+Quadrant)     Used:      1  Total:     15   (6.67%)
+    GLOBAL (Chip+Quadrant)     Used:      3  Total:     15   (20.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
     Main Crystal oscillator    Used:      0  Total:      1   (0.00%)
@@ -402,7 +403,7 @@ Global Information:
 
     Type            | Used   | Total
     ----------------|--------|--------------
-    Chip global     | 1      | 3  (33.33%)*
+    Chip global     | 3      | 3  (100.00%)*
     Quadrant global | 0      | 12 (0.00%)
     MSS global      | 3      | 3  (100.00%)
 
@@ -414,14 +415,14 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 569          | 569
-    SEQ     | 111          | 111
+    COMB    | 3843         | 3843
+    SEQ     | 709          | 709
 
 I/O Function:
 
     Type                                  | w/o register  | w/ register  | w/ DDR register
     --------------------------------------|---------------|--------------|----------------
-    Input I/O                             | 1             | 0            | 0
+    Input I/O                             | 0             | 0            | 0
     Output I/O                            | 3             | 0            | 0
     Bidirectional I/O                     | 0             | 0            | 0
     Differential Input I/O Pairs          | 0             | 0            | 0
@@ -433,11 +434,11 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 1     | 3      | 0
+    LVTTL                           | 3.30v | N/A   | 0     | 3      | 0
 
 I/O Placement:
 
-    Locked  :   4 ( 100.00% )
+    Locked  :   3 ( 100.00% )
     Placed  :   0
     UnPlaced:   0
 
@@ -447,59 +448,66 @@ Net information report:
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    112     CLK_NET       Net   : FAB_CLK
+    710     CLK_NET       Net   : FAB_CLK
                           Driver: lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC
                           Source: ESSENTIAL
-    89      INT_NET       Net   : lockNET_SF_MSS_0_M2F_RESET_N
+    263     INT_NET       Net   : lockNET_SF_MSS_0_M2F_RESET_N
                           Driver: lockNET_SF_MSS_0/MSS_ADLIB_INST_RNI2GO1/U_CLKSRC
+                          Source: NETLIST
+    171     INT_NET       Net   : apb3_interface_0/rsa_0/rsa_encrypt_RNI2SU7_0
+                          Driver: apb3_interface_0/rsa_0/rsa_encrypt_RNI2SU7_0/U_CLKSRC
+                          Source: NETLIST
+    137     INT_NET       Net   : apb3_interface_0/rsa_0/MonMult_0/un1_P6
+                          Driver:
+apb3_interface_0/rsa_0/MonMult_0/counter_RNI3LC2H3_5[6]/U_CLKSRC
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      INT_NET       Net   : apb3_interface_0/pxl_0/N_14
-                          Driver: apb3_interface_0/pxl_0/send_pixel_RNI7BNI5[4]
-    18      INT_NET       Net   : apb3_interface_0/servo_0/N_132
-                          Driver: apb3_interface_0/servo_0/counter_RNITIGRJ1[15]
-    16      INT_NET       Net   : apb3_interface_0/servo_0/write_pulse_0
-                          Driver: apb3_interface_0/servo_0/write_pulse_0
-    16      INT_NET       Net   : apb3_interface_0/servo_0/read_pulse_0
-                          Driver: apb3_interface_0/servo_0/read_pulse_0
-    16      INT_NET       Net   : apb3_interface_0/servo_0/read_pulse
-                          Driver: apb3_interface_0/servo_0/read_pulse
-    16      INT_NET       Net   : apb3_interface_0/servo_0/write_pulse
-                          Driver: apb3_interface_0/servo_0/write_pulse
-    15      INT_NET       Net   : apb3_interface_0/pxl_0/counter_0[0]
-                          Driver: apb3_interface_0/pxl_0/counter_0[0]
-    15      INT_NET       Net   : apb3_interface_0/pxl_0/N_322
-                          Driver: apb3_interface_0/pxl_0/send_pixel_RNIAS1H3[4]
-    15      INT_NET       Net   : apb3_interface_0/pxl_0/counter[0]
-                          Driver: apb3_interface_0/pxl_0/counter[0]
-    14      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[24]
-                          Driver: lockNET_SF_MSS_0/MSS_ADLIB_INST
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/encrypt_state_1[8]
+                          Driver: apb3_interface_0/rsa_0/encrypt_state_1[8]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/encrypt_state_0[8]
+                          Driver: apb3_interface_0/rsa_0/encrypt_state_0[8]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/N_2009
+                          Driver: apb3_interface_0/rsa_0/encrypt_state_RNIKG6C[8]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/N_2009_1
+                          Driver: apb3_interface_0/rsa_0/encrypt_state_0_RNI3N9O[8]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/N_2009_0
+                          Driver: apb3_interface_0/rsa_0/encrypt_state_0_RNI3N9O_0[8]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/MonMult_0/N_82_1
+                          Driver: apb3_interface_0/rsa_0/MonMult_0/counter_RNIVS5J3_1[6]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/MonMult_0/N_150
+                          Driver: apb3_interface_0/rsa_0/MonMult_0/counter_RNIP0SP2_0[4]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/MonMult_0/N_82_0
+                          Driver: apb3_interface_0/rsa_0/MonMult_0/counter_RNIVS5J3[6]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/MonMult_0/N_82
+                          Driver: apb3_interface_0/rsa_0/MonMult_0/counter_RNIVS5J3_0[6]
+    23      INT_NET       Net   : apb3_interface_0/rsa_0/encrypt_state[8]
+                          Driver: apb3_interface_0/rsa_0/encrypt_state[8]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    27      INT_NET       Net   : CoreAPB3_0_APBmslave0_PWDATA[24]
-                          Driver: lockNET_SF_MSS_0/MSS_ADLIB_INST
-    24      INT_NET       Net   : apb3_interface_0/pxl_0/N_14
-                          Driver: apb3_interface_0/pxl_0/send_pixel_RNI7BNI5[4]
-    18      INT_NET       Net   : apb3_interface_0/servo_0/N_132
-                          Driver: apb3_interface_0/servo_0/counter_RNITIGRJ1[15]
-    16      INT_NET       Net   : apb3_interface_0/servo_0/write_pulse_0
-                          Driver: apb3_interface_0/servo_0/write_pulse_0
-    16      INT_NET       Net   : apb3_interface_0/servo_0/read_pulse_0
-                          Driver: apb3_interface_0/servo_0/read_pulse_0
-    16      INT_NET       Net   : apb3_interface_0/servo_0/read_pulse
-                          Driver: apb3_interface_0/servo_0/read_pulse
-    16      INT_NET       Net   : apb3_interface_0/servo_0/write_pulse
-                          Driver: apb3_interface_0/servo_0/write_pulse
-    15      INT_NET       Net   : apb3_interface_0/pxl_0/counter_0[0]
-                          Driver: apb3_interface_0/pxl_0/counter_0[0]
-    15      INT_NET       Net   : apb3_interface_0/pxl_0/N_322
-                          Driver: apb3_interface_0/pxl_0/send_pixel_RNIAS1H3[4]
-    15      INT_NET       Net   : apb3_interface_0/pxl_0/counter[0]
-                          Driver: apb3_interface_0/pxl_0/counter[0]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/encrypt_state_1[8]
+                          Driver: apb3_interface_0/rsa_0/encrypt_state_1[8]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/encrypt_state_0[8]
+                          Driver: apb3_interface_0/rsa_0/encrypt_state_0[8]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/N_2009
+                          Driver: apb3_interface_0/rsa_0/encrypt_state_RNIKG6C[8]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/N_2009_1
+                          Driver: apb3_interface_0/rsa_0/encrypt_state_0_RNI3N9O[8]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/N_2009_0
+                          Driver: apb3_interface_0/rsa_0/encrypt_state_0_RNI3N9O_0[8]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/MonMult_0/N_82_1
+                          Driver: apb3_interface_0/rsa_0/MonMult_0/counter_RNIVS5J3_1[6]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/MonMult_0/N_150
+                          Driver: apb3_interface_0/rsa_0/MonMult_0/counter_RNIP0SP2_0[4]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/MonMult_0/N_82_0
+                          Driver: apb3_interface_0/rsa_0/MonMult_0/counter_RNIVS5J3[6]
+    24      INT_NET       Net   : apb3_interface_0/rsa_0/MonMult_0/N_82
+                          Driver: apb3_interface_0/rsa_0/MonMult_0/counter_RNIVS5J3_0[6]
+    23      INT_NET       Net   : apb3_interface_0/rsa_0/encrypt_state[8]
+                          Driver: apb3_interface_0/rsa_0/encrypt_state[8]
 
 

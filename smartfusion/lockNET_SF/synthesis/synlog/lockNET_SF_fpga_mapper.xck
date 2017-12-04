@@ -1,3 +1,1 @@
-CKID0001:@|S:apb3_interface_0.rsa_0.un1_bus_read_en_1_i_0_0@|E:apb3_interface_0.rsa_0.bus_read_data_1[10]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:apb3_interface_0.rsa_0.un1_bus_read_en_i_0_0_o3@|E:apb3_interface_0.rsa_0.bus_read_data_1[0]@|F:@syn_sample_clock_path1==CKID0002@|M:ClockId0002 
-CKID0003:@|S:lockNET_SF_MSS_0@|E:apb3_interface_0.rsa_0.residue_lower[31]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
+CKID0001:@|S:lockNET_SF_MSS_0@|E:apb3_interface_0.rsa_0.bus_read_data[31]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 

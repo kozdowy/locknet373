@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Mon Dec 04 05:10:15 2017 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Mon Dec 04 07:05:10 2017 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
@@ -189,7 +189,7 @@ F22                  IO22PDB1V0                    Unassigned
 G1                   GND                           Reserved
 G2                   GFB0/IO65NPB5V0               Special
 G3                   EMC_DB[9]/GEC1/IO63PDB5V0     Special
-G4      PIN_NFC_IRQ  GFC1/IO66PPB5V0               Special      LVTTL    ---                ---   None           No               ---   ---               No           No
+G4                   GFC1/IO66PPB5V0               Special
 G5                   EMC_DB[11]/IO69PPB5V0         Unassigned
 G6                   GNDQ                          Reserved
 G7                   Not Bonded                    Unconnected

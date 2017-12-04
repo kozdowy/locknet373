@@ -14,11 +14,11 @@ The file contains the job information from compiler to be displayed as part of t
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>96</data>
+  <data>89</data>
   <report_link name="more"><data>N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\synlog\report\lockNET_SF_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
-  <data>12</data>
+  <data>13</data>
   <report_link name="more"><data>N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\synlog\report\lockNET_SF_compiler_warnings.txt</data></report_link>
   </info>
 			<info name="Errors">
@@ -35,7 +35,7 @@ The file contains the job information from compiler to be displayed as part of t
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1512382415</data>
+  <data type="timestamp">1512388869</data>
   </info>
 			</job_info>
 </job_run_status>

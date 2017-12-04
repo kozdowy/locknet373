@@ -1,5 +1,5 @@
 # Created by Microsemi Libero Software 11.8.0.26
-# Mon Dec 04 05:15:18 2017
+# Mon Dec 04 07:02:33 2017
 
 # (OPEN DESIGN)
 
@@ -15,12 +15,11 @@ set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {N:\Git\locknet373\smartfusion\lockNET_SF\
 set_defvar "IDE_DESIGNERVIEW_LASTREV" "1"
 
 
-# import of input files
-import_source  \
--format "edif" -edif_flavor "GENERIC" -netlist_naming "VERILOG" {../../synthesis/lockNET_SF.edn} \
--format "pdc"  {..\..\component\work\lockNET_SF\lockNET_SF.pdc} -merge_physical "yes" -merge_timing "yes"
-compile
-report -type "status" {lockNET_SF_compile_report.txt}
+layout -timing_driven
+report -type "status" {lockNET_SF_place_and_route_report.txt}
+report -type "globalnet" {lockNET_SF_globalnet_report.txt}
+report -type "globalusage" {lockNET_SF_globalusage_report.txt}
+report -type "iobank" {lockNET_SF_iobank_report.txt}
 report -type "pin" -listby "name" {lockNET_SF_report_pin_byname.txt}
 report -type "pin" -listby "number" {lockNET_SF_report_pin_bynumber.txt}
 

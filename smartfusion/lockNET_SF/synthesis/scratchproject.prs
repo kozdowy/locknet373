@@ -3,11 +3,8 @@
 #--  Project file N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\scratchproject.prs
 
 #project files
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/neopixel.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/NFC.v"
 add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/MonMult.v"
 add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/RSA.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/servo.v"
 add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/apb3_interface.v"
 add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
 add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF_MSS/mss_tshell.v"

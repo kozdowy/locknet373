@@ -57,13 +57,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512382376"
+TIME="1512388839"
 SIZE="2769"
 PARENT="<project>\component\work\lockNET_SF\lockNET_SF.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1512382376"
+TIME="1512388839"
 SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -276,12 +276,12 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF\lockNET_SF.cxf,actgen_cxf"
 STATE="utd"
-TIME="1512382395"
+TIME="1512388858"
 SIZE="8582"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF\lockNET_SF.pdc,pdc"
 STATE="utd"
-TIME="1512382375"
+TIME="1512388837"
 SIZE="3673"
 PARENT="<project>\component\work\lockNET_SF\lockNET_SF.cxf"
 BEGIN_USE_CONSTRAINT
@@ -292,7 +292,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\lockNET_SF\lockNET_SF.v,hdl"
 STATE="utd"
-TIME="1512382377"
+TIME="1512388840"
 SIZE="16107"
 PARENT="<project>\component\work\lockNET_SF\lockNET_SF.cxf"
 IS_READONLY="TRUE"
@@ -365,7 +365,7 @@ USE_FOR_ANY_TOOL="FALSE"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF.adb,adb"
-STATE="ood"
+STATE="utd"
 TIME="1512353176"
 SIZE="761344"
 ENDFILE
@@ -394,6 +394,11 @@ STATE="utd"
 TIME="1512353177"
 SIZE="57621"
 ENDFILE
+VALUE "<project>\designer\impl1\lockNET_SF_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1512389114"
+SIZE="2669"
+ENDFILE
 VALUE "<project>\designer\impl1\lockNET_SF_timingconstraints_log.rpt,log"
 STATE="utd"
 TIME="1511849070"
@@ -401,8 +406,8 @@ SIZE="268"
 ENDFILE
 VALUE "<project>\hdl\apb3_interface.v,hdl"
 STATE="utd"
-TIME="1512382369"
-SIZE="3060"
+TIME="1512388610"
+SIZE="3128"
 ENDFILE
 VALUE "<project>\hdl\MonMult.v,hdl"
 STATE="utd"
@@ -421,8 +426,8 @@ SIZE="429"
 ENDFILE
 VALUE "<project>\hdl\RSA.v,hdl"
 STATE="utd"
-TIME="1512380095"
-SIZE="12378"
+TIME="1512388816"
+SIZE="10942"
 ENDFILE
 VALUE "<project>\hdl\servo.v,hdl"
 STATE="utd"
@@ -449,7 +454,7 @@ PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1512382378"
+TIME="1512388840"
 SIZE="639"
 PARENT="<project>\component\work\lockNET_SF\lockNET_SF.cxf"
 ENDFILE
@@ -485,6 +490,11 @@ STATE="utd"
 TIME="1512353177"
 SIZE="3250"
 ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1512386744"
+SIZE="159"
+ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
@@ -518,8 +528,9 @@ VALUE "<project>\component\work\lockNET_SF_MSS\mss_tshell_syn.sdc,sdc"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
-LiberoState=Post_Synthesis
+LiberoState=Post_Layout
 ideSYNTHESIS(<project>\synthesis\lockNET_SF.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\lockNET_SF.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -528,6 +539,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\lockNET_SF_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\lockNET_SF_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "lockNET_SF_MSS::work"
@@ -716,8 +731,9 @@ ENDLIST
 LIST ProjectState5.1
 LIST "lockNET_SF::work"
 LIST Impl1
-LiberoState=Post_Synthesis
+LiberoState=Post_Layout
 ideSYNTHESIS(<project>\synthesis\lockNET_SF.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\lockNET_SF.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -765,10 +781,7 @@ ACTIVEVIEW;hdl\RSA.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "apb3_interface::work","hdl\apb3_interface.v","FALSE","FALSE"
-SUBBLOCK "neopixel::work","hdl\neopixel.v","FALSE","FALSE"
-SUBBLOCK "nfc::work","hdl\NFC.v","FALSE","FALSE"
 SUBBLOCK "rsa::work","hdl\RSA.v","FALSE","FALSE"
-SUBBLOCK "servo::work","hdl\servo.v","FALSE","FALSE"
 ENDLIST
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 ENDLIST

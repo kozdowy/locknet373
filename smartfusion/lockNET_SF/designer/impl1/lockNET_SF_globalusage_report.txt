@@ -1,0 +1,27 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v11.8
+Version: 11.8.0.26
+Date: Mon Dec 04 07:05:08 2017
+Design Name: lockNET_SF  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    710               Net   : FAB_CLK
+                      Driver: lockNET_SF_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1
+    263               Net   : lockNET_SF_MSS_0_M2F_RESET_N
+                      Driver: lockNET_SF_MSS_0/MSS_ADLIB_INST_RNI2GO1/U_CLKSRC/U_GL
+    171               Net   : apb3_interface_0/rsa_0/rsa_encrypt_RNI2SU7_0
+                      Driver: apb3_interface_0/rsa_0/rsa_encrypt_RNI2SU7_0/U_CLKSRC/U_GL
+    137               Net   : apb3_interface_0/rsa_0/MonMult_0/un1_P6
+                      Driver: apb3_interface_0/rsa_0/MonMult_0/counter_RNI3LC2H3_5[6]/U_CLKSRC/U_GL
+
+
+
+

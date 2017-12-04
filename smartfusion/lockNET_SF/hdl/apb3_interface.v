@@ -62,40 +62,40 @@ assign PRDATA = (NP_EN ? NP_PRDATA :
                 (RSA_EN ? RSA_PRDATA :
                 (32'b0))));
 
-neopixel pxl_0(	.pclk(PCLK),
-			    .nreset(PRESETN),
-			    .bus_write_en(BUS_WRITE_EN),
-			    .bus_read_en(BUS_READ_EN),
-			    .bus_addr(PADDR),
-			    .bus_write_data(PWDATA),
-			    .bus_read_data(NP_PRDATA),
-                .np_en(NP_EN),
-                .np_out(NP_OUT)
-                //.green_t(TEST)
-			);
-
-servo servo_0(	.pclk(PCLK),
-			    .nreset(PRESETN),
-			    .bus_write_en(BUS_WRITE_EN),
-			    .bus_read_en(BUS_READ_EN),
-			    .bus_addr(PADDR),
-			    .bus_write_data(PWDATA),
-			    .bus_read_data(SERVO_PRDATA),
-                .servo_en(SERVO_EN),
-                .servo_out(SERVO_OUT)
-			);
-
-nfc nfc(
-                .pclk(PCLK),
-			    .nreset(PRESETN),
-			    .bus_write_en(BUS_WRITE_EN),
-			    .bus_read_en(BUS_READ_EN),
-			    .bus_addr(PADDR),
-			    .bus_write_data(PWDATA),
-			    .bus_read_data(PRDATA),
-                .fabint(FABINT),
-                .irq_pin(PIN_NFC_IRQ)
-          );
+//neopixel pxl_0(	.pclk(PCLK),
+			    //.nreset(PRESETN),
+			    //.bus_write_en(BUS_WRITE_EN),
+			    //.bus_read_en(BUS_READ_EN),
+			    //.bus_addr(PADDR),
+			    //.bus_write_data(PWDATA),
+			    //.bus_read_data(NP_PRDATA),
+                //.np_en(NP_EN),
+                //.np_out(NP_OUT)
+                ////.green_t(TEST)
+			//);
+//
+//servo servo_0(	.pclk(PCLK),
+			    //.nreset(PRESETN),
+			    //.bus_write_en(BUS_WRITE_EN),
+			    //.bus_read_en(BUS_READ_EN),
+			    //.bus_addr(PADDR),
+			    //.bus_write_data(PWDATA),
+			    //.bus_read_data(SERVO_PRDATA),
+                //.servo_en(SERVO_EN),
+                //.servo_out(SERVO_OUT)
+			//);
+//
+//nfc nfc(
+                //.pclk(PCLK),
+			    //.nreset(PRESETN),
+			    //.bus_write_en(BUS_WRITE_EN),
+			    //.bus_read_en(BUS_READ_EN),
+			    //.bus_addr(PADDR),
+			    //.bus_write_data(PWDATA),
+			    //.bus_read_data(PRDATA),
+                //.fabint(FABINT),
+                //.irq_pin(PIN_NFC_IRQ)
+          //);
 
 rsa rsa_0(
                 .pclk(PCLK), // clock

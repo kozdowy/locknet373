@@ -1,21 +1,15 @@
 Selecting top level module lockNET_SF
-@N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":13:7:13:14|Synthesizing module neopixel in library work.
-
-@N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\servo.v":4:7:4:11|Synthesizing module servo in library work.
-
-@N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":1:7:1:9|Synthesizing module nfc in library work.
-
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v":24:7:24:13|Synthesizing module MonMult in library work.
 
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":28:7:28:9|Synthesizing module rsa in library work.
 
-@W: CL169 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":312:0:312:5|Pruning unused register rsa_read_out[31:0]. Make sure that there are no unused intermediate registers.
-@W: CL118 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":190:4:190:5|Latch generated from always block for signal bus_read_data[31:0]; possible missing assignment in an if or case statement.
+@N: CG179 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":226:32:226:43|Removing redundant assignment.
+@N: CG179 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":227:32:227:43|Removing redundant assignment.
+@W: CG133 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":88:11:88:22|Object rsa_read_out is declared but not assigned. Either assign a value or remove the declaration.
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":2:7:2:20|Synthesizing module apb3_interface in library work.
 
-@W: CS263 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":93:17:93:21|Port-width mismatch for port bus_addr. The port definition is 1 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":94:23:94:28|Port-width mismatch for port bus_write_data. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":95:22:95:27|Port-width mismatch for port bus_read_data. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":37:12:37:20|Removing wire NP_PRDATA, as there is no assignment to it.
+@W: CG360 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":38:12:38:23|Removing wire SERVO_PRDATA, as there is no assignment to it.
 @W: CG775 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
 
@@ -192,7 +186,13 @@ Selecting top level module lockNET_SF
 @N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":688:0:688:9|Input PSLVERRS13 is unused.
 @N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
 @N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
-@N: CL201 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":312:0:312:5|Trying to extract state machine for register encrypt_state.
+@W: CL156 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":37:12:37:20|*Input NP_PRDATA[31:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":38:12:38:23|*Input SERVO_PRDATA[31:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL157 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":28:7:28:12|*Output NP_OUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":29:7:29:15|*Output SERVO_OUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":31:7:31:12|*Output FABINT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":30:6:30:16|Input PIN_NFC_IRQ is unused.
+@N: CL201 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":174:0:174:5|Trying to extract state machine for register encrypt_state.
 Extracted state machine for register encrypt_state
 State machine has 12 reachable states with original encodings of:
    00000
@@ -207,11 +207,3 @@ State machine has 12 reachable states with original encodings of:
    01001
    01010
    01011
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":4:9:4:20|Input bus_write_en is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":5:9:5:19|Input bus_read_en is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":6:9:6:16|Input bus_addr is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":7:9:7:22|Input bus_write_data is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":8:9:8:21|Input bus_read_data is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\servo.v":12:28:12:35|Input bus_addr is unused.
-@W: CL246 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":22:29:22:42|Input port bits 31 to 27 of bus_write_data[31:0] are unused. Assign logic for all port bits or change the input port size.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":21:28:21:35|Input bus_addr is unused.

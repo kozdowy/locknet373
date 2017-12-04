@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Mon Dec 04 05:10:14 2017 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Mon Dec 04 07:05:10 2017 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
@@ -19,7 +19,6 @@ I2C_1_SDA    V22   Yes    I2C_1_SDA/GPIO_30   LVTTL    8                  High  
 M2F_GPO_0    E3    Yes    GFA2/IO68PDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
 MSS_RESET_N  R1    Yes    MSS_RESET_N         LVTTL    ---                ---   None           No               ---   ---               No           Yes
 NP_OUT       F1    Yes    GFB1/IO65PPB5V0     LVTTL    12                 High  None           ---              No    35                No           No
-PIN_NFC_IRQ  G4    Yes    GFC1/IO66PPB5V0     LVTTL    ---                ---   None           No               ---   ---               No           No
 SERVO_OUT    J6    Yes    GFA0/IO64NDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
 SPI_1_CLK    AA22  Yes    SPI_1_CLK/GPIO_26   LVTTL    8                  High  None           No               No    35                No           Yes
 SPI_1_DI     V19   Yes    SPI_1_DI/GPIO_25    LVTTL    ---                ---   None           No               ---   ---               No           Yes

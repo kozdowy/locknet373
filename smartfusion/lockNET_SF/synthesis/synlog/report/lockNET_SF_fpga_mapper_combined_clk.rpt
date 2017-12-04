@@ -6,21 +6,15 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 790 clock pin(s) of sequential element(s)
-2 gated/generated clock tree(s) driving 32 clock pin(s) of sequential element(s)
-0 instances converted, 32 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 709 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 ============================================== Non-Gated/Non-Generated Clocks ==============================================
 Clock Tree ID     Driving Element      Drive Element Type                Fanout     Sample Instance                         
 ----------------------------------------------------------------------------------------------------------------------------
-@K:CKID0003       lockNET_SF_MSS_0     clock definition on hierarchy     790        apb3_interface_0.rsa_0.residue_lower[31]
+@K:CKID0001       lockNET_SF_MSS_0     clock definition on hierarchy     709        apb3_interface_0.rsa_0.bus_read_data[31]
 ============================================================================================================================
-============================================================================ Gated/Generated Clocks ============================================================================
-Clock Tree ID     Driving Element                                     Drive Element Type     Fanout     Sample Instance                                Explanation              
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       apb3_interface_0.rsa_0.un1_bus_read_en_1_i_0_0      OR2                    31         apb3_interface_0.rsa_0.bus_read_data_1[10]     Clock conversion disabled
-@K:CKID0002       apb3_interface_0.rsa_0.un1_bus_read_en_i_0_0_o3     OR2A                   1          apb3_interface_0.rsa_0.bus_read_data_1[0]      No clocks found on inputs
-================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

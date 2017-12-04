@@ -1,10 +1,9 @@
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
-@N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":13:7:13:14|Synthesizing module neopixel in library work.
-@N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\servo.v":4:7:4:11|Synthesizing module servo in library work.
-@N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":1:7:1:9|Synthesizing module nfc in library work.
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v":24:7:24:13|Synthesizing module MonMult in library work.
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":28:7:28:9|Synthesizing module rsa in library work.
+@N: CG179 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":226:32:226:43|Removing redundant assignment.
+@N: CG179 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":227:32:227:43|Removing redundant assignment.
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":2:7:2:20|Synthesizing module apb3_interface in library work.
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
@@ -85,13 +84,7 @@
 @N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":688:0:688:9|Input PSLVERRS13 is unused.
 @N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
 @N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
-@N: CL201 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":312:0:312:5|Trying to extract state machine for register encrypt_state.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":4:9:4:20|Input bus_write_en is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":5:9:5:19|Input bus_read_en is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":6:9:6:16|Input bus_addr is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":7:9:7:22|Input bus_write_data is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\NFC.v":8:9:8:21|Input bus_read_data is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\servo.v":12:28:12:35|Input bus_addr is unused.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":21:28:21:35|Input bus_addr is unused.
+@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":30:6:30:16|Input PIN_NFC_IRQ is unused.
+@N: CL201 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":174:0:174:5|Trying to extract state machine for register encrypt_state.
 @N|Running in 64-bit mode
 
