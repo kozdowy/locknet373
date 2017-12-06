@@ -5,6 +5,8 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../contact_switch.c \
+../door_state_machine.c \
+../fp_sensor.c \
 ../lora.c \
 ../lora_client_ex.c \
 ../lora_server_ex.c \
@@ -12,10 +14,13 @@ C_SRCS += \
 ../neopixel.c \
 ../neopixel_test.c \
 ../nfc.c \
-../servo.c 
+../servo.c \
+../togateway.c 
 
 OBJS += \
 ./contact_switch.o \
+./door_state_machine.o \
+./fp_sensor.o \
 ./lora.o \
 ./lora_client_ex.o \
 ./lora_server_ex.o \
@@ -23,10 +28,13 @@ OBJS += \
 ./neopixel.o \
 ./neopixel_test.o \
 ./nfc.o \
-./servo.o 
+./servo.o \
+./togateway.o 
 
 C_DEPS += \
 ./contact_switch.d \
+./door_state_machine.d \
+./fp_sensor.d \
 ./lora.d \
 ./lora_client_ex.d \
 ./lora_server_ex.d \
@@ -34,7 +42,8 @@ C_DEPS += \
 ./neopixel.d \
 ./neopixel_test.d \
 ./nfc.d \
-./servo.d 
+./servo.d \
+./togateway.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
