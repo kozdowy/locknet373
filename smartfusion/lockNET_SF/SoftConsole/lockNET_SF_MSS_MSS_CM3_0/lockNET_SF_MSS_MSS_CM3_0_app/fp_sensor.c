@@ -73,7 +73,7 @@ uint32_t FP_enroll(void){
     return res.parameter;
   }
 
-  enrolled_ids[i] = 1;
+  id_enrolled[i] = 1;
   return 0;
 }
 
@@ -141,8 +141,8 @@ comm_packet FP_verify_capture(uint8_t id){
   return FP_send_command(FP_VERIFY_CAPTURE, id);
 }
 
-comm_packet FP_identify_capture(uint8_t id){
-  return FP_send_command(FP_IDENTIFY_CAPTURE, id);
+comm_packet FP_identify_capture(void){
+  return FP_send_command(FP_IDENTIFY_CAPTURE, NO_PARAMETER);
 }
 
 comm_packet FP_verify_template(uint8_t id, uint8_t* template){
@@ -184,7 +184,7 @@ comm_packet FP_get_image(uint8_t* img){
 comm_packet FP_get_raw_image(uint8_t* img){
   comm_packet res = FP_send_command(FP_GET_RAW_IMAGE, NO_PARAMETER);
   if (res.command == FP_ACK){
-    return FP_recv_data(img, FP_IMAGE_LENGTH)
+    return FP_recv_data(img, FP_IMAGE_LENGTH);
       }
 }
 

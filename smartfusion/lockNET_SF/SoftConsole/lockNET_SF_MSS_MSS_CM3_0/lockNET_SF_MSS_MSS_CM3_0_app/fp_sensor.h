@@ -9,7 +9,7 @@
 #define FP_SENSOR_H_
 
 #include <stdint.h>
-#include "drivers/mss_uart.h"
+#include "drivers/mss_uart/mss_uart.h"
 
 #define FP_COMMAND_START_1 0x55
 #define FP_COMMAND_START_2 0xAA
@@ -66,11 +66,12 @@
 #define FP_IMAGE_LENGTH 51840
 
 #define FP_IDS_FULL 0xff
+#define NO_PARAMETER 0X35627321
 
 typedef struct comm_packet{
   uint32_t parameter;
   uint16_t command;
-};
+}comm_packet;
 
 /*
  * initializes uart and device
@@ -256,7 +257,7 @@ comm_packet FP_verify_capture(uint8_t id);
  * Response = Nack
  * Error NACK_DB_IS_EMPTY, NACK_IDENTIFY_FAILED
  */
-comm_packet FP_identify_capture(uint8_t id);
+comm_packet FP_identify_capture(void);
 
 /*
  * COMMAND PACKET
