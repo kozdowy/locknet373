@@ -3,24 +3,10 @@
 <drcreport>
   <header>lockNET_SF</header>
   <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected top level output port lockNET_SF:NP_OUT</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/lockNET_SF:NP_OUT</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected top level output port lockNET_SF:SERVO_OUT</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/lockNET_SF:SERVO_OUT</crossprobe>
-  </drc>
-  <drc>
     <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
     <StatusMessage>Warning</StatusMessage>
     <message>Floating Driver</message>
-    <detail>Floating output pin lockNET_SF:PIN_NFC_IRQ</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/lockNET_SF:PIN_NFC_IRQ</crossprobe>
+    <detail>Floating output pin apb3_interface_0:RAM_RESET</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/apb3_interface_0:RAM_RESET</crossprobe>
   </drc>
 </drcreport>

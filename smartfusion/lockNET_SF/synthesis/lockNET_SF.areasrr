@@ -4,12 +4,24 @@ Report for cell lockNET_SF.verilog
                                cell       count     area    count*area
                         CoreAPB3_Z1         1       4.0        4.0
                                 GND         1       0.0        0.0
-                             OUTBUF         1       0.0        0.0
+                             OUTBUF         3       0.0        0.0
+                        RSA_64b_RAM         1       0.0        0.0
+                            TRIBUFF         2       0.0        0.0
                                 VCC         1       0.0        0.0
-                     apb3_interface         1    4427.0     4427.0
+                     apb3_interface         1    4418.0     4418.0
                      lockNET_SF_MSS         1       0.0        0.0
                             
-                         TOTAL              6               4431.0
+                         TOTAL             11               4422.0
+----------------------------------------------------------------------
+Report for cell RSA_64b_RAM.netlist
+     Instance path:  RSA_64b_RAM_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                             RAM4K9         4       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              6                  0.0
 ----------------------------------------------------------------------
 Report for cell lockNET_SF_MSS.netlist
      Instance path:  lockNET_SF_MSS_0
@@ -44,24 +56,24 @@ Report for cell CoreAPB3_Z1.netlist
      Instance path:  CoreAPB3_0
                                           Cell usage:
                                cell       count     area    count*area
-                            CAPB3II         1       1.0        1.0
+                            CAPB3II         1       2.0        2.0
                                 GND         1       0.0        0.0
                                NOR2         1       1.0        1.0
-                              NOR2B         1       1.0        1.0
                               NOR3A         1       1.0        1.0
                                 VCC         1       0.0        0.0
                             
-                         TOTAL              6                  4.0
+                         TOTAL              5                  4.0
 ----------------------------------------------------------------------
 Report for cell CAPB3II.netlist
      Instance path:  CoreAPB3_0.CAPB3IIII
                                           Cell usage:
                                cell       count     area    count*area
                                 GND         1       0.0        0.0
+                              NOR3C         1       1.0        1.0
                                 OA1         1       1.0        1.0
                                 VCC         1       0.0        0.0
                             
-                         TOTAL              3                  1.0
+                         TOTAL              4                  2.0
 ----------------------------------------------------------------------
 Report for cell apb3_interface.netlist
      Instance path:  apb3_interface_0
@@ -70,95 +82,188 @@ Report for cell apb3_interface.netlist
                                AX1D         1       1.0        1.0
                                 GND         1       0.0        0.0
                                NOR2         2       1.0        2.0
+                              NOR2B         3       1.0        3.0
+                              NOR3A         1       1.0        1.0
                               NOR3C         1       1.0        1.0
                                 VCC         1       0.0        0.0
-                                rsa         1    4423.0     4423.0
+                           neopixel         1     236.0      236.0
+                                rsa         1    3804.0     3804.0
+                              servo         1     370.0      370.0
                             
-                         TOTAL              7               4427.0
+                         TOTAL             13               4418.0
 ----------------------------------------------------------------------
 Report for cell rsa.netlist
      Instance path:  apb3_interface_0.rsa_0
                                           Cell usage:
                                cell       count     area    count*area
-                                AO1        17       1.0       17.0
-                               AO1A        36       1.0       36.0
-                               AO1B         1       1.0        1.0
-                               AO1C         2       1.0        2.0
-                               AO1D        23       1.0       23.0
-                               AOI1        27       1.0       27.0
-                              AOI1B         3       1.0        3.0
-                               AX1E         1       1.0        1.0
+                               AND2         2       1.0        2.0
+                               AND3         4       1.0        4.0
+                                AO1        87       1.0       87.0
+                               AO1A        20       1.0       20.0
+                               AO1B        11       1.0       11.0
+                               AO1C        51       1.0       51.0
+                               AO1D        50       1.0       50.0
+                               AOI1         7       1.0        7.0
+                              AOI1B         1       1.0        1.0
+                               AX1C         1       1.0        1.0
                              CLKINT         2       0.0        0.0
-                               DFN1       599       1.0      599.0
-                             DFN1E0         7       1.0        7.0
+                               DFN1       224       1.0      224.0
+                             DFN1E1        91       1.0       91.0
+                             DLN0C0         3       1.0        3.0
                                 GND         1       0.0        0.0
-                                MX2       678       1.0      678.0
-                               MX2A        87       1.0       87.0
-                               MX2C        36       1.0       36.0
-                            MonMult         1    1934.0     1934.0
-                               NOR2        16       1.0       16.0
-                              NOR2A        83       1.0       83.0
-                              NOR2B       751       1.0      751.0
-                              NOR3A         8       1.0        8.0
+                                INV         2       1.0        2.0
+                                MX2       218       1.0      218.0
+                               MX2A       114       1.0      114.0
+                               MX2B         1       1.0        1.0
+                            MonMult         1    2169.0     2169.0
+                               NOR2        28       1.0       28.0
+                              NOR2A       162       1.0      162.0
+                              NOR2B       310       1.0      310.0
+                               NOR3         7       1.0        7.0
+                              NOR3A        16       1.0       16.0
                               NOR3B        19       1.0       19.0
-                              NOR3C        15       1.0       15.0
-                                OA1         5       1.0        5.0
-                               OA1A        27       1.0       27.0
-                               OA1B         3       1.0        3.0
-                                OR2        13       1.0       13.0
-                               OR2B         3       1.0        3.0
-                                OR3        24       1.0       24.0
+                              NOR3C        17       1.0       17.0
+                                OA1         7       1.0        7.0
+                               OA1A         7       1.0        7.0
+                               OA1C         7       1.0        7.0
+                               OAI1         1       1.0        1.0
+                                OR2         9       1.0        9.0
+                               OR2A         7       1.0        7.0
+                               OR2B        60       1.0       60.0
+                                OR3        69       1.0       69.0
+                               OR3A        11       1.0       11.0
+                               OR3C         1       1.0        1.0
                                 VCC         1       0.0        0.0
-                                XA1         5       1.0        5.0
+                               XA1B         1       1.0        1.0
+                               XA1C         2       1.0        2.0
+                               XOR2         7       1.0        7.0
                             
-                         TOTAL           2494               4423.0
+                         TOTAL           1640               3804.0
 ----------------------------------------------------------------------
 Report for cell MonMult.netlist
      Instance path:  apb3_interface_0.rsa_0.MonMult_0
                                           Cell usage:
                                cell       count     area    count*area
-                               AND2        26       1.0       26.0
-                              AND2A        11       1.0       11.0
-                               AND3        43       1.0       43.0
-                                AO1       210       1.0      210.0
-                               AO13         4       1.0        4.0
-                               AO1A        10       1.0       10.0
-                               AO1C        21       1.0       21.0
-                               AOI1         1       1.0        1.0
-                              AOI1A        21       1.0       21.0
-                                AX1         1       1.0        1.0
-                               AX1C         5       1.0        5.0
-                               AX1D        21       1.0       21.0
+                               AND2        17       1.0       17.0
+                              AND2A         7       1.0        7.0
+                               AND3        90       1.0       90.0
+                              AND3A         1       1.0        1.0
+                                AO1       300       1.0      300.0
+                               AO1A         4       1.0        4.0
+                               AO1C        29       1.0       29.0
+                               AO1D         3       1.0        3.0
+                              AOI1A        14       1.0       14.0
+                              AOI1B         2       1.0        2.0
+                               AX1C         1       1.0        1.0
+                               AX1D        20       1.0       20.0
+                              AXOI1         1       1.0        1.0
                                DFN1        73       1.0       73.0
+                             DFN1E1        72       1.0       72.0
+                               DLN0        64       1.0       64.0
+                           DLN1P1C1         3       2.0        6.0
                                 GND         1       0.0        0.0
-                               MAJ3        72       1.0       72.0
-                               MIN3         1       1.0        1.0
-                                MX2       104       1.0      104.0
-                               MX2B        66       1.0       66.0
-                               MX2C        29       1.0       29.0
-                               NOR2         3       1.0        3.0
-                              NOR2A       175       1.0      175.0
-                              NOR2B       389       1.0      389.0
-                               NOR3         4       1.0        4.0
-                              NOR3A         4       1.0        4.0
-                              NOR3B        21       1.0       21.0
-                              NOR3C        73       1.0       73.0
-                                OA1        43       1.0       43.0
-                               OA1A        16       1.0       16.0
-                               OA1C         1       1.0        1.0
-                                OR2        95       1.0       95.0
-                               OR2A        55       1.0       55.0
-                               OR2B         5       1.0        5.0
-                                OR3        24       1.0       24.0
-                               OR3A         1       1.0        1.0
-                               OR3B         4       1.0        4.0
+                               MAJ3        16       1.0       16.0
+                                MX2       197       1.0      197.0
+                               NOR2        22       1.0       22.0
+                              NOR2A        48       1.0       48.0
+                              NOR2B       586       1.0      586.0
+                               NOR3        18       1.0       18.0
+                              NOR3A        14       1.0       14.0
+                              NOR3B        16       1.0       16.0
+                              NOR3C        49       1.0       49.0
+                                OA1        39       1.0       39.0
+                               OA1A        17       1.0       17.0
+                                OR2        81       1.0       81.0
+                               OR2A        49       1.0       49.0
+                                OR3        67       1.0       67.0
+                                VCC         1       0.0        0.0
+                                XA1         6       1.0        6.0
+                               XA1B         1       1.0        1.0
+                               XA1C         1       1.0        1.0
+                              XNOR2       170       1.0      170.0
+                               XOR2        27       1.0       27.0
+                               XOR3        41       1.0       41.0
+                            
+                         TOTAL           2168               2169.0
+----------------------------------------------------------------------
+Report for cell servo.netlist
+     Instance path:  apb3_interface_0.servo_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         9       1.0        9.0
+                              AND2A         3       1.0        3.0
+                               AND3        13       1.0       13.0
+                                AO1         6       1.0        6.0
+                               AO1C        15       1.0       15.0
+                               AOI1         1       1.0        1.0
+                              AOI1A         5       1.0        5.0
+                                AX1         6       1.0        6.0
+                               AX1B         3       1.0        3.0
+                               AX1C         1       1.0        1.0
+                               DFN1        65       1.0       65.0
+                                GND         1       0.0        0.0
+                                MX2        32       1.0       32.0
+                               NOR2         9       1.0        9.0
+                              NOR2A        22       1.0       22.0
+                              NOR2B        35       1.0       35.0
+                               NOR3         2       1.0        2.0
+                              NOR3A         3       1.0        3.0
+                              NOR3B         6       1.0        6.0
+                              NOR3C         7       1.0        7.0
+                                OA1         6       1.0        6.0
+                               OA1A        12       1.0       12.0
+                               OA1C         2       1.0        2.0
+                               OR2A        38       1.0       38.0
+                               OR2B         2       1.0        2.0
+                               OR3A         2       1.0        2.0
+                               OR3B         5       1.0        5.0
                                OR3C         1       1.0        1.0
                                 VCC         1       0.0        0.0
-                                XA1        12       1.0       12.0
-                              XNOR2       122       1.0      122.0
-                              XNOR3         4       1.0        4.0
-                                XO1        12       1.0       12.0
-                               XOR2        84       1.0       84.0
-                               XOR3        67       1.0       67.0
+                               XA1A         9       1.0        9.0
+                               XA1B         2       1.0        2.0
+                               XA1C         6       1.0        6.0
+                              XAI1A         1       1.0        1.0
+                              XNOR2        41       1.0       41.0
                             
-                         TOTAL           1936               1934.0
+                         TOTAL            372                370.0
+----------------------------------------------------------------------
+Report for cell neopixel.netlist
+     Instance path:  apb3_interface_0.pxl_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         2       1.0        2.0
+                                AO1         2       1.0        2.0
+                               AO1A         1       1.0        1.0
+                               AO1D         2       1.0        2.0
+                               AOI1         1       1.0        1.0
+                               AX1A         1       1.0        1.0
+                               AX1E         1       1.0        1.0
+                               DFN1        40       1.0       40.0
+                             DFN1E1         5       1.0        5.0
+                                GND         1       0.0        0.0
+                                MX2        28       1.0       28.0
+                               MX2A        20       1.0       20.0
+                               MX2B         2       1.0        2.0
+                               NOR2         4       1.0        4.0
+                              NOR2A        18       1.0       18.0
+                              NOR2B        28       1.0       28.0
+                               NOR3         3       1.0        3.0
+                              NOR3A         4       1.0        4.0
+                              NOR3B         7       1.0        7.0
+                              NOR3C         5       1.0        5.0
+                               OA1A         1       1.0        1.0
+                               OA1C         1       1.0        1.0
+                               OAI1         2       1.0        2.0
+                                OR2         8       1.0        8.0
+                               OR2A        26       1.0       26.0
+                               OR2B         4       1.0        4.0
+                                OR3         3       1.0        3.0
+                               OR3A         1       1.0        1.0
+                               OR3C         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         5       1.0        5.0
+                               XA1A         8       1.0        8.0
+                              XNOR2         1       1.0        1.0
+                               XOR2         1       1.0        1.0
+                            
+                         TOTAL            238                236.0

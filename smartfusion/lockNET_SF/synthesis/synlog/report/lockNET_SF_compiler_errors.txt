@@ -1,0 +1,2 @@
+@E: CS153 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v":100:18:100:18|Can't mix blocking and non-blocking assignments to a variable
+

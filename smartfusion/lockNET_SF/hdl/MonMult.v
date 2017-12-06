@@ -36,7 +36,12 @@ module MonMult(
 
     reg [6:0] counter;
     reg [6:0] counter_n;
+    
+    reg [2:0] state;
+    reg [2:0] state_n;
 
+    reg [63:0] add;
+    reg [63:0] add_n;
 
     always @* begin
         P_n = P;
@@ -45,14 +50,38 @@ module MonMult(
         
         if (~counter[6]) begin
             is_ready_n = 1'b0;
-            counter_n = counter + 1'b1;
+            //counter_n = counter + 1'b1;
 
-            P_n = (P + (A[counter] ? B : 64'b0) + ((P[0] ^ (A[counter] & B[0])) ? M : 64'b0)) >> 1;
-            if((& counter[5:0])) begin
-                if( P_n >= M ) begin
-                    P_n = P_n - {2'b0, M};
-                end
+            if(state == 3'd0) begin
+                add_n = (P[0] ^ (A[counter] & B[0])) ? M : 64'b0;
+                state_n = 3'd1;
+            end else if(state == 3'd1) begin
+                state_n = 3'd2;
+            end else if(state == 3'd2) begin
+                add_n = A[counter] ? B : 64'b0;
+                state_n = 3'd3;
+            end else if(state == 3'd3) begin
+                state_n = 3'd4;
+            end else if(state == 3'd4) begin
+                P_n = P >> 1;
+                state_n = 3'd5;
+            end else if(state == 3'd5) begin
+                add_n = ~M + 1;
+                state_n = 3'd6;
+            end else if(state == 3'd6) begin
+                counter_n = counter + 1'b1;
+                state_n = 3'd0;
             end
+
+            if(state == 3'd1 || state == 3'd3 || (state == 3'd6 && (& counter[5:0]) && P >= M) ) begin
+                P_n = P + add;
+            end
+
+            //if(state == 3'd4 && (& counter[5:0])) begin
+                //if( P_n >= M ) begin
+                    //P_n = P_n - {2'b0, M};
+                //end
+            //end
         end
 
         
@@ -68,10 +97,13 @@ module MonMult(
             P <= 66'b0;
             is_ready <= 1'b0;
             counter <= 7'b0;
+            state <= 1'b0;
         end else begin
             counter <= counter_n;
             is_ready <= is_ready_n;
             P <= P_n;
+            state <= state_n;
+            add <= add_n;
         end
     end
     

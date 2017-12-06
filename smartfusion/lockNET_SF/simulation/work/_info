@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dN:/Git/locknet373/smartfusion/lockNET_SF/simulation
+vrsa_tb
+!s110 1512532429
+!i10b 1
+!s100 Xg@BmHhgVl5MRIoQP0_Qh0
+I6fkP[JeNIIYFAZT:F>YBL3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1512532146
+8N:/Git/locknet373/smartfusion/lockNET_SF/stimulus/rsa_test.v
+FN:/Git/locknet373/smartfusion/lockNET_SF/stimulus/rsa_test.v
+L0 35
+OW;L;10.5c;63
+r1
+!s85 0
+31
+!s108 1512532429.000000
+!s107 N:/Git/locknet373/smartfusion/lockNET_SF/stimulus/rsa_test.v|
+!s90 -reportprogress|300|-work|work|N:/Git/locknet373/smartfusion/lockNET_SF/stimulus/rsa_test.v|
+!s101 -O0
+!i113 1
+o-work work -O0
+tCvgOpt 0

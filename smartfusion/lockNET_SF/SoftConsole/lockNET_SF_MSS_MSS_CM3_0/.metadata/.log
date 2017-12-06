@@ -1,0 +1,21 @@
+!SESSION 2017-12-05 23:08:58.971 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data N:/Git/locknet373/smartfusion/lockNET_SF/SoftConsole/lockNET_SF_MSS_MSS_CM3_0
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2017-12-05 23:09:58.937
+!MESSAGE The installable unit org.eclipse.ui.win32.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2017-12-05 23:09:59.050
+!MESSAGE The installable unit org.eclipse.ui.win32.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2017-12-05 23:09:59.168
+!MESSAGE The installable unit org.eclipse.ui.win32.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-12-05 23:14:19.675
+!MESSAGE Indexed 'lockNET_SF_MSS_MSS_CM3_0_app' (0 sources, 21 headers) in 2.61 sec: 137 declarations; 309 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.22%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2017-12-05 23:14:24.083
+!MESSAGE Indexed 'lockNET_SF_MSS_MSS_CM3_0_hw_platform' (12 sources, 51 headers) in 0.55 sec: 3,217 declarations; 6,972 references; 3 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.01%)

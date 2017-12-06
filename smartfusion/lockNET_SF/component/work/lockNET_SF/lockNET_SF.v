@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Dec 05 03:10:26 2017
+// Created by SmartDesign Wed Dec 06 10:18:15 2017
 // Version: v11.8 11.8.0.26
 //////////////////////////////////////////////////////////////////////
 
@@ -15,9 +15,12 @@ module lockNET_SF(
     UART_0_RXD,
     UART_1_RXD,
     // Outputs
+    FABINT,
     GPIO_8_OUT,
     M2F_GPO_0,
-    RSA_VALID,
+    NP_OUT,
+    RAM_RESET,
+    SERVO_OUT,
     SPI_1_DO,
     UART_0_TXD,
     UART_1_TXD,
@@ -41,9 +44,12 @@ input  UART_1_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output FABINT;
 output GPIO_8_OUT;
 output M2F_GPO_0;
-output RSA_VALID;
+output NP_OUT;
+output RAM_RESET;
+output SERVO_OUT;
 output SPI_1_DO;
 output UART_0_TXD;
 output UART_1_TXD;
@@ -58,7 +64,14 @@ inout  SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
-wire          apb3_interface_0_FABINT;
+wire   [6:0]  apb3_interface_0_RAM_ADDRA;
+wire   [6:0]  apb3_interface_0_RAM_ADDRB;
+wire          apb3_interface_0_RAM_BLKA;
+wire          apb3_interface_0_RAM_BLKB;
+wire   [31:0] apb3_interface_0_RAM_DINA_0;
+wire   [31:0] apb3_interface_0_RAM_DINB_0;
+wire          apb3_interface_0_RAM_RWA;
+wire          apb3_interface_0_RAM_RWB;
 wire          CoreAPB3_0_APBmslave0_PENABLE;
 wire   [31:0] CoreAPB3_0_APBmslave0_PRDATA;
 wire          CoreAPB3_0_APBmslave0_PREADY;
@@ -66,6 +79,7 @@ wire          CoreAPB3_0_APBmslave0_PSELx;
 wire          CoreAPB3_0_APBmslave0_PSLVERR;
 wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire          CoreAPB3_0_APBmslave0_PWRITE;
+wire          FABINT_net_0;
 wire          GPIO_1_IN;
 wire          GPIO_8_OUT_net_0;
 wire          GPIO_9_IN;
@@ -83,7 +97,11 @@ wire   [31:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PWDATA;
 wire          lockNET_SF_MSS_0_MSS_MASTER_APB_PWRITE;
 wire          M2F_GPO_0_net_0;
 wire          MSS_RESET_N;
-wire          RSA_VALID_net_0;
+wire          NP_OUT_0;
+wire          RAM_RESET_net_0;
+wire   [31:0] RSA_64b_RAM_0_DOUTA_0;
+wire   [31:0] RSA_64b_RAM_0_DOUTB_0;
+wire          SERVO_OUT_0;
 wire          SPI_1_CLK;
 wire          SPI_1_DI;
 wire          SPI_1_DO_0;
@@ -97,7 +115,10 @@ wire          GPIO_8_OUT_net_1;
 wire          SPI_1_DO_0_net_0;
 wire          UART_1_TXD_0_net_0;
 wire          UART_0_TXD_0_net_0;
-wire          RSA_VALID_net_1;
+wire          NP_OUT_0_net_0;
+wire          SERVO_OUT_0_net_0;
+wire          FABINT_net_1;
+wire          RAM_RESET_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -126,10 +147,10 @@ wire   [31:0] PRDATAS16_const_net_0;
 wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0;
+wire   [19:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR_0;
-wire   [19:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -165,8 +186,14 @@ assign UART_1_TXD_0_net_0 = UART_1_TXD_0;
 assign UART_1_TXD         = UART_1_TXD_0_net_0;
 assign UART_0_TXD_0_net_0 = UART_0_TXD_0;
 assign UART_0_TXD         = UART_0_TXD_0_net_0;
-assign RSA_VALID_net_1    = RSA_VALID_net_0;
-assign RSA_VALID          = RSA_VALID_net_1;
+assign NP_OUT_0_net_0     = NP_OUT_0;
+assign NP_OUT             = NP_OUT_0_net_0;
+assign SERVO_OUT_0_net_0  = SERVO_OUT_0;
+assign SERVO_OUT          = SERVO_OUT_0_net_0;
+assign FABINT_net_1       = FABINT_net_0;
+assign FABINT             = FABINT_net_1;
+assign RAM_RESET_net_1    = RAM_RESET_net_0;
+assign RAM_RESET          = RAM_RESET_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -190,12 +217,24 @@ apb3_interface apb3_interface_0(
         .PWRITE    ( CoreAPB3_0_APBmslave0_PWRITE ),
         .PADDR     ( CoreAPB3_0_APBmslave0_PADDR_0 ),
         .PWDATA    ( CoreAPB3_0_APBmslave0_PWDATA ),
+        .RAM_DOUTA ( RSA_64b_RAM_0_DOUTA_0 ),
+        .RAM_DOUTB ( RSA_64b_RAM_0_DOUTB_0 ),
         // Outputs
         .PREADY    ( CoreAPB3_0_APBmslave0_PREADY ),
         .PSLVERR   ( CoreAPB3_0_APBmslave0_PSLVERR ),
-        .FABINT    ( apb3_interface_0_FABINT ),
-        .RSA_VALID ( RSA_VALID_net_0 ),
-        .PRDATA    ( CoreAPB3_0_APBmslave0_PRDATA ) 
+        .PRDATA    ( CoreAPB3_0_APBmslave0_PRDATA ),
+        .NP_OUT    ( NP_OUT_0 ),
+        .SERVO_OUT ( SERVO_OUT_0 ),
+        .FABINT    ( FABINT_net_0 ),
+        .RAM_DINA  ( apb3_interface_0_RAM_DINA_0 ),
+        .RAM_DINB  ( apb3_interface_0_RAM_DINB_0 ),
+        .RAM_ADDRA ( apb3_interface_0_RAM_ADDRA ),
+        .RAM_ADDRB ( apb3_interface_0_RAM_ADDRB ),
+        .RAM_RWA   ( apb3_interface_0_RAM_RWA ),
+        .RAM_RWB   ( apb3_interface_0_RAM_RWB ),
+        .RAM_BLKA  ( apb3_interface_0_RAM_BLKA ),
+        .RAM_BLKB  ( apb3_interface_0_RAM_BLKB ),
+        .RAM_RESET ( RAM_RESET_net_0 ) 
         );
 
 //--------CoreAPB3   -   Actel:DirectCore:CoreAPB3:4.1.100
@@ -329,19 +368,18 @@ CoreAPB3_0(
 lockNET_SF_MSS lockNET_SF_MSS_0(
         // Inputs
         .MSS_RESET_N ( MSS_RESET_N ),
-        .UART_0_RXD  ( UART_0_RXD ),
         .MSSPREADY   ( lockNET_SF_MSS_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( lockNET_SF_MSS_0_MSS_MASTER_APB_PSLVERR ),
         .GPIO_1_IN   ( GPIO_1_IN ),
-        .FABINT      ( apb3_interface_0_FABINT ),
+        .FABINT      ( FABINT_net_0 ),
         .GPIO_9_IN   ( GPIO_9_IN ),
         .SPI_1_DI    ( SPI_1_DI ),
         .UART_1_RXD  ( UART_1_RXD ),
+        .UART_0_RXD  ( UART_0_RXD ),
         .MSSPRDATA   ( lockNET_SF_MSS_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .FAB_CLK     ( lockNET_SF_MSS_0_FAB_CLK ),
         .M2F_RESET_N ( lockNET_SF_MSS_0_M2F_RESET_N ),
-        .UART_0_TXD  ( UART_0_TXD_0 ),
         .MSSPSEL     ( lockNET_SF_MSS_0_MSS_MASTER_APB_PSELx ),
         .MSSPENABLE  ( lockNET_SF_MSS_0_MSS_MASTER_APB_PENABLE ),
         .MSSPWRITE   ( lockNET_SF_MSS_0_MSS_MASTER_APB_PWRITE ),
@@ -349,6 +387,7 @@ lockNET_SF_MSS lockNET_SF_MSS_0(
         .GPIO_8_OUT  ( GPIO_8_OUT_net_0 ),
         .SPI_1_DO    ( SPI_1_DO_0 ),
         .UART_1_TXD  ( UART_1_TXD_0 ),
+        .UART_0_TXD  ( UART_0_TXD_0 ),
         .MSSPADDR    ( lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR ),
         .MSSPWDATA   ( lockNET_SF_MSS_0_MSS_MASTER_APB_PWDATA ),
         // Inouts
@@ -357,6 +396,24 @@ lockNET_SF_MSS lockNET_SF_MSS_0(
         .SPI_1_CLK   ( SPI_1_CLK ),
         .SPI_1_SS    ( SPI_1_SS ),
         .GPIO_10_BI  ( GPIO_10_BI ) 
+        );
+
+//--------RSA_64b_RAM
+RSA_64b_RAM RSA_64b_RAM_0(
+        // Inputs
+        .DINA  ( apb3_interface_0_RAM_DINA_0 ),
+        .DINB  ( apb3_interface_0_RAM_DINB_0 ),
+        .ADDRA ( apb3_interface_0_RAM_ADDRA ),
+        .ADDRB ( apb3_interface_0_RAM_ADDRB ),
+        .RWA   ( apb3_interface_0_RAM_RWA ),
+        .RWB   ( apb3_interface_0_RAM_RWB ),
+        .BLKA  ( apb3_interface_0_RAM_BLKA ),
+        .BLKB  ( apb3_interface_0_RAM_BLKB ),
+        .CLKAB ( lockNET_SF_MSS_0_FAB_CLK ),
+        .RESET ( lockNET_SF_MSS_0_M2F_RESET_N ),
+        // Outputs
+        .DOUTA ( RSA_64b_RAM_0_DOUTA_0 ),
+        .DOUTB ( RSA_64b_RAM_0_DOUTB_0 ) 
         );
 
 

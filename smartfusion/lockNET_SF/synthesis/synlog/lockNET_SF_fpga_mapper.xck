@@ -1,1 +1,3 @@
-CKID0001:@|S:lockNET_SF_MSS_0@|E:apb3_interface_0.rsa_0.message_upper[31]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0001:@|S:lockNET_SF_MSS_0.MSS_CCC_0.I_MSSCCC@|E:apb3_interface_0.rsa_0.RAM_ADDRB[6]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:apb3_interface_0.rsa_0.MonMult_0.counter_RNI656O[6]@|E:apb3_interface_0.rsa_0.MonMult_0.add_n[10]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:apb3_interface_0.rsa_0.encrypt_state_RNID7ME1[13]@|E:apb3_interface_0.rsa_0.read_wait_counter_n[0]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
