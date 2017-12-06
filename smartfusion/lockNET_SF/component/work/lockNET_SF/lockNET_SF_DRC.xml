@@ -3,80 +3,24 @@
 <drcreport>
   <header>lockNET_SF</header>
   <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Unconnected Bus Interface</message>
-    <detail>Unconnected bus interface pin CoreAPB3_0:APB3mmaster</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/CoreAPB3_0:APB3mmaster</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Unconnected Bus Interface</message>
-    <detail>Unconnected bus interface pin CoreAPB3_0:APBmslave0</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/CoreAPB3_0:APBmslave0</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin lockNET_SF_MSS_0:FAB_CLK</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/lockNET_SF_MSS_0:FAB_CLK</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin lockNET_SF_MSS_0:M2F_RESET_N</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/lockNET_SF_MSS_0:M2F_RESET_N</crossprobe>
+    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected top level output port lockNET_SF:NP_OUT</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/lockNET_SF:NP_OUT</crossprobe>
   </drc>
   <drc>
     <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\error.png</status>
     <StatusMessage>Error</StatusMessage>
     <message>Undriven Pin</message>
-    <detail>Unconnected input pin pwm_0:PCLK</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/pwm_0:PCLK</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected input pin pwm_0:PRESERN</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/pwm_0:PRESERN</crossprobe>
+    <detail>Unconnected top level output port lockNET_SF:SERVO_OUT</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/lockNET_SF:SERVO_OUT</crossprobe>
   </drc>
   <drc>
     <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
     <StatusMessage>Warning</StatusMessage>
     <message>Floating Driver</message>
-    <detail>Floating output bus pin pwm_0:test[15:0]</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/pwm_0:test</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\error.png</status>
-    <StatusMessage>Error</StatusMessage>
-    <message>Undriven Pin</message>
-    <detail>Unconnected input pin pwm_0:SW[1:0]</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/pwm_0:SW</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin pwm_0:pwm_out</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/pwm_0:pwm_out</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Floating Driver</message>
-    <detail>Floating output pin pwm_0:write_pulse</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/pwm_0:write_pulse</crossprobe>
-  </drc>
-  <drc>
-    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
-    <StatusMessage>Warning</StatusMessage>
-    <message>Unconnected Bus Interface</message>
-    <detail>Unconnected bus interface pin pwm_0:BIF_1</detail>
-    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/pwm_0:BIF_1</crossprobe>
+    <detail>Floating output pin lockNET_SF:PIN_NFC_IRQ</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/lockNET_SF/pins/lockNET_SF:PIN_NFC_IRQ</crossprobe>
   </drc>
 </drcreport>

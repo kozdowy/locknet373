@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\synlog\lockNET_SF_fpga_mapper.srr</data>
+<data>N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synlog\lockNET_SF_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -17,8 +17,8 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>FAB_CLK</data>
 <data>100.0 MHz</data>
-<data>28.0 MHz</data>
-<data>-25.749</data>
+<data>29.5 MHz</data>
+<data>-23.947</data>
 </row>
 <row>
 <data>FCLK</data>
@@ -29,7 +29,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>System</data>
 <data>100.0 MHz</data>
-<data>60.0 MHz</data>
-<data>-6.660</data>
+<data>78.6 MHz</data>
+<data>-2.727</data>
 </row>
 </report_table>

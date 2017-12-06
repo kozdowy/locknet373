@@ -81,20 +81,12 @@
         <spirit:right>0</spirit:right>
       </spirit:signal>
       <spirit:signal>
-        <spirit:name>NP_OUT</spirit:name>
-        <spirit:direction>out</spirit:direction>
-      </spirit:signal>
-      <spirit:signal>
-        <spirit:name>SERVO_OUT</spirit:name>
-        <spirit:direction>out</spirit:direction>
-      </spirit:signal>
-      <spirit:signal>
         <spirit:name>FABINT</spirit:name>
         <spirit:direction>out</spirit:direction>
       </spirit:signal>
       <spirit:signal>
-        <spirit:name>PIN_NFC_IRQ</spirit:name>
-        <spirit:direction>in</spirit:direction>
+        <spirit:name>RSA_VALID</spirit:name>
+        <spirit:direction>out</spirit:direction>
       </spirit:signal>
     </spirit:signals>
     <spirit:hwParameters>

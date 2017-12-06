@@ -1,28 +1,25 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-2
-#--  Project file N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\scratchproject.prs
+#--  Project file N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\scratchproject.prs
 
 #project files
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/neopixel.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/NFC.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/MonMult.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/RSA.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/servo.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/hdl/apb3_interface.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF_MSS/mss_tshell.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF_MSS/MSS_CCC_0/lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF_MSS/lockNET_SF_MSS.v"
-add_file -verilog -lib COREAPB3_LIB "N:/Git/locknet373/smartfusion/lockNET_SF/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
-add_file -verilog -lib COREAPB3_LIB "N:/Git/locknet373/smartfusion/lockNET_SF/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
-add_file -verilog -lib COREAPB3_LIB "N:/Git/locknet373/smartfusion/lockNET_SF/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v"
-add_file -verilog "N:/Git/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF/lockNET_SF.v"
-add_file -constraint "N:/Git/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF_MSS/mss_tshell_syn.sdc"
+add_file -verilog "N:/PortableGit/locknet373/smartfusion/lockNET_SF/hdl/MonMult.v"
+add_file -verilog "N:/PortableGit/locknet373/smartfusion/lockNET_SF/hdl/RSA.v"
+add_file -verilog "N:/PortableGit/locknet373/smartfusion/lockNET_SF/hdl/apb3_interface.v"
+add_file -verilog "N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
+add_file -verilog "N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF_MSS/mss_tshell.v"
+add_file -verilog "N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF_MSS/MSS_CCC_0/lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v"
+add_file -verilog "N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF_MSS/lockNET_SF_MSS.v"
+add_file -verilog -lib COREAPB3_LIB "N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
+add_file -verilog -lib COREAPB3_LIB "N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
+add_file -verilog -lib COREAPB3_LIB "N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v"
+add_file -verilog "N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF/lockNET_SF.v"
+add_file -constraint "N:/PortableGit/locknet373/smartfusion/lockNET_SF/component/work/lockNET_SF_MSS/mss_tshell_syn.sdc"
 
 
 
 #implementation: "synthesis"
-impl -add N:\Git\locknet373\smartfusion\lockNET_SF\synthesis -type fpga
+impl -add N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis -type fpga
 
 #
 #implementation attributes
@@ -84,5 +81,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "N:/Git/locknet373/smartfusion/lockNET_SF/synthesis/lockNET_SF.edn"
+project -result_file "N:/PortableGit/locknet373/smartfusion/lockNET_SF/synthesis/lockNET_SF.edn"
 impl -active "synthesis"

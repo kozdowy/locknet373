@@ -15,20 +15,21 @@ module neopixel(
            input             pclk, // clock
            input             nreset, // system reset
            input                bus_write_en,
-            input               bus_read_en,
+            //input               bus_read_en,
             input np_en,
  //          input             PWRITE, // distinguishes read and write cycles
            input [7:0]      bus_addr, // I/O address
            input wire [31:0] bus_write_data, // data from processor to I/O device (32 bits)
-           output reg [31:0] bus_read_data, // data to processor from I/O device (32-bits)
+           //output reg [31:0] bus_read_data, // data to processor from I/O device (32-bits)
            output reg        np_out
             //output [23:0] pixel_state
            );
 
    wire                      write_pulse;
+   wire read_pulse;
 
    assign write_pulse = bus_write_en & np_en;
-   assign read_pulse = bus_read_en & np_en;
+   //assign read_pulse = bus_read_en & np_en;
 
    reg [23:0]                neopixel_reg;
    reg [23:0]                neopixel_reg_n;
@@ -44,15 +45,13 @@ module neopixel(
 
    //assign pixel_state = neopixel_reg;
 
-    // TODO: fix sending of data
-
    always @* begin
       counter_n = counter;
       neopixel_reg_n = neopixel_reg;
       np_out_n = np_out;
       //compare_reg_n = compare_reg;
       send_pixel_n = send_pixel;
-      bus_read_data = 32'b0;
+      //bus_read_data = 32'b0;
 
       if (send_pixel != 5'b0) begin
          counter_n = counter + 1;
@@ -92,9 +91,11 @@ module neopixel(
          end // if (bus_write_data[24])
       end // if (send_pixel != 0)
 
+/*
       if (read_pulse) begin
         bus_read_data = {8'b0, neopixel_reg};
       end // if (read_pulse)
+*/
 
       if (send_pixel == 5'b0) begin
          counter_n = 8'b0;

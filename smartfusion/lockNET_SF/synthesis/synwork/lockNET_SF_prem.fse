@@ -1,28 +1,28 @@
 
-fsm_encoding {831203121} onehot
+fsm_encoding {636103611} sequential
 
-fsm_state_encoding {831203121} 00000 {000000000000}
+fsm_state_encoding {636103611} 00000 {0000}
 
-fsm_state_encoding {831203121} 00001 {000000000011}
+fsm_state_encoding {636103611} 00001 {0001}
 
-fsm_state_encoding {831203121} 00010 {000000000101}
+fsm_state_encoding {636103611} 00010 {0010}
 
-fsm_state_encoding {831203121} 00011 {000000001001}
+fsm_state_encoding {636103611} 00011 {0011}
 
-fsm_state_encoding {831203121} 00100 {000000010001}
+fsm_state_encoding {636103611} 00100 {0100}
 
-fsm_state_encoding {831203121} 00101 {000000100001}
+fsm_state_encoding {636103611} 00101 {0101}
 
-fsm_state_encoding {831203121} 00110 {000001000001}
+fsm_state_encoding {636103611} 00110 {0110}
 
-fsm_state_encoding {831203121} 00111 {000010000001}
+fsm_state_encoding {636103611} 00111 {0111}
 
-fsm_state_encoding {831203121} 01000 {000100000001}
+fsm_state_encoding {636103611} 01000 {1000}
 
-fsm_state_encoding {831203121} 01001 {001000000001}
+fsm_state_encoding {636103611} 01001 {1001}
 
-fsm_state_encoding {831203121} 01010 {010000000001}
+fsm_state_encoding {636103611} 01010 {1010}
 
-fsm_state_encoding {831203121} 01011 {100000000001}
+fsm_state_encoding {636103611} 01011 {1011}
 
-fsm_registers {831203121} {encrypt_state[11]}  {encrypt_state[10]}  {encrypt_state[9]}  {encrypt_state[8]}  {encrypt_state[7]}  {encrypt_state[6]}  {encrypt_state[5]}  {encrypt_state[4]}  {encrypt_state[3]}  {encrypt_state[2]}  {encrypt_state[1]}  {encrypt_state_i[0]} 
+fsm_registers {636103611} {encrypt_state[3]}  {encrypt_state[2]}  {encrypt_state[1]}  {encrypt_state[0]} 

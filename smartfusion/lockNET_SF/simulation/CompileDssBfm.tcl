@@ -1,1 +1,1 @@
-exec bfmtovec -in test.bfm -out test.vec
+exec ./bfmtovec -in test.bfm -out test.vec 

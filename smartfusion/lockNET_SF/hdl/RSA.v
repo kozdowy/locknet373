@@ -33,7 +33,8 @@ module rsa(
     input RSA_ENABLE,
     input [7:0] bus_addr, // I/O address
     input wire [31:0] bus_write_data, // data from processor to I/O device (32 bits)
-    output reg [31:0] bus_read_data // data to processor from I/O device (32-bits)   
+    output reg [31:0] bus_read_data, // data to processor from I/O device (32-bits)
+    output reg result_valid
 );
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -90,11 +91,11 @@ reg [31:0] Z_lower;
 reg [31:0] Z_upper_n;
 reg [31:0] Z_lower_n;
 
-reg result_valid;
+//reg result_valid;
 reg result_valid_n;
 
-reg [31:0] rsa_read_out;
-reg [31:0] rsa_read_out_n;
+//reg [31:0] rsa_read_out;
+//reg [31:0] rsa_read_out_n;
 
 reg MonMult_GO;
 reg MonMult_GO_n;
@@ -108,7 +109,7 @@ wire MonMult_ready;
 MonMult MonMult_0(
     .pclk(pclk),
     .nreset(nreset),
-    .GO(MonMult_GO),
+    .GO(MonMult_GO_n),
     .A(A),
     .B(B),
     .M({modulus_upper, modulus_lower}),
@@ -138,14 +139,62 @@ always @* begin
     temp_result_lower_n = temp_result_lower;
     Z_upper_n = Z_upper;
     Z_lower_n = Z_lower;
-    result_valid_n = result_valid;
-    rsa_read_out_n = rsa_read_out;
-    MonMult_GO_n = MonMult_GO;
+    //result_valid_n = result_valid;
+    //rsa_read_out_n = rsa_read_out;
+    //MonMult_GO_n = MonMult_GO;
     A_n = A;
     B_n = B;
-    encrypt_state_n = encrypt_state;
+    //encrypt_state_n = encrypt_state;
     counter_n = counter;
 
+    bus_read_data = 32'bx;
+
+    if(bus_addr == `BIT_SWITCH_ADDR & rsa_write) begin
+        bit_switch_n = bus_write_data[0];
+    end else if(bus_addr == `MESSAGE_ADDR & rsa_write) begin
+        if(bit_switch)
+            message_upper_n = bus_write_data;
+        else
+            message_lower_n = bus_write_data;
+        rsa_encrypt_n = 1'b0;
+        result_valid_n = 1'b0;
+    end else if(bus_addr == `MODULUS_ADDR & rsa_write) begin
+        if(bit_switch) 
+            modulus_upper_n = bus_write_data;
+        else
+            modulus_lower_n = bus_write_data;
+        rsa_encrypt_n = 1'b0;
+        result_valid_n = 1'b0;
+    end else if(bus_addr == `EXPONENT_ADDR & rsa_write) begin
+        if(bit_switch)
+            exponent_upper_n = bus_write_data;
+        else
+            exponent_lower_n = bus_write_data;
+        rsa_encrypt_n = 1'b0;
+        result_valid_n = 1'b0;
+    end else if(bus_addr == `RESIDUE_ADDR & rsa_write) begin
+        if(bit_switch)
+            residue_upper_n = bus_write_data;
+        else
+            residue_lower_n = bus_write_data;
+        rsa_encrypt_n = 1'b0;
+        result_valid_n = 1'b0;
+    end else if(bus_addr == `RSA_ENCRYPT_ADDR) begin
+        if (rsa_write) begin
+            rsa_encrypt_n = bus_write_data[0];
+            if(rsa_encrypt == 1'b1 && bus_write_data[0] == 0) begin
+                result_valid_n = 1'b0;
+            end
+        end
+        if (rsa_read) begin
+            bus_read_data = {31'b0, rsa_encrypt}; 
+        end
+    end else if (bus_addr == `RESULT_ADDR & rsa_read) begin
+            bus_read_data = (bit_switch) ? result_upper : result_lower;
+    end else if (bus_addr == `RESULT_VALID_ADDR & rsa_read) begin
+            bus_read_data = {31'b0, result_valid};
+    end
+    /*
     //write to MMIO
     if(rsa_write) begin
         if(bus_addr == `BIT_SWITCH_ADDR) begin
@@ -189,89 +238,105 @@ always @* begin
     //read from MMIO
     if(rsa_read) begin
         case(bus_addr)
-            `BIT_SWITCH_ADDR: bus_read_data = {31'b0, bit_switch};
-            `MESSAGE_ADDR: bus_read_data = (bit_switch)? message_upper : message_lower; 
-            `MODULUS_ADDR: bus_read_data = (bit_switch)? modulus_upper : modulus_lower; 
-            `EXPONENT_ADDR: bus_read_data =(bit_switch)? exponent_upper : exponent_lower; 
-            `RESIDUE_ADDR: bus_read_data = (bit_switch)? residue_upper : residue_lower; 
+            //`BIT_SWITCH_ADDR: bus_read_data = {31'b0, bit_switch};
+            //`MESSAGE_ADDR: bus_read_data = (bit_switch)? message_upper : message_lower; 
+            //`MODULUS_ADDR: bus_read_data = (bit_switch)? modulus_upper : modulus_lower; 
+            //`EXPONENT_ADDR: bus_read_data =(bit_switch)? exponent_upper : exponent_lower; 
+            //`RESIDUE_ADDR: bus_read_data = (bit_switch)? residue_upper : residue_lower; 
             `RSA_ENCRYPT_ADDR: bus_read_data = {31'b0, rsa_encrypt}; 
             `RESULT_ADDR: bus_read_data = (bit_switch)? result_upper : result_lower;
             `RESULT_VALID_ADDR: bus_read_data = {31'b0, result_valid};
         endcase
     end
+    */
+
+    MonMult_GO_n = encrypt_state[0] | (encrypt_state == 5'd4);
+    result_valid_n = (encrypt_state == 5'd11);
+    encrypt_state_n = encrypt_state;
 
     //Encrypt FSM
-    if(rsa_encrypt == 1'b1) begin
+    if(rsa_encrypt) begin
         if(encrypt_state == 5'd0) begin
-            MonMult_GO_n = 0;
+            //MonMult_GO_n = 1'b0;
             A_n = 64'd1;
             B_n = {residue_upper, residue_lower};
             encrypt_state_n = 5'd1;
         end else if(encrypt_state == 5'd1) begin
-            MonMult_GO_n = 1;
+            //MonMult_GO_n = 1'b1;
             if(MonMult_ready) begin
                 encrypt_state_n = 5'd2;
-            end else begin
+            end
+            /*
+            else begin
                 encrypt_state_n = 5'd1;
             end
+            */
         end else if(encrypt_state == 5'd2) begin
             result_upper_n = P[63:32];
             result_lower_n = P[31:0];
-            MonMult_GO_n = 0;
+            //MonMult_GO_n = 1'b0;
             A_n = {message_upper, message_lower};
             B_n = {residue_upper, residue_lower};
             encrypt_state_n = 5'd3;
         end else if(encrypt_state == 5'd3) begin
-            MonMult_GO_n = 1;
-            if(MonMult_ready) begin
+            //MonMult_GO_n = 1'b1;
+            if(MonMult_ready & MonMult_GO) begin
                 encrypt_state_n = 5'd4;
-            end else begin
+            end
+            /*
+            else begin
                 encrypt_state_n = 5'd3;
             end
+            */
         end else if(encrypt_state == 5'd4) begin
             Z_upper_n = P[63:32];
             Z_lower_n = P[31:0];
-            MonMult_GO_n = 0;
-            counter_n = 0;
+            //MonMult_GO_n = 1'b0;
+            counter_n = 1'b0;
             encrypt_state_n = 5'd5;
         end else if(encrypt_state == 5'd5) begin
             A_n = {result_upper, result_lower};
             B_n = {Z_upper, Z_lower};
-            MonMult_GO_n = 1;
-            if(MonMult_ready) begin
+            //MonMult_GO_n = 1'b1;
+            if(MonMult_ready & MonMult_GO) begin
                 encrypt_state_n = 5'd6;
-            end else begin
+            end
+            /*
+            else begin
                 encrypt_state_n = 5'd5;
             end
+            */
         end else if(encrypt_state == 5'd6) begin
             temp_result_upper_n = P[63:32];
             temp_result_lower_n = P[31:0];
-            MonMult_GO_n = 0;
+            //MonMult_GO_n = 1'b0;
             A_n = {Z_upper, Z_lower};
             B_n = {Z_upper, Z_lower};
             encrypt_state_n = 5'd7;
         end else if(encrypt_state == 5'd7) begin
-            MonMult_GO_n = 1;
-            if(MonMult_ready) begin
+            //MonMult_GO_n = 1'b1;
+            if(MonMult_ready & MonMult_GO) begin
                 encrypt_state_n = 5'd8;
-            end else begin
+            end
+            /*
+            else begin
                 encrypt_state_n = 5'd7;
             end
+            */
         end else if(encrypt_state == 5'd8) begin
             Z_upper_n = P[63:32];
             Z_lower_n = P[31:0];
-            MonMult_GO_n = 0;
-            counter_n = counter + 1;
-            if((counter >= 32  && exponent_upper[counter - 32] == 1'b1) ||
-               (counter < 32 && exponent_lower[counter] == 1'b1)) begin
-
+            //MonMult_GO_n = 1'b0;
+            counter_n = counter + 1'b1;
+            if((counter[5] & exponent_upper[counter[4:0]]) |
+               (~counter[5] & exponent_lower[counter])) begin
                 result_upper_n = temp_result_upper;
                 result_lower_n = temp_result_lower;
             end else begin
                 result_upper_n = result_upper;
                 result_lower_n = result_lower;
             end
-            if(counter == 63) begin
+            if(counter[6]) begin
                 encrypt_state_n = 5'd9;
             end else begin
                 encrypt_state_n = 5'd5;
@@ -279,33 +344,16 @@ always @* begin
         end else if(encrypt_state == 5'd9) begin
             A_n = {result_upper, result_lower};
             B_n = 64'd1;
-            MonMult_GO_n = 1;
-            if(MonMult_ready) begin
+            //MonMult_GO_n = 1'b1;
+            if(MonMult_ready & MonMult_GO) begin
                 encrypt_state_n = 5'd10;
-            end else begin
-                encrypt_state_n = 5'd9;
             end
         end else if(encrypt_state == 5'd10) begin
             result_upper_n = P[63:32];
             result_lower_n = P[31:0];
-            MonMult_GO_n = 0;
+            //MonMult_GO_n = 1'b0;
             encrypt_state_n = 5'd11;
-        end else if(encrypt_state == 5'd11) begin
-            result_valid_n = 1;
         end
-    end else begin
-        result_upper_n = 32'b0;
-        result_lower_n = 32'b0;
-        temp_result_upper_n = 32'b0;
-        temp_result_lower_n = 32'b0;
-        Z_upper_n = 32'b0;
-        Z_lower_n = 32'b0;
-        result_valid_n = 1'b0;
-        MonMult_GO_n = 1'b0;
-        A_n = 64'b0;
-        B_n = 64'b0;
-        encrypt_state_n = 5'b0;
-        counter_n = 7'b0;
     end
 end
 
@@ -328,7 +376,7 @@ always @(posedge pclk) begin
         Z_upper <= 32'b0;
         Z_lower <= 32'b0;
         result_valid <= 1'b0;
-        rsa_read_out <= 32'b0;
+        //rsa_read_out <= 32'b0;
         MonMult_GO <= 1'b0;
         A <= 64'b0;
         B <= 64'b0;
@@ -352,7 +400,7 @@ always @(posedge pclk) begin
         Z_upper <= Z_upper_n;
         Z_lower <= Z_lower_n;
         result_valid <= result_valid_n;
-        rsa_read_out <= rsa_read_out_n;
+        //rsa_read_out <= rsa_read_out_n;
         MonMult_GO <= MonMult_GO_n;
         A <= A_n;
         B <= B_n;

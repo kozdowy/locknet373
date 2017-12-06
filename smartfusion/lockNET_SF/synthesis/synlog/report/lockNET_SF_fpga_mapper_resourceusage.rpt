@@ -2,91 +2,81 @@ Target Part: A2F200M3F_FBGA484_STD
 Report for cell lockNET_SF.verilog
   Core Cell usage:
               cell count     area count*area
-              AND2    56      1.0       56.0
-             AND2A    14      1.0       14.0
-              AND3    56      1.0       56.0
-               AO1   271      1.0      271.0
-              AO18     1      1.0        1.0
-              AO1A   201      1.0      201.0
-              AO1B     4      1.0        4.0
-              AO1C    42      1.0       42.0
-              AO1D     2      1.0        2.0
-              AOI1    10      1.0       10.0
-             AOI1A    26      1.0       26.0
-             AOI1B    61      1.0       61.0
-               AX1     9      1.0        9.0
-              AX1A     2      1.0        2.0
-              AX1B     4      1.0        4.0
-              AX1C     4      1.0        4.0
-              AX1D    27      1.0       27.0
+              AND2    26      1.0       26.0
+             AND2A    11      1.0       11.0
+              AND3    43      1.0       43.0
+               AO1   227      1.0      227.0
+              AO13     4      1.0        4.0
+              AO1A    46      1.0       46.0
+              AO1B     1      1.0        1.0
+              AO1C    23      1.0       23.0
+              AO1D    23      1.0       23.0
+              AOI1    28      1.0       28.0
+             AOI1A    21      1.0       21.0
+             AOI1B     3      1.0        3.0
+               AX1     1      1.0        1.0
+              AX1C     5      1.0        5.0
+              AX1D    22      1.0       22.0
+              AX1E     1      1.0        1.0
             CLKINT     3      0.0        0.0
-               GND    11      0.0        0.0
-              MAJ3    40      1.0       40.0
-              MIN3     2      1.0        2.0
+               GND     8      0.0        0.0
+              MAJ3    72      1.0       72.0
+              MIN3     1      1.0        1.0
             MSSINT     1      0.0        0.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
-               MX2   691      1.0      691.0
-              MX2A   195      1.0      195.0
-              MX2B   117      1.0      117.0
-              MX2C    24      1.0       24.0
-              NOR2    30      1.0       30.0
-             NOR2A   539      1.0      539.0
-             NOR2B  1140      1.0     1140.0
-              NOR3     6      1.0        6.0
-             NOR3A    73      1.0       73.0
-             NOR3B    63      1.0       63.0
-             NOR3C   201      1.0      201.0
-               OA1    94      1.0       94.0
-              OA1A    34      1.0       34.0
-              OA1B     2      1.0        2.0
-              OA1C    15      1.0       15.0
-              OAI1     2      1.0        2.0
-               OR2   184      1.0      184.0
-              OR2A   111      1.0      111.0
-              OR2B   148      1.0      148.0
-               OR3   172      1.0      172.0
-              OR3A    15      1.0       15.0
-              OR3B    68      1.0       68.0
+               MX2   782      1.0      782.0
+              MX2A    87      1.0       87.0
+              MX2B    66      1.0       66.0
+              MX2C    65      1.0       65.0
+              NOR2    22      1.0       22.0
+             NOR2A   258      1.0      258.0
+             NOR2B  1141      1.0     1141.0
+              NOR3     4      1.0        4.0
+             NOR3A    13      1.0       13.0
+             NOR3B    40      1.0       40.0
+             NOR3C    89      1.0       89.0
+               OA1    49      1.0       49.0
+              OA1A    43      1.0       43.0
+              OA1B     3      1.0        3.0
+              OA1C     1      1.0        1.0
+               OR2   108      1.0      108.0
+              OR2A    55      1.0       55.0
+              OR2B     8      1.0        8.0
+               OR3    48      1.0       48.0
+              OR3A     1      1.0        1.0
+              OR3B     4      1.0        4.0
               OR3C     1      1.0        1.0
              RCOSC     1      0.0        0.0
-               VCC    11      0.0        0.0
-               XA1    23      1.0       23.0
-              XA1A    10      1.0       10.0
-              XA1B    14      1.0       14.0
-              XA1C    16      1.0       16.0
-             XNOR2   158      1.0      158.0
-             XNOR3     8      1.0        8.0
-               XO1     4      1.0        4.0
-              XOR2    90      1.0       90.0
-              XOR3    60      1.0       60.0
-             ZOR3I     1      1.0        1.0
+               VCC     8      0.0        0.0
+               XA1    17      1.0       17.0
+             XNOR2   122      1.0      122.0
+             XNOR3     4      1.0        4.0
+               XO1    12      1.0       12.0
+              XOR2    84      1.0       84.0
+              XOR3    67      1.0       67.0
 
 
-              DFN1   778      1.0      778.0
+              DFN1   672      1.0      672.0
             DFN1E0     7      1.0        7.0
-            DFN1E1     5      1.0        5.0
-              DLN0     1      1.0        1.0
-            DLN0P0    31      1.0       31.0
                    -----          ----------
-             TOTAL  5992              5963.0
+             TOTAL  4454              4431.0
 
 
   IO Cell usage:
               cell count
          BIBUF_MSS     3
    BIBUF_OPEND_MSS     2
-             INBUF     1
          INBUF_MSS     6
-            OUTBUF     3
+            OUTBUF     1
         OUTBUF_MSS     3
        TRIBUFF_MSS     1
                    -----
-             TOTAL    19
+             TOTAL    16
 
 
-Core Cells         : 5963 of 4608 (129%)
-IO Cells           : 19
+Core Cells         : 4431 of 4608 (96%)
+IO Cells           : 16
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

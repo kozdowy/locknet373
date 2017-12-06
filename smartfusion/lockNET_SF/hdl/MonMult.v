@@ -39,33 +39,34 @@ module MonMult(
 
     always @* begin
         P_n = P;
-        is_ready_n = is_ready;
-        counter_n = counter;
-        
+        is_ready_n = is_ready; //counter[6];
+        counter_n = counter; // + ~counter[6];
 //
-        if (counter < 63) begin
-            is_ready_n = 0;
-            counter_n = counter + 1;
-            P_n = (P + (A[counter] * B) + ((P[0] ^ (A[counter] & B[0])) * M)) >> 1;
-        end else if (counter == 63) begin
-            if( P >= M ) begin
-                P_n = P - M;
-            end else begin
-                P_n = P;
+        if (~(& counter[5:0]) & ~counter[6]) begin
+            is_ready_n = 1'b0;
+            counter_n = counter + 1'b1;
+            P_n = (P + (A[counter] ? B : 64'b0) + ((P[0] ^ (A[counter] & B[0])) ? M : 64'b0)) >> 1;
+        end else if ((& counter[5:0])) begin
+            P_n = (P + (A[counter] ? B : 64'b0) + ((P[0] ^ (A[counter] & B[0])) ? M : 64'b0)) >> 1;
+            if( P_n >= M ) begin
+                P_n = P_n - M;
             end
-            is_ready_n = 0;
-            counter_n = counter + 1;
-        end else if (counter == 64) begin
-            P_n = P;
-            is_ready_n = 1;
+            is_ready_n = 1'b0;
+            counter_n = counter + 1'b1;
+        end
+        
+        else if (counter[6]) begin
+            //P_n = P;
+            is_ready_n = 1'b1;
             counter_n = counter;
         end
+        
     end
             
     always @(posedge pclk) begin
-        if(!nreset || !GO) begin
+        if(~nreset | ~GO) begin
             P <= 64'b0;
-            is_ready <= 0;
+            is_ready <= 1'b0;
             counter <= 7'b0;
         end else begin
             counter <= counter_n;

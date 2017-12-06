@@ -5,9 +5,9 @@ The file contains the optimization information from mapper to be displayed as pa
 *******************************************************************************************-->
 <report_table display_priority="3" name="Optimizations Summary">
 <parameter tooltip="Non-gated/non-generated clock trees / Gated/generated clock trees" name="Combined Clock Conversion">
-<data>1 / 2</data>
+<data>1 / 0</data>
 <report_link name="more">
-<data>N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\synlog\report\lockNET_SF_fpga_mapper_combined_clk.rpt</data>
+<data>N:\PortableGit\locknet373\smartfusion\lockNET_SF\synthesis\synlog\report\lockNET_SF_fpga_mapper_combined_clk.rpt</data>
 <title>START OF CLOCK OPTIMIZATION REPORT</title>
 </report_link>
 </parameter>
