@@ -28,7 +28,7 @@
 `define RESULT_VALID_ADDR 8'h24
 
 `define MESSAGE 64'hDCBAABCDABCDDCBA
-`define MSG_ENC 64'h0f886e095e89cf95
+`define MSG_ENC 64'h19992ea93fb8845b
 `define PUB_EXP 64'h0000000000010001
 `define PRI_EXP 64'h044de026cabdb311
 
@@ -47,8 +47,6 @@ reg [7:0] bus_addr; // I/O address
 reg [31:0] bus_write_data; // data from processor to I/O device (32 bits)
 wire [31:0] bus_read_data; // data to processor from I/O device (32-bits)
 wire result_valid;
-wire [63:0] P;
-wire P_ready;
 
 reg [63:0] msg;
 reg [63:0] exp;
@@ -165,9 +163,6 @@ begin
     bus_write_en = 1'b0;
 
     while (!result_valid) begin
-        if (P_ready) begin
-            $display("P = %x", P);
-        end
         #(SYSCLK_PERIOD);
     end
 
@@ -202,9 +197,7 @@ rsa rsa_dut(
     .bus_addr(bus_addr), // I/O address
     .bus_write_data(bus_write_data), // data from processor to I/O device (32 bits)
     .bus_read_data(bus_read_data), // data to processor from I/O device (32-bits)
-    .result_valid(result_valid),
-    .P_out(P),
-    .P_ready_out(P_ready)
+    .result_valid(result_valid)
 );
 
 endmodule

@@ -34,7 +34,9 @@ module rsa(
     input [7:0] bus_addr, // I/O address
     input wire [31:0] bus_write_data, // data from processor to I/O device (32 bits)
     output reg [31:0] bus_read_data, // data to processor from I/O device (32-bits)
-    output reg result_valid
+    output reg result_valid,
+    output wire [63:0] P_out,
+    output wire P_ready_out
 );
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -103,8 +105,11 @@ reg [63:0] A;
 reg [63:0] A_n;
 reg [63:0] B;
 reg [63:0] B_n;
-wire [63:0] P;
+wire [64:0] P;
 wire MonMult_ready;
+
+assign P_out = P;
+assign P_ready_out = MonMult_ready;
 
 MonMult MonMult_0(
     .pclk(pclk),
@@ -250,7 +255,7 @@ always @* begin
     end
     */
 
-    MonMult_GO_n = encrypt_state[0] | (encrypt_state == 5'd4);
+    MonMult_GO_n = encrypt_state[0];// | (encrypt_state == 5'd4);
     result_valid_n = (encrypt_state == 5'd11);
     encrypt_state_n = encrypt_state;
 
@@ -258,12 +263,12 @@ always @* begin
     if(rsa_encrypt) begin
         if(encrypt_state == 5'd0) begin
             //MonMult_GO_n = 1'b0;
-            A_n = 64'd1;
-            B_n = {residue_upper, residue_lower};
+            A_n = {residue_upper, residue_lower};
+            B_n = 64'd1;
             encrypt_state_n = 5'd1;
         end else if(encrypt_state == 5'd1) begin
             //MonMult_GO_n = 1'b1;
-            if(MonMult_ready) begin
+            if(MonMult_ready & MonMult_GO) begin
                 encrypt_state_n = 5'd2;
             end
             /*
@@ -275,8 +280,8 @@ always @* begin
             result_upper_n = P[63:32];
             result_lower_n = P[31:0];
             //MonMult_GO_n = 1'b0;
-            A_n = {message_upper, message_lower};
-            B_n = {residue_upper, residue_lower};
+            A_n = {residue_upper, residue_lower};
+            B_n = {message_upper, message_lower};
             encrypt_state_n = 5'd3;
         end else if(encrypt_state == 5'd3) begin
             //MonMult_GO_n = 1'b1;
@@ -291,12 +296,13 @@ always @* begin
         end else if(encrypt_state == 5'd4) begin
             Z_upper_n = P[63:32];
             Z_lower_n = P[31:0];
+            A_n = {result_upper, result_lower};
+            B_n = {Z_upper_n, Z_lower_n};
             //MonMult_GO_n = 1'b0;
             counter_n = 1'b0;
             encrypt_state_n = 5'd5;
         end else if(encrypt_state == 5'd5) begin
-            A_n = {result_upper, result_lower};
-            B_n = {Z_upper, Z_lower};
+            
             //MonMult_GO_n = 1'b1;
             if(MonMult_ready & MonMult_GO) begin
                 encrypt_state_n = 5'd6;
@@ -329,21 +335,21 @@ always @* begin
             //MonMult_GO_n = 1'b0;
             counter_n = counter + 1'b1;
             if((counter[5] & exponent_upper[counter[4:0]]) |
-               (~counter[5] & exponent_lower[counter])) begin
+               (~counter[5] & exponent_lower[counter[4:0]])) begin
                 result_upper_n = temp_result_upper;
                 result_lower_n = temp_result_lower;
-            end else begin
-                result_upper_n = result_upper;
-                result_lower_n = result_lower;
-            end
-            if(counter[6]) begin
+            end 
+            
+            if(counter_n[6]) begin
                 encrypt_state_n = 5'd9;
+                A_n = 64'd1;
+                B_n = {result_upper_n, result_lower_n};
             end else begin
                 encrypt_state_n = 5'd5;
+                A_n = {result_upper_n, result_lower_n};
+                B_n = {Z_upper_n, Z_lower_n};
             end
         end else if(encrypt_state == 5'd9) begin
-            A_n = {result_upper, result_lower};
-            B_n = 64'd1;
             //MonMult_GO_n = 1'b1;
             if(MonMult_ready & MonMult_GO) begin
                 encrypt_state_n = 5'd10;
