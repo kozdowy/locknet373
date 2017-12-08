@@ -1,5 +1,5 @@
 // servo.v
-`define SERVO_PERIOD 2000000
+`define SERVO_PERIOD 500000
 
 module servo(
            /*** APB3 BUS INTERFACE ***/

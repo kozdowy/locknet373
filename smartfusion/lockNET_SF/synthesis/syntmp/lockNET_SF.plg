@@ -1,24 +1,24 @@
-@P:  Worst Slack : -12.035
-@P:  lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock - Estimated Frequency : 50.2 MHz
+@P:  Worst Slack : -10.848
+@P:  lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock - Estimated Frequency : 48.0 MHz
 @P:  lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock - Estimated Period : 19.929
+@P:  lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock - Estimated Period : 20.848
 @P:  lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock - Requested Period : 10.000
-@P:  lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock - Slack : -9.929
-@P:  System - Estimated Frequency : 77.9 MHz
+@P:  lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock - Slack : -10.848
+@P:  System - Estimated Frequency : 75.4 MHz
 @P:  System - Requested Frequency : 100.0 MHz
-@P:  System - Estimated Period : 12.834
+@P:  System - Estimated Period : 13.257
 @P:  System - Requested Period : 10.000
-@P:  System - Slack : -2.834
-@P:  Total Area : 4422.0
+@P:  System - Slack : -3.257
+@P:  Total Area : 4547.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  Total Area : 4.0
+@P:  Total Area : 5.0
 @P:  Total Area : 2.0
-@P:  Total Area : 4418.0
-@P:  Total Area : 3804.0
-@P:  Total Area : 2169.0
-@P:  Total Area : 370.0
-@P:  Total Area : 236.0
-@P:  Total Area : 4422.0
+@P:  Total Area : 4542.0
+@P:  Total Area : 3916.0
+@P:  Total Area : 2202.0
+@P:  Total Area : 392.0
+@P:  Total Area : 229.0
+@P:  Total Area : 4547.0
 @P:  CPU Time : 0h:00m:10s

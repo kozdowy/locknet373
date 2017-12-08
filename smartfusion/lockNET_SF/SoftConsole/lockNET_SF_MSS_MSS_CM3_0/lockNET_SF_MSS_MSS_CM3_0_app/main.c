@@ -2,16 +2,23 @@
 #include <inttypes.h>
 #include "drivers/mss_i2c/mss_i2c.h"
 #include <drivers/mss_gpio/mss_gpio.h>
-//#include <>
-#include "neopixel.h"
-#include "servo.h"
-#include "nfc.h"
-#include "contact_switch.h"
-#include "lora.h"
-#include "lora_client_ex.h"
+#include <drivers/mss_uart/mss_uart.h>
+//#include "neopixel.h"
+//#include "servo.h"
+//#include "nfc.h"
+//#include "contact_switch.h"
+//#include "lora.h"
+//#include "lora_client_ex.h"
+#include "rsa.h"
 //#include "lora_server_ex.h"
 
 uint8_t last_was_ack = 0;
+uint8_t RSA_result_ready = 0;
+
+__attribute__ ((interrupt)) void Fabric_IRQHandler( void ){
+	RSA_result_ready = 1;
+	NVIC_ClearPendingIRQ( Fabric_IRQn );
+}
 
 __attribute__ ((interrupt)) void GPIO9_IRQHandler( void ){
 	MSS_GPIO_clear_irq(MSS_GPIO_9);
@@ -24,61 +31,48 @@ __attribute__ ((interrupt)) void GPIO1_IRQHandler( void )
 	// Add interrupt status?
 	MSS_GPIO_clear_irq(MSS_GPIO_1);
 	// For the NFC module
-	//int n_bytes_to_read =; //Need to look it in the datasheet
 	if (!last_was_ack){
-		/*uint8_t receive_buf[7];
-		MSS_I2C_read
-			(
-					&g_mss_i2c1,
-					PN532_I2C_ADDRESS,
-					receive_buf,
-					7,
-					MSS_I2C_RELEASE_BUS
-			);
-		MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);*/
 		last_was_ack = 1;
 	} else {
-		/*uint8_t receive_buf[20];
-		MSS_I2C_read
-			(
-					&g_mss_i2c1,
-					PN532_I2C_ADDRESS,
-					receive_buf,
-					7,
-					MSS_I2C_RELEASE_BUS
-			);
-		MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);*/
 		last_was_ack = 0;
 	}
-
 	set_interrupt_handled(1);
 }
 
 // Main program
 int main()
 {
-	MSS_GPIO_init();
-	MSS_GPIO_config( MSS_GPIO_8, MSS_GPIO_OUTPUT_MODE);
-	MSS_GPIO_config( MSS_GPIO_9, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE );
-	MSS_GPIO_enable_irq(MSS_GPIO_9);
-	//MSS_GPIO_config( MSS_GPIO_10, MSS_GPIO_INOUT_MODE);
-	MSS_GPIO_set_output(MSS_GPIO_8, 1);
-
-	int init_res = LORA_init();
-
-	uint8_t send_buf[] = {0x01, 0x03, 0x05, 0x07};
-
-	LORA_write(RH_RF95_REG_0D_FIFO_ADDR_PTR, 0);
-	LORA_burst_write(RH_RF95_REG_00_FIFO, send_buf, 4);
-
-	int i;
-	for (i = 0; i < 100000; ++i);
-
-	LORA_write(RH_RF95_REG_0D_FIFO_ADDR_PTR, 0);
-	uint8_t read_buf[4];
-	LORA_burst_read(RH_RF95_REG_00_FIFO, read_buf, 4);
-
-	LORA_client_ex_setup();
+	//NVIC_EnableIRQ(Fabric_IRQn);
+	RSA_init();
+	RSA_test();
+	//while (!RSA_result_ready);
+	while (!RSA_is_ready());
+	uint32_t result[2];
+	RSA_read_result(result);
+	printf("result = %x %x", result[0], result[1]);
+//	MSS_GPIO_init();
+//
+//	MSS_GPIO_config( MSS_GPIO_8, MSS_GPIO_OUTPUT_MODE);
+//	MSS_GPIO_config( MSS_GPIO_9, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE );
+//	MSS_GPIO_enable_irq(MSS_GPIO_9);
+//	//MSS_GPIO_config( MSS_GPIO_10, MSS_GPIO_INOUT_MODE);
+//	MSS_GPIO_set_output(MSS_GPIO_8, 1);
+//
+//	int init_res = LORA_init();
+//
+//	uint8_t send_buf[] = {0x01, 0x03, 0x05, 0x07};
+//
+//	LORA_write(RH_RF95_REG_0D_FIFO_ADDR_PTR, 0);
+//	LORA_burst_write(RH_RF95_REG_00_FIFO, send_buf, 4);
+//
+//	int i;
+//	for (i = 0; i < 100000; ++i);
+//
+//	LORA_write(RH_RF95_REG_0D_FIFO_ADDR_PTR, 0);
+//	uint8_t read_buf[4];
+//	LORA_burst_read(RH_RF95_REG_00_FIFO, read_buf, 4);
+//
+//	LORA_client_ex_setup();
 	//LORA_read_addr(LORA_RegFifoTxBaseAddr);
 	/*
 	// MSS_GPIO initialization
@@ -151,15 +145,4 @@ int main()
 	*/
 
 	return(0);
-
 }
-
-
-
-
-/* I2C write function
- * Description:
- * Receives:
- */
-//void nfc_write(uint8_t *transmit_buf, uint8_t cmdlen)
-

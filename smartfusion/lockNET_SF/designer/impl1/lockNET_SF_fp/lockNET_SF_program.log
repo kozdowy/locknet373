@@ -3,49 +3,44 @@ Version: 11.8.0.26
 Release: v11.8
 
 Software Version: 11.8.0.26
-PDB file
-'N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pdb'
+PDB file 'N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pdb'
 has been loaded successfully.
-DESIGN : lockNET_SF;  CHECKSUM : 180A;  PDB_VERSION : 1.9
-Driver : 3.0.0 build 1
-programmer '79343' : FlashPro3
-Opened
-'N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pro'
+DESIGN : lockNET_SF;  CHECKSUM : 9534;  PDB_VERSION : 1.9
+Opened 'N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pro'
 The 'open_project' command succeeded.
 The 'set_programming_file' command succeeded.
 The 'set_device_type' command succeeded.
 The 'set_device_package' command succeeded.
 Info: Adding Flash Memory data from file
-      N:\PortableGit\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\MSS_ENVM_0\
-      \MSS_ENVM_0.efc.
+      N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\MSS_ENVM_0\MSS_ENV\
+      M_0.efc.
 Info: Adding FPGA Array data from file
-      N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.fdb.
-PDB file
-'N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pdb'
+      N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.fdb.
+PDB file 'N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pdb'
 has been loaded successfully.
-DESIGN : lockNET_SF;  CHECKSUM : 180A;  PDB_VERSION : 1.9
+DESIGN : lockNET_SF;  CHECKSUM : 9534;  PDB_VERSION : 1.9
+Warning: One or more programming or configuration files have changed since generation.
+         To view details and update a PDB, you may click on Modify PDB button for the target
+         device.
+         To update a STAPL file, you may reload the file or reload the project.
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
-programmer '79343' : Scan Chain...
-Warning: programmer '79343' : Vpump has been selected on programmer AND an externally provided
-         Vpump has also been detected. Using externally provided Vpump voltage source.
-programmer '79343' : Scan Chain PASSED.
-programmer '79343' : Executing action PROGRAM
-programmer '79343' : EXPORT FSN[48] = 0114ab584490
-programmer '79343' : Erase ...
-programmer '79343' : Completed erase
-programmer '79343' : EXPORT CHECKSUM[16] = 180a
-programmer '79343' : Programming FPGA Array
-programmer '79343' : Verifying FPGA Array
-programmer '79343' :         Verifying FPGA Array -- pass
-programmer '79343' : Program System Init and Boot Clients...
-programmer '79343' : Verify System Init and Boot Clients...
-programmer '79343' : Finished: Mon Dec 04 22:30:38 2017 (Elapsed time 00:00:38)
-programmer '79343' : Executing action PROGRAM PASSED.
-
-                        o - o - o - o - o - o
-
-The 'run_selected_actions' command succeeded.
-Project saved.
-The 'save_project' command succeeded.
+Warning: One or more programming or configuration files have changed since generation.
+         To view details and update a PDB, you may click on Modify PDB button for the target
+         device.
+         To update a STAPL file, you may reload the file or reload the project.
+         
+         --------------------------------------------------------------------------------------\
+         -----
+         Audit Status of Programming file 'lockNET_SF.pdb'
+         --------------------------------------------------------------------------------------\
+         -----
+         The following original file[s] have changed:
+                 'N:\Git\locknet373\smartfusion\lockNET_SF'
+         
+         
+         Do you want to Continue Programming? [NO]
+Error: The command 'run_selected_actions' failed.
+Error: Failure when executing Tcl script. [ Line 15 ]
+Error: The Execute Script command failed.
 Project closed.

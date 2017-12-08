@@ -1,7 +1,4 @@
-@W: CG360 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":29:8:29:17|Removing wire read_pulse, as there is no assignment to it.
-@W: CL118 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v":51:8:51:9|Latch generated from always block for signal add_n[63:0]; possible missing assignment in an if or case statement.
-@W: CL118 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v":51:8:51:9|Latch generated from always block for signal state_n[2:0]; possible missing assignment in an if or case statement.
-@W: CL118 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":232:4:232:5|Latch generated from always block for signal read_wait_counter_n[2:0]; possible missing assignment in an if or case statement.
+@W: CG360 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":31:8:31:17|Removing wire read_pulse, as there is no assignment to it.
 @W: CG360 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":58:12:58:20|Removing wire NP_PRDATA, as there is no assignment to it.
 @W: CG360 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":59:12:59:23|Removing wire SERVO_PRDATA, as there is no assignment to it.
 @W: CG775 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
@@ -11,7 +8,6 @@
 @W: CL157 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\MSS_CCC_0\lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL156 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":58:12:58:20|*Input NP_PRDATA[31:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @W: CL156 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":59:12:59:23|*Input SERVO_PRDATA[31:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL157 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":40:7:40:12|*Output FABINT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL157 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":51:7:51:15|*Output RAM_RESET has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL246 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":22:29:22:42|Input port bits 31 to 27 of bus_write_data[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":24:29:24:42|Input port bits 31 to 27 of bus_write_data[31:0] are unused. Assign logic for all port bits or change the input port size.
 

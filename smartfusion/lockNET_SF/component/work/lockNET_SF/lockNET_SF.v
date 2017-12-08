@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Dec 06 10:18:15 2017
+// Created by SmartDesign Thu Dec 07 23:43:04 2017
 // Version: v11.8 11.8.0.26
 //////////////////////////////////////////////////////////////////////
 
@@ -147,10 +147,10 @@ wire   [31:0] PRDATAS16_const_net_0;
 wire   [31:0] CoreAPB3_0_APBmslave0_PADDR;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0_7to0;
 wire   [7:0]  CoreAPB3_0_APBmslave0_PADDR_0;
-wire   [19:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR_0;
+wire   [19:0] lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -222,19 +222,19 @@ apb3_interface apb3_interface_0(
         // Outputs
         .PREADY    ( CoreAPB3_0_APBmslave0_PREADY ),
         .PSLVERR   ( CoreAPB3_0_APBmslave0_PSLVERR ),
-        .PRDATA    ( CoreAPB3_0_APBmslave0_PRDATA ),
         .NP_OUT    ( NP_OUT_0 ),
         .SERVO_OUT ( SERVO_OUT_0 ),
         .FABINT    ( FABINT_net_0 ),
-        .RAM_DINA  ( apb3_interface_0_RAM_DINA_0 ),
-        .RAM_DINB  ( apb3_interface_0_RAM_DINB_0 ),
-        .RAM_ADDRA ( apb3_interface_0_RAM_ADDRA ),
-        .RAM_ADDRB ( apb3_interface_0_RAM_ADDRB ),
         .RAM_RWA   ( apb3_interface_0_RAM_RWA ),
         .RAM_RWB   ( apb3_interface_0_RAM_RWB ),
         .RAM_BLKA  ( apb3_interface_0_RAM_BLKA ),
         .RAM_BLKB  ( apb3_interface_0_RAM_BLKB ),
-        .RAM_RESET ( RAM_RESET_net_0 ) 
+        .RAM_RESET ( RAM_RESET_net_0 ),
+        .PRDATA    ( CoreAPB3_0_APBmslave0_PRDATA ),
+        .RAM_DINA  ( apb3_interface_0_RAM_DINA_0 ),
+        .RAM_DINB  ( apb3_interface_0_RAM_DINB_0 ),
+        .RAM_ADDRA ( apb3_interface_0_RAM_ADDRA ),
+        .RAM_ADDRB ( apb3_interface_0_RAM_ADDRB ) 
         );
 
 //--------CoreAPB3   -   Actel:DirectCore:CoreAPB3:4.1.100
@@ -401,16 +401,16 @@ lockNET_SF_MSS lockNET_SF_MSS_0(
 //--------RSA_64b_RAM
 RSA_64b_RAM RSA_64b_RAM_0(
         // Inputs
-        .DINA  ( apb3_interface_0_RAM_DINA_0 ),
-        .DINB  ( apb3_interface_0_RAM_DINB_0 ),
-        .ADDRA ( apb3_interface_0_RAM_ADDRA ),
-        .ADDRB ( apb3_interface_0_RAM_ADDRB ),
         .RWA   ( apb3_interface_0_RAM_RWA ),
         .RWB   ( apb3_interface_0_RAM_RWB ),
         .BLKA  ( apb3_interface_0_RAM_BLKA ),
         .BLKB  ( apb3_interface_0_RAM_BLKB ),
         .CLKAB ( lockNET_SF_MSS_0_FAB_CLK ),
         .RESET ( lockNET_SF_MSS_0_M2F_RESET_N ),
+        .DINA  ( apb3_interface_0_RAM_DINA_0 ),
+        .DINB  ( apb3_interface_0_RAM_DINB_0 ),
+        .ADDRA ( apb3_interface_0_RAM_ADDRA ),
+        .ADDRB ( apb3_interface_0_RAM_ADDRB ),
         // Outputs
         .DOUTA ( RSA_64b_RAM_0_DOUTA_0 ),
         .DOUTB ( RSA_64b_RAM_0_DOUTB_0 ) 

@@ -1,4 +1,4 @@
-# Wed Dec 06 10:20:47 2017
+# Thu Dec 07 23:53:43 2017
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -12,12 +12,11 @@ Printing clock  summary report in "N:\Git\locknet373\smartfusion\lockNET_SF\synt
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 110MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 109MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 110MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 106MB peak: 109MB)
 
-@N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\apb3_interface.v":40:7:40:12|Tristate driver FABINT (in view: work.apb3_interface(verilog)) on net FABINT (in view: work.apb3_interface(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\apb3_interface.v":51:7:51:15|Tristate driver RAM_RESET (in view: work.apb3_interface(verilog)) on net RAM_RESET (in view: work.apb3_interface(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
@@ -33,20 +32,26 @@ Clock Summary
 Start                                                           Requested     Requested     Clock        Clock                   Clock
 Clock                                                           Frequency     Period        Type         Group                   Load 
 --------------------------------------------------------------------------------------------------------------------------------------
-System                                                          100.0 MHz     10.000        system       system_clkgroup         67   
-lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     566  
+lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     570  
 ======================================================================================================================================
 
-@W: MT532 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":51:8:51:9|Found signal identified as System clock which controls 67 sequential elements including apb3_interface_0.rsa_0.MonMult_0.add_n[63:0].  Using this clock, which has no specified timing constraint, can adversely impact design performance. 
-@W: MT530 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":105:3:105:8|Found inferred clock lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock which controls 566 sequential elements including apb3_interface_0.pxl_0.send_pixel[4:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":107:3:107:8|Found inferred clock lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock which controls 570 sequential elements including apb3_interface_0.pxl_0.send_pixel[4:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
-@N: MO111 :|Tristate driver FABINT_t (in view: work.lockNET_SF(verilog)) on net FABINT (in view: work.lockNET_SF(verilog)) has its enable tied to GND.
 @N: MO111 :|Tristate driver RAM_RESET_t (in view: work.lockNET_SF(verilog)) on net RAM_RESET (in view: work.lockNET_SF(verilog)) has its enable tied to GND.
 @N: BN225 |Writing default property annotation file N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\lockNET_SF.sap.
 
 Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 115MB)
 
+Encoding state machine state[6:0] (in view: work.MonMult(verilog))
+original code -> new code
+   000 -> 0000000
+   001 -> 0000011
+   010 -> 0000101
+   011 -> 0001001
+   100 -> 0010001
+   101 -> 0100001
+   110 -> 1000001
 Encoding state machine encrypt_state[21:0] (in view: work.rsa(verilog))
 original code -> new code
    00000 -> 0000000000000000000000
@@ -74,13 +79,13 @@ original code -> new code
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 117MB peak: 118MB)
+Finished constraint checker (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 119MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 30MB peak: 118MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:01s; Memory used current: 30MB peak: 119MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:01s cputime
-# Wed Dec 06 10:20:51 2017
+Process took 0h:00m:04s realtime, 0h:00m:01s cputime
+# Thu Dec 07 23:53:48 2017
 
 ###########################################################]

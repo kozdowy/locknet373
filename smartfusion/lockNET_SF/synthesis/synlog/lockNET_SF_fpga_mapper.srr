@@ -1,4 +1,4 @@
-# Wed Dec 06 10:20:51 2017
+# Thu Dec 07 23:53:48 2017
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -16,27 +16,25 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\apb3_interface.v":51:7:51:15|Tristate driver RAM_RESET (in view: work.apb3_interface(verilog)) on net RAM_RESET (in view: work.apb3_interface(verilog)) has its enable tied to GND.
-@N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\apb3_interface.v":40:7:40:12|Tristate driver FABINT (in view: work.apb3_interface(verilog)) on net FABINT (in view: work.apb3_interface(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver FABINT_t (in view: work.lockNET_SF(verilog)) on net FABINT (in view: work.lockNET_SF(verilog)) has its enable tied to GND.
 @N: MO111 :|Tristate driver RAM_RESET_t (in view: work.lockNET_SF(verilog)) on net RAM_RESET (in view: work.lockNET_SF(verilog)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 114MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
 
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":105:3:105:8|Found counter in view:work.neopixel(verilog) instance send_pixel[4:0] 
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":105:3:105:8|Found counter in view:work.neopixel(verilog) instance counter[13:0] 
+@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":107:3:107:8|Found counter in view:work.neopixel(verilog) instance send_pixel[4:0] 
+@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":107:3:107:8|Found counter in view:work.neopixel(verilog) instance counter[13:0] 
 @N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\servo.v":57:3:57:8|Found counter in view:work.servo(verilog) instance counter[31:0] 
 @N: MF179 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\servo.v":47:10:47:30|Found 32 by 32 bit less-than operator ('<') servo_out_n6 (in view: work.servo(verilog))
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\rsa.v":425:0:425:5|Found counter in view:work.rsa(verilog) instance counter[6:0] 
+@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\rsa.v":410:0:410:5|Found counter in view:work.rsa(verilog) instance counter[6:0] 
 Encoding state machine encrypt_state[21:0] (in view: work.rsa(verilog))
 original code -> new code
    00000 -> 0000000000000000000000
@@ -61,113 +59,130 @@ original code -> new code
    10011 -> 0010000000000000000001
    10100 -> 0100000000000000000001
    10101 -> 1000000000000000000001
-@N: MF238 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\rsa.v":199:26:199:43|Found 7-bit incrementor, 'un1_RAM_ADDRB_n_1[6:0]'
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":95:4:95:9|Found counter in view:work.MonMult(verilog) instance counter[6:0] 
-@N: MF179 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":76:87:76:93|Found 66 by 66 bit less-than operator ('<') un1_P (in view: work.MonMult(verilog))
+@N: MF238 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\rsa.v":187:26:187:43|Found 7-bit incrementor, 'un1_RAM_ADDRB_n_1[6:0]'
+@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":97:4:97:9|Found counter in view:work.MonMult(verilog) instance counter[6:0] 
+Encoding state machine state[6:0] (in view: work.MonMult(verilog))
+original code -> new code
+   000 -> 0000000
+   001 -> 0000011
+   010 -> 0000101
+   011 -> 0001001
+   100 -> 0010001
+   101 -> 0100001
+   110 -> 1000001
+@N: MF179 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":78:87:78:93|Found 66 by 66 bit less-than operator ('<') un1_P (in view: work.MonMult(verilog))
 @N: MF176 |Default generator successful 
-@N: MF238 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":69:25:69:30|Found 64-bit incrementor, 'un15_add_n[63:0]'
+@N: MF238 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":71:25:71:30|Found 64-bit incrementor, 'un16_add_n[63:0]'
 
-Starting factoring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 122MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:04s; Memory used current: 141MB peak: 142MB)
+Starting factoring (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:02s; Memory used current: 122MB peak: 122MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:04s; Memory used current: 132MB peak: 142MB)
+Finished factoring (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:04s; Memory used current: 143MB peak: 144MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:05s; Memory used current: 139MB peak: 152MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:04s; Memory used current: 135MB peak: 144MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:05s; Memory used current: 140MB peak: 152MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:05s; Memory used current: 140MB peak: 157MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:06s; Memory used current: 140MB peak: 152MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:06s; Memory used current: 142MB peak: 157MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:06s; Memory used current: 139MB peak: 152MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:06s; Memory used current: 142MB peak: 157MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:06s; Memory used current: 136MB peak: 152MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:06s; Memory used current: 140MB peak: 157MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:07s; Memory used current: 174MB peak: 178MB)
+Finished preparing to map (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:07s; Memory used current: 138MB peak: 157MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:07s; Memory used current: 180MB peak: 184MB)
 
 
 High Fanout Net Report
 **********************
 
-Driver Instance / Pin Name                                        Fanout, notes                 
-------------------------------------------------------------------------------------------------
-lockNET_SF_MSS_0.MSS_ADLIB_INST / M2FRESETn                       376 : 4 asynchronous set/reset
-apb3_interface_0.rsa_0.rsa_encrypt / Q                            41                            
-apb3_interface_0.rsa_0.encrypt_state[10] / Q                      69                            
-apb3_interface_0.rsa_0.counter[4] / Q                             25                            
-apb3_interface_0.rsa_0.encrypt_state_i_0[0] / Q                   69                            
-apb3_interface_0.rsa_0.MonMult_0.un1_counter_1 / Y                64                            
-apb3_interface_0.rsa_0.MonMult_0.state[0] / Q                     74                            
-apb3_interface_0.rsa_0.MonMult_0.counter[5] / Q                   35                            
-apb3_interface_0.pxl_0.counter[0] / Q                             30                            
-apb3_interface_0.servo_0.write_pulse / Y                          32                            
-apb3_interface_0.rsa_0.MonMult_0.un1_counter_4 / Y                66                            
-apb3_interface_0.rsa_0.MonMult_0.P_n12 / Y                        67                            
-apb3_interface_0.rsa_0.MonMult_0.add_n_0_sqmuxa_1 / Y             64                            
-apb3_interface_0.rsa_0.MonMult_0.add_n_0_sqmuxa / Y               64                            
-apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_4_0_i_0 / Y              64                            
-apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_8_0_0_i / Y              64                            
-apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa / Y               32                            
-apb3_interface_0.rsa_0.modulus_lower_n_1_sqmuxa / Y               32                            
-apb3_interface_0.rsa_0.RAM_DINA_n_0_sqmuxa / Y                    32                            
-apb3_interface_0.rsa_0.RAM_DINA_n_1_sqmuxa_2 / Y                  32                            
-apb3_interface_0.rsa_0.RAM_DINA_n_1_sqmuxa_0_a3_i / Y             64                            
-apb3_interface_0.rsa_0.N_404_i_i_o2 / Y                           64                            
-apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_8_0_0_i_o3 / Y           66                            
-apb3_interface_0.rsa_0.RAM_DINB_n_1_sqmuxa / Y                    32                            
-apb3_interface_0.rsa_0.un1_encrypt_state_2_i_o3_i_o3_i_o3 / Y     127                           
-apb3_interface_0.rsa_0.RAM_DINB_n_0_sqmuxa / Y                    32                            
-apb3_interface_0.rsa_0.MonMult_GO_1_0_0_a2_2_1 / Y                144                           
-apb3_interface_0.rsa_0.bus_read_data_0_sqmuxa / Y                 32                            
-apb3_interface_0.rsa_0.bus_read_data_1_sqmuxa / Y                 32                            
-================================================================================================
+Driver Instance / Pin Name                                          Fanout, notes                 
+--------------------------------------------------------------------------------------------------
+lockNET_SF_MSS_0.MSS_ADLIB_INST / M2FRESETn                         369 : 4 asynchronous set/reset
+apb3_interface_0.rsa_0.rsa_encrypt / Q                              62                            
+apb3_interface_0.rsa_0.counter[6] / Q                               67                            
+apb3_interface_0.rsa_0.encrypt_state[10] / Q                        70                            
+apb3_interface_0.rsa_0.encrypt_state[19] / Q                        71                            
+apb3_interface_0.rsa_0.encrypt_state_i_0[0] / Q                     76                            
+apb3_interface_0.rsa_0.MonMult_0.counter[6] / Q                     25                            
+apb3_interface_0.rsa_0.MonMult_0.counter[5] / Q                     35                            
+apb3_interface_0.servo_0.counter_n_0_sqmuxa / Y                     32                            
+apb3_interface_0.pxl_0.counter[0] / Q                               30                            
+apb3_interface_0.pxl_0.neopixel_reg_3_i_a2[1] / Y                   25                            
+apb3_interface_0.servo_0.write_pulse / Y                            32                            
+apb3_interface_0.rsa_0.modulus_lower_n_1_sqmuxa_0_a4_0_a4 / Y       32                            
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_a4 / Y       32                            
+apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_4_i_0_0 / Y                64                            
+apb3_interface_0.rsa_0.RAM_DINB_n_iv_0_0_0_a3_0[26] / Y             67                            
+apb3_interface_0.rsa_0.RAM_DINA_n_iv_0_0_0_o2[0] / Y                32                            
+apb3_interface_0.rsa_0.RAM_DINA_n_iv_0_0_0_o3[0] / Y                32                            
+apb3_interface_0.rsa_0.RAM_DINA_n_iv_0_0_0_a3_2[0] / Y              68                            
+apb3_interface_0.rsa_0.MonMult_0.P5 / Y                             145                           
+apb3_interface_0.rsa_0.MonMult_0.un1_counter_3_0 / Y                66                            
+apb3_interface_0.rsa_0.MonMult_0.P_n12_i_0_a3 / Y                   66                            
+apb3_interface_0.rsa_0.MonMult_0.add_n_m_0_a2[63] / Y               61                            
+apb3_interface_0.rsa_0.MonMult_0.add_n_4_sqmuxa_0_0_a4_0_a3 / Y     53                            
+apb3_interface_0.rsa_0.MonMult_0.add_n_m_0_m5[63] / Y               61                            
+apb3_interface_0.rsa_0.MonMult_0.un1_counter_0_0_o3 / Y             64                            
+apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_8_0_0_0 / Y                64                            
+apb3_interface_0.rsa_0.bus_read_data_0_iv_i_0_i_a3_0[31] / Y        32                            
+apb3_interface_0.rsa_0.bus_read_data_0_iv_i_0_i_a3[31] / Y          32                            
+apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_8_0_0_0_o2 / Y             69                            
+apb3_interface_0.rsa_0.RAM_DINB_n_iv_0_0_0_o3[26] / Y               32                            
+apb3_interface_0.rsa_0.RAM_DINB_n_iv_0_0_0_o3_0[26] / Y             32                            
+==================================================================================================
 
-@N: FP130 |Promoting Net lockNET_SF_MSS_0_M2F_RESET_N on CLKINT  I_129 
-@N: FP130 |Promoting Net apb3_interface_0.rsa_0.N_608_1 on CLKINT  I_130 
-@N: FP130 |Promoting Net apb3_interface_0.rsa_0.N_343 on CLKINT  I_131 
+@N: FP130 |Promoting Net lockNET_SF_MSS_0_M2F_RESET_N on CLKINT  I_326 
+@N: FP130 |Promoting Net apb3_interface_0.rsa_0.MonMult_0.P5 on CLKINT  I_327 
+@N: FP130 |Promoting Net apb3_interface_0.rsa_0.encrypt_state_i[0] on CLKINT  I_328 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:07s; Memory used current: 175MB peak: 178MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:08s; Memory used current: 180MB peak: 184MB)
 
-Replicating Combinational Instance apb3_interface_0.rsa_0.bus_read_data_1_sqmuxa, fanout 32 segments 2
-Replicating Combinational Instance apb3_interface_0.rsa_0.bus_read_data_0_sqmuxa, fanout 32 segments 2
-Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINB_n_0_sqmuxa, fanout 32 segments 2
-Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINB_n_1_sqmuxa, fanout 32 segments 2
-Replicating Combinational Instance apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_8_0_0_i_o3, fanout 66 segments 3
-Replicating Combinational Instance apb3_interface_0.rsa_0.N_404_i_i_o2, fanout 64 segments 3
-Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINA_n_1_sqmuxa_0_a3_i, fanout 64 segments 3
-Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINA_n_1_sqmuxa_2, fanout 32 segments 2
-Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINA_n_0_sqmuxa, fanout 32 segments 2
-Replicating Combinational Instance apb3_interface_0.rsa_0.modulus_lower_n_1_sqmuxa, fanout 32 segments 2
-Replicating Combinational Instance apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa, fanout 32 segments 2
-Replicating Combinational Instance apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_8_0_0_i, fanout 64 segments 3
-Replicating Combinational Instance apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_4_0_i_0, fanout 64 segments 3
-Replicating Combinational Instance apb3_interface_0.rsa_0.MonMult_0.add_n_0_sqmuxa, fanout 64 segments 3
-Replicating Combinational Instance apb3_interface_0.rsa_0.MonMult_0.add_n_0_sqmuxa_1, fanout 64 segments 3
-Replicating Combinational Instance apb3_interface_0.rsa_0.MonMult_0.P_n12, fanout 67 segments 3
-Replicating Combinational Instance apb3_interface_0.rsa_0.MonMult_0.un1_counter_4, fanout 66 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINB_n_iv_0_0_0_o3_0[26], fanout 32 segments 2
+Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINB_n_iv_0_0_0_o3[26], fanout 32 segments 2
+Replicating Combinational Instance apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_8_0_0_0_o2, fanout 69 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.bus_read_data_0_iv_i_0_i_a3[31], fanout 32 segments 2
+Replicating Combinational Instance apb3_interface_0.rsa_0.bus_read_data_0_iv_i_0_i_a3_0[31], fanout 32 segments 2
+Replicating Combinational Instance apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_8_0_0_0, fanout 64 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.MonMult_0.un1_counter_0_0_o3, fanout 64 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.MonMult_0.add_n_m_0_m5[63], fanout 61 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.MonMult_0.add_n_4_sqmuxa_0_0_a4_0_a3, fanout 53 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.MonMult_0.add_n_m_0_a2[63], fanout 61 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.MonMult_0.P_n12_i_0_a3, fanout 66 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.MonMult_0.un1_counter_3_0, fanout 66 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINA_n_iv_0_0_0_a3_2[0], fanout 70 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINA_n_iv_0_0_0_o3[0], fanout 32 segments 2
+Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINA_n_iv_0_0_0_o2[0], fanout 32 segments 2
+Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINB_n_iv_0_0_0_a3_0[26], fanout 70 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.un1_RAM_ADDRA_n52_4_i_0_0, fanout 64 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_a4, fanout 32 segments 2
+Replicating Combinational Instance apb3_interface_0.rsa_0.modulus_lower_n_1_sqmuxa_0_a4_0_a4, fanout 32 segments 2
 Replicating Combinational Instance apb3_interface_0.servo_0.write_pulse, fanout 32 segments 2
+Replicating Combinational Instance apb3_interface_0.pxl_0.neopixel_reg_3_i_a2[1], fanout 25 segments 2
 Replicating Sequential Instance apb3_interface_0.pxl_0.counter[0], fanout 30 segments 2
+Replicating Combinational Instance apb3_interface_0.servo_0.counter_n_0_sqmuxa, fanout 32 segments 2
 Replicating Sequential Instance apb3_interface_0.rsa_0.MonMult_0.counter[5], fanout 35 segments 2
-Replicating Sequential Instance apb3_interface_0.rsa_0.MonMult_0.state[0], fanout 74 segments 4
-Replicating Sequential Instance apb3_interface_0.rsa_0.encrypt_state_i_0[0], fanout 69 segments 3
-Replicating Sequential Instance apb3_interface_0.rsa_0.counter[4], fanout 25 segments 2
-Replicating Sequential Instance apb3_interface_0.rsa_0.encrypt_state[10], fanout 69 segments 3
-Replicating Sequential Instance apb3_interface_0.rsa_0.rsa_encrypt, fanout 51 segments 3
+Replicating Sequential Instance apb3_interface_0.rsa_0.MonMult_0.counter[6], fanout 31 segments 2
+Replicating Sequential Instance apb3_interface_0.rsa_0.encrypt_state[19], fanout 71 segments 3
+Replicating Sequential Instance apb3_interface_0.rsa_0.encrypt_state[10], fanout 70 segments 3
+Replicating Sequential Instance apb3_interface_0.rsa_0.counter[6], fanout 67 segments 3
+Replicating Sequential Instance apb3_interface_0.rsa_0.rsa_encrypt, fanout 68 segments 3
+Replicating Combinational Instance apb3_interface_0.rsa_0.RAM_DINA_n_iv_0_0_0_a3_2_0[0], fanout 25 segments 2
 
 Added 0 Buffers
-Added 39 Cells via replication
-	Added 12 Sequential Cells via replication
-	Added 27 Combinational Cells via replication
+Added 45 Cells via replication
+	Added 11 Sequential Cells via replication
+	Added 34 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:08s; Memory used current: 175MB peak: 178MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:08s; Memory used current: 181MB peak: 184MB)
 
 
 
@@ -178,34 +193,32 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-3 gated/generated clock tree(s) driving 645 clock pin(s) of sequential element(s)
-0 instances converted, 645 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 581 clock pin(s) of sequential element(s)
+0 instances converted, 581 sequential instances remain driven by gated/generated clocks
 
-================================================================================================================================== Gated/Generated Clocks ==================================================================================================================================
-Clock Tree ID     Driving Element                                         Drive Element Type     Fanout     Sample Instance                                   Explanation                                                                                                                   
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       lockNET_SF_MSS_0.MSS_CCC_0.I_MSSCCC                     MSS_CCC                578        apb3_interface_0.rsa_0.RAM_ADDRB[6]               Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
-@K:CKID0002       apb3_interface_0.rsa_0.MonMult_0.counter_RNI656O[6]     OR2A                   64         apb3_interface_0.rsa_0.MonMult_0.add_n[10]        No clocks found on inputs                                                                                                     
-@K:CKID0003       apb3_interface_0.rsa_0.encrypt_state_RNID7ME1[13]       AO1                    3          apb3_interface_0.rsa_0.read_wait_counter_n[0]     No clocks found on inputs                                                                                                     
-============================================================================================================================================================================================================================================================================================
+===================================================================================================================== Gated/Generated Clocks =====================================================================================================================
+Clock Tree ID     Driving Element                         Drive Element Type     Fanout     Sample Instance                         Explanation                                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       lockNET_SF_MSS_0.MSS_CCC_0.I_MSSCCC     MSS_CCC                581        apb3_interface_0.rsa_0.RAM_DINA[31]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+==================================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:08s; Memory used current: 167MB peak: 178MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:08s; Memory used current: 171MB peak: 184MB)
 
 Writing Analyst data base N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\synwork\lockNET_SF_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:08s; Memory used current: 170MB peak: 178MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:09s; Memory used current: 175MB peak: 184MB)
 
 Writing EDIF Netlist and constraint files
 L-2016.09M-2
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:09s; Memory used current: 174MB peak: 178MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:10s; Memory used current: 178MB peak: 184MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:09s; Memory used current: 171MB peak: 178MB)
+Start final timing analysis (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:10s; Memory used current: 176MB peak: 184MB)
 
 @W: MT246 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\locknet_sf_mss.v":657:7:657:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 @W: MT246 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\locknet_sf_mss.v":590:0:590:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
@@ -213,7 +226,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Dec 06 10:21:07 2017
+# Timing Report written on Thu Dec 07 23:54:09 2017
 #
 
 
@@ -235,14 +248,14 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -12.035
+Worst slack in design: -10.848
 
-                                                                Requested     Estimated     Requested     Estimated                Clock        Clock              
-Starting Clock                                                  Frequency     Frequency     Period        Period        Slack      Type         Group              
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     50.2 MHz      10.000        19.929        -9.929     inferred     Inferred_clkgroup_0
-System                                                          100.0 MHz     77.9 MHz      10.000        12.834        -2.834     system       system_clkgroup    
-===================================================================================================================================================================
+                                                                Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                                  Frequency     Frequency     Period        Period        Slack       Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     48.0 MHz      10.000        20.848        -10.848     inferred     Inferred_clkgroup_0
+System                                                          100.0 MHz     75.4 MHz      10.000        13.257        -3.257      system       system_clkgroup    
+====================================================================================================================================================================
 
 
 
@@ -251,15 +264,15 @@ System                                                          100.0 MHz     77
 Clock Relationships
 *******************
 
-Clocks                                                                                                                    |    rise  to  rise    |    fall  to  fall   |    rise  to  fall     |    fall  to  rise 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Starting                                                     Ending                                                       |  constraint  slack   |  constraint  slack  |  constraint  slack    |  constraint  slack
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                       System                                                       |  10.000      -2.834  |  No paths    -      |  No paths    -        |  No paths    -    
-System                                                       lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      -5.619  |  No paths    -      |  No paths    -        |  10.000      8.558
-lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  System                                                       |  10.000      1.768   |  No paths    -      |  10.000      -12.035  |  No paths    -    
-lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      -9.929  |  No paths    -      |  No paths    -        |  No paths    -    
-===================================================================================================================================================================================================================
+Clocks                                                                                                                    |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                     Ending                                                       |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                       System                                                       |  10.000      -3.257   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                       lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      -6.715   |  No paths    -      |  No paths    -      |  No paths    -    
+lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  System                                                       |  10.000      1.731    |  No paths    -      |  No paths    -      |  No paths    -    
+lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      -10.848  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -285,37 +298,37 @@ Starting Points with Worst Slack
 Instance                                     Reference                                                       Type     Pin     Net                   Time        Slack  
                                              Clock                                                                                                                     
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-apb3_interface_0.rsa_0.modulus_lower[4]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[4]      0.737       -12.035
-apb3_interface_0.rsa_0.modulus_lower[2]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[2]      0.737       -12.028
-apb3_interface_0.rsa_0.modulus_lower[3]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[3]      0.737       -11.773
-apb3_interface_0.rsa_0.modulus_lower[7]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[7]      0.737       -11.489
-apb3_interface_0.rsa_0.modulus_lower[5]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[5]      0.737       -11.453
-apb3_interface_0.rsa_0.modulus_lower[8]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[8]      0.737       -11.443
-apb3_interface_0.rsa_0.modulus_lower[10]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[10]     0.737       -11.336
-apb3_interface_0.rsa_0.modulus_lower[9]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[9]      0.737       -11.187
-apb3_interface_0.rsa_0.modulus_lower[11]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[11]     0.737       -11.170
-apb3_interface_0.rsa_0.modulus_lower[13]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[13]     0.737       -11.093
+apb3_interface_0.rsa_0.modulus_lower[4]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[4]      0.737       -10.848
+apb3_interface_0.rsa_0.modulus_lower[2]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[2]      0.737       -10.841
+apb3_interface_0.rsa_0.modulus_lower[3]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[3]      0.737       -10.586
+apb3_interface_0.rsa_0.modulus_lower[5]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[5]      0.737       -10.302
+apb3_interface_0.rsa_0.modulus_lower[8]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[8]      0.737       -10.256
+apb3_interface_0.rsa_0.modulus_lower[10]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[10]     0.737       -10.150
+apb3_interface_0.rsa_0.MonMult_0.P[5]        lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       P[5]                  0.737       -10.130
+apb3_interface_0.rsa_0.modulus_lower[6]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[6]      0.737       -10.123
+apb3_interface_0.rsa_0.modulus_lower[7]      lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       modulus_lower[7]      0.737       -10.040
+apb3_interface_0.rsa_0.MonMult_0.P[4]        lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       P[4]                  0.737       -10.017
 =======================================================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                               Starting                                                                                         Required            
-Instance                                       Reference                                                       Type     Pin     Net             Time         Slack  
-                                               Clock                                                                                                                
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-apb3_interface_0.rsa_0.MonMult_0.add_n[63]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DLN0     D       add_n_2[63]     9.248        -12.035
-apb3_interface_0.rsa_0.MonMult_0.add_n[62]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DLN0     D       add_n_2[62]     9.248        -11.198
-apb3_interface_0.rsa_0.MonMult_0.add_n[61]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DLN0     D       add_n_2[61]     9.248        -11.050
-apb3_interface_0.rsa_0.MonMult_0.add_n[60]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DLN0     D       add_n_2[60]     9.248        -10.212
-apb3_interface_0.rsa_0.MonMult_0.P[64]         lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       P_RNO[64]       9.427        -9.929 
-apb3_interface_0.rsa_0.MonMult_0.P[63]         lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       P_RNO[63]       9.427        -9.753 
-apb3_interface_0.servo_0.counter[31]           lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       counter_n31     9.461        -9.652 
-apb3_interface_0.rsa_0.MonMult_0.add_n[57]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DLN0     D       add_n_2[57]     9.248        -9.449 
-apb3_interface_0.rsa_0.MonMult_0.P[0]          lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       P_RNO[0]        9.461        -9.419 
-apb3_interface_0.rsa_0.MonMult_0.P[1]          lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       P_RNO[1]        9.461        -9.419 
-====================================================================================================================================================================
+                                             Starting                                                                                         Required            
+Instance                                     Reference                                                       Type       Pin     Net           Time         Slack  
+                                             Clock                                                                                                                
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+apb3_interface_0.rsa_0.MonMult_0.add[63]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1E0     D       add_n[63]     9.461        -10.848
+apb3_interface_0.rsa_0.MonMult_0.P[62]       lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1       D       P_RNO[62]     9.427        -10.130
+apb3_interface_0.rsa_0.MonMult_0.add[42]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1E0     D       add_n[42]     9.461        -10.096
+apb3_interface_0.rsa_0.MonMult_0.add[45]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1E0     D       add_n[45]     9.461        -10.096
+apb3_interface_0.rsa_0.MonMult_0.add[62]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1E0     D       add_n[62]     9.461        -10.011
+apb3_interface_0.rsa_0.MonMult_0.P[64]       lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1       D       P_RNO[64]     9.427        -9.969 
+apb3_interface_0.rsa_0.MonMult_0.add[61]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1E0     D       add_n[61]     9.461        -9.863 
+apb3_interface_0.rsa_0.MonMult_0.add[39]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1E0     D       add_n[39]     9.461        -9.809 
+apb3_interface_0.rsa_0.MonMult_0.add[50]     lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1E0     D       add_n[50]     9.461        -9.750 
+apb3_interface_0.rsa_0.RAM_ADDRA[0]          lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1E1     D       N_126         9.461        -9.121 
+==================================================================================================================================================================
 
 
 
@@ -325,336 +338,316 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      10.000
-    - Setup time:                            0.752
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         9.248
+    = Required time:                         9.461
 
-    - Propagation time:                      21.283
+    - Propagation time:                      20.309
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -12.035
+    = Slack (critical) :                     -10.848
 
-    Number of logic level(s):                13
+    Number of logic level(s):                12
     Starting point:                          apb3_interface_0.rsa_0.modulus_lower[4] / Q
-    Ending point:                            apb3_interface_0.rsa_0.MonMult_0.add_n[63] / D
+    Ending point:                            apb3_interface_0.rsa_0.MonMult_0.add[63] / D
     The start point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
-    The end   point is clocked by            System [rising] on pin G
+    The end   point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                  Pin      Pin               Arrival     No. of    
-Name                                                  Type      Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------
-apb3_interface_0.rsa_0.modulus_lower[4]               DFN1      Q        Out     0.737     0.737       -         
-modulus_lower[4]                                      Net       -        -       1.639     -           8         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_114     NOR3      C        In      -         2.376       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_114     NOR3      Y        Out     0.751     3.127       -         
-DWACT_FINC_E[2]                                       Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_164     AND3      B        In      -         4.550       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_164     AND3      Y        Out     0.624     5.174       -         
-DWACT_FINC_E[29]                                      Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_183     AND2      A        In      -         6.597       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_183     AND2      Y        Out     0.488     7.086       -         
-DWACT_FINC_E[24]                                      Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_193     AND3      A        In      -         8.269       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_193     AND3      Y        Out     0.525     8.794       -         
-N_6                                                   Net       -        -       1.279     -           5         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_67      NOR3A     A        In      -         10.073      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_67      NOR3A     Y        Out     0.664     10.737      -         
-DWACT_FINC_E_0[34]                                    Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_68      AND3      A        In      -         11.059      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_68      AND3      Y        Out     0.525     11.583      -         
-DWACT_FINC_E_0[29]                                    Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_87      AND2      A        In      -         13.007      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_87      AND2      Y        Out     0.488     13.495      -         
-DWACT_FINC_E_0[24]                                    Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_97      AND3      A        In      -         14.679      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_97      AND3      Y        Out     0.525     15.204      -         
-N_37                                                  Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_202     NOR3A     A        In      -         16.387      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_202     NOR3A     Y        Out     0.664     17.051      -         
-DWACT_FINC_E_1[0]                                     Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_203     NOR2A     A        In      -         17.372      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_203     NOR2A     Y        Out     0.516     17.889      -         
-N_2                                                   Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_204     XNOR2     B        In      -         18.210      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_204     XNOR2     Y        Out     0.937     19.147      -         
-I_204                                                 Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO_2[63]      NOR2B     A        In      -         19.468      -         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO_2[63]      NOR2B     Y        Out     0.488     19.957      -         
-un15_add_n_m[63]                                      Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO[63]        OR3       C        In      -         20.278      -         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO[63]        OR3       Y        Out     0.683     20.961      -         
-add_n_2[63]                                           Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n[63]            DLN0      D        In      -         21.283      -         
-=================================================================================================================
-Total path delay (propagation time + setup) of 22.035 is 9.367(42.5%) logic and 12.668(57.5%) route.
+Instance / Net                                                   Pin      Pin               Arrival     No. of    
+Name                                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+apb3_interface_0.rsa_0.modulus_lower[4]               DFN1       Q        Out     0.737     0.737       -         
+modulus_lower[4]                                      Net        -        -       1.639     -           8         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_114     NOR3       C        In      -         2.376       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_114     NOR3       Y        Out     0.751     3.127       -         
+DWACT_FINC_E[2]                                       Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_164     AND3       B        In      -         4.550       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_164     AND3       Y        Out     0.624     5.174       -         
+DWACT_FINC_E[29]                                      Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_183     AND2       A        In      -         6.597       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_183     AND2       Y        Out     0.488     7.086       -         
+DWACT_FINC_E[24]                                      Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_193     AND3       A        In      -         8.269       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_193     AND3       Y        Out     0.525     8.794       -         
+N_6                                                   Net        -        -       1.279     -           5         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_67      NOR3A      A        In      -         10.073      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_67      NOR3A      Y        Out     0.664     10.737      -         
+DWACT_FINC_E_0[34]                                    Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_68      AND3       A        In      -         11.059      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_68      AND3       Y        Out     0.525     11.583      -         
+DWACT_FINC_E_0[29]                                    Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_87      AND2       A        In      -         13.007      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_87      AND2       Y        Out     0.488     13.495      -         
+DWACT_FINC_E_0[24]                                    Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_97      AND3       A        In      -         14.679      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_97      AND3       Y        Out     0.525     15.204      -         
+N_37                                                  Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_202     NOR3A      A        In      -         16.387      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_202     NOR3A      Y        Out     0.664     17.051      -         
+DWACT_FINC_E_1[0]                                     Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_203     NOR2A      A        In      -         17.372      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_203     NOR2A      Y        Out     0.516     17.889      -         
+N_2                                                   Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_204     XNOR2      B        In      -         18.210      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_204     XNOR2      Y        Out     0.937     19.147      -         
+I_204                                                 Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.add_RNO[63]          AO1        A        In      -         19.468      -         
+apb3_interface_0.rsa_0.MonMult_0.add_RNO[63]          AO1        Y        Out     0.520     19.988      -         
+add_n[63]                                             Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.add[63]              DFN1E0     D        In      -         20.309      -         
+==================================================================================================================
+Total path delay (propagation time + setup) of 20.848 is 8.502(40.8%) logic and 12.347(59.2%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
       Requested Period:                      10.000
-    - Setup time:                            0.752
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         9.248
+    = Required time:                         9.461
 
-    - Propagation time:                      21.276
+    - Propagation time:                      20.302
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -12.028
+    = Slack (non-critical) :                 -10.841
 
-    Number of logic level(s):                13
+    Number of logic level(s):                12
     Starting point:                          apb3_interface_0.rsa_0.modulus_lower[2] / Q
-    Ending point:                            apb3_interface_0.rsa_0.MonMult_0.add_n[63] / D
+    Ending point:                            apb3_interface_0.rsa_0.MonMult_0.add[63] / D
     The start point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
-    The end   point is clocked by            System [rising] on pin G
+    The end   point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                  Pin      Pin               Arrival     No. of    
-Name                                                  Type      Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------
-apb3_interface_0.rsa_0.modulus_lower[2]               DFN1      Q        Out     0.737     0.737       -         
-modulus_lower[2]                                      Net       -        -       1.669     -           9         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_114     NOR3      B        In      -         2.405       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_114     NOR3      Y        Out     0.714     3.120       -         
-DWACT_FINC_E[2]                                       Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_164     AND3      B        In      -         4.543       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_164     AND3      Y        Out     0.624     5.167       -         
-DWACT_FINC_E[29]                                      Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_183     AND2      A        In      -         6.590       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_183     AND2      Y        Out     0.488     7.079       -         
-DWACT_FINC_E[24]                                      Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_193     AND3      A        In      -         8.262       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_193     AND3      Y        Out     0.525     8.787       -         
-N_6                                                   Net       -        -       1.279     -           5         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_67      NOR3A     A        In      -         10.066      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_67      NOR3A     Y        Out     0.664     10.730      -         
-DWACT_FINC_E_0[34]                                    Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_68      AND3      A        In      -         11.052      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_68      AND3      Y        Out     0.525     11.576      -         
-DWACT_FINC_E_0[29]                                    Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_87      AND2      A        In      -         13.000      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_87      AND2      Y        Out     0.488     13.488      -         
-DWACT_FINC_E_0[24]                                    Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_97      AND3      A        In      -         14.672      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_97      AND3      Y        Out     0.525     15.197      -         
-N_37                                                  Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_202     NOR3A     A        In      -         16.380      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_202     NOR3A     Y        Out     0.664     17.044      -         
-DWACT_FINC_E_1[0]                                     Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_203     NOR2A     A        In      -         17.366      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_203     NOR2A     Y        Out     0.516     17.882      -         
-N_2                                                   Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_204     XNOR2     B        In      -         18.203      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_204     XNOR2     Y        Out     0.937     19.140      -         
-I_204                                                 Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO_2[63]      NOR2B     A        In      -         19.461      -         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO_2[63]      NOR2B     Y        Out     0.488     19.950      -         
-un15_add_n_m[63]                                      Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO[63]        OR3       C        In      -         20.271      -         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO[63]        OR3       Y        Out     0.683     20.954      -         
-add_n_2[63]                                           Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n[63]            DLN0      D        In      -         21.276      -         
-=================================================================================================================
-Total path delay (propagation time + setup) of 22.028 is 9.330(42.4%) logic and 12.698(57.6%) route.
+Instance / Net                                                   Pin      Pin               Arrival     No. of    
+Name                                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+apb3_interface_0.rsa_0.modulus_lower[2]               DFN1       Q        Out     0.737     0.737       -         
+modulus_lower[2]                                      Net        -        -       1.669     -           9         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_114     NOR3       B        In      -         2.405       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_114     NOR3       Y        Out     0.714     3.120       -         
+DWACT_FINC_E[2]                                       Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_164     AND3       B        In      -         4.543       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_164     AND3       Y        Out     0.624     5.167       -         
+DWACT_FINC_E[29]                                      Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_183     AND2       A        In      -         6.590       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_183     AND2       Y        Out     0.488     7.079       -         
+DWACT_FINC_E[24]                                      Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_193     AND3       A        In      -         8.262       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_193     AND3       Y        Out     0.525     8.787       -         
+N_6                                                   Net        -        -       1.279     -           5         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_67      NOR3A      A        In      -         10.066      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_67      NOR3A      Y        Out     0.664     10.730      -         
+DWACT_FINC_E_0[34]                                    Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_68      AND3       A        In      -         11.052      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_68      AND3       Y        Out     0.525     11.576      -         
+DWACT_FINC_E_0[29]                                    Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_87      AND2       A        In      -         13.000      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_87      AND2       Y        Out     0.488     13.488      -         
+DWACT_FINC_E_0[24]                                    Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_97      AND3       A        In      -         14.672      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_97      AND3       Y        Out     0.525     15.197      -         
+N_37                                                  Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_202     NOR3A      A        In      -         16.380      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_202     NOR3A      Y        Out     0.664     17.044      -         
+DWACT_FINC_E_1[0]                                     Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_203     NOR2A      A        In      -         17.366      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_203     NOR2A      Y        Out     0.516     17.882      -         
+N_2                                                   Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_204     XNOR2      B        In      -         18.203      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_204     XNOR2      Y        Out     0.937     19.140      -         
+I_204                                                 Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.add_RNO[63]          AO1        A        In      -         19.461      -         
+apb3_interface_0.rsa_0.MonMult_0.add_RNO[63]          AO1        Y        Out     0.520     19.981      -         
+add_n[63]                                             Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.add[63]              DFN1E0     D        In      -         20.302      -         
+==================================================================================================================
+Total path delay (propagation time + setup) of 20.841 is 8.465(40.6%) logic and 12.376(59.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
       Requested Period:                      10.000
-    - Setup time:                            0.752
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         9.248
+    = Required time:                         9.461
 
-    - Propagation time:                      21.020
+    - Propagation time:                      20.047
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -11.773
+    = Slack (non-critical) :                 -10.586
 
-    Number of logic level(s):                13
+    Number of logic level(s):                12
     Starting point:                          apb3_interface_0.rsa_0.modulus_lower[3] / Q
-    Ending point:                            apb3_interface_0.rsa_0.MonMult_0.add_n[63] / D
+    Ending point:                            apb3_interface_0.rsa_0.MonMult_0.add[63] / D
     The start point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
-    The end   point is clocked by            System [rising] on pin G
+    The end   point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                  Pin      Pin               Arrival     No. of    
-Name                                                  Type      Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------
-apb3_interface_0.rsa_0.modulus_lower[3]               DFN1      Q        Out     0.737     0.737       -         
-modulus_lower[3]                                      Net       -        -       1.639     -           8         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_114     NOR3      A        In      -         2.376       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_114     NOR3      Y        Out     0.488     2.864       -         
-DWACT_FINC_E[2]                                       Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_164     AND3      B        In      -         4.287       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_164     AND3      Y        Out     0.624     4.911       -         
-DWACT_FINC_E[29]                                      Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_183     AND2      A        In      -         6.335       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_183     AND2      Y        Out     0.488     6.823       -         
-DWACT_FINC_E[24]                                      Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_193     AND3      A        In      -         8.007       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_193     AND3      Y        Out     0.525     8.531       -         
-N_6                                                   Net       -        -       1.279     -           5         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_67      NOR3A     A        In      -         9.811       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_67      NOR3A     Y        Out     0.664     10.475      -         
-DWACT_FINC_E_0[34]                                    Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_68      AND3      A        In      -         10.796      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_68      AND3      Y        Out     0.525     11.321      -         
-DWACT_FINC_E_0[29]                                    Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_87      AND2      A        In      -         12.744      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_87      AND2      Y        Out     0.488     13.233      -         
-DWACT_FINC_E_0[24]                                    Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_97      AND3      A        In      -         14.416      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_97      AND3      Y        Out     0.525     14.941      -         
-N_37                                                  Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_202     NOR3A     A        In      -         16.125      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_202     NOR3A     Y        Out     0.664     16.788      -         
-DWACT_FINC_E_1[0]                                     Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_203     NOR2A     A        In      -         17.110      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_203     NOR2A     Y        Out     0.516     17.626      -         
-N_2                                                   Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_204     XNOR2     B        In      -         17.948      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_204     XNOR2     Y        Out     0.937     18.884      -         
-I_204                                                 Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO_2[63]      NOR2B     A        In      -         19.206      -         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO_2[63]      NOR2B     Y        Out     0.488     19.694      -         
-un15_add_n_m[63]                                      Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO[63]        OR3       C        In      -         20.016      -         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO[63]        OR3       Y        Out     0.683     20.699      -         
-add_n_2[63]                                           Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n[63]            DLN0      D        In      -         21.020      -         
-=================================================================================================================
-Total path delay (propagation time + setup) of 21.773 is 9.104(41.8%) logic and 12.668(58.2%) route.
+Instance / Net                                                   Pin      Pin               Arrival     No. of    
+Name                                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+apb3_interface_0.rsa_0.modulus_lower[3]               DFN1       Q        Out     0.737     0.737       -         
+modulus_lower[3]                                      Net        -        -       1.639     -           8         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_114     NOR3       A        In      -         2.376       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_114     NOR3       Y        Out     0.488     2.864       -         
+DWACT_FINC_E[2]                                       Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_164     AND3       B        In      -         4.287       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_164     AND3       Y        Out     0.624     4.911       -         
+DWACT_FINC_E[29]                                      Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_183     AND2       A        In      -         6.335       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_183     AND2       Y        Out     0.488     6.823       -         
+DWACT_FINC_E[24]                                      Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_193     AND3       A        In      -         8.007       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_193     AND3       Y        Out     0.525     8.531       -         
+N_6                                                   Net        -        -       1.279     -           5         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_67      NOR3A      A        In      -         9.811       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_67      NOR3A      Y        Out     0.664     10.475      -         
+DWACT_FINC_E_0[34]                                    Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_68      AND3       A        In      -         10.796      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_68      AND3       Y        Out     0.525     11.321      -         
+DWACT_FINC_E_0[29]                                    Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_87      AND2       A        In      -         12.744      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_87      AND2       Y        Out     0.488     13.233      -         
+DWACT_FINC_E_0[24]                                    Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_97      AND3       A        In      -         14.416      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_97      AND3       Y        Out     0.525     14.941      -         
+N_37                                                  Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_202     NOR3A      A        In      -         16.125      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_202     NOR3A      Y        Out     0.664     16.788      -         
+DWACT_FINC_E_1[0]                                     Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_203     NOR2A      A        In      -         17.110      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_203     NOR2A      Y        Out     0.516     17.626      -         
+N_2                                                   Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_204     XNOR2      B        In      -         17.948      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_204     XNOR2      Y        Out     0.937     18.884      -         
+I_204                                                 Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.add_RNO[63]          AO1        A        In      -         19.206      -         
+apb3_interface_0.rsa_0.MonMult_0.add_RNO[63]          AO1        Y        Out     0.520     19.725      -         
+add_n[63]                                             Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.add[63]              DFN1E0     D        In      -         20.047      -         
+==================================================================================================================
+Total path delay (propagation time + setup) of 20.586 is 8.239(40.0%) logic and 12.347(60.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
       Requested Period:                      10.000
-    - Setup time:                            0.752
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         9.248
+    = Required time:                         9.461
 
-    - Propagation time:                      20.737
+    - Propagation time:                      19.764
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -11.489
+    = Slack (non-critical) :                 -10.302
 
-    Number of logic level(s):                13
-    Starting point:                          apb3_interface_0.rsa_0.modulus_lower[7] / Q
-    Ending point:                            apb3_interface_0.rsa_0.MonMult_0.add_n[63] / D
+    Number of logic level(s):                12
+    Starting point:                          apb3_interface_0.rsa_0.modulus_lower[5] / Q
+    Ending point:                            apb3_interface_0.rsa_0.MonMult_0.add[63] / D
     The start point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
-    The end   point is clocked by            System [rising] on pin G
+    The end   point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                  Pin      Pin               Arrival     No. of    
-Name                                                  Type      Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------
-apb3_interface_0.rsa_0.modulus_lower[7]               DFN1      Q        Out     0.737     0.737       -         
-modulus_lower[7]                                      Net       -        -       1.669     -           9         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_125     NOR3      C        In      -         2.405       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_125     NOR3      Y        Out     0.751     3.156       -         
-DWACT_FINC_E[5]                                       Net       -        -       0.806     -           3         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_164     AND3      C        In      -         3.963       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_164     AND3      Y        Out     0.666     4.628       -         
-DWACT_FINC_E[29]                                      Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_183     AND2      A        In      -         6.052       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_183     AND2      Y        Out     0.488     6.540       -         
-DWACT_FINC_E[24]                                      Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_193     AND3      A        In      -         7.723       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_193     AND3      Y        Out     0.525     8.248       -         
-N_6                                                   Net       -        -       1.279     -           5         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_67      NOR3A     A        In      -         9.527       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_67      NOR3A     Y        Out     0.664     10.191      -         
-DWACT_FINC_E_0[34]                                    Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_68      AND3      A        In      -         10.513      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_68      AND3      Y        Out     0.525     11.038      -         
-DWACT_FINC_E_0[29]                                    Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_87      AND2      A        In      -         12.461      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_87      AND2      Y        Out     0.488     12.949      -         
-DWACT_FINC_E_0[24]                                    Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_97      AND3      A        In      -         14.133      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_97      AND3      Y        Out     0.525     14.658      -         
-N_37                                                  Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_202     NOR3A     A        In      -         15.841      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_202     NOR3A     Y        Out     0.664     16.505      -         
-DWACT_FINC_E_1[0]                                     Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_203     NOR2A     A        In      -         16.827      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_203     NOR2A     Y        Out     0.516     17.343      -         
-N_2                                                   Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_204     XNOR2     B        In      -         17.664      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_204     XNOR2     Y        Out     0.937     18.601      -         
-I_204                                                 Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO_2[63]      NOR2B     A        In      -         18.923      -         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO_2[63]      NOR2B     Y        Out     0.488     19.411      -         
-un15_add_n_m[63]                                      Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO[63]        OR3       C        In      -         19.732      -         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO[63]        OR3       Y        Out     0.683     20.415      -         
-add_n_2[63]                                           Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n[63]            DLN0      D        In      -         20.737      -         
-=================================================================================================================
-Total path delay (propagation time + setup) of 21.489 is 9.409(43.8%) logic and 12.081(56.2%) route.
+Instance / Net                                                   Pin      Pin               Arrival     No. of    
+Name                                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+apb3_interface_0.rsa_0.modulus_lower[5]               DFN1       Q        Out     0.737     0.737       -         
+modulus_lower[5]                                      Net        -        -       1.669     -           9         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_125     NOR3       C        In      -         2.405       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_125     NOR3       Y        Out     0.751     3.156       -         
+DWACT_FINC_E[5]                                       Net        -        -       0.806     -           3         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_164     AND3       C        In      -         3.963       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_164     AND3       Y        Out     0.666     4.628       -         
+DWACT_FINC_E[29]                                      Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_183     AND2       A        In      -         6.052       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_183     AND2       Y        Out     0.488     6.540       -         
+DWACT_FINC_E[24]                                      Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_193     AND3       A        In      -         7.723       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_193     AND3       Y        Out     0.525     8.248       -         
+N_6                                                   Net        -        -       1.279     -           5         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_67      NOR3A      A        In      -         9.527       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_67      NOR3A      Y        Out     0.664     10.191      -         
+DWACT_FINC_E_0[34]                                    Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_68      AND3       A        In      -         10.513      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_68      AND3       Y        Out     0.525     11.038      -         
+DWACT_FINC_E_0[29]                                    Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_87      AND2       A        In      -         12.461      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_87      AND2       Y        Out     0.488     12.949      -         
+DWACT_FINC_E_0[24]                                    Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_97      AND3       A        In      -         14.133      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_97      AND3       Y        Out     0.525     14.658      -         
+N_37                                                  Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_202     NOR3A      A        In      -         15.841      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_202     NOR3A      Y        Out     0.664     16.505      -         
+DWACT_FINC_E_1[0]                                     Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_203     NOR2A      A        In      -         16.827      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_203     NOR2A      Y        Out     0.516     17.343      -         
+N_2                                                   Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_204     XNOR2      B        In      -         17.664      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_204     XNOR2      Y        Out     0.937     18.601      -         
+I_204                                                 Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.add_RNO[63]          AO1        A        In      -         18.923      -         
+apb3_interface_0.rsa_0.MonMult_0.add_RNO[63]          AO1        Y        Out     0.520     19.442      -         
+add_n[63]                                             Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.add[63]              DFN1E0     D        In      -         19.764      -         
+==================================================================================================================
+Total path delay (propagation time + setup) of 20.302 is 8.543(42.1%) logic and 11.759(57.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
       Requested Period:                      10.000
-    - Setup time:                            0.752
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    + Estimated clock delay at ending point: 0.000
-    = Required time:                         9.248
+    = Required time:                         9.461
 
-    - Propagation time:                      20.700
+    - Propagation time:                      19.717
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -11.453
+    = Slack (non-critical) :                 -10.256
 
-    Number of logic level(s):                13
-    Starting point:                          apb3_interface_0.rsa_0.modulus_lower[5] / Q
-    Ending point:                            apb3_interface_0.rsa_0.MonMult_0.add_n[63] / D
+    Number of logic level(s):                12
+    Starting point:                          apb3_interface_0.rsa_0.modulus_lower[8] / Q
+    Ending point:                            apb3_interface_0.rsa_0.MonMult_0.add[63] / D
     The start point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
-    The end   point is clocked by            System [rising] on pin G
+    The end   point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                  Pin      Pin               Arrival     No. of    
-Name                                                  Type      Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------------
-apb3_interface_0.rsa_0.modulus_lower[5]               DFN1      Q        Out     0.737     0.737       -         
-modulus_lower[5]                                      Net       -        -       1.669     -           9         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_125     NOR3      B        In      -         2.405       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_125     NOR3      Y        Out     0.714     3.120       -         
-DWACT_FINC_E[5]                                       Net       -        -       0.806     -           3         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_164     AND3      C        In      -         3.926       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_164     AND3      Y        Out     0.666     4.592       -         
-DWACT_FINC_E[29]                                      Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_183     AND2      A        In      -         6.015       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_183     AND2      Y        Out     0.488     6.503       -         
-DWACT_FINC_E[24]                                      Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_193     AND3      A        In      -         7.687       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_193     AND3      Y        Out     0.525     8.212       -         
-N_6                                                   Net       -        -       1.279     -           5         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_67      NOR3A     A        In      -         9.491       -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_67      NOR3A     Y        Out     0.664     10.155      -         
-DWACT_FINC_E_0[34]                                    Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_68      AND3      A        In      -         10.476      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_68      AND3      Y        Out     0.525     11.001      -         
-DWACT_FINC_E_0[29]                                    Net       -        -       1.423     -           6         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_87      AND2      A        In      -         12.425      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_87      AND2      Y        Out     0.488     12.913      -         
-DWACT_FINC_E_0[24]                                    Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_97      AND3      A        In      -         14.097      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_97      AND3      Y        Out     0.525     14.621      -         
-N_37                                                  Net       -        -       1.184     -           4         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_202     NOR3A     A        In      -         15.805      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_202     NOR3A     Y        Out     0.664     16.469      -         
-DWACT_FINC_E_1[0]                                     Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_203     NOR2A     A        In      -         16.790      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_203     NOR2A     Y        Out     0.516     17.306      -         
-N_2                                                   Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_204     XNOR2     B        In      -         17.628      -         
-apb3_interface_0.rsa_0.MonMult_0.un15_add_n.I_204     XNOR2     Y        Out     0.937     18.565      -         
-I_204                                                 Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO_2[63]      NOR2B     A        In      -         18.886      -         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO_2[63]      NOR2B     Y        Out     0.488     19.374      -         
-un15_add_n_m[63]                                      Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO[63]        OR3       C        In      -         19.696      -         
-apb3_interface_0.rsa_0.MonMult_0.add_n_RNO[63]        OR3       Y        Out     0.683     20.379      -         
-add_n_2[63]                                           Net       -        -       0.322     -           1         
-apb3_interface_0.rsa_0.MonMult_0.add_n[63]            DLN0      D        In      -         20.700      -         
-=================================================================================================================
-Total path delay (propagation time + setup) of 21.453 is 9.372(43.7%) logic and 12.081(56.3%) route.
+Instance / Net                                                   Pin      Pin               Arrival     No. of    
+Name                                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+apb3_interface_0.rsa_0.modulus_lower[8]               DFN1       Q        Out     0.737     0.737       -         
+modulus_lower[8]                                      Net        -        -       1.669     -           9         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_129     NOR3       B        In      -         2.405       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_129     NOR3       Y        Out     0.714     3.120       -         
+DWACT_FINC_E_0[7]                                     Net        -        -       1.526     -           7         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_176     AND3       A        In      -         4.646       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_176     AND3       Y        Out     0.525     5.170       -         
+DWACT_FINC_E[30]                                      Net        -        -       0.806     -           3         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_183     AND2       B        In      -         5.977       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_183     AND2       Y        Out     0.516     6.493       -         
+DWACT_FINC_E[24]                                      Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_193     AND3       A        In      -         7.677       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_193     AND3       Y        Out     0.525     8.201       -         
+N_6                                                   Net        -        -       1.279     -           5         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_67      NOR3A      A        In      -         9.481       -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_67      NOR3A      Y        Out     0.664     10.145      -         
+DWACT_FINC_E_0[34]                                    Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_68      AND3       A        In      -         10.466      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_68      AND3       Y        Out     0.525     10.991      -         
+DWACT_FINC_E_0[29]                                    Net        -        -       1.423     -           6         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_87      AND2       A        In      -         12.414      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_87      AND2       Y        Out     0.488     12.903      -         
+DWACT_FINC_E_0[24]                                    Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_97      AND3       A        In      -         14.086      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_97      AND3       Y        Out     0.525     14.611      -         
+N_37                                                  Net        -        -       1.184     -           4         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_202     NOR3A      A        In      -         15.794      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_202     NOR3A      Y        Out     0.664     16.458      -         
+DWACT_FINC_E_1[0]                                     Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_203     NOR2A      A        In      -         16.780      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_203     NOR2A      Y        Out     0.516     17.296      -         
+N_2                                                   Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_204     XNOR2      B        In      -         17.618      -         
+apb3_interface_0.rsa_0.MonMult_0.un16_add_n.I_204     XNOR2      Y        Out     0.937     18.554      -         
+I_204                                                 Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.add_RNO[63]          AO1        A        In      -         18.876      -         
+apb3_interface_0.rsa_0.MonMult_0.add_RNO[63]          AO1        Y        Out     0.520     19.395      -         
+add_n[63]                                             Net        -        -       0.322     -           1         
+apb3_interface_0.rsa_0.MonMult_0.add[63]              DFN1E0     D        In      -         19.717      -         
+==================================================================================================================
+Total path delay (propagation time + setup) of 20.255 is 8.394(41.4%) logic and 11.862(58.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -673,37 +666,37 @@ Starting Points with Worst Slack
 Instance                            Reference     Type        Pin              Net                                           Time        Slack 
                                     Clock                                                                                                      
 -----------------------------------------------------------------------------------------------------------------------------------------------
-lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[5]      CoreAPB3_0_APBmslave0_PADDR[5]                0.000       -5.619
-lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[2]      CoreAPB3_0_APBmslave0_PADDR[2]                0.000       -5.362
-lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[3]      CoreAPB3_0_APBmslave0_PADDR[3]                0.000       -5.249
-lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[6]      CoreAPB3_0_APBmslave0_PADDR[6]                0.000       -5.235
-lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[1]      CoreAPB3_0_APBmslave0_PADDR[1]                0.000       -4.988
-lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[4]      CoreAPB3_0_APBmslave0_PADDR[4]                0.000       -4.620
-lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[0]      CoreAPB3_0_APBmslave0_PADDR[0]                0.000       -4.378
-lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR[10]     0.000       -4.265
-lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          lockNET_SF_MSS_0_MSS_MASTER_APB_PSELx         0.000       -4.265
-lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR[9]      0.000       -4.016
+lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[3]      CoreAPB3_0_APBmslave0_PADDR[3]                0.000       -6.715
+lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[4]      CoreAPB3_0_APBmslave0_PADDR[4]                0.000       -6.661
+lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR[11]     0.000       -6.641
+lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR[8]      0.000       -6.599
+lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          lockNET_SF_MSS_0_MSS_MASTER_APB_PSELx         0.000       -6.588
+lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR[9]      0.000       -6.460
+lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR[10]     0.000       -6.413
+lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[1]      CoreAPB3_0_APBmslave0_PADDR[1]                0.000       -6.335
+lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[0]      CoreAPB3_0_APBmslave0_PADDR[0]                0.000       -6.112
+lockNET_SF_MSS_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[5]      CoreAPB3_0_APBmslave0_PADDR[5]                0.000       -5.886
 ===============================================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                        Starting                                            Required           
-Instance                                Reference     Type       Pin     Net                Time         Slack 
-                                        Clock                                                                  
----------------------------------------------------------------------------------------------------------------
-apb3_interface_0.rsa_0.RAM_DINB[16]     System        DFN1E1     D       RAM_DINB_n[16]     9.427        -5.619
-apb3_interface_0.rsa_0.RAM_DINA[2]      System        DFN1E1     D       RAM_DINA_n[2]      9.427        -5.555
-apb3_interface_0.rsa_0.RAM_DINA[3]      System        DFN1E1     D       RAM_DINA_n[3]      9.427        -5.555
-apb3_interface_0.rsa_0.RAM_DINA[4]      System        DFN1E1     D       RAM_DINA_n[4]      9.427        -5.555
-apb3_interface_0.rsa_0.RAM_DINA[5]      System        DFN1E1     D       RAM_DINA_n[5]      9.427        -5.555
-apb3_interface_0.rsa_0.RAM_DINA[6]      System        DFN1E1     D       RAM_DINA_n[6]      9.427        -5.555
-apb3_interface_0.rsa_0.RAM_DINA[7]      System        DFN1E1     D       RAM_DINA_n[7]      9.427        -5.555
-apb3_interface_0.rsa_0.RAM_DINA[8]      System        DFN1E1     D       RAM_DINA_n[8]      9.427        -5.555
-apb3_interface_0.rsa_0.RAM_DINA[9]      System        DFN1E1     D       RAM_DINA_n[9]      9.427        -5.555
-apb3_interface_0.rsa_0.RAM_DINA[10]     System        DFN1E1     D       RAM_DINA_n[10]     9.427        -5.555
-===============================================================================================================
+                                        Starting                                           Required           
+Instance                                Reference     Type       Pin     Net               Time         Slack 
+                                        Clock                                                                 
+--------------------------------------------------------------------------------------------------------------
+apb3_interface_0.rsa_0.RAM_ADDRA[2]     System        DFN1E1     D       N_79              9.427        -6.715
+apb3_interface_0.rsa_0.RAM_DINA[0]      System        DFN1E1     D       RAM_DINA_n[0]     9.427        -6.552
+apb3_interface_0.rsa_0.RAM_DINA[1]      System        DFN1E1     D       RAM_DINA_n[1]     9.427        -6.552
+apb3_interface_0.rsa_0.RAM_DINA[2]      System        DFN1E1     D       RAM_DINA_n[2]     9.427        -6.552
+apb3_interface_0.rsa_0.RAM_DINA[3]      System        DFN1E1     D       RAM_DINA_n[3]     9.427        -6.552
+apb3_interface_0.rsa_0.RAM_DINA[4]      System        DFN1E1     D       RAM_DINA_n[4]     9.427        -6.552
+apb3_interface_0.rsa_0.RAM_DINA[5]      System        DFN1E1     D       RAM_DINA_n[5]     9.427        -6.552
+apb3_interface_0.rsa_0.RAM_DINA[7]      System        DFN1E1     D       RAM_DINA_n[7]     9.427        -6.552
+apb3_interface_0.rsa_0.RAM_DINA[8]      System        DFN1E1     D       RAM_DINA_n[8]     9.427        -6.552
+apb3_interface_0.rsa_0.RAM_DINA[9]      System        DFN1E1     D       RAM_DINA_n[9]     9.427        -6.552
+==============================================================================================================
 
 
 
@@ -717,52 +710,58 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.427
 
-    - Propagation time:                      15.045
+    - Propagation time:                      16.142
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -5.619
+    = Slack (non-critical) :                 -6.715
 
-    Number of logic level(s):                9
-    Starting point:                          lockNET_SF_MSS_0.MSS_ADLIB_INST / MSSPADDR[5]
-    Ending point:                            apb3_interface_0.rsa_0.RAM_DINB[16] / D
+    Number of logic level(s):                11
+    Starting point:                          lockNET_SF_MSS_0.MSS_ADLIB_INST / MSSPADDR[3]
+    Ending point:                            apb3_interface_0.rsa_0.RAM_ADDRA[2] / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                    Pin             Pin               Arrival     No. of    
-Name                                                  Type        Name            Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------------
-lockNET_SF_MSS_0.MSS_ADLIB_INST                       MSS_APB     MSSPADDR[5]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[5]                        Net         -               -       1.669     -           9         
-apb3_interface_0.rsa_0.bit_switch_n4_4                NOR2        B               In      -         1.669       -         
-apb3_interface_0.rsa_0.bit_switch_n4_4                NOR2        Y               Out     0.646     2.315       -         
-bit_switch_n4_4                                       Net         -               -       0.806     -           3         
-apb3_interface_0.rsa_0.un1_bus_addr_1_5               NOR2A       A               In      -         3.121       -         
-apb3_interface_0.rsa_0.un1_bus_addr_1_5               NOR2A       Y               Out     0.516     3.638       -         
-un1_bus_addr_1_5                                      Net         -               -       0.386     -           2         
-apb3_interface_0.rsa_0.un1_bus_addr_1                 NOR3C       B               In      -         4.023       -         
-apb3_interface_0.rsa_0.un1_bus_addr_1                 NOR3C       Y               Out     0.624     4.647       -         
-un1_bus_addr_1                                        Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.un1_bus_addr_4                 OR3         B               In      -         4.969       -         
-apb3_interface_0.rsa_0.un1_bus_addr_4                 OR3         Y               Out     0.641     5.610       -         
-un1_bus_addr_4                                        Net         -               -       1.184     -           4         
-apb3_interface_0.rsa_0.bit_switch_RNIED932            NOR3C       B               In      -         6.794       -         
-apb3_interface_0.rsa_0.bit_switch_RNIED932            NOR3C       Y               Out     0.624     7.418       -         
-RAM_ADDRA_n_0_sqmuxa                                  Net         -               -       1.994     -           12        
-apb3_interface_0.rsa_0.rsa_encrypt_0_0_RNI9DC33_1     OA1C        C               In      -         9.411       -         
-apb3_interface_0.rsa_0.rsa_encrypt_0_0_RNI9DC33_1     OA1C        Y               Out     0.487     9.898       -         
-RAM_DINB_n_0_sqmuxa                                   Net         -               -       2.172     -           16        
-apb3_interface_0.rsa_0.RAM_DINB_RNO_3[16]             NOR2B       B               In      -         12.070      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_3[16]             NOR2B       Y               Out     0.627     12.698      -         
-N_1950                                                Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_0[16]             OR3         C               In      -         13.019      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_0[16]             OR3         Y               Out     0.751     13.770      -         
-RAM_DINB_n_iv_0_0_1[16]                               Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB_RNO[16]               AO1         C               In      -         14.091      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO[16]               AO1         Y               Out     0.633     14.724      -         
-RAM_DINB_n[16]                                        Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB[16]                   DFN1E1      D               In      -         15.045      -         
-==========================================================================================================================
-Total path delay (propagation time + setup) of 15.619 is 6.123(39.2%) logic and 9.496(60.8%) route.
+Instance / Net                                                            Pin             Pin               Arrival     No. of    
+Name                                                          Type        Name            Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------
+lockNET_SF_MSS_0.MSS_ADLIB_INST                               MSS_APB     MSSPADDR[3]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PADDR[3]                                Net         -               -       2.127     -           15        
+apb3_interface_0.RSA_EN_0_o2                                  AX1D        B               In      -         2.127       -         
+apb3_interface_0.RSA_EN_0_o2                                  AX1D        Y               Out     0.716     2.843       -         
+N_42                                                          Net         -               -       0.322     -           1         
+apb3_interface_0.RSA_EN_0_a2                                  NOR3A       A               In      -         3.165       -         
+apb3_interface_0.RSA_EN_0_a2                                  NOR3A       Y               Out     0.664     3.829       -         
+RSA_EN                                                        Net         -               -       0.806     -           3         
+apb3_interface_0.rsa_0.un1_bit_switch_n5_3_i_i_o4             OR3B        A               In      -         4.635       -         
+apb3_interface_0.rsa_0.un1_bit_switch_n5_3_i_i_o4             OR3B        Y               Out     0.525     5.160       -         
+N_759                                                         Net         -               -       1.526     -           7         
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_o3     OR2A        B               In      -         6.686       -         
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_o3     OR2A        Y               Out     0.646     7.332       -         
+N_771                                                         Net         -               -       1.184     -           4         
+apb3_interface_0.rsa_0.bit_switch_RNI6CVV                     OR2         A               In      -         8.516       -         
+apb3_interface_0.rsa_0.bit_switch_RNI6CVV                     OR2         Y               Out     0.507     9.023       -         
+N_781                                                         Net         -               -       0.806     -           3         
+apb3_interface_0.rsa_0.bit_switch_RNI8SN11                    OR2         A               In      -         9.830       -         
+apb3_interface_0.rsa_0.bit_switch_RNI8SN11                    OR2         Y               Out     0.507     10.337      -         
+N_2789                                                        Net         -               -       1.184     -           4         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNIDS192[2]                  AO1C        C               In      -         11.521      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNIDS192[2]                  AO1C        Y               Out     0.633     12.153      -         
+N_2795                                                        Net         -               -       0.386     -           2         
+apb3_interface_0.rsa_0.rsa_encrypt_RNID88F2                   NOR2A       A               In      -         12.539      -         
+apb3_interface_0.rsa_0.rsa_encrypt_RNID88F2                   NOR2A       Y               Out     0.516     13.055      -         
+N_1542                                                        Net         -               -       0.386     -           2         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_3[2]                     AO1A        C               In      -         13.441      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_3[2]                     AO1A        Y               Out     0.655     14.096      -         
+N_743                                                         Net         -               -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_2[2]                     OA1A        C               In      -         14.418      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_2[2]                     OA1A        Y               Out     0.398     14.816      -         
+N_1524                                                        Net         -               -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO[2]                       NOR3        C               In      -         15.137      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO[2]                       NOR3        Y               Out     0.683     15.820      -         
+N_79                                                          Net         -               -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA[2]                           DFN1E1      D               In      -         16.142      -         
+==================================================================================================================================
+Total path delay (propagation time + setup) of 16.715 is 7.024(42.0%) logic and 9.691(58.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -772,52 +771,58 @@ Path information for path number 2:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.427
 
-    - Propagation time:                      14.788
+    - Propagation time:                      16.088
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -5.362
+    = Slack (non-critical) :                 -6.661
 
-    Number of logic level(s):                9
-    Starting point:                          lockNET_SF_MSS_0.MSS_ADLIB_INST / MSSPADDR[2]
-    Ending point:                            apb3_interface_0.rsa_0.RAM_DINB[1] / D
+    Number of logic level(s):                11
+    Starting point:                          lockNET_SF_MSS_0.MSS_ADLIB_INST / MSSPADDR[4]
+    Ending point:                            apb3_interface_0.rsa_0.RAM_ADDRA[2] / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                    Pin             Pin               Arrival     No. of    
-Name                                                  Type        Name            Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------------
-lockNET_SF_MSS_0.MSS_ADLIB_INST                       MSS_APB     MSSPADDR[2]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[2]                        Net         -               -       1.776     -           11        
-apb3_interface_0.rsa_0.bit_switch_n6_1                NOR2B       B               In      -         1.776       -         
-apb3_interface_0.rsa_0.bit_switch_n6_1                NOR2B       Y               Out     0.627     2.404       -         
-bit_switch_n6_1                                       Net         -               -       0.386     -           2         
-apb3_interface_0.rsa_0.un1_bus_addr_3_2               NOR2A       A               In      -         2.789       -         
-apb3_interface_0.rsa_0.un1_bus_addr_3_2               NOR2A       Y               Out     0.627     3.417       -         
-un1_bus_addr_3_2                                      Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.un1_bus_addr_3                 NOR3C       C               In      -         3.738       -         
-apb3_interface_0.rsa_0.un1_bus_addr_3                 NOR3C       Y               Out     0.641     4.380       -         
-un1_bus_addr_3                                        Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.un1_bus_addr_4                 OR3         C               In      -         4.701       -         
-apb3_interface_0.rsa_0.un1_bus_addr_4                 OR3         Y               Out     0.751     5.452       -         
-un1_bus_addr_4                                        Net         -               -       1.184     -           4         
-apb3_interface_0.rsa_0.bit_switch_RNIED932            NOR3C       B               In      -         6.636       -         
-apb3_interface_0.rsa_0.bit_switch_RNIED932            NOR3C       Y               Out     0.607     7.242       -         
-RAM_ADDRA_n_0_sqmuxa                                  Net         -               -       1.994     -           12        
-apb3_interface_0.rsa_0.rsa_encrypt_0_0_RNI9DC33_2     OA1A        C               In      -         9.236       -         
-apb3_interface_0.rsa_0.rsa_encrypt_0_0_RNI9DC33_2     OA1A        Y               Out     0.405     9.640       -         
-RAM_DINB_n_1_sqmuxa_0                                 Net         -               -       2.172     -           16        
-apb3_interface_0.rsa_0.RAM_DINB_RNO_3[1]              NOR2B       B               In      -         11.813      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_3[1]              NOR2B       Y               Out     0.627     12.440      -         
-N_2341                                                Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_0[1]              OR3         C               In      -         12.762      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_0[1]              OR3         Y               Out     0.751     13.513      -         
-RAM_DINB_n_iv_0_1[1]                                  Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB_RNO[1]                AO1         C               In      -         13.834      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO[1]                AO1         Y               Out     0.633     14.467      -         
-RAM_DINB_n[1]                                         Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB[1]                    DFN1E1      D               In      -         14.788      -         
-==========================================================================================================================
-Total path delay (propagation time + setup) of 15.362 is 6.243(40.6%) logic and 9.119(59.4%) route.
+Instance / Net                                                            Pin             Pin               Arrival     No. of    
+Name                                                          Type        Name            Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------
+lockNET_SF_MSS_0.MSS_ADLIB_INST                               MSS_APB     MSSPADDR[4]     Out     0.000     0.000       -         
+CoreAPB3_0_APBmslave0_PADDR[4]                                Net         -               -       2.037     -           13        
+apb3_interface_0.RSA_EN_0_o2                                  AX1D        A               In      -         2.037       -         
+apb3_interface_0.RSA_EN_0_o2                                  AX1D        Y               Out     0.752     2.789       -         
+N_42                                                          Net         -               -       0.322     -           1         
+apb3_interface_0.RSA_EN_0_a2                                  NOR3A       A               In      -         3.111       -         
+apb3_interface_0.RSA_EN_0_a2                                  NOR3A       Y               Out     0.664     3.775       -         
+RSA_EN                                                        Net         -               -       0.806     -           3         
+apb3_interface_0.rsa_0.un1_bit_switch_n5_3_i_i_o4             OR3B        A               In      -         4.581       -         
+apb3_interface_0.rsa_0.un1_bit_switch_n5_3_i_i_o4             OR3B        Y               Out     0.525     5.106       -         
+N_759                                                         Net         -               -       1.526     -           7         
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_o3     OR2A        B               In      -         6.632       -         
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_o3     OR2A        Y               Out     0.646     7.279       -         
+N_771                                                         Net         -               -       1.184     -           4         
+apb3_interface_0.rsa_0.bit_switch_RNI6CVV                     OR2         A               In      -         8.462       -         
+apb3_interface_0.rsa_0.bit_switch_RNI6CVV                     OR2         Y               Out     0.507     8.970       -         
+N_781                                                         Net         -               -       0.806     -           3         
+apb3_interface_0.rsa_0.bit_switch_RNI8SN11                    OR2         A               In      -         9.776       -         
+apb3_interface_0.rsa_0.bit_switch_RNI8SN11                    OR2         Y               Out     0.507     10.283      -         
+N_2789                                                        Net         -               -       1.184     -           4         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNIDS192[2]                  AO1C        C               In      -         11.467      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNIDS192[2]                  AO1C        Y               Out     0.633     12.100      -         
+N_2795                                                        Net         -               -       0.386     -           2         
+apb3_interface_0.rsa_0.rsa_encrypt_RNID88F2                   NOR2A       A               In      -         12.485      -         
+apb3_interface_0.rsa_0.rsa_encrypt_RNID88F2                   NOR2A       Y               Out     0.516     13.001      -         
+N_1542                                                        Net         -               -       0.386     -           2         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_3[2]                     AO1A        C               In      -         13.387      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_3[2]                     AO1A        Y               Out     0.655     14.042      -         
+N_743                                                         Net         -               -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_2[2]                     OA1A        C               In      -         14.364      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_2[2]                     OA1A        Y               Out     0.398     14.762      -         
+N_1524                                                        Net         -               -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO[2]                       NOR3        C               In      -         15.083      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO[2]                       NOR3        Y               Out     0.683     15.766      -         
+N_79                                                          Net         -               -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA[2]                           DFN1E1      D               In      -         16.088      -         
+==================================================================================================================================
+Total path delay (propagation time + setup) of 16.661 is 7.061(42.4%) logic and 9.601(57.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -827,52 +832,61 @@ Path information for path number 3:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.427
 
-    - Propagation time:                      14.788
+    - Propagation time:                      16.067
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -5.362
+    = Slack (non-critical) :                 -6.640
 
-    Number of logic level(s):                9
-    Starting point:                          lockNET_SF_MSS_0.MSS_ADLIB_INST / MSSPADDR[2]
-    Ending point:                            apb3_interface_0.rsa_0.RAM_DINA[2] / D
+    Number of logic level(s):                12
+    Starting point:                          lockNET_SF_MSS_0.MSS_ADLIB_INST / MSSPADDR[11]
+    Ending point:                            apb3_interface_0.rsa_0.RAM_ADDRA[2] / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                    Pin             Pin               Arrival     No. of    
-Name                                                  Type        Name            Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------------
-lockNET_SF_MSS_0.MSS_ADLIB_INST                       MSS_APB     MSSPADDR[2]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[2]                        Net         -               -       1.776     -           11        
-apb3_interface_0.rsa_0.bit_switch_n6_1                NOR2B       B               In      -         1.776       -         
-apb3_interface_0.rsa_0.bit_switch_n6_1                NOR2B       Y               Out     0.627     2.404       -         
-bit_switch_n6_1                                       Net         -               -       0.386     -           2         
-apb3_interface_0.rsa_0.un1_bus_addr_3_2               NOR2A       A               In      -         2.789       -         
-apb3_interface_0.rsa_0.un1_bus_addr_3_2               NOR2A       Y               Out     0.627     3.417       -         
-un1_bus_addr_3_2                                      Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.un1_bus_addr_3                 NOR3C       C               In      -         3.738       -         
-apb3_interface_0.rsa_0.un1_bus_addr_3                 NOR3C       Y               Out     0.641     4.380       -         
-un1_bus_addr_3                                        Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.un1_bus_addr_4                 OR3         C               In      -         4.701       -         
-apb3_interface_0.rsa_0.un1_bus_addr_4                 OR3         Y               Out     0.751     5.452       -         
-un1_bus_addr_4                                        Net         -               -       1.184     -           4         
-apb3_interface_0.rsa_0.bit_switch_RNIED932_0          NOR3B       B               In      -         6.636       -         
-apb3_interface_0.rsa_0.bit_switch_RNIED932_0          NOR3B       Y               Out     0.607     7.242       -         
-RAM_ADDRA_n_1_sqmuxa                                  Net         -               -       1.994     -           12        
-apb3_interface_0.rsa_0.rsa_encrypt_0_0_RNI9DC33_3     OA1A        C               In      -         9.236       -         
-apb3_interface_0.rsa_0.rsa_encrypt_0_0_RNI9DC33_3     OA1A        Y               Out     0.405     9.640       -         
-RAM_DINA_n_1_sqmuxa_2_0                               Net         -               -       2.172     -           16        
-apb3_interface_0.rsa_0.RAM_DINA_RNO_3[2]              NOR2B       B               In      -         11.813      -         
-apb3_interface_0.rsa_0.RAM_DINA_RNO_3[2]              NOR2B       Y               Out     0.627     12.440      -         
-bus_write_data_m[2]                                   Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINA_RNO_0[2]              OR3         C               In      -         12.762      -         
-apb3_interface_0.rsa_0.RAM_DINA_RNO_0[2]              OR3         Y               Out     0.751     13.513      -         
-RAM_DINA_n_iv_1[2]                                    Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINA_RNO[2]                AO1         C               In      -         13.834      -         
-apb3_interface_0.rsa_0.RAM_DINA_RNO[2]                AO1         Y               Out     0.633     14.467      -         
-RAM_DINA_n[2]                                         Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINA[2]                    DFN1E1      D               In      -         14.788      -         
-==========================================================================================================================
-Total path delay (propagation time + setup) of 15.362 is 6.243(40.6%) logic and 9.119(59.4%) route.
+Instance / Net                                                            Pin              Pin               Arrival     No. of    
+Name                                                          Type        Name             Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------
+lockNET_SF_MSS_0.MSS_ADLIB_INST                               MSS_APB     MSSPADDR[11]     Out     0.000     0.000       -         
+lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR[11]                     Net         -                -       0.322     -           1         
+CoreAPB3_0.CAPB3l0OI_2[0]                                     NOR3A       C                In      -         0.322       -         
+CoreAPB3_0.CAPB3l0OI_2[0]                                     NOR3A       Y                Out     0.716     1.038       -         
+CAPB3l0OI_2[0]                                                Net         -                -       0.322     -           1         
+CoreAPB3_0.CAPB3l0OI[0]                                       NOR2B       A                In      -         1.359       -         
+CoreAPB3_0.CAPB3l0OI[0]                                       NOR2B       Y                Out     0.488     1.847       -         
+CoreAPB3_0_APBmslave0_PSELx                                   Net         -                -       0.806     -           3         
+apb3_interface_0.BUS_WRITE_EN_0_a2                            NOR3C       B                In      -         2.654       -         
+apb3_interface_0.BUS_WRITE_EN_0_a2                            NOR3C       Y                Out     0.624     3.278       -         
+BUS_WRITE_EN                                                  Net         -                -       1.184     -           4         
+apb3_interface_0.rsa_0.un1_bit_switch_n5_3_i_i_o4             OR3B        B                In      -         4.461       -         
+apb3_interface_0.rsa_0.un1_bit_switch_n5_3_i_i_o4             OR3B        Y                Out     0.624     5.085       -         
+N_759                                                         Net         -                -       1.526     -           7         
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_o3     OR2A        B                In      -         6.611       -         
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_o3     OR2A        Y                Out     0.646     7.258       -         
+N_771                                                         Net         -                -       1.184     -           4         
+apb3_interface_0.rsa_0.bit_switch_RNI6CVV                     OR2         A                In      -         8.441       -         
+apb3_interface_0.rsa_0.bit_switch_RNI6CVV                     OR2         Y                Out     0.507     8.949       -         
+N_781                                                         Net         -                -       0.806     -           3         
+apb3_interface_0.rsa_0.bit_switch_RNI8SN11                    OR2         A                In      -         9.755       -         
+apb3_interface_0.rsa_0.bit_switch_RNI8SN11                    OR2         Y                Out     0.507     10.262      -         
+N_2789                                                        Net         -                -       1.184     -           4         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNIDS192[2]                  AO1C        C                In      -         11.446      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNIDS192[2]                  AO1C        Y                Out     0.633     12.079      -         
+N_2795                                                        Net         -                -       0.386     -           2         
+apb3_interface_0.rsa_0.rsa_encrypt_RNID88F2                   NOR2A       A                In      -         12.464      -         
+apb3_interface_0.rsa_0.rsa_encrypt_RNID88F2                   NOR2A       Y                Out     0.516     12.980      -         
+N_1542                                                        Net         -                -       0.386     -           2         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_3[2]                     AO1A        C                In      -         13.366      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_3[2]                     AO1A        Y                Out     0.655     14.022      -         
+N_743                                                         Net         -                -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_2[2]                     OA1A        C                In      -         14.343      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_2[2]                     OA1A        Y                Out     0.398     14.741      -         
+N_1524                                                        Net         -                -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO[2]                       NOR3        C                In      -         15.063      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO[2]                       NOR3        Y                Out     0.683     15.746      -         
+N_79                                                          Net         -                -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA[2]                           DFN1E1      D                In      -         16.067      -         
+===================================================================================================================================
+Total path delay (propagation time + setup) of 16.640 is 7.572(45.5%) logic and 9.069(54.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -882,52 +896,61 @@ Path information for path number 4:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.427
 
-    - Propagation time:                      14.788
+    - Propagation time:                      16.025
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -5.362
+    = Slack (non-critical) :                 -6.599
 
-    Number of logic level(s):                9
-    Starting point:                          lockNET_SF_MSS_0.MSS_ADLIB_INST / MSSPADDR[2]
-    Ending point:                            apb3_interface_0.rsa_0.RAM_DINB[12] / D
+    Number of logic level(s):                12
+    Starting point:                          lockNET_SF_MSS_0.MSS_ADLIB_INST / MSSPADDR[8]
+    Ending point:                            apb3_interface_0.rsa_0.RAM_ADDRA[2] / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                  Pin             Pin               Arrival     No. of    
-Name                                                Type        Name            Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------------
-lockNET_SF_MSS_0.MSS_ADLIB_INST                     MSS_APB     MSSPADDR[2]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[2]                      Net         -               -       1.776     -           11        
-apb3_interface_0.rsa_0.bit_switch_n6_1              NOR2B       B               In      -         1.776       -         
-apb3_interface_0.rsa_0.bit_switch_n6_1              NOR2B       Y               Out     0.627     2.404       -         
-bit_switch_n6_1                                     Net         -               -       0.386     -           2         
-apb3_interface_0.rsa_0.un1_bus_addr_3_2             NOR2A       A               In      -         2.789       -         
-apb3_interface_0.rsa_0.un1_bus_addr_3_2             NOR2A       Y               Out     0.627     3.417       -         
-un1_bus_addr_3_2                                    Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.un1_bus_addr_3               NOR3C       C               In      -         3.738       -         
-apb3_interface_0.rsa_0.un1_bus_addr_3               NOR3C       Y               Out     0.641     4.380       -         
-un1_bus_addr_3                                      Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.un1_bus_addr_4               OR3         C               In      -         4.701       -         
-apb3_interface_0.rsa_0.un1_bus_addr_4               OR3         Y               Out     0.751     5.452       -         
-un1_bus_addr_4                                      Net         -               -       1.184     -           4         
-apb3_interface_0.rsa_0.bit_switch_RNIED932          NOR3C       B               In      -         6.636       -         
-apb3_interface_0.rsa_0.bit_switch_RNIED932          NOR3C       Y               Out     0.607     7.242       -         
-RAM_ADDRA_n_0_sqmuxa                                Net         -               -       1.994     -           12        
-apb3_interface_0.rsa_0.rsa_encrypt_1_0_RNIAFD33     OA1A        C               In      -         9.236       -         
-apb3_interface_0.rsa_0.rsa_encrypt_1_0_RNIAFD33     OA1A        Y               Out     0.405     9.640       -         
-RAM_DINB_n_1_sqmuxa                                 Net         -               -       2.172     -           16        
-apb3_interface_0.rsa_0.RAM_DINB_RNO_3[12]           NOR2B       B               In      -         11.813      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_3[12]           NOR2B       Y               Out     0.627     12.440      -         
-N_1967                                              Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_0[12]           OR3         C               In      -         12.762      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_0[12]           OR3         Y               Out     0.751     13.513      -         
-RAM_DINB_n_iv_0_0_1[12]                             Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB_RNO[12]             AO1         C               In      -         13.834      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO[12]             AO1         Y               Out     0.633     14.467      -         
-RAM_DINB_n[12]                                      Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB[12]                 DFN1E1      D               In      -         14.788      -         
-========================================================================================================================
-Total path delay (propagation time + setup) of 15.362 is 6.243(40.6%) logic and 9.119(59.4%) route.
+Instance / Net                                                            Pin             Pin               Arrival     No. of    
+Name                                                          Type        Name            Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------
+lockNET_SF_MSS_0.MSS_ADLIB_INST                               MSS_APB     MSSPADDR[8]     Out     0.000     0.000       -         
+lockNET_SF_MSS_0_MSS_MASTER_APB_PADDR[8]                      Net         -               -       0.322     -           1         
+CoreAPB3_0.CAPB3l0OI_1[0]                                     NOR2        B               In      -         0.322       -         
+CoreAPB3_0.CAPB3l0OI_1[0]                                     NOR2        Y               Out     0.646     0.968       -         
+CAPB3l0OI_1[0]                                                Net         -               -       0.322     -           1         
+CoreAPB3_0.CAPB3l0OI[0]                                       NOR2B       B               In      -         1.290       -         
+CoreAPB3_0.CAPB3l0OI[0]                                       NOR2B       Y               Out     0.516     1.806       -         
+CoreAPB3_0_APBmslave0_PSELx                                   Net         -               -       0.806     -           3         
+apb3_interface_0.BUS_WRITE_EN_0_a2                            NOR3C       B               In      -         2.612       -         
+apb3_interface_0.BUS_WRITE_EN_0_a2                            NOR3C       Y               Out     0.624     3.236       -         
+BUS_WRITE_EN                                                  Net         -               -       1.184     -           4         
+apb3_interface_0.rsa_0.un1_bit_switch_n5_3_i_i_o4             OR3B        B               In      -         4.420       -         
+apb3_interface_0.rsa_0.un1_bit_switch_n5_3_i_i_o4             OR3B        Y               Out     0.624     5.043       -         
+N_759                                                         Net         -               -       1.526     -           7         
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_o3     OR2A        B               In      -         6.569       -         
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_o3     OR2A        Y               Out     0.646     7.216       -         
+N_771                                                         Net         -               -       1.184     -           4         
+apb3_interface_0.rsa_0.bit_switch_RNI6CVV                     OR2         A               In      -         8.399       -         
+apb3_interface_0.rsa_0.bit_switch_RNI6CVV                     OR2         Y               Out     0.507     8.907       -         
+N_781                                                         Net         -               -       0.806     -           3         
+apb3_interface_0.rsa_0.bit_switch_RNI8SN11                    OR2         A               In      -         9.713       -         
+apb3_interface_0.rsa_0.bit_switch_RNI8SN11                    OR2         Y               Out     0.507     10.221      -         
+N_2789                                                        Net         -               -       1.184     -           4         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNIDS192[2]                  AO1C        C               In      -         11.404      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNIDS192[2]                  AO1C        Y               Out     0.633     12.037      -         
+N_2795                                                        Net         -               -       0.386     -           2         
+apb3_interface_0.rsa_0.rsa_encrypt_RNID88F2                   NOR2A       A               In      -         12.423      -         
+apb3_interface_0.rsa_0.rsa_encrypt_RNID88F2                   NOR2A       Y               Out     0.516     12.939      -         
+N_1542                                                        Net         -               -       0.386     -           2         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_3[2]                     AO1A        C               In      -         13.325      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_3[2]                     AO1A        Y               Out     0.655     13.980      -         
+N_743                                                         Net         -               -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_2[2]                     OA1A        C               In      -         14.301      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_2[2]                     OA1A        Y               Out     0.398     14.699      -         
+N_1524                                                        Net         -               -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO[2]                       NOR3        C               In      -         15.021      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO[2]                       NOR3        Y               Out     0.683     15.704      -         
+N_79                                                          Net         -               -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA[2]                           DFN1E1      D               In      -         16.025      -         
+==================================================================================================================================
+Total path delay (propagation time + setup) of 16.599 is 7.530(45.4%) logic and 9.069(54.6%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -937,52 +960,61 @@ Path information for path number 5:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.427
 
-    - Propagation time:                      14.788
+    - Propagation time:                      16.015
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 -5.362
+    = Slack (non-critical) :                 -6.588
 
-    Number of logic level(s):                9
-    Starting point:                          lockNET_SF_MSS_0.MSS_ADLIB_INST / MSSPADDR[2]
-    Ending point:                            apb3_interface_0.rsa_0.RAM_DINB[3] / D
+    Number of logic level(s):                12
+    Starting point:                          lockNET_SF_MSS_0.MSS_ADLIB_INST / MSSPSEL
+    Ending point:                            apb3_interface_0.rsa_0.RAM_ADDRA[2] / D
     The start point is clocked by            System [rising]
     The end   point is clocked by            lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
 
-Instance / Net                                                    Pin             Pin               Arrival     No. of    
-Name                                                  Type        Name            Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------------------------
-lockNET_SF_MSS_0.MSS_ADLIB_INST                       MSS_APB     MSSPADDR[2]     Out     0.000     0.000       -         
-CoreAPB3_0_APBmslave0_PADDR[2]                        Net         -               -       1.776     -           11        
-apb3_interface_0.rsa_0.bit_switch_n6_1                NOR2B       B               In      -         1.776       -         
-apb3_interface_0.rsa_0.bit_switch_n6_1                NOR2B       Y               Out     0.627     2.404       -         
-bit_switch_n6_1                                       Net         -               -       0.386     -           2         
-apb3_interface_0.rsa_0.un1_bus_addr_3_2               NOR2A       A               In      -         2.789       -         
-apb3_interface_0.rsa_0.un1_bus_addr_3_2               NOR2A       Y               Out     0.627     3.417       -         
-un1_bus_addr_3_2                                      Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.un1_bus_addr_3                 NOR3C       C               In      -         3.738       -         
-apb3_interface_0.rsa_0.un1_bus_addr_3                 NOR3C       Y               Out     0.641     4.380       -         
-un1_bus_addr_3                                        Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.un1_bus_addr_4                 OR3         C               In      -         4.701       -         
-apb3_interface_0.rsa_0.un1_bus_addr_4                 OR3         Y               Out     0.751     5.452       -         
-un1_bus_addr_4                                        Net         -               -       1.184     -           4         
-apb3_interface_0.rsa_0.bit_switch_RNIED932            NOR3C       B               In      -         6.636       -         
-apb3_interface_0.rsa_0.bit_switch_RNIED932            NOR3C       Y               Out     0.607     7.242       -         
-RAM_ADDRA_n_0_sqmuxa                                  Net         -               -       1.994     -           12        
-apb3_interface_0.rsa_0.rsa_encrypt_0_0_RNI9DC33_2     OA1A        C               In      -         9.236       -         
-apb3_interface_0.rsa_0.rsa_encrypt_0_0_RNI9DC33_2     OA1A        Y               Out     0.405     9.640       -         
-RAM_DINB_n_1_sqmuxa_0                                 Net         -               -       2.172     -           16        
-apb3_interface_0.rsa_0.RAM_DINB_RNO_3[3]              NOR2B       B               In      -         11.813      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_3[3]              NOR2B       Y               Out     0.627     12.440      -         
-N_2337                                                Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_0[3]              OR3         C               In      -         12.762      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO_0[3]              OR3         Y               Out     0.751     13.513      -         
-RAM_DINB_n_iv_0_1[3]                                  Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB_RNO[3]                AO1         C               In      -         13.834      -         
-apb3_interface_0.rsa_0.RAM_DINB_RNO[3]                AO1         Y               Out     0.633     14.467      -         
-RAM_DINB_n[3]                                         Net         -               -       0.322     -           1         
-apb3_interface_0.rsa_0.RAM_DINB[3]                    DFN1E1      D               In      -         14.788      -         
-==========================================================================================================================
-Total path delay (propagation time + setup) of 15.362 is 6.243(40.6%) logic and 9.119(59.4%) route.
+Instance / Net                                                            Pin         Pin               Arrival     No. of    
+Name                                                          Type        Name        Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------
+lockNET_SF_MSS_0.MSS_ADLIB_INST                               MSS_APB     MSSPSEL     Out     0.000     0.000       -         
+lockNET_SF_MSS_0_MSS_MASTER_APB_PSELx                         Net         -           -       0.322     -           1         
+CoreAPB3_0.CAPB3l0OI_2[0]                                     NOR3A       A           In      -         0.322       -         
+CoreAPB3_0.CAPB3l0OI_2[0]                                     NOR3A       Y           Out     0.664     0.985       -         
+CAPB3l0OI_2[0]                                                Net         -           -       0.322     -           1         
+CoreAPB3_0.CAPB3l0OI[0]                                       NOR2B       A           In      -         1.307       -         
+CoreAPB3_0.CAPB3l0OI[0]                                       NOR2B       Y           Out     0.488     1.795       -         
+CoreAPB3_0_APBmslave0_PSELx                                   Net         -           -       0.806     -           3         
+apb3_interface_0.BUS_WRITE_EN_0_a2                            NOR3C       B           In      -         2.602       -         
+apb3_interface_0.BUS_WRITE_EN_0_a2                            NOR3C       Y           Out     0.624     3.225       -         
+BUS_WRITE_EN                                                  Net         -           -       1.184     -           4         
+apb3_interface_0.rsa_0.un1_bit_switch_n5_3_i_i_o4             OR3B        B           In      -         4.409       -         
+apb3_interface_0.rsa_0.un1_bit_switch_n5_3_i_i_o4             OR3B        Y           Out     0.624     5.033       -         
+N_759                                                         Net         -           -       1.526     -           7         
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_o3     OR2A        B           In      -         6.559       -         
+apb3_interface_0.rsa_0.modulus_lower_n_0_sqmuxa_0_a4_0_o3     OR2A        Y           Out     0.646     7.205       -         
+N_771                                                         Net         -           -       1.184     -           4         
+apb3_interface_0.rsa_0.bit_switch_RNI6CVV                     OR2         A           In      -         8.389       -         
+apb3_interface_0.rsa_0.bit_switch_RNI6CVV                     OR2         Y           Out     0.507     8.896       -         
+N_781                                                         Net         -           -       0.806     -           3         
+apb3_interface_0.rsa_0.bit_switch_RNI8SN11                    OR2         A           In      -         9.703       -         
+apb3_interface_0.rsa_0.bit_switch_RNI8SN11                    OR2         Y           Out     0.507     10.210      -         
+N_2789                                                        Net         -           -       1.184     -           4         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNIDS192[2]                  AO1C        C           In      -         11.394      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNIDS192[2]                  AO1C        Y           Out     0.633     12.027      -         
+N_2795                                                        Net         -           -       0.386     -           2         
+apb3_interface_0.rsa_0.rsa_encrypt_RNID88F2                   NOR2A       A           In      -         12.412      -         
+apb3_interface_0.rsa_0.rsa_encrypt_RNID88F2                   NOR2A       Y           Out     0.516     12.928      -         
+N_1542                                                        Net         -           -       0.386     -           2         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_3[2]                     AO1A        C           In      -         13.314      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_3[2]                     AO1A        Y           Out     0.655     13.969      -         
+N_743                                                         Net         -           -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_2[2]                     OA1A        C           In      -         14.291      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO_2[2]                     OA1A        Y           Out     0.398     14.689      -         
+N_1524                                                        Net         -           -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO[2]                       NOR3        C           In      -         15.010      -         
+apb3_interface_0.rsa_0.RAM_ADDRA_RNO[2]                       NOR3        Y           Out     0.683     15.693      -         
+N_79                                                          Net         -           -       0.322     -           1         
+apb3_interface_0.rsa_0.RAM_ADDRA[2]                           DFN1E1      D           In      -         16.015      -         
+==============================================================================================================================
+Total path delay (propagation time + setup) of 16.588 is 7.520(45.3%) logic and 9.069(54.7%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -992,83 +1024,82 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:10s; Memory used current: 171MB peak: 178MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:10s; Memory used current: 176MB peak: 184MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:10s; Memory used current: 171MB peak: 178MB)
+Finished timing report (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:10s; Memory used current: 176MB peak: 184MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
 Report for cell lockNET_SF.verilog
   Core Cell usage:
               cell count     area count*area
-              AND2    30      1.0       30.0
+              AND2    35      1.0       35.0
              AND2A    10      1.0       10.0
               AND3   107      1.0      107.0
              AND3A     1      1.0        1.0
-               AO1   395      1.0      395.0
-              AO1A    25      1.0       25.0
-              AO1B    11      1.0       11.0
-              AO1C    95      1.0       95.0
-              AO1D    55      1.0       55.0
-              AOI1     9      1.0        9.0
+               AO1   406      1.0      406.0
+              AO1A    94      1.0       94.0
+              AO1B    25      1.0       25.0
+              AO1C    54      1.0       54.0
+              AO1D     9      1.0        9.0
+              AOI1    12      1.0       12.0
              AOI1A    19      1.0       19.0
-             AOI1B     3      1.0        3.0
-               AX1     6      1.0        6.0
-              AX1A     1      1.0        1.0
-              AX1B     3      1.0        3.0
-              AX1C     3      1.0        3.0
-              AX1D    21      1.0       21.0
+             AOI1B     1      1.0        1.0
+               AX1     8      1.0        8.0
+              AX1A     3      1.0        3.0
+              AX1B     2      1.0        2.0
+              AX1C     1      1.0        1.0
+              AX1D    25      1.0       25.0
               AX1E     1      1.0        1.0
-             AXOI1     1      1.0        1.0
             CLKINT     3      0.0        0.0
                GND    11      0.0        0.0
-               INV     2      1.0        2.0
-              MAJ3    16      1.0       16.0
+              MAJ3    10      1.0       10.0
             MSSINT     1      0.0        0.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
-               MX2   475      1.0      475.0
-              MX2A   134      1.0      134.0
-              MX2B     3      1.0        3.0
-              NOR2    66      1.0       66.0
-             NOR2A   250      1.0      250.0
-             NOR2B   962      1.0      962.0
-              NOR3    30      1.0       30.0
-             NOR3A    39      1.0       39.0
-             NOR3B    48      1.0       48.0
-             NOR3C    80      1.0       80.0
-               OA1    53      1.0       53.0
-              OA1A    37      1.0       37.0
-              OA1C    10      1.0       10.0
-              OAI1     3      1.0        3.0
-               OR2    98      1.0       98.0
-              OR2A   120      1.0      120.0
-              OR2B    66      1.0       66.0
-               OR3   139      1.0      139.0
-              OR3A    14      1.0       14.0
-              OR3B     5      1.0        5.0
-              OR3C     3      1.0        3.0
+               MX2   368      1.0      368.0
+              MX2A    68      1.0       68.0
+              MX2B    89      1.0       89.0
+              MX2C    99      1.0       99.0
+              NOR2    77      1.0       77.0
+             NOR2A   236      1.0      236.0
+             NOR2B   955      1.0      955.0
+              NOR3    39      1.0       39.0
+             NOR3A    57      1.0       57.0
+             NOR3B    72      1.0       72.0
+             NOR3C    98      1.0       98.0
+               OA1    59      1.0       59.0
+              OA1A    32      1.0       32.0
+              OA1B     2      1.0        2.0
+              OA1C    13      1.0       13.0
+              OAI1     7      1.0        7.0
+               OR2   177      1.0      177.0
+              OR2A    99      1.0       99.0
+              OR2B    80      1.0       80.0
+               OR3   160      1.0      160.0
+              OR3A    10      1.0       10.0
+              OR3B    18      1.0       18.0
+              OR3C     4      1.0        4.0
              RCOSC     1      0.0        0.0
                VCC    11      0.0        0.0
-               XA1    11      1.0       11.0
-              XA1A    17      1.0       17.0
+               XA1     1      1.0        1.0
+              XA1A     6      1.0        6.0
               XA1B     4      1.0        4.0
-              XA1C     9      1.0        9.0
-             XAI1A     1      1.0        1.0
-             XNOR2   212      1.0      212.0
-              XOR2    35      1.0       35.0
-              XOR3    41      1.0       41.0
+              XA1C    12      1.0       12.0
+              XAI1     2      1.0        2.0
+             XNOR2   218      1.0      218.0
+              XOR2    55      1.0       55.0
+              XOR3    33      1.0       33.0
+             ZOR3I     1      1.0        1.0
 
 
-              DFN1   402      1.0      402.0
-            DFN1E1   168      1.0      168.0
-              DLN0    64      1.0       64.0
-            DLN0C0     3      1.0        3.0
-          DLN1P1C1     3      2.0        6.0
+              DFN1   403      1.0      403.0
+            DFN1E0    64      1.0       64.0
+            DFN1E1   106      1.0      106.0
             RAM4K9     4      0.0        0.0
                    -----          ----------
-             TOTAL  4452              4422.0
+             TOTAL  4580              4547.0
 
 
   IO Cell usage:
@@ -1076,15 +1107,15 @@ Report for cell lockNET_SF.verilog
          BIBUF_MSS     3
    BIBUF_OPEND_MSS     2
          INBUF_MSS     6
-            OUTBUF     3
+            OUTBUF     4
         OUTBUF_MSS     3
-           TRIBUFF     2
+           TRIBUFF     1
        TRIBUFF_MSS     1
                    -----
              TOTAL    20
 
 
-Core Cells         : 4422 of 4608 (96%)
+Core Cells         : 4547 of 4608 (99%)
 IO Cells           : 20
 
   RAM/ROM Usage Summary
@@ -1092,9 +1123,9 @@ Block Rams : 4 of 8 (50%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:10s; Memory used current: 35MB peak: 178MB)
+At Mapper Exit (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:10s; Memory used current: 36MB peak: 184MB)
 
-Process took 0h:00m:16s realtime, 0h:00m:10s cputime
-# Wed Dec 06 10:21:08 2017
+Process took 0h:00m:21s realtime, 0h:00m:10s cputime
+# Thu Dec 07 23:54:09 2017
 
 ###########################################################]

@@ -1,24 +1,22 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\apb3_interface.v":51:7:51:15|Tristate driver RAM_RESET (in view: work.apb3_interface(verilog)) on net RAM_RESET (in view: work.apb3_interface(verilog)) has its enable tied to GND.
-@N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\apb3_interface.v":40:7:40:12|Tristate driver FABINT (in view: work.apb3_interface(verilog)) on net FABINT (in view: work.apb3_interface(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\git\locknet373\smartfusion\locknet_sf\component\work\locknet_sf_mss\mss_ccc_0\locknet_sf_mss_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.lockNET_SF_MSS_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver FABINT_t (in view: work.lockNET_SF(verilog)) on net FABINT (in view: work.lockNET_SF(verilog)) has its enable tied to GND.
 @N: MO111 :|Tristate driver RAM_RESET_t (in view: work.lockNET_SF(verilog)) on net RAM_RESET (in view: work.lockNET_SF(verilog)) has its enable tied to GND.
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":105:3:105:8|Found counter in view:work.neopixel(verilog) instance send_pixel[4:0] 
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":105:3:105:8|Found counter in view:work.neopixel(verilog) instance counter[13:0] 
+@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":107:3:107:8|Found counter in view:work.neopixel(verilog) instance send_pixel[4:0] 
+@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\neopixel.v":107:3:107:8|Found counter in view:work.neopixel(verilog) instance counter[13:0] 
 @N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\servo.v":57:3:57:8|Found counter in view:work.servo(verilog) instance counter[31:0] 
 @N: MF179 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\servo.v":47:10:47:30|Found 32 by 32 bit less-than operator ('<') servo_out_n6 (in view: work.servo(verilog))
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\rsa.v":425:0:425:5|Found counter in view:work.rsa(verilog) instance counter[6:0] 
-@N: MF238 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\rsa.v":199:26:199:43|Found 7-bit incrementor, 'un1_RAM_ADDRB_n_1[6:0]'
-@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":95:4:95:9|Found counter in view:work.MonMult(verilog) instance counter[6:0] 
-@N: MF179 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":76:87:76:93|Found 66 by 66 bit less-than operator ('<') un1_P (in view: work.MonMult(verilog))
+@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\rsa.v":410:0:410:5|Found counter in view:work.rsa(verilog) instance counter[6:0] 
+@N: MF238 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\rsa.v":187:26:187:43|Found 7-bit incrementor, 'un1_RAM_ADDRB_n_1[6:0]'
+@N: MO231 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":97:4:97:9|Found counter in view:work.MonMult(verilog) instance counter[6:0] 
+@N: MF179 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":78:87:78:93|Found 66 by 66 bit less-than operator ('<') un1_P (in view: work.MonMult(verilog))
 @N: MF176 |Default generator successful 
-@N: MF238 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":69:25:69:30|Found 64-bit incrementor, 'un15_add_n[63:0]'
-@N: FP130 |Promoting Net lockNET_SF_MSS_0_M2F_RESET_N on CLKINT  I_129 
-@N: FP130 |Promoting Net apb3_interface_0.rsa_0.N_608_1 on CLKINT  I_130 
-@N: FP130 |Promoting Net apb3_interface_0.rsa_0.N_343 on CLKINT  I_131 
+@N: MF238 :"n:\git\locknet373\smartfusion\locknet_sf\hdl\monmult.v":71:25:71:30|Found 64-bit incrementor, 'un16_add_n[63:0]'
+@N: FP130 |Promoting Net lockNET_SF_MSS_0_M2F_RESET_N on CLKINT  I_326 
+@N: FP130 |Promoting Net apb3_interface_0.rsa_0.MonMult_0.P5 on CLKINT  I_327 
+@N: FP130 |Promoting Net apb3_interface_0.rsa_0.encrypt_state_i[0] on CLKINT  I_328 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 @N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

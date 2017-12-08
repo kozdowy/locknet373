@@ -1,2 +1,7 @@
-@E: CS153 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v":100:18:100:18|Can't mix blocking and non-blocking assignments to a variable
+@E: CS231 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":3:0:3:7|Unknown macro defind
+@E: CS231 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":71:39:71:39|Unknown macro CLOCK_PERIOD
+@E: CS231 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":73:40:73:40|Unknown macro CLOCK_PERIOD
+@E: CS231 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":80:60:80:60|Unknown macro CLOCK_PERIOD
+@E: CS231 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":82:70:82:70|Unknown macro CLOCK_PERIOD
+@E: CS187 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":123:0:123:8|Expecting endmodule
 

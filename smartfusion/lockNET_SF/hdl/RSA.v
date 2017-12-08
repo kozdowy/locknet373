@@ -146,28 +146,14 @@ assign rsa_read = bus_read_en && RSA_ENABLE;
 
 always @* begin
     bit_switch_n = bit_switch;
-    //message_upper_n = message_upper;
-    //message_lower_n = message_lower;
     modulus_upper_n = modulus_upper;
     modulus_lower_n = modulus_lower;
-    //exponent_upper_n = exponent_upper;
-    //exponent_lower_n = exponent_lower;
-    //residue_upper_n = residue_upper;
-    //residue_lower_n = residue_lower;
     rsa_encrypt_n = rsa_encrypt;
-    //result_upper_n = result_upper;
-    //result_lower_n = result_lower;
-    //temp_result_upper_n = temp_result_upper;
-    //temp_result_lower_n = temp_result_lower;
-    //Z_upper_n = Z_upper;
-    //Z_lower_n = Z_lower;
-    //result_valid_n = result_valid;
-    //rsa_read_out_n = rsa_read_out;
-    //MonMult_GO_n = MonMult_GO;
     A_n = A;
     B_n = B;
-    //encrypt_state_n = encrypt_state;
+    encrypt_state_n = encrypt_state;
     counter_n = counter;
+    result_valid_n = (encrypt_state == 5'd21);
     RAM_DINA_n = RAM_DINA;//32'b0;
     RAM_DINB_n = RAM_DINB;//32'b0;
     RAM_ADDRA_n = RAM_ADDRA;//7'b0;
@@ -176,6 +162,8 @@ always @* begin
     RAM_RWB_n = RAM_RWB;//1'b0;
     RAM_BLKA_n = RAM_BLKA;//1'b1;
     RAM_BLKB_n = RAM_BLKB;//1'b1;
+    read_wait_counter_n = read_wait_counter;
+    MonMult_GO_n = MonMult_GO;
 
     bus_read_data = 32'bx;
 
@@ -209,6 +197,7 @@ always @* begin
     end else if(bus_addr == `RSA_ENCRYPT_ADDR) begin
         if (rsa_write) begin
             rsa_encrypt_n = bus_write_data[0];
+            encrypt_state_n = 5'b0;
             if(rsa_encrypt == 1'b1 && bus_write_data[0] == 0) begin
                 result_valid_n = 1'b0;
             end
@@ -223,11 +212,7 @@ always @* begin
             bus_read_data = {31'b0, result_valid};
     end
 
-    MonMult_GO_n = MonMult_GO;
-    //result_valid_n = (encrypt_state == 5'd11);
-    result_valid_n = (encrypt_state == 5'd21);
-    encrypt_state_n = encrypt_state;
-
+    
     //Encrypt FSM
     if(rsa_encrypt) begin
         if(encrypt_state == 5'd0) begin

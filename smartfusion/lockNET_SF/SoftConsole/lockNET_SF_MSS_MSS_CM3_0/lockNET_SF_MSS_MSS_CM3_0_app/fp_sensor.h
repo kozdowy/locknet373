@@ -390,7 +390,7 @@ comm_packet FP_get_template(uint8_t id, uint8_t* template);
  */
 comm_packet FP_set_template(uint8_t id, uint8_t* template);
 
-comm_packet FP_send_command(uint16_t parameter, uint8_t command_code);
+comm_packet FP_send_command(uint8_t command, uint32_t parameter);
 
 comm_packet FP_recv_data(uint8_t* data_buf, uint32_t data_len);
 

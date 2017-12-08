@@ -1,14 +1,16 @@
 // neopixel.v
-// clk period = 10 ns
-`define PERIOD 125 // 1.25us = 1250 ns = 125
-`define HOLD 5000 // 50us
+// clk period = 40 ns
+`define CLOCK_PERIOD 40
+
+`define PERIOD 31 // / `CLOCK_PERIOD // 1.25us = 1250 ns = 125
+`define HOLD 1250 // 50us
 `define PERIOD_PLUS_HOLD `PERIOD + `HOLD
 
-`define HIGH_0 7'd40// 8'd32, 0.4us
-`define HIGH_1 7'd80 // 8'd64, 0.8us
+`define HIGH_0 7'd10// 8'd32, 0.4us
+`define HIGH_1 7'd20 // 8'd64, 0.8us
 
-`define LOW_0 7'd85 // 0.85us
-`define LOW_1 7'd45 // 0.45us 
+`define LOW_0 7'd21 // 0.85us
+`define LOW_1 7'd11 // 0.45us 
 
 module neopixel(
            /*** APB3 BUS INTERFACE ***/

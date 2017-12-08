@@ -47,6 +47,8 @@ module MonMult(
         P_n = P;
         is_ready_n = is_ready;
         counter_n = counter;
+        state_n = state;
+        add_n = add;
         
         if (~counter[6]) begin
             is_ready_n = 1'b0;

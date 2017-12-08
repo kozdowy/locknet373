@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>24</data>
+<data>22</data>
 <report_link name="more">
 <data>N:\Git\locknet373\smartfusion\lockNET_SF\synthesis\synlog\report\lockNET_SF_fpga_mapper_notes.txt</data>
 </report_link>
@@ -34,13 +34,13 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:10s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:16s</data>
+<data>0h:00m:20s</data>
 </info>
 <info name="Peak Memory">
-<data>178MB</data>
+<data>184MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1512573667</data>
+<data type="timestamp">1512708849</data>
 </info>
 </job_info>
 </job_run_status>

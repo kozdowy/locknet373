@@ -5,6 +5,77 @@ Release: v11.8
 Info: The design lockNET_SF.adb was last modified by software version 11.8.0.26.
 Opened an existing Libero design lockNET_SF.adb.
 
-The Execute Script command succeeded ( 00:00:04 )
+The Execute Script command succeeded ( 00:00:07 )
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: ON
+Incremental Route: ON
+High Effort Layout Mode: ON
+Sequential Optimization: ON
+Repair Hold Violations: ON
+
+
+Warning: The advanced layout option 'High Effort Layout Mode' is active.
+Info: I/O Bank Assigner detected (6) out of (6) I/O Bank(s) with locked I/O technologies.
+Info: I/O Bank Assigner is running in incremental mode. All pre-assigned I/O Bank technologies
+      will not be changed.
+Info: All I/O Banks have locked technologies. Skipping I/O Bank Assigner.
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Thu Dec 07 22:01:02 2017
+High-Effort Placer Started...
+
+Placer Finished: Thu Dec 07 22:03:55 2017
+Total Placer CPU Time:     00:02:53
+
+                        o - o - o - o - o - o
+
+
+
+Post-Layout Core Information:
+    Used:   3691  Total:   4608   (80.10%)
+
+    Type       | Instances    | Core tiles
+    -----------|--------------|-----------
+    COMB       | 3046         | 3046
+    SEQ        | 642          | 645
+INFO: Writing the file:
+N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.dtf\swloc
+
+Timing-driven Router 
+Design: lockNET_SF                      Started: Thu Dec 07 22:04:11 2017
+
+3804 nets of 3810 have to be routed incrementally.
+ 
+Repairing minimum delay violations ...
+
+  Initial analysis:
+    Number of violating paths:        0
+    Number of violating paths:        0
+Balancing the clock successfully done.
+
+Timing-driven Router completed successfully.
+
+Design: lockNET_SF                      
+Finished: Thu Dec 07 22:04:42 2017
+Total CPU Time:     00:00:28            Total Elapsed Time: 00:00:31
+Total Memory Usage: 217.8 Mbytes
+                        o - o - o - o - o - o
+
+Loading the Timing data for the design.
+Finished loading the Timing data.
+TIMER: Max delay timing requirements have NOT been met.
+TIMER: Min delay timing requirements have been met.
+
+The Layout command succeeded ( 00:03:56 )
+Design saved to file N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb.
 Design closed.
 

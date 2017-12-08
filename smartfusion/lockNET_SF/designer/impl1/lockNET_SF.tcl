@@ -1,5 +1,5 @@
 # Created by Microsemi Libero Software 11.8.0.26
-# Mon Dec 04 21:12:38 2017
+# Fri Dec 08 00:40:33 2017
 
 # (OPEN DESIGN)
 
@@ -11,17 +11,12 @@ set_defvar "IDE_DESIGNERVIEW_NAME" {Impl1}
 set_defvar "IDE_DESIGNERVIEW_COUNT" "1"
 set_defvar "IDE_DESIGNERVIEW_REV0" {Impl1}
 set_defvar "IDE_DESIGNERVIEW_REVNUM0" "1"
-set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {N:\PortableGit\locknet373\smartfusion\lockNET_SF\designer}
+set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {N:\Git\locknet373\smartfusion\lockNET_SF\designer}
 set_defvar "IDE_DESIGNERVIEW_LASTREV" "1"
 
-
-# import of input files
-import_source  \
--format "edif" -edif_flavor "GENERIC" -netlist_naming "VERILOG" {../../synthesis/lockNET_SF.edn} \
--format "pdc"  {..\..\component\work\lockNET_SF\lockNET_SF.pdc} -merge_physical "yes" -merge_timing "yes"
-compile
-report -type "status" {lockNET_SF_compile_report.txt}
-report -type "pin" -listby "name" {lockNET_SF_report_pin_byname.txt}
-report -type "pin" -listby "number" {lockNET_SF_report_pin_bynumber.txt}
+report -type "timing" -format "TEXT" -analysis "max" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {lockNET_SF_maxdelay_timing_report.txt}
+report -type "timing" -format "TEXT" -analysis "min" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {lockNET_SF_mindelay_timing_report.txt}
+report -type "timing_violations" -format "TEXT" -analysis "max" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {lockNET_SF_maxdelay_timingviolations_report.txt}
+report -type "timing_violations" -format "TEXT" -analysis "min" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {lockNET_SF_mindelay_timingviolations_report.txt}
 
 save_design

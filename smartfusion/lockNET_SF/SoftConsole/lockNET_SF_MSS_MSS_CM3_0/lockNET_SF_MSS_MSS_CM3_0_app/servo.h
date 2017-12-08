@@ -11,9 +11,9 @@
 #include <stdint.h>
 
 #define SERVO_ADDR 0x40050004
-#define SERVO_PERIOD 2000000
-#define SERVO_OPEN 90000
-#define SERVO_CLOSED 150000
+#define SERVO_PERIOD 500000
+#define SERVO_OPEN 22500
+#define SERVO_CLOSED 37500
 
 #define SERVO ((uint32_t *) SERVO_ADDR)
 

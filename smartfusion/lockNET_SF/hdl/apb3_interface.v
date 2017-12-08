@@ -135,7 +135,7 @@ rsa rsa_0(
                 .bus_addr(PADDR), // I/O address
                 .bus_write_data(PWDATA), // data from processor to I/O device (32 bits)
                 .bus_read_data(RSA_PRDATA), // data to processor from I/O device (32-bits)   
-                .result_valid(RSA_VALID),
+                .result_valid(FABINT),
                 .RAM_DINA(RAM_DINA),
                 .RAM_DINB(RAM_DINB),
                 .RAM_ADDRA(RAM_ADDRA),

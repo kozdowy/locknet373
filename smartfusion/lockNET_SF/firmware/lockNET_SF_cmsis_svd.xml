@@ -2,7 +2,7 @@
 <device>
   <name>lockNET_SF</name>
   <version>1.0</version>
-  <description>CMSIS description for lockNET_SF.  Created by Microsemi SmartDesign on Wed Dec 06 10:18:20 2017</description>
+  <description>CMSIS description for lockNET_SF.  Created by Microsemi SmartDesign on Thu Dec 07 23:43:11 2017</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

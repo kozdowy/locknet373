@@ -10,7 +10,7 @@ uint8_t FP_init(void){
                 MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
                 );
   int i = 0;
-  for (i; i < 20; ++i){
+  for (; i < 20; ++i){
     id_enrolled[i] = (FP_check_enrolled(i).command == FP_ACK);
   }
   //send initialization - command = open, parameter = 0, get ack back
@@ -73,7 +73,7 @@ uint32_t FP_enroll(void){
     return res.parameter;
   }
 
-  id_enrolled[i] = 1;
+  id_enrolled[id] = 1;
   return 0;
 }
 
@@ -134,7 +134,7 @@ comm_packet FP_delete_ID(uint8_t id){
 }
 
 comm_packet FP_delete_all(void){
-  return FP_send_command(FP_DELETE_ALL);
+  return FP_send_command(FP_DELETE_ALL, NO_PARAMETER);
 }
 
 comm_packet FP_verify_capture(uint8_t id){
@@ -205,13 +205,16 @@ comm_packet FP_set_template(uint8_t id, uint8_t* template){
 }
 
 comm_packet FP_send_command(uint8_t command, uint32_t parameter){
-  return 0;
+	comm_packet c;
+  return c;
 }
 
 comm_packet FP_recv_data(uint8_t* data_buf, uint32_t data_len){
-  return 0;
+	comm_packet c;
+  return c;
 }
 
 comm_packet FP_send_data(uint8_t* data_buf, uint32_t data_len){
-  return 0;
+	comm_packet c;
+  return c;
 }

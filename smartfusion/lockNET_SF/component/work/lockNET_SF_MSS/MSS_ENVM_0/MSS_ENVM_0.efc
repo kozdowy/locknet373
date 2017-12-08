@@ -226,15 +226,15 @@
             </crc>
         </region>
         <region name="ACTEL_AB_MSS_CONFIG" address="0x083e00" retrieveAddressFromFile="false" size="208" format="HEX" type="Data Storage" wordSize="32" numberWords="52" memFile="" memType="" memFileTimeStamp="" clientType="private" program="true">
-            000000000000000000000000000000000000000000000000001f1f004245
-            45007e7f0100000002000008200100e1f505010000d2000000000000001e
+            00000000000000000000000000000000000000000000000000031f00421d
+            45007e7f0100c00002000028200100e1f505010000d2000000000000001e
             1a0707000500100005001000000000002bacb0c20a1828b0c20a00280000
             0018280000002bacb0c20a2bacb0c20a2baca0c00a2bacb0c20a2b60a000
             002bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c2
             0a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb002
-            0000000078aa080090d0030000ff030088ff2300000057070000dc90
+            0000000078aa080090d0030000ff030088ff2300000057070000fd5e
             <crc>
-                4de7
+                e5c8
             </crc>
         </region>
         <region name="ACTEL_INIT_CONFIG" address="0x07fe00" retrieveAddressFromFile="false" size="152" format="HEX" type="Data Storage" wordSize="32" numberWords="38" memFile="" memType="" memFileTimeStamp="" clientType="private" program="true">

@@ -14,14 +14,6 @@
     <SerializationOption>
         Skip
     </SerializationOption>
-    <programmer status="enable" type="FlashPro3" revision="UndefRev" connection="usb2.0">
-        <name>
-            79964
-        </name>
-        <id>
-            79964
-        </id>
-    </programmer>
     <configuration>
         <Hardware>
             <FlashPro>

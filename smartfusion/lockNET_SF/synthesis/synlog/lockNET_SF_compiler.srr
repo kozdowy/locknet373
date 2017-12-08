@@ -13,9 +13,9 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
 @I::"N:\Git\locknet373\smartfusion\lockNET_SF\smartgen\RSA_64b_RAM\RSA_64b_RAM.v" (library work)
 @I::"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v" (library work)
-@I::"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\servo.v" (library work)
 @I::"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v" (library work)
 @I::"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v" (library work)
+@I::"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\servo.v" (library work)
 @I::"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v" (library work)
 @I::"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" (library work)
 @I::"N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF_MSS\mss_tshell.v" (library work)
@@ -26,21 +26,16 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
 @I::"N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v" (library work)
 Verilog syntax check successful!
-File N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v changed - recompiling
-File N:\Git\locknet373\smartfusion\lockNET_SF\component\work\lockNET_SF\lockNET_SF.v changed - recompiling
 Selecting top level module lockNET_SF
-@N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":13:7:13:14|Synthesizing module neopixel in library work.
+@N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":15:7:15:14|Synthesizing module neopixel in library work.
 
-@W: CG360 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":29:8:29:17|Removing wire read_pulse, as there is no assignment to it.
+@W: CG360 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":31:8:31:17|Removing wire read_pulse, as there is no assignment to it.
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\servo.v":4:7:4:11|Synthesizing module servo in library work.
 
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v":24:7:24:13|Synthesizing module MonMult in library work.
 
-@W: CL118 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v":51:8:51:9|Latch generated from always block for signal add_n[63:0]; possible missing assignment in an if or case statement.
-@W: CL118 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v":51:8:51:9|Latch generated from always block for signal state_n[2:0]; possible missing assignment in an if or case statement.
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":32:7:32:9|Synthesizing module rsa in library work.
 
-@W: CL118 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":232:4:232:5|Latch generated from always block for signal read_wait_counter_n[2:0]; possible missing assignment in an if or case statement.
 @N: CG364 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":2:7:2:20|Synthesizing module apb3_interface in library work.
 
 @W: CG360 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":58:12:58:20|Removing wire NP_PRDATA, as there is no assignment to it.
@@ -227,9 +222,8 @@ Selecting top level module lockNET_SF
 @N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
 @W: CL156 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":58:12:58:20|*Input NP_PRDATA[31:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @W: CL156 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":59:12:59:23|*Input SERVO_PRDATA[31:0] to expression [pmux] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL157 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":40:7:40:12|*Output FABINT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
 @W: CL157 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\apb3_interface.v":51:7:51:15|*Output RAM_RESET has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@N: CL201 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":425:0:425:5|Trying to extract state machine for register encrypt_state.
+@N: CL201 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":410:0:410:5|Trying to extract state machine for register encrypt_state.
 Extracted state machine for register encrypt_state
 State machine has 22 reachable states with original encodings of:
    00000
@@ -254,18 +248,28 @@ State machine has 22 reachable states with original encodings of:
    10011
    10100
    10101
-@N: CL189 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":425:0:425:5|Register bit RAM_BLKA is always 0.
-@N: CL189 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":425:0:425:5|Register bit RAM_BLKB is always 0.
+@N: CL189 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":410:0:410:5|Register bit RAM_BLKA is always 0.
+@N: CL189 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\RSA.v":410:0:410:5|Register bit RAM_BLKB is always 0.
+@N: CL201 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\MonMult.v":97:4:97:9|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 7 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+   101
+   110
 @N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\servo.v":12:28:12:35|Input bus_addr is unused.
-@W: CL246 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":22:29:22:42|Input port bits 31 to 27 of bus_write_data[31:0] are unused. Assign logic for all port bits or change the input port size.
-@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":21:28:21:35|Input bus_addr is unused.
+@W: CL246 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":24:29:24:42|Input port bits 31 to 27 of bus_write_data[31:0] are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"N:\Git\locknet373\smartfusion\lockNET_SF\hdl\neopixel.v":23:28:23:35|Input bus_addr is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 81MB peak: 106MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 81MB peak: 93MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:01s cputime
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Dec 06 10:20:45 2017
+# Thu Dec 07 23:53:40 2017
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
@@ -276,16 +280,16 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Dec 06 10:20:45 2017
+# Thu Dec 07 23:53:40 2017
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:02s cputime
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Dec 06 10:20:45 2017
+# Thu Dec 07 23:53:40 2017
 
 ###########################################################]
