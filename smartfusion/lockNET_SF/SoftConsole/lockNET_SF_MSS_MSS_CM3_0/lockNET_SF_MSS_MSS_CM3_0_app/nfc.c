@@ -8,12 +8,19 @@ const uint8_t PN532_ACK_FRAME[] = {0x01, 0x00, 0x00, 0xFF, 0x00, 0xFF, 0x00};
 const uint8_t PN532_NACK_FRAME[] = {0x01, 0x00, 0x00, 0xFF, 0xFF, 0x00, 0x00};
 const uint8_t PN532_TURN_ON_RF_INFO[]= {0x01, 0x01};
 const uint8_t PN532_POWERDOWN_INFO[] = {0x88, 0x01};
+const uint8_t PN532_INLISTPASSIVETARGET_INFO[] = {0x01, 0x00};
+const uint8_t PN532_SAMCONFIG_INFO[] = {0x01, 0x14, 0x01};
 
+uint8_t last_command_sent;
 
 uint8_t NFC_ACK_BUF[7];
 const uint8_t NFC_ACK_LENGTH = 7;
+uint8_t NFC_RESPONSE_BUFFER[100];
+const uint8_t NFC_RESPONSE_BUFFER_LENGTH = 100;
 
-uint8_t interrupt_handled = 1;
+
+volatile uint8_t interrupt_handled = 1;
+uint8_t last_was_ack = 0;
 
 /*
  * nfc.c
@@ -28,7 +35,7 @@ uint8_t interrupt_handled = 1;
  * Receives: 	Nothing
  * Returns:		Nothing
  */
-void nfc_setup(void){
+void nfc_init(void){
 	MSS_I2C_init(&g_mss_i2c1 , PN532_I2C_ADDRESS, MSS_I2C_PCLK_DIV_960 );
 	MSS_GPIO_config( MSS_GPIO_0, MSS_GPIO_OUTPUT_MODE);
 	MSS_GPIO_config( MSS_GPIO_1, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_NEGATIVE );
@@ -43,14 +50,14 @@ void nfc_setup(void){
 	MSS_GPIO_set_output(MSS_GPIO_0 ,(uint8_t)  1);
 	for(i=0;i<100000;i++); //We need 10 msecs (we get 18 msec => OK)
 	/* times tested with oscilloscope */
-
-	//turn on rf field
-	//nfc_send_command(PN532_COMMAND_RF_CONFIG, PN532_TURN_ON_RF_INFO, sizeof(PN532_TURN_ON_RF_INFO));
-	//uint8_t buff[10];
-	//while(nfc_read(buff, sizeof(buff), 1));
-
-	uint8_t sam_buff[14];
-	uint8_t sc = nfc_SAMConfig(sam_buff);
+	for(i = 0; i < NFC_RESPONSE_BUFFER_LENGTH; ++i){
+		NFC_RESPONSE_BUFFER[i] = 0;
+	}
+	nfc_SAMConfig();
+	while(interrupt_handled);
+	nfc_read_response();
+	while(interrupt_handled);
+	nfc_read_response();
 	return;
 }
 
@@ -88,22 +95,40 @@ uint8_t nfc_read_ack(){
 	return 1;
 }
 
-uint8_t nfc_read_response(uint8_t *buff, uint8_t n){
-	// Read transaction
-	int count = 0;
-	while(buff[0] != 0x01 && count < 10){
-		MSS_I2C_read
-			(
-					&g_mss_i2c1,
-					PN532_I2C_ADDRESS,
-					buff,
-					n,
-					MSS_I2C_RELEASE_BUS
-			);
-		MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
-		++count;
+uint8_t nfc_read_response(){
+	nfc_set_interrupt_handled(1);
+	if(last_was_ack){
+		int i = 0;
+		for(i = 0; i < NFC_RESPONSE_BUFFER_LENGTH; ++i){
+			NFC_RESPONSE_BUFFER[i] = 0;
+		}
+		int count = 0;
+		while(NFC_RESPONSE_BUFFER[0] != 0x01 && count < 10){
+			MSS_I2C_read
+				(
+						&g_mss_i2c1,
+						PN532_I2C_ADDRESS,
+						NFC_RESPONSE_BUFFER,
+						nfc_get_response_size(),
+						MSS_I2C_RELEASE_BUS
+				);
+			MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+			++count;
+		}
+		last_was_ack = 0;
+		return 0;
+	} else {
+		if(nfc_read_ack()){
+			last_was_ack = 1;
+			return 1;
+		}else{
+			return 0;
+		}
 	}
-	return 0;
+}
+
+uint8_t *nfc_get_response_buffer(){
+	return NFC_RESPONSE_BUFFER;
 }
 
 
@@ -149,72 +174,63 @@ void nfc_send_command(const uint8_t command, const uint8_t info_buf[], const uin
  * Receives:	Array LENGTH 9(+8) where the info will be stored
  * Returns:	 field (if external RF is present=1, 0 otherwise)
  */
-uint8_t nfc_GetGeneralStatus(uint8_t *array){
+uint8_t nfc_GetGeneralStatus(){
 	uint8_t command[] = {};
 	nfc_send_command(PN532_COMMAND_GETSTATUS, command, 0);
-	if(!nfc_read_ack())
-		return 0;
-
-	nfc_read_response(array, 9+8);
-
-	return array[3+6];
-}
-
-uint8_t nfc_InListPassiveTarget(uint8_t *response_buf){
-
-	//send D4 4A 01 00
-	//receive D5 4B <num targets> <tg (1) sens_res (2) sel_res (1) nfcidlength (1) nfcid (4?) atslength (1) ats (y)>
-	uint8_t command[] = {0x01, 0x00};
-	nfc_send_command(PN532_COMMAND_INLISTPASSIVETARGET, command, 2);
-	set_interrupt_handled(0);
-	//uint8_t ack_buf[7];
-	//nfc_read(ack_buf, sizeof(ack_buf), 0);
-	//while(nfc_read(response_buf, 12 + 8, 1));
-	while(!is_interrupt_handled());
-	set_interrupt_handled(0);
-	if(!nfc_read_ack())
-		return 0;
-	uint8_t response_buff[20];
-	while (!is_interrupt_handled());
-	nfc_read_response(response_buff, 20);
-	return 1; //response_buf[6];
-}
-
-uint8_t nfc_SAMConfig(uint8_t *response_buf){
-  uint8_t command[] = {0x01, 0x14, 0x01};
-  nfc_send_command(PN532_COMMAND_SAMCONFIG, command, 3);
-  set_interrupt_handled(0);
-  while (!is_interrupt_handled());
-  set_interrupt_handled(0);
-  if(!nfc_read_ack())
-  		return 0;
-  uint8_t response_buff[10];
-  while (!is_interrupt_handled());
-  nfc_read_response(response_buff, 10);
-  return 1;// response_buf[6];
-}
-
-uint8_t nfc_GetFirmwareVersion(uint8_t *response_buf){
-	uint8_t command[] = {};
-	nfc_send_command(PN532_COMMAND_GETFIRMWARE, command, 0);
-	set_interrupt_handled(0);
-	while (!is_interrupt_handled());
-	if(!nfc_read_ack())
-		return 0;
-	uint8_t response_buff[14];
-	nfc_read_response(response_buff, 14);
+	last_command_sent = PN532_COMMAND_GETSTATUS;
 	return 1;
 }
 
-uint8_t is_interrupt_handled(void){
+uint8_t nfc_InListPassiveTarget(){
+
+	//send D4 4A 01 00
+	//receive D5 4B <num targets> <tg (1) sens_res (2) sel_res (1) nfcidlength (1) nfcid (4?) atslength (1) ats (y)>
+
+	nfc_send_command(PN532_COMMAND_INLISTPASSIVETARGET,
+					PN532_INLISTPASSIVETARGET_INFO,
+					2);
+	last_command_sent = PN532_COMMAND_INLISTPASSIVETARGET;
+	return 1; //response_buf[6];
+}
+
+uint8_t nfc_SAMConfig(){
+  uint8_t command[] = {0x01, 0x14, 0x01};
+  nfc_send_command(PN532_COMMAND_SAMCONFIG, PN532_SAMCONFIG_INFO, 3);
+  last_command_sent = PN532_COMMAND_SAMCONFIG;
+  return 1;// response_buf[6];
+}
+
+uint8_t nfc_GetFirmwareVersion(){
+	uint8_t command[] = {};
+	nfc_send_command(PN532_COMMAND_GETFIRMWARE, command, 0);
+	last_command_sent = PN532_COMMAND_GETFIRMWARE;
+	return 1;
+}
+
+uint8_t nfc_is_interrupt_handled(void){
 	return interrupt_handled;
 }
 
-void set_interrupt_handled(uint8_t val){
+void nfc_set_interrupt_handled(uint8_t val){
 	interrupt_handled = val;
 }
 
+uint8_t nfc_get_response_size(){
+	switch(last_command_sent){
+	case PN532_COMMAND_GETFIRMWARE: return 14;
+	case PN532_COMMAND_POWERDOWN: return 5;
+	case PN532_COMMAND_GETSTATUS: return 20;
+	case PN532_COMMAND_INAUTOPOLL: return 5;
+	case PN532_COMMAND_RF_CONFIG: return 5;
+	case PN532_COMMAND_INLISTPASSIVETARGET: return 20;
+	case PN532_COMMAND_SAMCONFIG: return 10;
+	default: return NULL;
+	}
+}
 
+uint8_t nfc_last_was_ack(){
+	return last_was_ack;
+}
 
 
 

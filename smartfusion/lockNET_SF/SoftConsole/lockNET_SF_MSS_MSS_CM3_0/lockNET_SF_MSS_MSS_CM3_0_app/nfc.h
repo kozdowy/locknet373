@@ -35,25 +35,29 @@
 #define PN532_COMMAND_SAMCONFIG (0x14)
 
 // Prototypes
+uint8_t nfc_get_response_size();
+
 uint8_t nfc_read_ack();
 
-uint8_t nfc_read_response(uint8_t *buff, uint8_t n);
+uint8_t nfc_read_response();
 
-void nfc_setup(void);
+uint8_t *nfc_get_response_buffer();
+
+void nfc_init(void);
 
 void nfc_send_command(const uint8_t command, const uint8_t info_buf[], const uint8_t length);
 
-uint8_t nfc_GetGeneralStatus(uint8_t *array);
+uint8_t nfc_GetGeneralStatus();
 
-uint8_t nfc_InListPassiveTarget(uint8_t *response_buf);
+uint8_t nfc_InListPassiveTarget();
 
-uint8_t nfc_SAMConfig(uint8_t *response_buf);
+uint8_t nfc_SAMConfig();
 
-uint8_t nfc_GetFirmwareVersion(uint8_t *response_buf);
+uint8_t nfc_GetFirmwareVersion();
 
-uint8_t is_interrupt_handled(void);
+uint8_t nfc_is_interrupt_handled(void);
 
-void set_interrupt_handled(uint8_t val);
+void nfc_set_interrupt_handled(uint8_t val);
 
-
+uint8_t nfc_last_was_ack();
 #endif /* NFC_H_ */

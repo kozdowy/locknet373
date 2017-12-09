@@ -12,16 +12,16 @@
 
 #define SERVO_ADDR 0x40050004
 #define SERVO_PERIOD 500000
-#define SERVO_OPEN 22500
-#define SERVO_CLOSED 37500
+#define SERVO_UNLOCKED 23000
+#define SERVO_LOCKED 45500 // 37500
 
 #define SERVO ((uint32_t *) SERVO_ADDR)
 
 void SERVO_init(void);
 
-void SERVO_close(void);
+void SERVO_lock(void);
 
-void SERVO_open(void);
+void SERVO_unlock(void);
 
 uint32_t SERVO_read_state(void);
 

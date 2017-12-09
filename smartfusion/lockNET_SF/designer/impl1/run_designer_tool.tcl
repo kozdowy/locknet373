@@ -1,7 +1,4 @@
-# (OPEN DESIGN)
-
-open_design "N:/Git/locknet373/smartfusion/lockNET_SF/designer/impl1/lockNET_SF.adb"
-export -format "FDB" {N:/Git/locknet373/smartfusion/lockNET_SF/designer/impl1/lockNET_SF.fdb}
-
-save_design "N:/Git/locknet373/smartfusion/lockNET_SF/designer/impl1/lockNET_SF.adb"
+set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {N:\Git\locknet373\smartfusion\lockNET_SF\designer}
+open_design lockNET_SF.adb
+open_tool mvn_ioedit
 

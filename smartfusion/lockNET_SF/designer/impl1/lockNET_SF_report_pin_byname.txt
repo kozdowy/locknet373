@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Fri Dec 08 00:40:22 2017 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Fri Dec 08 20:51:33 2017 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.8
 Version: 11.8.0.26
@@ -11,13 +11,13 @@ Package: 484 FBGA
 Port        |Pin  |Fixed |Function           |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
 ------------|-----|------|-------------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
 FABINT       G4    Yes    GFC1/IO66PPB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+GPIO_0_OUT   V1    Yes    GPIO_0/IO47RSB4V0   LVTTL    8                  High  None           ---              No    35                No           Yes
 GPIO_1_IN    R3    Yes    GPIO_1/IO46RSB4V0   LVTTL    ---                ---   None           No               ---   ---               No           Yes
+GPIO_4_IN    AA1   Yes    GPIO_4/IO43RSB4V0   LVTTL    ---                ---   None           No               ---   ---               No           Yes
 GPIO_8_OUT   T3    Yes    GPIO_8/IO39RSB4V0   LVTTL    8                  High  None           ---              No    35                No           Yes
 GPIO_9_IN    V3    Yes    GPIO_9/IO38RSB4V0   LVTTL    ---                ---   None           No               ---   ---               No           Yes
-GPIO_10_BI   U3    Yes    GPIO_10/IO58RSB4V0  LVTTL    8                  High  None           No               No    35                No           Yes
 I2C_1_SCL    U20   Yes    I2C_1_SCL/GPIO_31   LVTTL    8                  High  None           No               No    35                No           Yes
 I2C_1_SDA    V22   Yes    I2C_1_SDA/GPIO_30   LVTTL    8                  High  None           No               No    35                No           Yes
-M2F_GPO_0    E3    Yes    GFA2/IO68PDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
 MSS_RESET_N  R1    Yes    MSS_RESET_N         LVTTL    ---                ---   None           No               ---   ---               No           Yes
 NP_OUT       F1    Yes    GFB1/IO65PPB5V0     LVTTL    12                 High  None           ---              No    35                No           No
 RAM_RESET    K19   No     GDA0/IO31NDB1V0     LVTTL    12                 High  None           ---              No    35                No           No

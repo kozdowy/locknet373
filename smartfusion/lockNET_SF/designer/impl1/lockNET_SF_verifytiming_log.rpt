@@ -22,9 +22,9 @@ Wrote timing_violations report to file: lockNET_SF_maxdelay_timingviolations_rep
 The Report command succeeded ( 00:00:01 )
 Wrote timing_violations report to file: lockNET_SF_mindelay_timingviolations_report.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Design saved to file N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.adb.
 
-The Execute Script command succeeded ( 00:00:17 )
+The Execute Script command succeeded ( 00:00:16 )
 Design closed.
 

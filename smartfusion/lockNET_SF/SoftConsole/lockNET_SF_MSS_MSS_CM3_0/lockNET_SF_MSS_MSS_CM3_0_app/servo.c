@@ -10,12 +10,12 @@ void SERVO_init(void){
 	// intentionally blank
 }
 
-void SERVO_close(void){
-	(*SERVO) = (uint32_t) SERVO_CLOSED;
+void SERVO_lock(void){
+	(*SERVO) = (uint32_t) SERVO_LOCKED;
 }
 
-void SERVO_open(void){
-	(*SERVO) = (uint32_t) SERVO_OPEN;
+void SERVO_unlock(void){
+	(*SERVO) = (uint32_t) SERVO_UNLOCKED;
 }
 
 uint32_t SERVO_read_state(void){

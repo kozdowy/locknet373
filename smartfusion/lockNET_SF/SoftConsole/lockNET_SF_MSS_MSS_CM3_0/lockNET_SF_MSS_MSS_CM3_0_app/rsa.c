@@ -5,33 +5,8 @@
  *      Author: eliubakk
  */
 #include "rsa.h"
-// FOR TESTING DELETE LATER
-
-#define MESSAGE_U 0xDCBAABCD
-#define MESSAGE_L 0xABCDDCBA
-#define MSG_ENC_U 0x0f886e09
-#define MSG_ENC_L 0x5e89cf95
-#define PUB_EXP_U 0x00000000
-#define PUB_EXP_L 0x00010001
-#define PRI_EXP_U 0x044de026
-#define PRI_EXP_L 0xcabdb311
-#define MODULUS_U 0xeda515ef
-#define MODULUS_L 0x24029417
-#define RESIDUE_U 0x859cfcfb
-#define RESIDUE_L 0x5a1f75d5
-
-void RSA_test(void){
-	//uint32_t message[] = {MESSAGE_U, MESSAGE_L};
-	//uint32_t key[] = {PUB_EXP_U, PUB_EXP_L};
-	uint32_t message[] = {MSG_ENC_U, MSG_ENC_L};
-	uint32_t key[] = {PRI_EXP_U, PRI_EXP_L};
-	uint32_t modulus[] = {MODULUS_U, MODULUS_L};
-	uint32_t residue[] = {RESIDUE_U, RESIDUE_L};
-	RSA_run(message, key, modulus, residue);
-}
 
 void RSA_init(void){
-
 	*RSA_BEGIN_ENCRYPT = 0x0;
 }
 

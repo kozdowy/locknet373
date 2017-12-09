@@ -2,7 +2,7 @@ Timing Report Min Delay Analysis
 
 SmartTime Version v11.8
 Microsemi Corporation - Microsemi Libero Software Release v11.8 (Version 11.8.0.26)
-Date: Fri Dec 08 00:40:42 2017
+Date: Fri Dec 08 20:51:50 2017
 
 
 Design: lockNET_SF
@@ -48,10 +48,10 @@ Period (ns):                N/A
 Frequency (MHz):            N/A
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        -1.630
+External Setup (ns):        -1.755
 External Hold (ns):         2.902
-Min Clock-To-Out (ns):      5.905
-Max Clock-To-Out (ns):      13.906
+Min Clock-To-Out (ns):      6.372
+Max Clock-To-Out (ns):      12.360
 
 Clock Domain:               mss_ccc_gla0
 Period (ns):                12.500
@@ -411,6 +411,16 @@ Path 1
   External Hold (ns):          2.902
 
 Path 2
+  From:                        GPIO_4_IN
+  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GPI[4]
+  Delay (ns):                  0.620
+  Slack (ns):
+  Arrival (ns):                0.620
+  Required (ns):
+  Hold (ns):                   0.961
+  External Hold (ns):          2.898
+
+Path 3
   From:                        GPIO_9_IN
   To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GPI[9]
   Delay (ns):                  0.645
@@ -419,16 +429,6 @@ Path 2
   Required (ns):
   Hold (ns):                   0.978
   External Hold (ns):          2.890
-
-Path 3
-  From:                        GPIO_10_BI
-  To:                          lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GPI[10]
-  Delay (ns):                  0.865
-  Slack (ns):
-  Arrival (ns):                0.865
-  Required (ns):
-  Hold (ns):                   0.951
-  External Hold (ns):          2.643
 
 
 Expanded Path 1
@@ -467,15 +467,6 @@ SET Clock to Output
 
 Path 1
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
-  To:                          GPIO_10_BI
-  Delay (ns):                  3.348
-  Slack (ns):
-  Arrival (ns):                5.905
-  Required (ns):
-  Clock to Out (ns):           5.905
-
-Path 2
-  From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
   To:                          GPIO_8_OUT
   Delay (ns):                  3.815
   Slack (ns):
@@ -483,20 +474,20 @@ Path 2
   Required (ns):
   Clock to Out (ns):           6.372
 
-Path 3
+Path 2
   From:                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
-  To:                          M2F_GPO_0
-  Delay (ns):                  4.612
+  To:                          GPIO_0_OUT
+  Delay (ns):                  3.849
   Slack (ns):
-  Arrival (ns):                7.169
+  Arrival (ns):                6.406
   Required (ns):
-  Clock to Out (ns):           7.169
+  Clock to Out (ns):           6.406
 
 
 Expanded Path 1
   From: lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
-  To: GPIO_10_BI
-  data arrival time                              5.905
+  To: GPIO_8_OUT
+  data arrival time                              6.372
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -506,16 +497,16 @@ Expanded Path 1
   0.000                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
                +     2.557          Clock generation
   2.557
-               +     1.997          cell: ADLIB:MSS_APB_IP
-  4.554                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GPOE[10] (f)
-               +     0.405          net: lockNET_SF_MSS_0/GPOE_net_0[10]
-  4.959                        lockNET_SF_MSS_0/MSS_GPIO_0_GPIO_10_BI:E (f)
-               +     0.946          cell: ADLIB:IOPAD_BI
-  5.905                        lockNET_SF_MSS_0/MSS_GPIO_0_GPIO_10_BI:PAD (r)
-               +     0.000          net: GPIO_10_BI
-  5.905                        GPIO_10_BI (r)
+               +     1.950          cell: ADLIB:MSS_APB_IP
+  4.507                        lockNET_SF_MSS_0/MSS_ADLIB_INST/U_CORE:GPO[8] (r)
+               +     0.435          net: lockNET_SF_MSS_0/GPO_net_0[8]
+  4.942                        lockNET_SF_MSS_0/MSS_GPIO_0_GPIO_8_OUT:D (r)
+               +     1.430          cell: ADLIB:IOPAD_TRI
+  6.372                        lockNET_SF_MSS_0/MSS_GPIO_0_GPIO_8_OUT:PAD (r)
+               +     0.000          net: GPIO_8_OUT
+  6.372                        GPIO_8_OUT (r)
                                     
-  5.905                        data arrival time
+  6.372                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_pclk1
@@ -524,7 +515,7 @@ Expanded Path 1
                +     2.557          Clock generation
   N/C
                                     
-  N/C                          GPIO_10_BI (r)
+  N/C                          GPIO_8_OUT (r)
 
 
 END SET Clock to Output

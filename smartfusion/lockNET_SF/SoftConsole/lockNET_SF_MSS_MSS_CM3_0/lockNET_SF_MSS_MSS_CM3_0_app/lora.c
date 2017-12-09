@@ -145,7 +145,10 @@ void LORA_set_header_flags(uint8_t set, uint8_t clear){
 // END RHGenericDriver code
 
 uint8_t LORA_init(void){
-
+	MSS_GPIO_config( MSS_GPIO_8, MSS_GPIO_OUTPUT_MODE);
+	MSS_GPIO_config( MSS_GPIO_9, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE );
+	MSS_GPIO_enable_irq(MSS_GPIO_9);
+	MSS_GPIO_set_output(MSS_GPIO_8, 1);
 	MSS_SPI_init(&g_mss_spi1);
 	MSS_SPI_configure_master_mode
 	(

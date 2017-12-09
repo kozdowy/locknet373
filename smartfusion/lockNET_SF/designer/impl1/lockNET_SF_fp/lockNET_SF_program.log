@@ -5,7 +5,9 @@ Release: v11.8
 Software Version: 11.8.0.26
 PDB file 'N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pdb'
 has been loaded successfully.
-DESIGN : lockNET_SF;  CHECKSUM : 9534;  PDB_VERSION : 1.9
+DESIGN : lockNET_SF;  CHECKSUM : 2B1B;  PDB_VERSION : 1.9
+Driver : 3.0.0 build 1
+programmer '79964' : FlashPro3
 Opened 'N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pro'
 The 'open_project' command succeeded.
 The 'set_programming_file' command succeeded.
@@ -18,29 +20,31 @@ Info: Adding FPGA Array data from file
       N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF.fdb.
 PDB file 'N:\Git\locknet373\smartfusion\lockNET_SF\designer\impl1\lockNET_SF_fp\lockNET_SF.pdb'
 has been loaded successfully.
-DESIGN : lockNET_SF;  CHECKSUM : 9534;  PDB_VERSION : 1.9
-Warning: One or more programming or configuration files have changed since generation.
-         To view details and update a PDB, you may click on Modify PDB button for the target
-         device.
-         To update a STAPL file, you may reload the file or reload the project.
+DESIGN : lockNET_SF;  CHECKSUM : 2B1B;  PDB_VERSION : 1.9
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
-Warning: One or more programming or configuration files have changed since generation.
-         To view details and update a PDB, you may click on Modify PDB button for the target
-         device.
-         To update a STAPL file, you may reload the file or reload the project.
-         
-         --------------------------------------------------------------------------------------\
-         -----
-         Audit Status of Programming file 'lockNET_SF.pdb'
-         --------------------------------------------------------------------------------------\
-         -----
-         The following original file[s] have changed:
-                 'N:\Git\locknet373\smartfusion\lockNET_SF'
-         
-         
-         Do you want to Continue Programming? [NO]
-Error: The command 'run_selected_actions' failed.
-Error: Failure when executing Tcl script. [ Line 15 ]
-Error: The Execute Script command failed.
+programmer '79964' : Scan Chain...
+Warning: programmer '79964' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '79964' : Scan Chain PASSED.
+programmer '79964' : Executing action PROGRAM
+programmer '79964' : EXPORT FSN[48] = 014b3e609880
+programmer '79964' : Erase ...
+programmer '79964' : Completed erase
+programmer '79964' : EXPORT CHECKSUM[16] = 2b1b
+programmer '79964' : Programming FPGA Array
+programmer '79964' : Verifying FPGA Array
+programmer '79964' :         Verifying FPGA Array -- pass
+programmer '79964' : Program System Init and Boot Clients...
+programmer '79964' : Program Embedded Flash Memory Module ALL....
+programmer '79964' : Verify System Init and Boot Clients...
+programmer '79964' : Verify Embedded Flash Memory Module ALL...
+programmer '79964' : Finished: Fri Dec 08 20:55:43 2017 (Elapsed time 00:00:38)
+programmer '79964' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
 Project closed.

@@ -31,8 +31,6 @@
 #define RSA_RESULT ((uint32_t *) RSA_RESULT_ADDR)
 #define RSA_RESULT_VALID ((uint32_t *) RSA_RESULT_VALID_ADDR)
 
-void RSA_test(void);
-
 void RSA_init(void);
 
 void RSA_run(uint32_t* message, uint32_t *key, uint32_t *modulus, uint32_t *residue);
