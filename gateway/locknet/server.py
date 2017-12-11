@@ -7,7 +7,7 @@ import sys
 import os
 import random
 import string
-from .keys import *
+from keys import *
 
 sys.path.insert(0, '/usr/lib/python2.7/bridge')
 
@@ -35,7 +35,6 @@ def decrypt(msg):
 from bridgeclient import BridgeClient as bridgeclient
 bridge = bridgeclient()
 
-
 locks = {}
 for lock_id in LOCK_LIST:
     lock = {}
@@ -43,7 +42,7 @@ for lock_id in LOCK_LIST:
     lock['blacklist'] = set()
     lock['req_access'] = 0
 
-    fname = 'db/lock_{}.whitelist'.format(i)
+    fname = 'db/lock_{}.whitelist'.format(lock_id)
     if os.path.isfile(fname):
         with open(fname, 'r') as f:
             for line in f:
@@ -53,7 +52,7 @@ for lock_id in LOCK_LIST:
     else:
         open(fname, 'a').close()
 
-    fname = 'db/lock_{}.blacklist'.format(i)
+    fname = 'db/lock_{}.blacklist'.format(lock_id)
     if os.path.isfile(fname):
         with open(fname, 'r') as f:
             for line in f:
@@ -79,12 +78,14 @@ if os.path.isfile(user_file):
 else:
     open(user_file, 'a').close()
 
-unassoc_tags = []
+unassoc_tags = set()
 fname = 'db/unassoc.tags'
 if os.path.isfile(fname):
     with open(fname, 'r') as f:
         for line in f:
-        unassoc_tags.append(line.strip())
+            l = line.strip()
+            if l:
+                unassoc_tags.add(line.strip())
 else:
     open(fname, 'a').close()
 
@@ -157,7 +158,7 @@ app = Bottle()
 @app.route('/assoc', method=['POST', 'GET'])
 def do_assoc():
     if request.method == 'POST':
-        user = request.get_cookie("account")
+        user = request.get_cookie("account", secret=COOKIE_SECRET_KEY)
         tag = request.forms.get('tag')
         for u in users:
             if u['username'] == user:
@@ -166,7 +167,7 @@ def do_assoc():
                 update_unassoc()
                 break
     if request.method == 'GET':
-        return template('assoc.tpl', user=request.get_cookie("account"), tags=unassoc_tags)
+        return template('assoc.tpl', user=request.get_cookie("account", secret=COOKIE_SECRET_KEY), tags=unassoc_tags)
 
 
 @app.route('/enroll', method=['POST', 'GET'])
@@ -182,7 +183,7 @@ def do_enroll():
         name_last = request.forms.get('name_last')
         add_user(name_first, name_last, username, hashed, salt)
         response.set_cookie("account", username, secret=COOKIE_SECRET_KEY)
-        return index(username) #add session cookie...
+        redirect('/')
     if request.method == 'GET':
         return template('enroll.tpl')
 
@@ -193,26 +194,29 @@ def do_login():
         password = request.forms.get('password')
         if(check_login(username, password)):
             response.set_cookie("account", username, secret=COOKIE_SECRET_KEY)
-            return index(username)
+            redirect('/')
         else:
             return "Login Failed"
     if request.method == 'GET':
         return template('login.tpl')
 
 @app.route('/')
-def index(user = "guest"):
-    return template('index.tpl', user, locks=locks)
+def index():
+    user = request.get_cookie("account", secret=COOKIE_SECRET_KEY)
+    if not user:
+        redirect('/login')
+    return template('index.tpl', user=user, locks=locks)
 
 @app.route('/grant', method='POST')
 def grant():
-    lock = int(request.forms.get('lock'))
+    lock = int(request.forms.get('lock'), 16)
     locks[lock]['req_access'] = 0
     send_to_lora(lock, encrypt(GRANT_ACCESS, lock))
     redirect('/')
 
 @app.route('/deny', method='POST')
 def deny():
-    lock = int(request.forms.get('lock'))
+    lock = int(request.forms.get('lock'), 16)
     locks[lock]['req_access'] = 0
     send_to_lora(lock, encrypt(DENY_ACCESS, lock) )
     redirect('/')
@@ -220,7 +224,7 @@ def deny():
 @app.route('/from_lora')
 def from_lora():
     msg = int(request.query['msg'], 16)
-    lock = int(request.query['lock'])
+    lock = int(request.query['lock'], 16)
     decr = decrypt(msg)
     print('recv: {}'.format(hex(msg)))
     print('decrypted: {}'.format(hex(decr)))
@@ -237,7 +241,7 @@ def from_lora():
 @app.route('/modify_list', method='POST')
 def modify_list():
     uid = request.forms.get('id')
-    lock = int(request.forms.get('lock'))
+    lock = int(request.forms.get('lock'), 16)
     l = request.forms.get('list')
     addrem = request.forms.get('addrem')
     if addrem == 'add':
