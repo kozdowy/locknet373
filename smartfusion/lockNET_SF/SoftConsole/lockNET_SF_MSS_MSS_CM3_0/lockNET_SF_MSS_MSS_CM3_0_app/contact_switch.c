@@ -7,7 +7,6 @@
 #include "contact_switch.h"
 
 void CS_init(void){
-	MSS_GPIO_init();
 	MSS_GPIO_config( MSS_GPIO_4, MSS_GPIO_INPUT_MODE);
 }
 

@@ -7,10 +7,6 @@
 
 #include "lora.h"
 
-// CHANGE FOR OTHER LOCK
-#define DEVICE_ID 0x37
-#define GATEWAY_ID 0x77
-
 const uint8_t frame_size = 16;
 const uint8_t burst_frame_size = 8;
 const uint8_t modem_default[] = {0x72, 0x74, 0x00};
@@ -164,7 +160,7 @@ uint8_t LORA_init(void){
 
 
 
-
+	NVIC_SetPriority(41, 1);
 	//MSS_GPIO_drive_inout(MSS_GPIO_10, MSS_GPIO_HIGH_Z);
 	int i;
 	LORA_write(RH_RF95_REG_01_OP_MODE, RH_RF95_MODE_SLEEP | RH_RF95_LONG_RANGE_MODE);
@@ -196,8 +192,8 @@ uint8_t LORA_init(void){
 	// Lowish power
 	LORA_set_tx_power(13, 0);
 
-  LORA_set_header_from(DEVICE_ID);
-  LORA_set_this_address(DEVICE_ID);
+  //LORA_set_header_from(DEVICE_ID);
+  //LORA_set_this_address(DEVICE_ID);
 
 	return 0;
 }

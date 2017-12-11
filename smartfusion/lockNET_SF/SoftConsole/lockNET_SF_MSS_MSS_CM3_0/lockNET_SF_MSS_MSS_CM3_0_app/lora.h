@@ -13,6 +13,17 @@
 #include <inttypes.h>
 #include <time.h>
 #include "drivers/mss_uart/mss_uart.h"
+#include "lock.h"
+
+#ifdef LOCK_0
+#define DEVICE_ID 0xD0
+#endif
+
+#ifdef LOCK_1
+#define DEVICE_ID 0xD1
+#endif
+
+#define GATEWAY_ID 0x66
 
 
 #define LORA_RegFifoTxBaseAddr 0x0E
