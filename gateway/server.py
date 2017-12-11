@@ -2,15 +2,20 @@
 
 from bottle import Bottle, run, get, post, request, template, redirect
 from time import sleep
+from hashlib import sha256 as password_hash
 import sys
 import os
+import random
+import string
 
 sys.path.insert(0, '/usr/lib/python2.7/bridge')
 
 PUB_EXP = 0x0000000000010001
 PRI_EXP = 0x044de026cabdb311
-MODULUS = 0xeda515ef24029417
-RESIDUE = 0x859cfcfb5a1f75d5
+SERVER_MODULUS = 0xeda515ef24029417
+SERVER_RESIDUE = 0x859cfcfb5a1f75d5
+
+COOKIE_SECRET_KEY = "EECS373_LOCKNET_GO_BLUE"
 
 ON_WHITELIST = 0xEE
 ON_BLACKLIST = 0xBB
@@ -23,11 +28,11 @@ NUM_LOCKS = 2
 
 LORA_REQ_ACCESS = 0xAC
 
-def encrypt(msg):
-    return pow(msg, PUB_EXP, MODULUS)
+def RSA(msg, exponent, modulus):
+    return pow(msg, exponent, modulus)
 
-def decrypt(msg):
-    return pow(msg, PRI_EXP, MODULUS)
+#def decrypt(msg):
+#    return pow(msg, PRI_EXP, MODULUS)
 
 from bridgeclient import BridgeClient as bridgeclient
 bridge = bridgeclient()
@@ -64,6 +69,21 @@ for i in range(NUM_LOCKS):
 
 print(locks)
 
+def make_dict(keys, values):
+	return dict(zip(keys, values + [None] * (len(keys) - len(values))))
+	
+user_keys = ['first', 'last', 'username', 'password', 'pass_salt', 'nfc_id']
+users = []
+user_file = 'db/users.list'
+if os.path.isfile(user_file):
+	with open(user_file, 'r') as f:
+		users = [make_dict(user_keys, line.strip().split(' ')) for line in f]
+
+def gen_salt():
+	ALPHABET = string.ascii_letters + string.digits
+	return ''.join(random.choice(ALPHABET) for i in range(15)
+	
+		
 # 0 if neither
 # 1 if whitelist
 # 2 if blacklist
@@ -90,6 +110,24 @@ def update_db():
             for id in lock['blacklist']:
                 f.write('{}\n'.format(id))
 
+def check_user_exists(username):
+	if username in [user['username'] for user in users]:
+		return true
+	return false
+
+def check_login(username, password):
+	for user in users:
+		if (user['username'] == username &&	user['password'] == password_hash(password + user['pass_salt'])):
+			return true
+	return false
+	
+def add_user(first, last, username, password, salt)
+	if os.path.isfile(user_file):
+		with open(user_file,'a') as f:
+			f.write("{} {} {} {} {}\n".format(first, last, username, password, salt))
+			
+	users.append(make_dict(user_keys, [first, last, username, password, salt])
+			
 def add_to_list(lock, id, l):
     n_l = 'whitelist' if l == 'blacklist' else 'blacklist'
     locks[lock][n_l].discard(id)
@@ -102,15 +140,40 @@ def remove_from_list(lock, id, l):
 
 app = Bottle()
 
+@app.route('/enroll', method=POST)
+def do_enroll():
+	username = request.forms.get('username')
+	if(check_user_exists(username)):
+		return "Enrollment Failed," + username + "is taken"
+	password = request.forms.get('password')
+	salt = gen_salt()
+	hashed = password_hash(password + salt)
+	name_first = request.forms.get('name_first')
+	name_last = request.forms.get('name_last')
+	add_user(name_first, name_last, username, hashed, salt)
+	response.set_cookie("account", username, secret=COOKIE_SECRET_KEY)
+	return index(username) #add session cookie...
+	
+@app.route('/login', method=POST)
+def do_login():
+	username = request.forms.get('username')
+	password = request.forms.get('password')
+	if(check_login(username, password)):
+		response.set_cookie("account", username, secret=COOKIE_SECRET_KEY)
+		return index(username) 
+	else:
+		return "Login Failed"
+	
+	
+
 @app.route('/')
-def index():
+def index(user):
     return template('index.tpl', locks=locks)
 
 #@app.route('/req_access')
 #def req_access():
     #return template("req_access.tpl", locks=locks)
 
-    redirect('/')
 def send_to_lora(lock, msg):
     locks[lock]['req_access'] = 0
     bridge.mailbox(msg)
