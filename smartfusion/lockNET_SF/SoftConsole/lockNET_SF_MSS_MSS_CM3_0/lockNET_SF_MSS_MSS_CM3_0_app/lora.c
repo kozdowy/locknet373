@@ -7,6 +7,9 @@
 
 #include "lora.h"
 
+// CHANGE FOR OTHER LOCK
+#define DEVICE_ID 0x37
+#define GATEWAY_ID 0x77
 
 const uint8_t frame_size = 16;
 const uint8_t burst_frame_size = 8;
@@ -19,7 +22,7 @@ uint8_t buf[RH_RF95_MAX_PAYLOAD_LEN];
 // BEGIN RHGenericDriver code
 uint8_t mode;
 
-uint8_t this_address = 0x37;
+uint8_t this_address = DEVICE_ID;
 uint8_t promiscuous = 0;
 
 volatile uint8_t rx_header_to;
@@ -27,8 +30,8 @@ volatile uint8_t rx_header_from;
 volatile uint8_t rx_header_id;
 volatile uint8_t rx_header_flags;
 
-uint8_t tx_header_to = RH_BROADCAST_ADDRESS;
-uint8_t tx_header_from = 0x37;
+uint8_t tx_header_to = GATEWAY_ID;
+uint8_t tx_header_from = DEVICE_ID;
 uint8_t tx_header_id = 0x01;
 uint8_t tx_header_flags = 0x00;
 
@@ -193,6 +196,9 @@ uint8_t LORA_init(void){
 	// Lowish power
 	LORA_set_tx_power(13, 0);
 
+  LORA_set_header_from(DEVICE_ID);
+  LORA_set_this_address(DEVICE_ID);
+
 	return 0;
 }
 
@@ -317,6 +323,7 @@ uint8_t LORA_send(const uint8_t* data, uint8_t len){
 
 	LORA_wait_packet_sent(0);
 	LORA_set_mode_idle();
+  LORA_set_header_to(GATEWAY_ID);
 
 	// Position at the beginning of the FIFO
 	LORA_write(RH_RF95_REG_0D_FIFO_ADDR_PTR, 0);
