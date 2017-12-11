@@ -58,7 +58,7 @@ void LORA_client_ex_setup(void){
 void LORA_client_ex_loop(void){
   printf("Sending to rf95_server\r\n");
   // Send a message to rf95_server
-  uint8_t data[] = "Hello World!";
+  uint8_t data[] = {0xdc, 0xba, 0xab, 0xcd, 0xab, 0xcd, 0xdc, 0xba};
   LORA_send(data, sizeof(data));
 
   LORA_wait_packet_sent(0);
@@ -74,8 +74,6 @@ void LORA_client_ex_loop(void){
       printf("got reply: ");
       printf((char*)buf);
       printf("\r\n");
-//      Serial.print("RSSI: ");
-//      printf(rf95.lastRssi(), DEC);
     }
     else
     {
