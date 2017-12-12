@@ -1,9 +1,12 @@
-Welcome, {{user}}!
+% include('header.tpl')
+Welcome, {{user}}! <br>
+
+<a href="/assoc">Associate tag</a>
 <h2>Blacklist</h2>
 <form action="/modify_list" method="POST">
     Lock:
-    % for i in range(len(locks)):
-    <input name="lock" type="radio" value="{{i}}" {{"checked" if i == 0 else ""}}>{{i}}</input>
+    % for id in locks.keys():
+    <input name="lock" type="radio" value="{{hex(id)}}" {{"checked" if id == locks.keys()[0] else ""}}>{{hex(id)}}</input>
     % end
     <br>
     <input name="addrem" type="radio" value="add" checked>Add</input>
@@ -17,8 +20,8 @@ Welcome, {{user}}!
 <h2>Whitelist</h2>
 <form action="/modify_list" method="POST">
     Lock:
-    % for i in range(len(locks)):
-    <input name="lock" type="radio" value="{{i}}" {{"checked" if i == 0 else ""}}>{{i}}</input>
+    % for id in locks.keys():
+    <input name="lock" type="radio" value="{{hex(id)}}" {{"checked" if id == locks.keys()[0] else ""}}>{{hex(id)}}</input>
     % end
     <br>
     <input name="addrem" type="radio" value="add" checked>Add</input>
@@ -29,22 +32,23 @@ Welcome, {{user}}!
     <input value="Submit" type="submit" />
 </form>
 
-% for i in range(len(locks)):
+% for id in locks.keys():
     <div>
 	<div>
-        <h3>Lock {{i}} Whitelist members</h3>
-        % for id in locks[i]['whitelist']:
-        <p>{{id}}</p>
+        <h3>Lock {{hex(id)}} Whitelist members</h3>
+        % for user in locks[id]['whitelist']:
+        <p>{{user}}</p>
         % end
         </div>
 
 	<div>
-        <h3>Lock {{i}} Blacklist members</h3>
-        % for id in locks[i]['blacklist']:
-        <p>{{id}}</p>
+        <h3>Lock {{hex(id)}} Blacklist members</h3>
+        % for user in locks[id]['blacklist']:
+        <p>{{user}}</p>
         % end
         </div>
     </div>
 % end
 
 % include('req_access.tpl', locks=locks)
+% include('footer.tpl')

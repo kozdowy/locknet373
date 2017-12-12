@@ -7,7 +7,7 @@ import sys
 import os
 import random
 import string
-from .keys import *
+from keys import *
 
 sys.path.insert(0, '/usr/lib/python2.7/bridge')
 
@@ -22,6 +22,7 @@ LOCK_LIST = [0xD0, 0xD1]
 ON_WHITELIST = 0
 ON_BLACKLIST = 1
 ON_NEITHER = 2
+UNASSOC = 3
 
 
 LORA_REQ_ACCESS = 0xAC
@@ -35,7 +36,6 @@ def decrypt(msg):
 from bridgeclient import BridgeClient as bridgeclient
 bridge = bridgeclient()
 
-
 locks = {}
 for lock_id in LOCK_LIST:
     lock = {}
@@ -43,7 +43,7 @@ for lock_id in LOCK_LIST:
     lock['blacklist'] = set()
     lock['req_access'] = 0
 
-    fname = 'db/lock_{}.whitelist'.format(i)
+    fname = 'db/lock_{}.whitelist'.format(lock_id)
     if os.path.isfile(fname):
         with open(fname, 'r') as f:
             for line in f:
@@ -53,7 +53,7 @@ for lock_id in LOCK_LIST:
     else:
         open(fname, 'a').close()
 
-    fname = 'db/lock_{}.blacklist'.format(i)
+    fname = 'db/lock_{}.blacklist'.format(lock_id)
     if os.path.isfile(fname):
         with open(fname, 'r') as f:
             for line in f:
@@ -79,12 +79,14 @@ if os.path.isfile(user_file):
 else:
     open(user_file, 'a').close()
 
-unassoc_tags = []
+unassoc_tags = set()
 fname = 'db/unassoc.tags'
 if os.path.isfile(fname):
     with open(fname, 'r') as f:
         for line in f:
-        unassoc_tags.append(line.strip())
+            l = line.strip()
+            if l:
+                unassoc_tags.add(line.strip())
 else:
     open(fname, 'a').close()
 
@@ -93,9 +95,17 @@ def gen_salt():
     return ''.join(random.choice(ALPHABET) for i in range(15))
 
 
-def check_lists(lock, uid):
-    if type(uid) is long:
-        return ON_NEITHER
+def check_lists(lock, nfc_tag):
+    uid = ""
+    print('checking for nfc_tag={}'.format(nfc_tag))
+    for user in users:
+        print('nfc_id={}'.format(user['nfc_id']))
+        if (user['nfc_id'] == nfc_tag):
+            uid = user['username']
+            break
+    print('user is {}'.format(uid))
+    if not uid:
+        return UNASSOC
     if uid in locks[lock]['whitelist']:
         return ON_WHITELIST
     if uid in locks[lock]['blacklist']:
@@ -113,7 +123,7 @@ def update_unassoc():
 
 def update_db():
     print(locks)
-    for i in range(NUM_LOCKS):
+    for i in locks.keys():
         lock = locks[i]
         with open('db/lock_{}.whitelist'.format(i), 'w') as f:
             for uid in lock['whitelist']:
@@ -121,6 +131,11 @@ def update_db():
         with open('db/lock_{}.blacklist'.format(i), 'w') as f:
             for uid in lock['blacklist']:
                 f.write('{}\n'.format(uid))
+
+def update_users():
+    with open('db/users.list', 'w') as f:
+        for user in users:
+            f.write('{} {} {} {} {} {}\n'.format(user['first'], user['last'], user['username'], user['password'], user['pass_salt'], user['nfc_id']))
 
 def check_user_exists(username):
     return (username in [user['username'] for user in users])
@@ -150,23 +165,28 @@ def remove_from_list(lock, uid, l):
     update_db()
 
 def send_to_lora(lock, msg):
-    bridge.mailbox(hex(lock) + hex(msg)[:-1])
+    bridge.mailbox(lock + '{0:#0{1}x}'.format(msg, 18))
 
 app = Bottle()
 
 @app.route('/assoc', method=['POST', 'GET'])
 def do_assoc():
     if request.method == 'POST':
-        user = request.get_cookie("account")
+        user = request.get_cookie("account", secret=COOKIE_SECRET_KEY)
+        print('user in assoc is {}'.format(user))
         tag = request.forms.get('tag')
         for u in users:
+            print('checking against user {}'.format(u['username']))
             if u['username'] == user:
+                print('found user')
                 u['nfc_id'] = tag
                 unassoc_tags.discard(tag)
                 update_unassoc()
+                update_users()
                 break
+        redirect('/')
     if request.method == 'GET':
-        return template('assoc.tpl', user=request.get_cookie("account"), tags=unassoc_tags)
+        return template('assoc.tpl', user=request.get_cookie("account", secret=COOKIE_SECRET_KEY), tags=unassoc_tags)
 
 
 @app.route('/enroll', method=['POST', 'GET'])
@@ -182,7 +202,7 @@ def do_enroll():
         name_last = request.forms.get('name_last')
         add_user(name_first, name_last, username, hashed, salt)
         response.set_cookie("account", username, secret=COOKIE_SECRET_KEY)
-        return index(username) #add session cookie...
+        redirect('/')
     if request.method == 'GET':
         return template('enroll.tpl')
 
@@ -193,57 +213,68 @@ def do_login():
         password = request.forms.get('password')
         if(check_login(username, password)):
             response.set_cookie("account", username, secret=COOKIE_SECRET_KEY)
-            return index(username)
+            redirect('/')
         else:
             return "Login Failed"
     if request.method == 'GET':
         return template('login.tpl')
 
 @app.route('/')
-def index(user = "guest"):
-    return template('index.tpl', user, locks=locks)
+def index():
+    user = request.get_cookie("account", secret=COOKIE_SECRET_KEY)
+    if not user:
+        redirect('/login')
+    return template('index.tpl', user=user, locks=locks)
 
 @app.route('/grant', method='POST')
 def grant():
-    lock = int(request.forms.get('lock'))
+    lock = int(request.forms.get('lock'), 16)
+    print('granting access to {}'.format(lock))
     locks[lock]['req_access'] = 0
-    send_to_lora(lock, encrypt(GRANT_ACCESS, lock))
+    send_to_lora(hex(lock), encrypt(GRANT_ACCESS, lock))
     redirect('/')
 
 @app.route('/deny', method='POST')
 def deny():
-    lock = int(request.forms.get('lock'))
+    lock = int(request.forms.get('lock'), 16)
     locks[lock]['req_access'] = 0
-    send_to_lora(lock, encrypt(DENY_ACCESS, lock) )
+    send_to_lora(hex(lock), encrypt(DENY_ACCESS, lock) )
     redirect('/')
 
-@app.route('/from_lora')
+@app.route('/l')
 def from_lora():
-    msg = int(request.query['msg'], 16)
-    lock = int(request.query['lock'])
+    msg = int(request.query['m'], 16)
+    lock = int(request.query['l'], 16)
     decr = decrypt(msg)
     print('recv: {}'.format(hex(msg)))
     print('decrypted: {}'.format(hex(decr)))
-    resp = check_lists(lock, decr)
-    if decr == ON_WHITELIST:
+    resp = check_lists(lock, hex(decr))
+    if resp == ON_WHITELIST:
+        print('granting access')
         send_to_lora(hex(lock), encrypt(GRANT_ACCESS, lock))
-    elif decr == ON_BLACKLIST:
+    elif resp == ON_BLACKLIST:
+        print('denying access')
         send_to_lora(hex(lock), encrypt(DENY_ACCESS, lock))
-    elif decr == ON_NEITHER:
-        unassoc_tags.add(decr)
+    elif resp == ON_NEITHER:
+        print('tag recognized, not on list')
+        request_access(lock)
+    else:
+        print('unassociated tag')
+        unassoc_tags.add(hex(decr))
+        update_unassoc()
         request_access(lock)
     return 'recv'
 
 @app.route('/modify_list', method='POST')
 def modify_list():
     uid = request.forms.get('id')
-    lock = int(request.forms.get('lock'))
+    lock = int(request.forms.get('lock'), 16)
     l = request.forms.get('list')
     addrem = request.forms.get('addrem')
     if addrem == 'add':
         add_to_list(lock, uid, l)
     elif addrem == 'rem':
         remove_from_list(lock, uid, l)
-        redirect('/')
+    redirect('/')
 
 run(app, host='0.0.0.0', port=8080, debug=True)

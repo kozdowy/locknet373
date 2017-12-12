@@ -1,3 +1,4 @@
+% include('header.tpl')
 Associating tag for {{user}}
 <form action="/assoc" method="POST">
 Unassociated tags: <br>
@@ -6,3 +7,4 @@ Unassociated tags: <br>
 % end
 <input type="submit" value="Associate">
 </form>
+% include('footer.tpl')
